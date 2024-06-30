@@ -471,9 +471,11 @@ header {
 //////////////////////////////////////////////////////////////////////////// 
 
 main {
+    // position: relative;
+    width: 100%; height: 100%;
     overflow: hidden;
     .main-bg {
-        position: relative;
+        // position: relative;
         width: 100%;
         height: 100%;
         background:linear-gradient( #93E4FF 17%, #4AB2D4 34%, #007EA8 100%);
@@ -484,7 +486,10 @@ main {
         }
 
         .fishs {
-            
+            position: absolute;
+            width: 100%;
+            // background-color: #00A3A0;
+            overflow: hidden;
             img {
                 width: 30%;
             }
@@ -576,16 +581,7 @@ main {
             animation-duration: 10s;
             
         }
-        // @keyframes buble-move {
-        //     0% {
-        //         transform: translateY(1500px);
-        //     }
-            
-        //     100% {
-        //         transform: translateY(-1000px);
-                
-        //     }
-        // }
+    
         .buble0 {
             top: 0%; left: 60%;
             width: 50px;
@@ -943,6 +939,28 @@ main {
     
                     background-color: white;
 
+                    .letter-title {
+                        font-size: 6vw;
+                        text-shadow: none;
+                        margin: 0;
+                        padding: 20px;
+                        @include responsive(large-screens) {
+                            padding-top: 80px;
+                            text-align: center;
+                            font-size: 40px;
+                        }
+                    }
+                    p {
+                        text-align: center;
+                        font-size: 4.5vw;
+                        font-weight: 600;
+                        @include responsive(large-screens) {
+                            padding: 20px;
+                            font-size: 30px;
+                            
+                            
+                        }
+                    }
                     @include responsive(large-screens) {
                         width: 730px; height: 490px;
                     }
@@ -953,132 +971,315 @@ main {
 
             .skill {
                 .skill-box {
-                    position: relative;
-                    width: 100%;
-                    height: 1500px;
+                    width: 90%;
+                    margin: auto;
+                    height: 100%;
+                    
                     // background-color: #00A3A0;
                     @include responsive(large-screens) {
+                        position: relative;
                         height: 1000px;
                         // background-color: #F0F0F0;
-                    }
-                    .icon {
-                        width: 30%;
+                    }          
+                    .skill-item {
+                        position: relative;
+                        display: inline-block;
+                        cursor: pointer;
+                        // background-color: #00A3A0;
                         @include responsive(large-screens) {
-                            width: 220px; height: 220px;
+                            position: absolute;
+                            // background-color: #F0F0F0;
+                        }     
+                        
+                        &:hover .overlay {
+                            opacity: 1;
                         }
-                    }
-                    .icon:before {
-                        content: "";
-                        display: block;
-                        padding-top: 100%;
-                       }
-                    .html-img, .js-img, .css-img{
-                        width: 25%;
-                        @include responsive(large-screens) {
-                            width: 180px; height: 180px;
+                        .icon {
+                            width: 30vw; /* 이미지 크기 조절 */
+                            height: auto;
+                            display: block;
+                            
+                           
                         }
-                    }
-                    .react-img, .sass-img, .jquery-img {
-                        width: 20%;
-                        @include responsive(large-screens) {
-                            width: 150px; height: 150px;
-                        }
-                    }
 
-                    .ai-img {
-                        position: absolute; top: 0%; left: 10%;
-                        @include responsive(large-screens) {
-                            top: 25%; left: 75%;
-                            // display: none;
+                      
+                        .ai-img {
+                            width: 25vw;
+                            @include responsive(large-screens) {
+                                width: 10vw;
+                            }
                         }
-                    }
-                    .pr-img {
-                        position: absolute; top: 8%; left: 50%;
-                        @include responsive(large-screens) {
-                            top: 0%; left: 5%;
-                            // display: none;
+
+                       
+                        .pr-img {
+                            width: 25vw;
+                            @include responsive(large-screens) {
+                                width: 10vw;
+                            }
                         }
-                    }
-                    .html-img {
-                        position: absolute; top: 15%; left: 5%;
-                        @include responsive(large-screens) {
-                            top: 80%; left: 45%;
-                            // display: none;
+
+                       
+                        .html-img {
+                            width: 23vw;
+                            @include responsive(large-screens) {
+                                width: 8vw;
+                            }
                         }
-                    }
-                    .sass-img {
-                        position: absolute; top: 25%; left: 45%;
-                        @include responsive(large-screens) {
-                            top: 40%; left: 43%;
-                            // display: none;
+
+                       
+                        .sass-img {
+                            width: 23vw;
+                            @include responsive(large-screens) {
+                                width: 8vw;
+                            }
                         }
-                    }
-                    .js-img {
-                        position: absolute; top: 35%; left: 57%;
-                        @include responsive(large-screens) {
-                            top: 75%; left: 10%;
-                            // display: none;
+
+                       
+                        .js-img {
+                            width: 23vw;
+                            @include responsive(large-screens) {
+                                width: 8vw;
+                            }
                         }
-                    }
-                    .ps-img {
-                        position: absolute; top: 40%; left: 10%;
-                        @include responsive(large-screens) {
-                            top: 55%; left: 25%;
-                            // display: none;
+
+                      
+                        .ps-img {
+                            width: 25vw;
+                            @include responsive(large-screens) {
+                                width: 10vw;
+                            }
                         }
-                    }
-                    .jquery-img {
-                        position: absolute; top: 50%; left: 57%;
-                        @include responsive(large-screens) {
-                            top: 80%; left: 80%;
-                            // display: none;
+
+                       
+                        .jquery-img {
+                            width: 21vw;
+                            @include responsive(large-screens) {
+                                width: 6vw;
+                            }
                         }
-                    }
-                    .react-img {
-                        position: absolute; top: 55%; left: 25%;
-                        @include responsive(large-screens) {
-                            top: 35%; left: 15%;
-                            // display: none;
+
+                      
+                        .react-img {
+                            width: 21vw;
+                            @include responsive(large-screens) {
+                                width: 6vw;
+                            }
                         }
-                    }
-                    .git-img {
-                        position: absolute; top: 65%; left: 5%;
-                        width: 18%;
-                        @include responsive(large-screens) {
-                            width: 120px; height: 120px;
-                            top: 20%; left: 60%;
-                            // display: none;
+
+                      
+                        .git-img {
+                            width: 21vw;
+                            @include responsive(large-screens) {
+                                width: 6vw;
+                            }
                         }
-                    }
-                    .css-img {
-                        position: absolute; top: 70%; left: 55%;
-                        @include responsive(large-screens) {
-                            top: 50%; left: 60%;
-                            // display: none;
+
+                       
+                        .css-img {
+                            width: 23vw;
+                            @include responsive(large-screens) {
+                                width: 8vw;
+                            }
                         }
-                    }
-                    .figma-img {
-                        position: absolute; top: 80%; left: 6%;
-                        @include responsive(large-screens) {
-                            top: 0%; left: 80%;
-                            // display: none;
+
+                      
+                        .figma-img {
+                            width: 25vw;
+                            @include responsive(large-screens) {
+                                width: 10vw;
+                            }
                         }
-                    }
-                    .ae-img {
-                        position: absolute; top: 90%; left: 50%;
+
+                      
+                        .ae-img {
+                            width: 25vw;
+                            @include responsive(large-screens) {
+                                width: 10vw;
+                            }
+                        }
+                        //////////////////////
+                        .overlay {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            background: rgba(0, 0, 0, 0.7); /* 검은색 반투명 배경 */
+                            color: white;
+                            font-size: 24px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            opacity: 0;
+                            transition: opacity 0.3s;
+                            border-radius: 50%;
+                        }
+                        // .skill-item:hover .overlay {
+                        //     opacity: 1 !important;
+                        // }
+                        .description-modal {
+                            position: fixed;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            background: white;
+                            padding: 20px;
+                            border-radius: 5px;
+                            z-index: 1000; /* z-index 추가 */
+                            display: none;
+                        }
+                        .hidden {
+                            display: none;
+                        }
+                        .close-btn {
+                            cursor: pointer;
+                        }
+                    } // skill-item
+
+                    .ai {
+                        margin-top: 20%;
+                        margin-left: 12%;
+                        margin-right: 0vh;
+                        margin-bottom: 20%;
                         @include responsive(large-screens) {
-                            top: 10%; left: 40%;
-                            // display: none;
+                            
+                            margin: 0;
+                            top: 10%;
+                            left: 67%;
+                          
                         }
                         
-                    } //ae-img
+                    }
+                    .pr {
+                        margin-top: 10%;
+                        margin-left: 8%;
+                        margin-right: 0vh;
+                        margin-bottom: 0vh;
+                        @include responsive(large-screens) {
+                            margin: 0;
+                            top: 0px;
+                            left: 0px;
+                         
+                        }
+                    }
+                    .html {
+                        margin-top: 10%;
+                        margin-left: 15%;
+                        margin-right: 10%;
+                        margin-bottom: 20%;
+                           @include responsive(large-screens) {
+                            margin: 0;
+                            top: 80%;
+                            left: 50%;
+                        }
+                    }
+                    .sass {
+                        margin-top: 20%;
+                        margin-left: 10%;
+                        margin-right: 0vh;
+                        margin-bottom: 10%;
+                        @include responsive(large-screens) {
+                            margin: 0;
+                            top: 40%;
+                            left: 40%;
+                        }
+                    }
+                    .js {
+                        margin-top: 10%;
+                        margin-left: 10%;
+                        margin-right: 0vh;
+                        margin-bottom: 0%;
+                        @include responsive(large-screens) {
+                            margin: 0;
+                            top: 70%;
+                            left: 10%;
+                        }
+                    }
+                    .ps {
+                        margin-top: 3%;
+                        margin-left: 10%;
+                        margin-right: 0vh;
+                        margin-bottom: 10%;
+                        @include responsive(large-screens) {
+                            margin: 0;
+                            top: 60%;
+                            left: 30%;
+                        }
+                    }
+                    .jquery {
+                        margin-top: 20%;
+                        margin-left: 30%;
+                        margin-right: 8%;
+                        margin-bottom: 20%;
+                        @include responsive(large-screens) {
+                            margin: 0;
+                            top: 80%;
+                            left: 80%;
+                        }
+                    }
+                    .react {
+                        margin-top: 0%;
+                        margin-left: 0%;
+                        margin-right: 0%;
+                        margin-bottom: 10%;
+                        @include responsive(large-screens) {
+                            margin: 0;
+                            top: 35%;
+                            left: 20%;
+                        }
+                    }
+                    .git {
+                        margin-top: 0%;
+                        margin-left: 0%;
+                        margin-right: 0%;
+                        margin-bottom: 10%;
+                        @include responsive(large-screens) {
+                            margin: 0;
+                            top: 25%;
+                            left: 55%;
+                        }
+                    }
+                    .css {
+                        margin-top: 0%;
+                        margin-left: 10%;
+                        margin-right: 10%;
+                        margin-bottom: 30%;
+                        @include responsive(large-screens) {
+                            margin: 0;
+                            top: 50%;
+                            left: 65%;
+                        }
+                    }
+                    .figma {
+                        margin-top: 0%;
+                        margin-left: 50%;
+                        margin-right: 0%;
+                        margin-bottom: 10%;
+                        @include responsive(large-screens) {
+                            margin: 0;
+                            top: 0%;
+                            left: 85%;
+                        }
+                    }
+                    .ae {
+                        margin-top: 0%;
+                        margin-left: 30%;
+                        margin-right: 0%;
+                        margin-bottom: 10%;
+                        @include responsive(large-screens) {
+                            margin: 0;
+                            top: 10%;
+                            left: 30%;
+                        }
+                    }
                 } // skill-box
             } // skill
 
             .portfolio {
+                width: 100%; height: 100%;
                 @include responsive(large-screens) {
                     // background-color: aquamarine;
-                    width: 100%; height: 5200px;
+                    width: 100%; height: 100%;
                 }
                 .box {
                     position: relative;
@@ -1546,25 +1747,8 @@ main {
                             overflow: hidden;
                             background-size: cover;
                             background-position-y: -50px;
-                        }   
-                        @include responsive(large-screens) {
-                            margin-left:5%;
-                            
-                        } 
-                    }
-                   
-                    a {
-                        .detail-box {
-                            margin-left:50%;
-                            .detail {
-                                width: 100%;
-                                
-                                overflow: hidden;
-                                cursor: pointer;
-                           
-                                background-size: cover;
-
-                                .detail:hover {
+                            img {
+                                &:hover {
                                     animation-name: detail;
                                     animation-timing-function: ease-in-out;
                                     animation-duration: 0.5s;
@@ -1576,26 +1760,81 @@ main {
                                             
                                         }
                                         100% {
-                                            scale: 103%;
-                                           
+                                            scale: 120%;
+                                            
                                         }
                                     }
-                            }
-
+                                    }
+                                }
+                        }   
+                        @include responsive(large-screens) {
+                            margin-left:5%;
                             
+                        } 
+                    }
+                   
+                    
+                        .detail-box {
+                            margin-left:50%;
+                            .detail {
+                                overflow: hidden;
+                                background-size: cover;
+                                background-position-y: -50px;
+                                img {
+                                &:hover {
+                                    animation-name: detail;
+                                    animation-timing-function: ease-in-out;
+                                    animation-duration: 0.5s;
+                                    animation-fill-mode: forwards;
+                                    
+                                    @keyframes detail {
+                                        0% {
+                                            scale: 100%;
+                                            
+                                        }
+                                        100% {
+                                            scale: 102%;
+                                            
+                                        }
+                                    }
+                                    }
+                                }
+                            }
                             @include responsive(large-screens) {
                                 transform: translateY(-200px);
-                                margin-left:37%;
+                                margin-left:38%;
                             } 
-                        }
                     }
 
                   
                         // background-color: #00A3A0;
-                    }
+                    
 
                     .package-box {
                         margin-left:15%;
+                        .package {
+                            overflow: hidden;
+                            background-size: cover;
+                            img {
+                                &:hover {
+                                    animation-name: detail;
+                                    animation-timing-function: ease-in-out;
+                                    animation-duration: 0.5s;
+                                    animation-fill-mode: forwards;
+                                    
+                                    @keyframes detail {
+                                        0% {
+                                            scale: 100%;
+                                            
+                                        }
+                                        100% {
+                                            scale: 106%;
+                                            
+                                        }
+                                    }
+                                    }
+                                }
+                        }
                         @include responsive(large-screens) {
                             transform: translateY(-350px);
                             margin-left:70%;
@@ -1604,6 +1843,29 @@ main {
 
                     .logo-box {
                         margin-left:50%;
+                        .logo {
+                            overflow: hidden;
+                            background-size: cover;
+                            img {
+                                &:hover {
+                                    animation-name: detail;
+                                    animation-timing-function: ease-in-out;
+                                    animation-duration: 0.5s;
+                                    animation-fill-mode: forwards;
+                                    
+                                    @keyframes detail {
+                                        0% {
+                                            scale: 100%;
+                                            
+                                        }
+                                        100% {
+                                            scale: 106%;
+                                            
+                                        }
+                                    }
+                                    }
+                                }
+                        }
                         @include responsive(large-screens) {
                             transform: translateY(-450px);
                             margin-left:40%;
@@ -1611,6 +1873,29 @@ main {
                     }
 
                     .mobile-box {
+                        .mobile {
+                            overflow: hidden;
+                            background-size: cover;
+                            img {
+                                &:hover {
+                                    animation-name: detail;
+                                    animation-timing-function: ease-in-out;
+                                    animation-duration: 0.5s;
+                                    animation-fill-mode: forwards;
+                                    
+                                    @keyframes detail {
+                                        0% {
+                                            scale: 100%;
+                                            
+                                        }
+                                        100% {
+                                            scale: 106%;
+                                            
+                                        }
+                                    }
+                                    }
+                                }
+                        }
                         margin-left:15%;
                         @include responsive(large-screens) {
                             transform: translateY(-550px);
@@ -1621,9 +1906,27 @@ main {
                     .info-box {
                         margin-left:50%;
                         .info {
-                            background-image: url(../images/info.png);
+                            overflow: hidden;
                             background-size: cover;
-                            background-position-y: 0px;
+                            img {
+                                &:hover {
+                                    animation-name: detail;
+                                    animation-timing-function: ease-in-out;
+                                    animation-duration: 0.5s;
+                                    animation-fill-mode: forwards;
+                                    
+                                    @keyframes detail {
+                                        0% {
+                                            scale: 100%;
+                                            
+                                        }
+                                        100% {
+                                            scale: 106%;
+                                            
+                                        }
+                                    }
+                                    }
+                                }
                            }
                         @include responsive(large-screens) {
                             transform: translateY(-550px);

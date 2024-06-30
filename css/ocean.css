@@ -507,10 +507,11 @@ header .container .gnb .menu {
 }
 
 main {
+  width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 main .main-bg {
-  position: relative;
   width: 100%;
   height: 100%;
   background: linear-gradient(#93E4FF 17%, #4AB2D4 34%, #007EA8 100%);
@@ -520,6 +521,11 @@ main .main-bg {
     height: 100%;
     background: linear-gradient(#93E4FF 17%, #4AB2D4 34%, #007EA8 100%);
   }
+}
+main .main-bg .fishs {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
 }
 main .main-bg .fishs img {
   width: 30%;
@@ -949,6 +955,30 @@ main .main-bg .container .about-me .letter {
   border-radius: 30px;
   background-color: white;
 }
+main .main-bg .container .about-me .letter .letter-title {
+  font-size: 6vw;
+  text-shadow: none;
+  margin: 0;
+  padding: 20px;
+}
+@media only screen and (min-width: 1024px) {
+  main .main-bg .container .about-me .letter .letter-title {
+    padding-top: 80px;
+    text-align: center;
+    font-size: 40px;
+  }
+}
+main .main-bg .container .about-me .letter p {
+  text-align: center;
+  font-size: 4.5vw;
+  font-weight: 600;
+}
+@media only screen and (min-width: 1024px) {
+  main .main-bg .container .about-me .letter p {
+    padding: 20px;
+    font-size: 30px;
+  }
+}
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .about-me .letter {
     width: 730px;
@@ -956,186 +986,327 @@ main .main-bg .container .about-me .letter {
   }
 }
 main .main-bg .container .skill .skill-box {
-  position: relative;
-  width: 100%;
-  height: 1500px;
+  width: 90%;
+  margin: auto;
+  height: 100%;
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .skill .skill-box {
+    position: relative;
     height: 1000px;
   }
 }
-main .main-bg .container .skill .skill-box .icon {
-  width: 30%;
+main .main-bg .container .skill .skill-box .skill-item {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .skill .skill-box .icon {
-    width: 220px;
-    height: 220px;
+  main .main-bg .container .skill .skill-box .skill-item {
+    position: absolute;
   }
 }
-main .main-bg .container .skill .skill-box .icon:before {
-  content: "";
+main .main-bg .container .skill .skill-box .skill-item:hover .overlay {
+  opacity: 1;
+}
+main .main-bg .container .skill .skill-box .skill-item .icon {
+  width: 30vw; /* 이미지 크기 조절 */
+  height: auto;
   display: block;
-  padding-top: 100%;
 }
-main .main-bg .container .skill .skill-box .html-img, main .main-bg .container .skill .skill-box .js-img, main .main-bg .container .skill .skill-box .css-img {
-  width: 25%;
-}
-@media only screen and (min-width: 1024px) {
-  main .main-bg .container .skill .skill-box .html-img, main .main-bg .container .skill .skill-box .js-img, main .main-bg .container .skill .skill-box .css-img {
-    width: 180px;
-    height: 180px;
-  }
-}
-main .main-bg .container .skill .skill-box .react-img, main .main-bg .container .skill .skill-box .sass-img, main .main-bg .container .skill .skill-box .jquery-img {
-  width: 20%;
+main .main-bg .container .skill .skill-box .skill-item .ai-img {
+  width: 25vw;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .skill .skill-box .react-img, main .main-bg .container .skill .skill-box .sass-img, main .main-bg .container .skill .skill-box .jquery-img {
-    width: 150px;
-    height: 150px;
+  main .main-bg .container .skill .skill-box .skill-item .ai-img {
+    width: 10vw;
   }
 }
-main .main-bg .container .skill .skill-box .ai-img {
+main .main-bg .container .skill .skill-box .skill-item .pr-img {
+  width: 25vw;
+}
+@media only screen and (min-width: 1024px) {
+  main .main-bg .container .skill .skill-box .skill-item .pr-img {
+    width: 10vw;
+  }
+}
+main .main-bg .container .skill .skill-box .skill-item .html-img {
+  width: 23vw;
+}
+@media only screen and (min-width: 1024px) {
+  main .main-bg .container .skill .skill-box .skill-item .html-img {
+    width: 8vw;
+  }
+}
+main .main-bg .container .skill .skill-box .skill-item .sass-img {
+  width: 23vw;
+}
+@media only screen and (min-width: 1024px) {
+  main .main-bg .container .skill .skill-box .skill-item .sass-img {
+    width: 8vw;
+  }
+}
+main .main-bg .container .skill .skill-box .skill-item .js-img {
+  width: 23vw;
+}
+@media only screen and (min-width: 1024px) {
+  main .main-bg .container .skill .skill-box .skill-item .js-img {
+    width: 8vw;
+  }
+}
+main .main-bg .container .skill .skill-box .skill-item .ps-img {
+  width: 25vw;
+}
+@media only screen and (min-width: 1024px) {
+  main .main-bg .container .skill .skill-box .skill-item .ps-img {
+    width: 10vw;
+  }
+}
+main .main-bg .container .skill .skill-box .skill-item .jquery-img {
+  width: 21vw;
+}
+@media only screen and (min-width: 1024px) {
+  main .main-bg .container .skill .skill-box .skill-item .jquery-img {
+    width: 6vw;
+  }
+}
+main .main-bg .container .skill .skill-box .skill-item .react-img {
+  width: 21vw;
+}
+@media only screen and (min-width: 1024px) {
+  main .main-bg .container .skill .skill-box .skill-item .react-img {
+    width: 6vw;
+  }
+}
+main .main-bg .container .skill .skill-box .skill-item .git-img {
+  width: 21vw;
+}
+@media only screen and (min-width: 1024px) {
+  main .main-bg .container .skill .skill-box .skill-item .git-img {
+    width: 6vw;
+  }
+}
+main .main-bg .container .skill .skill-box .skill-item .css-img {
+  width: 23vw;
+}
+@media only screen and (min-width: 1024px) {
+  main .main-bg .container .skill .skill-box .skill-item .css-img {
+    width: 8vw;
+  }
+}
+main .main-bg .container .skill .skill-box .skill-item .figma-img {
+  width: 25vw;
+}
+@media only screen and (min-width: 1024px) {
+  main .main-bg .container .skill .skill-box .skill-item .figma-img {
+    width: 10vw;
+  }
+}
+main .main-bg .container .skill .skill-box .skill-item .ae-img {
+  width: 25vw;
+}
+@media only screen and (min-width: 1024px) {
+  main .main-bg .container .skill .skill-box .skill-item .ae-img {
+    width: 10vw;
+  }
+}
+main .main-bg .container .skill .skill-box .skill-item .overlay {
   position: absolute;
-  top: 0%;
-  left: 10%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7); /* 검은색 반투명 배경 */
+  color: white;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  border-radius: 50%;
 }
-@media only screen and (min-width: 1024px) {
-  main .main-bg .container .skill .skill-box .ai-img {
-    top: 25%;
-    left: 75%;
-  }
-}
-main .main-bg .container .skill .skill-box .pr-img {
-  position: absolute;
-  top: 8%;
+main .main-bg .container .skill .skill-box .skill-item .description-modal {
+  position: fixed;
+  top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  z-index: 1000; /* z-index 추가 */
+  display: none;
+}
+main .main-bg .container .skill .skill-box .skill-item .hidden {
+  display: none;
+}
+main .main-bg .container .skill .skill-box .skill-item .close-btn {
+  cursor: pointer;
+}
+main .main-bg .container .skill .skill-box .ai {
+  margin-top: 20%;
+  margin-left: 12%;
+  margin-right: 0vh;
+  margin-bottom: 20%;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .skill .skill-box .pr-img {
-    top: 0%;
-    left: 5%;
+  main .main-bg .container .skill .skill-box .ai {
+    margin: 0;
+    top: 10%;
+    left: 67%;
   }
 }
-main .main-bg .container .skill .skill-box .html-img {
-  position: absolute;
-  top: 15%;
-  left: 5%;
+main .main-bg .container .skill .skill-box .pr {
+  margin-top: 10%;
+  margin-left: 8%;
+  margin-right: 0vh;
+  margin-bottom: 0vh;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .skill .skill-box .html-img {
+  main .main-bg .container .skill .skill-box .pr {
+    margin: 0;
+    top: 0px;
+    left: 0px;
+  }
+}
+main .main-bg .container .skill .skill-box .html {
+  margin-top: 10%;
+  margin-left: 15%;
+  margin-right: 10%;
+  margin-bottom: 20%;
+}
+@media only screen and (min-width: 1024px) {
+  main .main-bg .container .skill .skill-box .html {
+    margin: 0;
     top: 80%;
-    left: 45%;
+    left: 50%;
   }
 }
-main .main-bg .container .skill .skill-box .sass-img {
-  position: absolute;
-  top: 25%;
-  left: 45%;
+main .main-bg .container .skill .skill-box .sass {
+  margin-top: 20%;
+  margin-left: 10%;
+  margin-right: 0vh;
+  margin-bottom: 10%;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .skill .skill-box .sass-img {
+  main .main-bg .container .skill .skill-box .sass {
+    margin: 0;
     top: 40%;
-    left: 43%;
+    left: 40%;
   }
 }
-main .main-bg .container .skill .skill-box .js-img {
-  position: absolute;
-  top: 35%;
-  left: 57%;
+main .main-bg .container .skill .skill-box .js {
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 0vh;
+  margin-bottom: 0%;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .skill .skill-box .js-img {
-    top: 75%;
+  main .main-bg .container .skill .skill-box .js {
+    margin: 0;
+    top: 70%;
     left: 10%;
   }
 }
-main .main-bg .container .skill .skill-box .ps-img {
-  position: absolute;
-  top: 40%;
-  left: 10%;
+main .main-bg .container .skill .skill-box .ps {
+  margin-top: 3%;
+  margin-left: 10%;
+  margin-right: 0vh;
+  margin-bottom: 10%;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .skill .skill-box .ps-img {
-    top: 55%;
-    left: 25%;
+  main .main-bg .container .skill .skill-box .ps {
+    margin: 0;
+    top: 60%;
+    left: 30%;
   }
 }
-main .main-bg .container .skill .skill-box .jquery-img {
-  position: absolute;
-  top: 50%;
-  left: 57%;
+main .main-bg .container .skill .skill-box .jquery {
+  margin-top: 20%;
+  margin-left: 30%;
+  margin-right: 8%;
+  margin-bottom: 20%;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .skill .skill-box .jquery-img {
+  main .main-bg .container .skill .skill-box .jquery {
+    margin: 0;
     top: 80%;
     left: 80%;
   }
 }
-main .main-bg .container .skill .skill-box .react-img {
-  position: absolute;
-  top: 55%;
-  left: 25%;
+main .main-bg .container .skill .skill-box .react {
+  margin-top: 0%;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-bottom: 10%;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .skill .skill-box .react-img {
+  main .main-bg .container .skill .skill-box .react {
+    margin: 0;
     top: 35%;
-    left: 15%;
+    left: 20%;
   }
 }
-main .main-bg .container .skill .skill-box .git-img {
-  position: absolute;
-  top: 65%;
-  left: 5%;
-  width: 18%;
+main .main-bg .container .skill .skill-box .git {
+  margin-top: 0%;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-bottom: 10%;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .skill .skill-box .git-img {
-    width: 120px;
-    height: 120px;
-    top: 20%;
-    left: 60%;
+  main .main-bg .container .skill .skill-box .git {
+    margin: 0;
+    top: 25%;
+    left: 55%;
   }
 }
-main .main-bg .container .skill .skill-box .css-img {
-  position: absolute;
-  top: 70%;
-  left: 55%;
+main .main-bg .container .skill .skill-box .css {
+  margin-top: 0%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 30%;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .skill .skill-box .css-img {
+  main .main-bg .container .skill .skill-box .css {
+    margin: 0;
     top: 50%;
-    left: 60%;
+    left: 65%;
   }
 }
-main .main-bg .container .skill .skill-box .figma-img {
-  position: absolute;
-  top: 80%;
-  left: 6%;
+main .main-bg .container .skill .skill-box .figma {
+  margin-top: 0%;
+  margin-left: 50%;
+  margin-right: 0%;
+  margin-bottom: 10%;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .skill .skill-box .figma-img {
+  main .main-bg .container .skill .skill-box .figma {
+    margin: 0;
     top: 0%;
-    left: 80%;
+    left: 85%;
   }
 }
-main .main-bg .container .skill .skill-box .ae-img {
-  position: absolute;
-  top: 90%;
-  left: 50%;
+main .main-bg .container .skill .skill-box .ae {
+  margin-top: 0%;
+  margin-left: 30%;
+  margin-right: 0%;
+  margin-bottom: 10%;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .skill .skill-box .ae-img {
+  main .main-bg .container .skill .skill-box .ae {
+    margin: 0;
     top: 10%;
-    left: 40%;
+    left: 30%;
   }
+}
+main .main-bg .container .portfolio {
+  width: 100%;
+  height: 100%;
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .portfolio {
     width: 100%;
-    height: 5200px;
+    height: 100%;
   }
 }
 main .main-bg .container .portfolio .box {
@@ -1556,21 +1727,7 @@ main .main-bg .container .portfolio .design .banner-box .banner {
   background-size: cover;
   background-position-y: -50px;
 }
-@media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .design .banner-box {
-    margin-left: 5%;
-  }
-}
-main .main-bg .container .portfolio .design a .detail-box {
-  margin-left: 50%;
-}
-main .main-bg .container .portfolio .design a .detail-box .detail {
-  width: 100%;
-  overflow: hidden;
-  cursor: pointer;
-  background-size: cover;
-}
-main .main-bg .container .portfolio .design a .detail-box .detail .detail:hover {
+main .main-bg .container .portfolio .design .banner-box .banner img:hover {
   animation-name: detail;
   animation-timing-function: ease-in-out;
   animation-duration: 0.5s;
@@ -1581,17 +1738,62 @@ main .main-bg .container .portfolio .design a .detail-box .detail .detail:hover 
     scale: 100%;
   }
   100% {
-    scale: 103%;
+    scale: 120%;
   }
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .design a .detail-box .detail {
+  main .main-bg .container .portfolio .design .banner-box {
+    margin-left: 5%;
+  }
+}
+main .main-bg .container .portfolio .design .detail-box {
+  margin-left: 50%;
+}
+main .main-bg .container .portfolio .design .detail-box .detail {
+  overflow: hidden;
+  background-size: cover;
+  background-position-y: -50px;
+}
+main .main-bg .container .portfolio .design .detail-box .detail img:hover {
+  animation-name: detail;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes detail {
+  0% {
+    scale: 100%;
+  }
+  100% {
+    scale: 102%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  main .main-bg .container .portfolio .design .detail-box {
     transform: translateY(-200px);
-    margin-left: 37%;
+    margin-left: 38%;
   }
 }
 main .main-bg .container .portfolio .design .package-box {
   margin-left: 15%;
+}
+main .main-bg .container .portfolio .design .package-box .package {
+  overflow: hidden;
+  background-size: cover;
+}
+main .main-bg .container .portfolio .design .package-box .package img:hover {
+  animation-name: detail;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes detail {
+  0% {
+    scale: 100%;
+  }
+  100% {
+    scale: 106%;
+  }
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .portfolio .design .package-box {
@@ -1602,6 +1804,24 @@ main .main-bg .container .portfolio .design .package-box {
 main .main-bg .container .portfolio .design .logo-box {
   margin-left: 50%;
 }
+main .main-bg .container .portfolio .design .logo-box .logo {
+  overflow: hidden;
+  background-size: cover;
+}
+main .main-bg .container .portfolio .design .logo-box .logo img:hover {
+  animation-name: detail;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes detail {
+  0% {
+    scale: 100%;
+  }
+  100% {
+    scale: 106%;
+  }
+}
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .portfolio .design .logo-box {
     transform: translateY(-450px);
@@ -1610,6 +1830,24 @@ main .main-bg .container .portfolio .design .logo-box {
 }
 main .main-bg .container .portfolio .design .mobile-box {
   margin-left: 15%;
+}
+main .main-bg .container .portfolio .design .mobile-box .mobile {
+  overflow: hidden;
+  background-size: cover;
+}
+main .main-bg .container .portfolio .design .mobile-box .mobile img:hover {
+  animation-name: detail;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes detail {
+  0% {
+    scale: 100%;
+  }
+  100% {
+    scale: 106%;
+  }
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .portfolio .design .mobile-box {
@@ -1621,9 +1859,22 @@ main .main-bg .container .portfolio .design .info-box {
   margin-left: 50%;
 }
 main .main-bg .container .portfolio .design .info-box .info {
-  background-image: url(../images/info.png);
+  overflow: hidden;
   background-size: cover;
-  background-position-y: 0px;
+}
+main .main-bg .container .portfolio .design .info-box .info img:hover {
+  animation-name: detail;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes detail {
+  0% {
+    scale: 100%;
+  }
+  100% {
+    scale: 106%;
+  }
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .portfolio .design .info-box {
