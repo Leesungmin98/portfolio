@@ -507,11 +507,13 @@ header .container .gnb .menu {
 }
 
 main {
+  position: relative;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  background-color: #00A3A0;
 }
 main .main-bg {
+  overflow: hidden;
   width: 100%;
   height: 100%;
   background: linear-gradient(#93E4FF 17%, #4AB2D4 34%, #007EA8 100%);
@@ -525,6 +527,7 @@ main .main-bg {
 main .main-bg .fishs {
   position: absolute;
   width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 main .main-bg .fishs img {
@@ -532,67 +535,254 @@ main .main-bg .fishs img {
 }
 main .main-bg .fishs .killer {
   position: absolute;
-  top: 30%;
+  top: 4000px;
   left: 70%;
-  width: 500px;
+  width: 60%;
+  animation-name: killer;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .fishs .killer {
-    top: 55%;
-    left: 70%;
-    width: 60%;
+    width: 15%;
+    top: 5500px;
+    left: 0%;
+    width: 40%;
+    animation-name: killer;
+    animation-duration: 18s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+}
+@keyframes killer {
+  0% {
+    transform: translateX(50%) scaleX(1);
+    rotate: 20deg;
+  }
+  45% {
+    transform: translateX(-290%) scaleX(1);
+    rotate: -10deg;
+  }
+  55% {
+    transform: translateX(-290%) scaleX(-1);
+    rotate: -20deg;
+  }
+  100% {
+    transform: translateX(65%) scaleX(-1);
+    rotate: -30deg;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  @keyframes killer {
+    0% {
+      transform: translateX(270%) scaleX(1);
+      rotate: 20deg;
+    }
+    45% {
+      transform: translateX(-110%) scaleX(1);
+      rotate: -10deg;
+    }
+    55% {
+      transform: translateX(-110%) scaleX(-1);
+      rotate: -20deg;
+    }
+    100% {
+      transform: translateX(285%) scaleX(-1);
+      rotate: 30deg;
+    }
   }
 }
 main .main-bg .fishs .whale {
   position: absolute;
-  top: 30%;
+  top: 300vh;
   left: -55%;
   width: 100%;
+  animation-name: whale;
+  animation-duration: 18s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .fishs .whale {
-    top: 20%;
-    left: -20%;
+    top: 2000px;
     width: 40%;
+  }
+}
+@keyframes whale {
+  0% {
+    transform: translateX(-50%) scaleX(1);
+    rotate: 20deg;
+  }
+  45% {
+    transform: translateX(165%) scaleX(1);
+    rotate: -10deg;
+  }
+  55% {
+    transform: translateX(165%) scaleX(-1);
+    rotate: 10deg;
+  }
+  100% {
+    transform: translateX(-50%) scaleX(-1);
+    rotate: -10deg;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  @keyframes whale {
+    0% {
+      transform: translateX(38%) scaleX(1);
+      rotate: 20deg;
+    }
+    45% {
+      transform: translateX(395%) scaleX(1);
+      rotate: -10deg;
+    }
+    55% {
+      transform: translateX(395%) scaleX(-1);
+      rotate: 10deg;
+    }
+    100% {
+      transform: translateX(38%) scaleX(-1);
+      rotate: -10deg;
+    }
   }
 }
 main .main-bg .fishs .fish1-box {
   position: absolute;
-  top: 21%;
+  top: 150vh;
   left: 72%;
   width: 40%;
+  animation-name: fish1-box;
+  animation-duration: 8s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .fishs .fish1-box {
-    top: 25%;
-    left: 75%;
-    width: 17%;
+    top: 5500px;
+    width: 20%;
+    animation-name: fish1-box;
+    animation-duration: 12s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+}
+@keyframes fish1-box {
+  0% {
+    transform: translateY(-110%) translateX(100%);
+    rotate: 0deg;
+  }
+  100% {
+    transform: translateY(300%) translateX(-500%);
+    rotate: -30deg;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  @keyframes fish1-box {
+    0% {
+      transform: translateY(-110%) translateX(140%);
+      rotate: 0deg;
+    }
+    100% {
+      transform: translateY(500%) translateX(-700%);
+      rotate: -30deg;
+    }
   }
 }
 main .main-bg .fishs .fish2 {
   position: absolute;
-  top: 36%;
+  top: 210vh;
   left: 55%;
   width: 26%;
+  animation-name: fish2;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .fishs .fish2 {
-    top: 64%;
-    left: 20%;
+    width: 20px;
+    top: 2000px;
     width: 10%;
+    animation-name: fish2;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+}
+@keyframes fish2 {
+  0% {
+    transform: translateX(315%) scaleX(-1);
+    rotate: 20deg;
+  }
+  45% {
+    transform: translateX(-315%) scaleX(-1);
+    rotate: -10deg;
+  }
+  55% {
+    transform: translateX(-315%) scaleX(1);
+  }
+  100% {
+    transform: translateX(315%) scaleX(1);
+    rotate: 5deg;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  @keyframes fish2 {
+    0% {
+      transform: translateX(470%) scaleX(-1);
+      rotate: 20deg;
+    }
+    45% {
+      transform: translateX(-705%) scaleX(-1);
+      rotate: -10deg;
+    }
+    55% {
+      transform: translateX(-705%) scaleX(1);
+    }
+    100% {
+      transform: translateX(470%) scaleX(1);
+      rotate: 5deg;
+    }
   }
 }
 main .main-bg .fishs .fish3-box {
   position: absolute;
-  top: 98%;
+  top: 500vh;
   left: 70%;
-  width: 70%;
+  width: 50%;
+  animation-name: fish3-box;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes fish3-box {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@media only screen and (min-width: 1024px) {
+  @keyframes fish3-box {
+    0% {
+      transform: translateX(-450%);
+    }
+    100% {
+      transform: translateX(170%);
+    }
+  }
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .fishs .fish3-box {
-    top: 75%;
+    top: 7500px;
     left: 78%;
     width: 20%;
+    animation-name: fish3-box;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
   }
 }
 main .main-bg .fishs .fish3-box .fish3-1 {
@@ -607,12 +797,38 @@ main .main-bg .fishs .fish3-box .fish3-3 {
 }
 main .main-bg .fishs .fish4-box {
   position: absolute;
-  top: 2%;
+  top: 50vh;
   left: 80%;
+  animation-name: fish4-box;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes fish4-box {
+  0% {
+    transform: translateX(260%) translateY(0%);
+    rotate: 0deg;
+  }
+  100% {
+    transform: translateX(-550%) translateY(-600%);
+    rotate: -30deg;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  @keyframes fish4-box {
+    0% {
+      transform: translateX(260%) translateY(0%);
+      rotate: 0deg;
+    }
+    100% {
+      transform: translateX(-550%) translateY(-600%);
+      rotate: -30deg;
+    }
+  }
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .fishs .fish4-box {
-    top: 2%;
+    top: 6000px;
     left: 75%;
     width: 10%;
   }
@@ -925,7 +1141,7 @@ main .main-bg .container .about-me .picture {
   position: relative;
   width: 70%;
   margin: auto;
-  border: 3px solid black;
+  border: 3px solid white;
   border-radius: 50%;
   overflow: hidden;
   background-color: white;
@@ -951,32 +1167,38 @@ main .main-bg .container .about-me .letter {
   width: 90%;
   height: 65vw;
   margin: 50px auto;
-  border: 3px solid black;
+  border: 3px solid white;
   border-radius: 30px;
   background-color: white;
 }
-main .main-bg .container .about-me .letter .letter-title {
-  font-size: 6vw;
+main .main-bg .container .about-me .letter .letter-box {
+  width: 85%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .main-bg .container .about-me .letter .letter-box .letter-title {
+  width: 45%;
+  font-size: 4.5vw;
   text-shadow: none;
   margin: 0;
-  padding: 20px;
+  padding: 0;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .about-me .letter .letter-title {
-    padding-top: 80px;
-    text-align: center;
-    font-size: 40px;
+  main .main-bg .container .about-me .letter .letter-box .letter-title {
+    font-size: 2vw;
   }
 }
-main .main-bg .container .about-me .letter p {
+main .main-bg .container .about-me .letter .letter-box p {
   text-align: center;
-  font-size: 4.5vw;
+  font-size: 3vw;
   font-weight: 600;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .about-me .letter p {
-    padding: 20px;
-    font-size: 30px;
+  main .main-bg .container .about-me .letter .letter-box p {
+    font-size: 1.3vw;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -1118,7 +1340,8 @@ main .main-bg .container .skill .skill-box .skill-item .overlay {
   bottom: 0;
   background: rgba(0, 0, 0, 0.7); /* 검은색 반투명 배경 */
   color: white;
-  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1131,6 +1354,7 @@ main .main-bg .container .skill .skill-box .skill-item .description-modal {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
   background: white;
   padding: 20px;
   border-radius: 5px;
@@ -1141,6 +1365,14 @@ main .main-bg .container .skill .skill-box .skill-item .hidden {
   display: none;
 }
 main .main-bg .container .skill .skill-box .skill-item .close-btn {
+  width: 20%;
+  height: 10%;
+  background-color: #000;
+  color: white;
+  margin-top: 12px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
 }
 main .main-bg .container .skill .skill-box .ai {
@@ -1306,13 +1538,13 @@ main .main-bg .container .portfolio {
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .portfolio {
     width: 100%;
-    height: 100%;
+    height: 5200px;
   }
 }
 main .main-bg .container .portfolio .box {
   position: relative;
   width: 100%;
-  border: 3px solid black;
+  border: 3px solid #ffffff;
   border-radius: 20px;
   overflow: hidden;
 }
@@ -1369,7 +1601,7 @@ main .main-bg .container .portfolio .po-box .box-txt {
 }
 main .main-bg .container .portfolio .po-box .box-txt h3 {
   margin-bottom: 3px;
-  font-size: 1rem;
+  font-size: 4.5vw;
   font-weight: bold;
   font-family: "pretendard";
 }
@@ -1382,7 +1614,7 @@ main .main-bg .container .portfolio .po-box .box-txt h3 {
   }
 }
 main .main-bg .container .portfolio .po-box .box-txt p {
-  font-size: 0.8rem;
+  font-size: 3vw;
   font-weight: 350;
   font-family: "pretendard";
 }
@@ -1407,7 +1639,7 @@ main .main-bg .container .portfolio .po-box .box-button button {
   height: 8vw;
   line-height: 8vw;
   margin: 20px 2px 80px 2px;
-  font-size: 1.3vmax;
+  font-size: 3vw;
   font-weight: bold;
   color: white;
   background-color: black;
@@ -1577,10 +1809,15 @@ main .main-bg .container .portfolio .b5-b6 .b5 {
 main .main-bg .container .portfolio .b5-b6 .b5 .box5 {
   width: 100%;
   height: 50%;
-  border: 3px solid black;
+  border: 3px solid white;
   border-radius: 20px;
   background-color: rgb(0, 0, 0);
   overflow: hidden;
+}
+@media only screen and (min-width: 1024px) {
+  main .main-bg .container .portfolio .b5-b6 .b5 .box5 {
+    height: 30%;
+  }
 }
 main .main-bg .container .portfolio .b5-b6 .b5 .box5 video {
   width: 100%;
@@ -1599,9 +1836,10 @@ main .main-bg .container .portfolio .b5-b6 .b5 .inner-box5 {
   border-radius: 50px;
 }
 main .main-bg .container .portfolio .b5-b6 .b5 h3 {
+  font-size: 4vw;
   margin-top: 10px;
   margin-left: 10px;
-  margin-bottom: 6px;
+  margin-bottom: 2%;
   font-weight: bold;
 }
 @media only screen and (min-width: 1024px) {
@@ -1614,9 +1852,9 @@ main .main-bg .container .portfolio .b5-b6 .b5 h3 {
 }
 main .main-bg .container .portfolio .b5-b6 .b5 p {
   margin-left: 10px;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
+  font-size: 3vw;
+  font-weight: 600;
+  line-height: 120%;
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .portfolio .b5-b6 .b5 p {
@@ -1629,10 +1867,15 @@ main .main-bg .container .portfolio .b5-b6 .b5 p {
 main .main-bg .container .portfolio .b5-b6 .b6 .box6 {
   width: 100%;
   height: 50%;
-  border: 3px solid black;
+  border: 3px solid white;
   border-radius: 20px;
   background-color: rgb(0, 0, 0);
   overflow: hidden;
+}
+@media only screen and (min-width: 1024px) {
+  main .main-bg .container .portfolio .b5-b6 .b6 .box6 {
+    height: 30%;
+  }
 }
 main .main-bg .container .portfolio .b5-b6 .b6 .box6 video {
   width: 100%;
@@ -1651,10 +1894,10 @@ main .main-bg .container .portfolio .b5-b6 .b6 .inner-box6 {
   border-radius: 50px;
 }
 main .main-bg .container .portfolio .b5-b6 .b6 h3 {
+  font-size: 4vw;
   margin-top: 10px;
   margin-left: 10px;
-  margin-bottom: 6px;
-  font-weight: bold;
+  margin-bottom: 2%;
   font-weight: bold;
 }
 @media only screen and (min-width: 1024px) {
@@ -1667,16 +1910,16 @@ main .main-bg .container .portfolio .b5-b6 .b6 h3 {
 }
 main .main-bg .container .portfolio .b5-b6 .b6 p {
   margin-left: 10px;
-  font-size: 16px;
+  font-size: 3vw;
   font-weight: 700;
-  line-height: 20px;
+  line-height: 120%;
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .portfolio .b5-b6 .b6 p {
     margin-left: 20px;
     font-size: 20px;
     font-weight: 700;
-    line-height: 24px;
+    line-height: 110%;
   }
 }
 main .main-bg .container .portfolio .design .d-box {
@@ -1705,7 +1948,8 @@ main .main-bg .container .portfolio .design .ds {
   width: 35vw;
   height: 35vw;
   border-radius: 50%;
-  border: 1px solid black;
+  border: 1px solid #00A3A0;
+  background-color: #ffffff;
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .portfolio .design .ds {
