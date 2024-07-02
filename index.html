@@ -11,12 +11,13 @@
 
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/ocean.css">
+    <script src="./js/jquery.js"></script>
     <script src="./js/index.js"></script>
 
     
     <title>Wave</title>
 </head>
-<body>
+<body class="modal-open">
   <header>
       <div class="wave">
           <!-- JavaScript에서 생성되는 canvas는 여기에 추가될 것입니다 -->
@@ -142,112 +143,149 @@
 
                     <div class="skill-item ai">
                         <img src="./images/ai.png" alt="일러스트" class="ai-img icon">
-                        <div class="overlay">90%</div>
-                        <div class="description-modal ai-modal">
-                            <p>일러스트에 대한 설명입니다.</p>
-                            <button class="close-btn">닫기</button>
+                        <div class="overlay">80%</div>
+                    </div>
+                    <div class="modal-box">
+                        <div class="modal ai-modal hidden">
+                            <h2>80%</h2>
+                            <p>일러스트의 기능을 능숙하게 다룰줄 알고, 응용이 가능합니다 </p>
+                            <button class="close">닫기</button>
                         </div>
                     </div>
 
                     <div class="skill-item pr">
                         <img src="./images/pr.png" alt="프리미어프로" class="pr-img icon">
                         <div class="overlay">90%</div>
-                        <div class="description-modal pr-modal">
+                    </div>
+                    <div class="modal-box">
+                        <div class="modal pr-modal hidden">
+                            <h2>80%</h2>
                             <p>프리미어 프로에 대한 설명입니다.</p>
-                            <button class="close-btn">닫기</button>
+                            <button class="close">닫기</button>
                         </div>
                     </div>
+                
 
                     <div class="skill-item html">
                         <img src="./images/html.png" alt="html" class="html-img icon">
                         <div class="overlay">90%</div>
-                        <div class="description-modal html-modal">
+                    </div>
+                    <div class="modal-box">
+                        <div class="modal html-modal hidden">
+                            <h2>80%</h2>
                             <p>html에 대한 설명입니다.</p>
-                            <button class="close-btn">닫기</button>
+                            <button class="close">닫기</button>
                         </div>
                     </div>
 
                     <div class="skill-item sass">
-                        <img src="./images/sass.png" alt="세스" class="sass-img icon">
+                        <img src="./images/sass.png" alt="sass" class="sass-img icon">
                         <div class="overlay">90%</div>
-                        <div class="description-modal sass-modal">
-                            <p>세스에 대한 설명입니다.</p>
-                            <button class="close-btn">닫기</button>
+                    </div>
+                    <div class="modal-box">
+                        <div class="modal sass-modal hidden">
+                            <h2>80%</h2>
+                            <p>sass에 대한 설명입니다.</p>
+                            <button class="close">닫기</button>
                         </div>
                     </div>
 
                     <div class="skill-item js">
                         <img src="./images/js.png" alt="자바스크립트" class="js-img icon" >
                         <div class="overlay">90%</div>
-                        <div class="description-modal js-modal">
+                    </div>
+                    <div class="modal-box">
+                        <div class="modal js-modal hidden">
+                            <h2>80%</h2>
                             <p>자바스크립트에 대한 설명입니다.</p>
-                            <button class="close-btn">닫기</button>
+                            <button class="close">닫기</button>
                         </div>
                     </div>
                     
                     <div class="skill-item ps">
                         <img src="./images/ps.png" alt="포토샵" class="ps-img icon">
                         <div class="overlay">90%</div>
-                        <div class="description-modal ps-modal">
+                    </div>
+                    <div class="modal-box">
+                        <div class="modal ps-modal hidden">
+                            <h2>80%</h2>
                             <p>포토샵에 대한 설명입니다.</p>
-                            <button class="close-btn">닫기</button>
+                            <button class="close">닫기</button>
                         </div>
                     </div>
                     
                     <div class="skill-item jquery">
                         <img src="./images/jquery.png" alt="제이쿼리" class="jquery-img icon">
                         <div class="overlay">90%</div>
-                        <div class="description-modal jquery-modal">
+                    </div>
+                    <div class="modal-box">
+                        <div class="modal jquery-modal hidden">
+                            <h2>80%</h2>
                             <p>제이쿼리에 대한 설명입니다.</p>
-                            <button class="close-btn">닫기</button>
+                            <button class="close">닫기</button>
                         </div>
                     </div>
                     
                     <div class="skill-item react">
                         <img src="./images/react.png" alt="리액트" class="react-img icon">
                         <div class="overlay">90%</div>
-                        <div class="description-modal react-modal">
+                    </div>
+                    <div class="modal-box">
+                        <div class="modal react-modal hidden">
+                            <h2>80%</h2>
                             <p>리액트에 대한 설명입니다.</p>
-                            <button class="close-btn">닫기</button>
+                            <button class="close">닫기</button>
                         </div>
                     </div>
                     
+
                     <div class="skill-item git">
                     <img src="./images/git.png" alt="깃" class="git-img icon"> 
                         <div class="overlay">90%</div>
-                        <div class="description-modal git-modal">
+                    </div> 
+                    <div class="modal-box">
+                        <div class="modal git-modal hidden">
+                            <h2>80%</h2>
                             <p>깃에 대한 설명입니다.</p>
-                            <button class="close-btn">닫기</button>
+                            <button class="close">닫기</button>
                         </div>
                     </div>
                     
                     <div class="skill-item css">
                         <img src="./images/css.png" alt="css" class="css-img icon"> 
                         <div class="overlay">90%</div>
-                        <div class="description-modal css-modal">
+                    </div>
+                    <div class="modal-box">
+                        <div class="modal css-modal hidden">
+                            <h2>80%</h2>
                             <p>css에 대한 설명입니다.</p>
-                            <button class="close-btn">닫기</button>
+                            <button class="close">닫기</button>
                         </div>
                     </div>
                         
                     <div class="skill-item figma">
                         <img src="./images/figma.png" alt="피그마" class="figma-img icon">
                         <div class="overlay">90%</div>
-                        <div class="description-modal figma-modal">
+                    </div>
+                    <div class="modal-box">
+                        <div class="modal figma-modal hidden">
+                            <h2>80%</h2>
                             <p>피그마에 대한 설명입니다.</p>
-                            <button class="close-btn">닫기</button>
+                            <button class="close">닫기</button>
                         </div>
                     </div>
                         
                     <div class="skill-item ae">
                         <img src="./images/ae.png" alt="애프터이펙트" class="ae-img icon">
                         <div class="overlay">90%</div>
-                        <div class="description-modal ae-modal">
+                    </div>
+                    <div class="modal-box">
+                        <div class="modal ae-modal hidden">
+                            <h2>80%</h2>
                             <p>애프터이펙트에 대한 설명입니다.</p>
-                            <button class="close-btn">닫기</button>
+                            <button class="close">닫기</button>
                         </div>
                     </div>
-                 
                  </div> <!-- skill-box -->
             </div> <!-- skill --> 
 
@@ -367,58 +405,97 @@
                 <div class="design">
 
                     <div class="banner-box d-box" >
-                        <a href="./design/banner.html">
                             <div class="banner ds">
                                 <img src="./images/starbucks.png" alt="스타벅스 배너">
                             </div>
-                        </a>
                         <p>배너 디자인</p>
                     </div>
+                    <div class="po-modal-box banner-modal-box">
+                        <div class="po-modal banner-modal">
+                            <div class="img-box">
+                                <img src="./images/starbucks.png" alt="스타벅스 배너" id="modal-image" >
+                            </div>
+                        </div>
+                        <button class="close-modal">모달 닫기</button>
+                    </div> 
                         
                     <div class="detail-box d-box">
-                        <a href="./design/detail.html">
                             <div class="detail ds">
                                 <img src="./images/beauty.png" alt="상세페이지">
                             </div>
-                        </a>
                         <p>상세페이지</p>
                     </div>
+                    <div class="po-modal-box detail-modal-box">
+                        <div class="po-modal detail-modal">
+                            <div class="img-box">
+                                <img src="./images/beauty.png" alt="상세페이지 배너" id="modal-image" >
+                            </div>
+                        </div>
+                        <button class="close-modal">모달 닫기</button>
+                    </div> 
                         
                     <div class="package-box d-box">
-                        <a href="./design/package.html">
                             <div class="package ds">
 
-                            </div>
-                        </a>
+                            </div> 
                         <p>패키지 디자인</p>
                     </div>
+                    <div class="po-modal-box package-modal-box">
+                        <div class="po-modal package-modal">
+                            <div class="img-box">
+                                <img src="./images/beauty.png" alt="상세페이지 배너" id="modal-image" >
+                            </div>
+                        </div>
+                        <button class="close-modal">모달 닫기</button>
+                    </div> 
 
                     <div class="logo-box d-box">
-                        <a href="./design/logo.html">
                             <div class="logo ds">
         
                             </div>
-                        </a>
                         <p>로고</p>
                     </div> 
+                    <div class="po-modal-box logo-modal-box">
+                        <div class="po-modal logo-modal">
+                            <div class="img-box ">
+                                <img src="./images/beauty.png" alt="상세페이지 배너" id="modal-image" >
+                            </div>
+                        </div>
+                        <button class="close-modal">모달 닫기</button>
+                    </div> 
+
 
                     <div class="mobile-box d-box">
-                        <a href="./design/mobile.html">
                             <div class="mobile ds">
         
                             </div>
-                        </a>
                         <p>모바일</p>
                     </div>
+                    <div class="po-modal-box mobile-modal-box">
+                        <div class="po-modal mobile-modal">
+                            <div class="img-box">
+                                <img src="./images/beauty.png" alt="상세페이지 배너" id="modal-image" >
+                            </div>
+                        </div>
+                        <button class="close-modal">모달 닫기</button>
+                    </div> 
 
-                    <div class="info-box d-box">
-                        <a href="./design/info.html">
+
+                    <div class="info-box d-box">  
                             <div class="info ds">
                                 <img src="./images/info.png" alt="인포그래픽">
                             </div>
-                        </a>
                         <p>인포그래픽</p>
-                    </div>      
+                    </div>
+                    <div class="po-modal-box info-modal-box">
+                        <div class="po-modal info-modal">
+                            <div class="img-box">
+                                <img src="./images/info.png" alt="인포그래픽" class="info-img" >
+                            </div>
+                        </div>
+                        <button class="close-modal">모달 닫기</button>
+                    </div> 
+
              </div> <!-- design -->
                 
             </div> <!-- portfolio -->

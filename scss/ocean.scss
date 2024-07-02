@@ -471,7 +471,7 @@ header {
 //////////////////////////////////////////////////////////////////////////// 
 
 main {
-    position: relative;
+    // position: relative;
     width: 100%; height: 100%;
     background-color: #00A3A0;
     .main-bg {
@@ -1248,8 +1248,7 @@ main {
                             
                            
                         }
-
-                      
+//////////////////////////////////////////////////////////////////////                  
                         .ai-img {
                             width: 25vw;
                             @include responsive(large-screens) {
@@ -1344,7 +1343,7 @@ main {
                                 width: 10vw;
                             }
                         }
-                        //////////////////////
+    //////////////////////////////////////////////////////////
                         .overlay {
                             position: absolute;
                             top: 0;
@@ -1364,34 +1363,58 @@ main {
                         }
                         // .skill-item:hover .overlay {
                         //     opacity: 1 !important;
-                        // }
-                        .description-modal {
+                        // }   
+                    } // skill-item
+                    .modal-box {
+                       
+                        .modal {
                             position: fixed;
                             top: 50%;
                             left: 50%;
                             transform: translate(-50%, -50%);
-
                             text-align: center;
-                            background: white;
+                          
+                            width: 60%; height: 50%;
+                            background: rgba(255, 255, 255, 0.7);
                             padding: 20px;
                             border-radius: 5px;
                             z-index: 1000; /* z-index 추가 */
-                            display: none;
+                            h2 {
+                                position: absolute; top: 20%; left: 50%;
+                                transform: translate(-50%);
+                                font-size: 3.5rem;
+                                text-align: center;
+                                padding: 0;
+                                
+                              
+                            }
+                            p {
+                                width: 80%;
+                                position: absolute; top: 50%; left: 50%;
+                                transform: translate(-50%);
+                                font-family: "pretendard";              
+                            }
+                            .close {
+                                position: absolute; bottom: 10%; left: 50%;
+                                transform: translate(-50%);
+                                width: 20%; height: 10%;
+                                background-color: #000;
+                                color: white;
+                                margin-top: 10%;
+                                padding: 5px;
+                                border: none;
+                                border-radius: 5px;
+                                cursor: pointer;
+                                font-family: "pretendard";
+                                &:hover {
+                                    background-color: #93E4FF;
+                                }
+                            }
                         }
                         .hidden {
                             display: none;
                         }
-                        .close-btn {
-                            width: 20%; height: 10%;
-                            background-color: #000;
-                            color: white;
-                            margin-top: 12px;
-                            padding: 5px;
-                            border: none;
-                            border-radius: 5px;
-                            cursor: pointer;
-                        }
-                    } // skill-item
+                    }
 
                     .ai {
                         margin-top: 20%;
@@ -1529,6 +1552,7 @@ main {
                             left: 30%;
                         }
                     }
+
                 } // skill-box
             } // skill
 
@@ -1537,7 +1561,7 @@ main {
                 // background-color: #00A3A0;
                 @include responsive(large-screens) {
                     // background-color: aquamarine;
-                    width: 100%; height: 5200px;
+                    width: 100%; height: 5500px;
                 }
                 .box {
                     position: relative;
@@ -2042,8 +2066,45 @@ main {
                             
                         } 
                     }
+
+                    .po-modal-box {
+                        position: fixed;
+                        bottom: -100%; /* 초기에는 숨김 */
+                        left: 0;
+                        width: 100%; height: 100%;
+                        background: rgba(0, 0, 0, 0.7);
+                        padding: 20px;
+                        transition: bottom 0.3s ease;
+                        box-shadow: 0px -2px 10px rgba(255, 255, 255, 0.1);
+                        overflow-y: auto; /* 세로 스크롤바가 필요한 경우에만 표시 */
+                        .po-modal {
+                            text-align: center;
+                            .img-box {
+                                width: 80%; 
+                                margin: auto;
+                                cursor: grab; /* 드래그 가능한 커서 설정 */
+                                img {
+                                    width: 40%;
+                                    height: auto;
+                                    
+                                    transition: transform 0.3s ease-out;
+                                }
+                                img:active {
+                                    cursor: grabbing; /* 드래그 중인 커서 설정 */
+                                }
+                            }
+                        }
+                        .close-modal {
+                            display: none;
+                            position: fixed; top: 0; right: 0;
+                            padding: 10px 20px;
+                            background-color: #ccc;
+                            border: none;
+                            cursor: pointer;
+                        }
+                    }
                    
-                    
+                    //////////////////////////
                         .detail-box {
                             margin-left:50%;
                             .detail {
@@ -2178,10 +2239,13 @@ main {
 
                     .info-box {
                         margin-left:50%;
+                        cursor: pointer;
                         .info {
                             overflow: hidden;
                             background-size: cover;
+                           
                             img {
+                                
                                 &:hover {
                                     animation-name: detail;
                                     animation-timing-function: ease-in-out;
