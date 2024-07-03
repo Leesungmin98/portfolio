@@ -14,10 +14,14 @@
     <script src="./js/jquery.js"></script>
     <script src="./js/index.js"></script>
 
+    <style>
+        	#top-bt { display: none; position: fixed; right: 0; bottom: 10%; width: 10%; height: auto; font-size: 12px;
+                background: red; color: white; text-align: center; line-height: 30px; cursor: pointer; z-index: 100; }
+    </style>
     
     <title>Wave</title>
 </head>
-<body class="modal-open">
+<body>
   <header>
       <div class="wave">
           <!-- JavaScript에서 생성되는 canvas는 여기에 추가될 것입니다 -->
@@ -61,15 +65,36 @@
       <h1><span>SUNGMIN'S</span> <br> 
           Portfolio
       </h1>
-      <div class="gnb">
-          <h2>SUNGMIN</h2>
-          <ul class="menu">
-              <li><a href="#">About me</a></li>
-              <li><a href="#">Skill</a></li>
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">Contact</a></li>
-          </ul>
-      </div> <!-- gnb -->
+
+    <div class="logo-btn-screen">
+        <div class="header-logo">
+            <h2>SUNGMIN</h2>
+        </div>
+        <div class="btn_container" id="toggle">   <!-- 버튼 만들기 위한 큰 틀  버튼 활성화를 위한 토글 -->
+            <span class="top"></span>         <!-- 햄버거의 맨 위 막대기 -->
+            <span class="middle"></span>    <!-- 햄버거의 가운데 막대기 -->
+            <span class="bottom"></span>    <!-- 햄버거의 맨 아래 막대기 -->
+        </div> <!-- btn_container -->
+
+        <div class="fullscreen" id="fullscreen">    <!-- 풀스크린 메뉴 만들기 위한 큰 틀 토글 활성화시 풀스크린 메뉴 열기 -->
+          <nav class="fullscreen-menu">          <!-- 풀스크린 메뉴 만들기 -->
+            <ul class="mobile-menu">
+              <li><a href="#about-me">About Me</a></li>  <!-- 각 목차 이름 지정 -->
+              <li><a href="#skill">menu2</a></li>
+              <li><a href="#portfolio">menu3</a></li>
+              <li><a href="#contact">menu4</a></li>
+            </ul>
+
+            <ul class="pc-menu">
+                <li><a href="#about-me">About Me</a></li>  <!-- 각 목차 이름 지정 -->
+                <li><a href="#skill">menu2</a></li>
+                <li><a href="#portfolio">menu3</a></li>
+                <li><a href="#contact">menu4</a></li>
+            </ul>
+          </nav>
+        </div> <!-- fullscreen -->      
+    </div> <!-- logo-btn-screen --> 
+
 
   </div> <!-- container -->
     <script type="module" src="./js/app.js"></script>
@@ -80,8 +105,9 @@
   </header>
 
   <main>
+    <div id="top-bt">top</div>
     <section class="main-bg">
-        <img src="./images/buble.png" alt="비눗방울" class="buble0 buble">
+        <!-- <img src="./images/buble.png" alt="비눗방울" class="buble0 buble">
         <img src="./images/buble.png" alt="비눗방울" class="buble1 buble">
         <img src="./images/buble.png" alt="비눗방울" class="buble2 buble">
         <img src="./images/buble.png" alt="비눗방울" class="buble3 buble">
@@ -90,7 +116,7 @@
         <img src="./images/buble.png" alt="비눗방울" class="buble6 buble">
         <img src="./images/buble.png" alt="비눗방울" class="buble7 buble"> 
         <img src="./images/buble.png" alt="비눗방울" class="buble8 buble"> 
-        <img src="./images/buble.png" alt="비눗방울" class="buble9 buble"> 
+        <img src="./images/buble.png" alt="비눗방울" class="buble9 buble">  -->
        
 
         <div class="fishs">
@@ -115,7 +141,7 @@
 
         <div class="container">
             <h2>About Me</h2>
-            <div class="about-me">
+            <div class="about-me" id="about-me">
                 <div class="picture">
                     <img src="./images/me.jpg" alt="나">
                 </div>
@@ -137,7 +163,7 @@
                 </div>
             </div> <!-- about-me -->
 
-            <div class="skill">
+            <div class="skill" id="skill">
                 <h2>Skill</h2>
                 <div class="skill-box">
 
@@ -289,7 +315,7 @@
                  </div> <!-- skill-box -->
             </div> <!-- skill --> 
 
-            <div class="portfolio">
+            <div class="portfolio" id="portfolio">
                 <h2>Portfolio</h2>
                 <div class="po-box">
                     <div class="b1-b2">
@@ -379,27 +405,33 @@
                 </div> <!-- po-box -->
 
                 <div class="b5-b6">
+
                     <div class="b5">
                         <div class="box5 ">
                             <video src="./videos/video1.mp4"></video>
                             <div class="inner-box5 inner-box">
                             </div> <!-- inner-box5 -->
-                        </div> <!-- box1 -->
-                        <h3>29cm 소개영상</h3>
-                        <p>작업기간 : 5일</p>
-                        <p>인원 : 1명</p>
+                        </div> <!-- box5 -->
+                        <div class="box5-txt">
+                            <h3>29cm 소개영상</h3>
+                            <p>작업기간 : 5일</p>
+                            <p>인원 : 1명</p>
+                        </div>
                     </div> <!-- b5 -->
-                    <div class="b6">
 
+                    <div class="b6">
                         <div class="box6 ">
                             <video src="./videos/video2.mp4"></video>
                             <div class="inner-box6 inner-box">
                             </div> <!-- inner-box2 -->
-                        </div> <!-- box2 -->
-                        <h3>아디다스 타이포그래피</h3>
-                        <p>작업기간 : 5일</p>
-                        <p>인원 : 1명</p>
+                        </div> <!-- box6 -->
+                        <div class="box6-txt">
+                            <h3>아디다스 타이포그래피</h3>
+                            <p>작업기간 : 5일</p>
+                            <p>인원 : 1명</p>
+                        </div>
                     </div> <!-- b6 -->
+
                 </div> <!-- b5-b6 -->
 
                 <div class="design">
@@ -416,7 +448,7 @@
                                 <img src="./images/starbucks.png" alt="스타벅스 배너" id="modal-image" >
                             </div>
                         </div>
-                        <button class="close-modal">모달 닫기</button>
+                        <button class="close-modal">x</button>
                     </div> 
                         
                     <div class="detail-box d-box">
@@ -431,7 +463,7 @@
                                 <img src="./images/beauty.png" alt="상세페이지 배너" id="modal-image" >
                             </div>
                         </div>
-                        <button class="close-modal">모달 닫기</button>
+                        <button class="close-modal">x</button>
                     </div> 
                         
                     <div class="package-box d-box">
@@ -446,7 +478,7 @@
                                 <img src="./images/beauty.png" alt="상세페이지 배너" id="modal-image" >
                             </div>
                         </div>
-                        <button class="close-modal">모달 닫기</button>
+                        <button class="close-modal">x</button>
                     </div> 
 
                     <div class="logo-box d-box">
@@ -461,7 +493,7 @@
                                 <img src="./images/beauty.png" alt="상세페이지 배너" id="modal-image" >
                             </div>
                         </div>
-                        <button class="close-modal">모달 닫기</button>
+                        <button class="close-modal">x</button>
                     </div> 
 
 
@@ -477,7 +509,7 @@
                                 <img src="./images/beauty.png" alt="상세페이지 배너" id="modal-image" >
                             </div>
                         </div>
-                        <button class="close-modal">모달 닫기</button>
+                        <button class="close-modal">x</button>
                     </div> 
 
 
@@ -493,7 +525,7 @@
                                 <img src="./images/info.png" alt="인포그래픽" class="info-img" >
                             </div>
                         </div>
-                        <button class="close-modal">모달 닫기</button>
+                        <button class="close-modal">x</button>
                     </div> 
 
              </div> <!-- design -->
@@ -501,12 +533,12 @@
             </div> <!-- portfolio -->
         </div> <!-- container -->
 
-        <div class="bgbgbg">
+        <div class="contact" id="contact">
             <div class="bg-img-box">
                 <img src="./images/sea-bottom.png" alt="바다" class="sea">
                
             </div>
-            <div class="bgbgbg-box">
+            <div class="contact-box">
                 <h2>Contact</h2>
                 <p>E-mail : cjrdl22@naver.com</p>
                 <p>Phone : 010-5766-8428</p>
