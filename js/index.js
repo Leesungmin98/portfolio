@@ -1,16 +1,24 @@
 $(function() {
 /// 스킬 
 
-    // 모달 열기
-    $('.skill-item').click(function() {
-        var modalClass = $(this).attr('class').split(' ')[1] + '-modal';
-        $('.' + modalClass).removeClass('hidden');
+    
+    $(document).ready(function() {
+        // 스킬 아이템 클릭 시 모달 열기
+        $('.skill-item').click(function() {
+            var modalClass = $(this).attr('class').split(' ')[1] + '-modal';
+            // 모든 모달 숨기기
+            $('.modal').addClass('hidden');
+            // 클릭한 스킬 아이템에 해당하는 모달 열기
+            $('.' + modalClass).removeClass('hidden');
+        });
+    
+        // 닫기 버튼 클릭 시 모달 닫기
+        $('.close').click(function() {
+            $(this).closest('.modal').addClass('hidden');
+        });
+    
     });
 
-    // 닫기 버튼
-    $('.close').click(function() {
-        $(this).closest('.modal').addClass('hidden');
-    });
 });
 
 
@@ -99,8 +107,7 @@ $(function() {
 
 $(function() {
     const gnbA = $('.mobile-menu > li > a');
-    gnbA.click(function() {
-        
+    gnbA.click(function() {    
         const target = $(this).attr('href'); // 메뉴를 클릭했을 때 해당 섹션의 ID (예: #m2)
         $('html').animate({ scrollTop: $(target).offset().top }, 1000);
         e.preventDefault();
@@ -111,7 +118,7 @@ $(function() {
         
         const target = $(this).attr('href'); // 메뉴를 클릭했을 때 해당 섹션의 ID (예: #m2)
         $('html').animate({ scrollTop: $(target).offset().top }, 1000);
-        e.preventDefault();
+       e.preventDefault();
     });
 });
 
@@ -133,3 +140,5 @@ $(function(){
         $('html').animate({ scrollTop:0 }, 300);
     })
 });
+
+/////////////////////////////////////////////////////////////////////////////////

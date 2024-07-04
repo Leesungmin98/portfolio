@@ -201,7 +201,7 @@ header {
                 } // ray  
             }// box
 
-            /*animations*/
+         
 
             @keyframes spin {
                 0% {
@@ -401,8 +401,6 @@ header {
         height: 100%;
         max-width: 1580px;
         margin: auto;
-        // padding: 0 20px;
-        // background-color: #29c558;
 
         h1 {
             position: absolute; top: 50%; left: 50%;
@@ -479,7 +477,7 @@ header {
             }
         
 
-            /* 햄버거메뉴(버튼) 막대기 만들기, span이라 class를 하나 더 만들어 주는 것이 좋다. */
+            
             span {
                 background: black;
                 border: none;
@@ -506,7 +504,6 @@ header {
         }
     } // logo-btn-screen
 
-        /* 메뉴버튼 활성화시 보여질 풀스크린(빨간 배경) 메뉴 만들기 */
         .fullscreen {
             position: fixed;
             background: $color-main;
@@ -550,17 +547,17 @@ header {
             }
             }
         }
-        /* 풀스크린 메뉴 - 메뉴 */
         nav {
             position: relative;
-            height: 70%;
-            top: 50%;
+            height: 100%;
+            top: 70%;
             transform: translateY(-50%);
             font-size: 50px;
-            font-family: 'Vollkorn', serif;
             font-weight: 400;
             text-align: center;
-            
+            @include responsive(large-screens) {
+                top: 47%;
+            }
         }
         .mobile-menu {
             list-style: none;
@@ -671,9 +668,8 @@ header {
 //////////////////////////////////////////////////////////////////////////// 
 
 main {
-    // position: relative;
     width: 100%; height: 100%;
-    background-color: #00A3A0;
+  
     .main-bg {
         position: relative;
         overflow: hidden;
@@ -686,15 +682,42 @@ main {
             background:linear-gradient( #93E4FF 17%, #4AB2D4 34%, #007EA8 100% );
         }
 
+        #top-bt { 
+            display: none;
+            position: fixed; 
+            right: 0; 
+            bottom: 10%; 
+            width: 15%;
+            height: auto; 
+            margin-right: 20px;
+            z-index: 998; 
+            text-align: center;   
+            cursor: pointer; 
+            // background-color: #00A3A0;
+    
+            @include responsive(large-screens) {
+                width: 5%;
+                margin-right: 50px;
+            }
+            img {
+                width: 100%;
+            }
+            p {
+                position: absolute; top: 89%; left: 47%;
+                transform: translate(-50%);
+                font-family: 'crunch chips'; 
+                // font-weight: bold;
+                font-size: 1.2rem;
+                @include responsive(large-screens) {
+                    font-size: 1.5rem;
+                }
+            }
+            }
+
         .fishs {
             position: absolute; 
             width: 100%; height: 100%;
-            overflow: hidden;
-            // background-color: #00A3A0;
-            @include responsive(large-screens) {
-              
-            }
-          
+            overflow: hidden; 
             img {
                 width: 30%;
             }
@@ -703,7 +726,7 @@ main {
                 top: 80%; left: 70%;
                 // width: 80%;
                 width: 60%;
-
+                z-index: 9;
                 animation-name: killer ;
                 animation-duration: 10s;
                 animation-timing-function: ease-in-out;
@@ -815,7 +838,7 @@ main {
                 position: absolute;
                 top: 80%; left: 72%;
                 width: 40%;
-
+                z-index: 9;
                 animation-name: fish1-box ;
                 animation-duration: 8s;
                 animation-timing-function: ease-in-out;
@@ -858,7 +881,7 @@ main {
                 position: absolute;
                 top: 40%; left: 55%;
                 width: 26%;
-
+                
                 animation-name: fish2 ;
                 animation-duration: 10s;
                 animation-timing-function: ease-in-out;
@@ -915,8 +938,9 @@ main {
             }
             .fish3-box {
                 position: absolute;
-                top: 500vh; left: 70%;
+                top: 92%; left: 70%;
                 width: 50%;
+                z-index: 9;
                 animation-name: fish3-box ;
                 animation-duration: 6s;
                 animation-timing-function: linear;
@@ -962,8 +986,8 @@ main {
             }
             .fish4-box {
                 position: absolute;
-                top: 50vh; left: 80%;
-
+                top: 70%; left: 80%;
+                z-index: 1;
                 animation-name: fish4-box ;
                 animation-duration: 10s;
                 animation-timing-function: ease-in-out;
@@ -1010,7 +1034,7 @@ main {
 
         .buble {
             position: absolute; 
-            
+            z-index: 900;
             width: 100px;
             // display: none;
 
@@ -1179,7 +1203,7 @@ main {
         .buble8 {
             width: 120px;
             top: 71%; left: 73%;
-            z-index: 0;
+           
 
             animation-name: buble-move8;
             animation-iteration-count: infinite;
@@ -1199,7 +1223,7 @@ main {
         .buble9 {
             width: 100px;
             top: 79%; left: 20%;
-            z-index: 0;
+           
 
             animation-name: buble-move9;
             animation-iteration-count: infinite;
@@ -1219,7 +1243,7 @@ main {
         .buble10 {
             width: 100px;
             top: 85%; left: 20%;
-            z-index: 0;
+        
 
             animation-name: buble-move10;
             animation-iteration-count: infinite;
@@ -1239,8 +1263,7 @@ main {
         .buble11 {
             width: 100px;
             top: 90%; left: 60%;
-            z-index: 0;
-
+         
             animation-name: buble-move11;
             animation-iteration-count: infinite;
             animation-timing-function: ease-in-out;
@@ -1259,7 +1282,7 @@ main {
         .buble12 {
             width: 80px;
             top: 99%; left: 60%;
-            z-index: 0;
+          
 
             animation-name: buble-move12;
             animation-iteration-count: infinite;
@@ -1280,7 +1303,7 @@ main {
         .buble13 {
             width: 30px;
             top: 96%; left: 30%;
-            z-index: 0;
+            
 
             animation-name: buble-move13;
             animation-iteration-count: infinite;
@@ -1577,11 +1600,14 @@ main {
                             transform: translate(-50%, -50%);
                             text-align: center;
                           
-                            width: 60%; height: 50%;
-                            background: rgba(255, 255, 255, 0.7);
+                            width: 80%; height: 50%;
+                            background: rgba(255, 255, 255, 0.9);
                             padding: 20px;
                             border-radius: 5px;
                             z-index: 1000; /* z-index 추가 */
+                            @include responsive(large-screens) {
+                                width: 60%;
+                            }
                             h2 {
                                 position: absolute; top: 20%; left: 50%;
                                 transform: translate(-50%);
@@ -1595,7 +1621,10 @@ main {
                                 width: 80%;
                                 position: absolute; top: 50%; left: 50%;
                                 transform: translate(-50%);
-                                font-family: "pretendard";              
+                                font-family: "pretendard";     
+                                @include responsive(large-screens) {
+                                    font-size: 1.5rem;
+                                }         
                             }
                             .close {
                                 position: absolute; bottom: 10%; left: 50%;
@@ -1748,17 +1777,17 @@ main {
 
             .portfolio {
                 width: 100%; height: 100%;
-                // background-color: #00A3A0;
+             
                 @include responsive(large-screens) {
                     // background-color: aquamarine;
-                    width: 100%; height: 5200px;
+                    width: 100%; height: 4000px;
                 }
                 .box {
                     position: relative;
                     width: 100%;
                     border: 3px solid #ffffff;
                     border-radius: 20px;
-                   z-index: 10;
+                   z-index: 100;
                     overflow: hidden;
                     @include responsive(large-screens) {
                         width: 100%;
@@ -2050,149 +2079,96 @@ main {
                   } // po-box
 
                   
-                  .b5-b6 {
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
-                    margin: 0 0px 0 20px;
-                    width: 175%;
-                    overflow: hidden;
-                    // background-color: #c2c2c2;
+                  .slider {
+                    position: relative; 
+                    width: 100%; height: 60vw;   
+                    padding-left: 20px;
+                    // background-color: #00A3A0;
+                    z-index: 995;
                     @include responsive(large-screens) {
-                        margin: 10px 0 0 0;
-                        height: 1600px;
-                        
+                        padding-left: 0px;
                     }
-                    .b5 {
-                        margin-right: 10px; 
-                       
-                        
-                        .box5 {
-                            width: 100%; height: 50%;
-                            
-                            border: 3px solid white;
-                            border-radius: 20px;
-                            background-color: rgb(0, 0, 0);
-                            overflow: hidden;
-
-                            @include responsive(large-screens) {
-                                height: 30%;
-                            }
-                            
-                        video {
-                            width: 100%; height: 100%;
+                    .slider-inner {
+                        // background-color: antiquewhite;
+                        position: relative;
+                        top: 0; left: 0;
+                        height: 75vw;
+                        width: 175%;
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        gap: 10px;
+                        pointer-events: none;
+                        transition: 0s ease-in;
+                        z-index: 0;
+                        @include responsive(large-screens) {
+                            width: 140%; height: 43vw;
+                            // height: 1600px;
                         }
-                          }
-                          .box5::after {
-                            display: block;
-                            content: "";
-                            padding-bottom: 100%;
-                          }
-                          .inner-box5 {
-                            width: 100%;
-                            height: 100%;
-                            object-fit: cover;
-                            border-radius: 50px;
-                          }
-                          .box5-txt {
-                              h3 {
-                                font-size: 4vw;
-                                margin-top: 10px;
-                                margin-left: 10px;
-                                margin-bottom: 2%;
-                                font-weight: bold;
-                                @include responsive(large-screens) {
-                                    margin-left: 20px;
-                                    margin-top: 20px;
-                                    margin-bottom: 6px;
-                                    font-size: 32px;
-                                  
-                                }
-                             }
-                             p {
-                                
-                                margin-left: 10px;
-                                font-size: 3vw;
-                                font-weight: 600;
-                                line-height: 120%;
-                                @include responsive(large-screens) {
-                                    margin-left: 20px;
-                                    font-size:20px;
-                                    font-weight: 700;
-                                    line-height: 24px;
-                                }
-                              
-                             }
-                          } // box5-txt
-                      } // b1
-                      .b6 {
-                           
-                          .box6 {
-                            width: 100%;  height: 50%;
+                        .slider-item {
+                            width: 100%; height: 60vw;    
                             border: 3px solid white;
                             border-radius: 20px;
                             background-color: rgb(0, 0, 0);
                             overflow: hidden;
-
                             @include responsive(large-screens) {
-                                height: 30%;
+                                margin-top: 10px;
+                                height: 700px;
                             }
-                            video {
-                                width: 100%; height: 100%;
+                            .slide-box {
+                                border: none;
+                                video {
+                                    width: 100%; height: 59.5vw;
+                                    @include responsive(large-screens) {
+                                        height: 700px;
+                                    }
+                                }
                             }
-                            }
-                            .box6::after {
-                                display: block;
-                                content: "";
-                                padding-bottom: 100%;
-                              }
-                            .inner-box6 {
-                            width: 100%;
-                            height: 100%;
-                            object-fit: cover;
-                            border-radius: 50px;
-                            }
-                            
-                            .box6-txt {
-
-                                h3 { 
-                                    font-size: 4vw;
-                                    margin-top: 10px;
-                                    margin-left: 10px;
-                                    margin-bottom: 2%;
-                                    font-weight: bold;
+                                 .box-txt {
+                                    position: absolute; bottom: 0;
                                    
-                                    @include responsive(large-screens) {
-                                        margin-left: 20px;
-                                        margin-top: 20px;
-                                        margin-bottom: 6px;
-                                        font-size: 32px;
-                                        
-                                    }
-                                }
-                                p {
-                                    margin-left: 10px;
-                                    font-size: 3vw;
-                                    font-weight: 700;
-                                    line-height: 120%;
-                                    @include responsive(large-screens) {
-                                        margin-left: 20px;
-                                        font-size:20px;
-                                        font-weight: 700;
-                                        line-height: 110%;
-                                        
-                                        
-                                    }
-                                }
-                                // padding: 0px 0 0px 20px;
-                            } // box6-txt
-                        } // b6
-                }// b5-b6
+                                     h3 { 
+                                         font-size: 4vw;
+                                         margin-top: 10px;
+                                         margin-left: 10px;
+                                         margin-bottom: 2%;
+                                         font-weight: bold;
+                                         color: black;
+                                         @include responsive(large-screens) {
+                                             margin-left: 20px;
+                                             margin-top: 20px;
+                                             margin-bottom: 6px;
+                                             font-size: 32px;
+                                             
+                                         }
+                                     }
+                                     p {
+                                         margin-left: 10px;
+                                         font-size: 3vw;
+                                         font-weight: 700;
+                                         line-height: 120%;
+                                         color: black;
+                                         @include responsive(large-screens) {
+                                             margin-left: 20px;
+                                             font-size:20px;
+                                             font-weight: 700;
+                                             line-height: 110%;    
+                                         }
+                                     }
+                         
+                                 } // box6-txt
+                        }
+                    }
+                }
 
 
                 .design {
-                    // background-color: #4AB2D4;
                     position: relative;
-                    z-index: 10;
+                    z-index: 10000;
+                    margin-top:50%;
+                    // background-color: #d44acd;
+                    @include responsive(large-screens) {
+                        margin-top:0;
+                    }
                     .d-box {
                         width: 35vw;
                         
@@ -2231,14 +2207,90 @@ main {
                     }
 
 
+                   
+                    .po-modal-box {
+                        position: fixed;
+                        bottom: -100%; /* 초기에는 숨김 */
+                        left: 0;
+                        width: 100%; height: 100%;
+                        background: rgba(0, 0, 0, 0.8);
+                        padding: 20px;
+                        transition: bottom 0.3s ease;
+                        box-shadow: 0px -2px 10px rgba(255, 255, 255, 0.1);
+                        overflow-y: auto;
+                        z-index: 20000;
+                        .po-modal {
+                            text-align: center;
+                            .img-box {
+                                width: 80%; 
+                                margin: auto;
+                                cursor: grab; 
+                               
+                                img {
+                                    width: 100%;
+                                    height: auto;
+                                    margin-bottom: 50px;
+                                    
+                                    transition: transform 0.3s ease-out;
+                                    @include responsive(large-screens) {
+                                        width: 50%; 
+                                        margin: 0 auto;
+                                        margin-bottom: 50px;
+                                    }
+                                }
+                                img:active {
+                                    cursor: grabbing; /* 드래그 중인 커서 설정 */
+                                }
+                            }
+                        }
+                        .close-modal {
+                            display: none;
+                            position: fixed; top: 0; right: 2%;
+                            padding: 10px 20px;
+                            background: none;
+                            font-size: 40px;
+                            color: white;
+                            border: none;
+                            cursor: pointer;
+                            z-index: 9999;
+                        }
+                    }
+
+                    .detail-modal-box {
+                        .detail-modal {
+                            .img-box {
+                                display: flex;
+                                @include responsive(large-screens) {
+                                    display: flex;
+                                   
+                                
+                                }
+                                img {
+                                    width: 50%; 
+                                    height: 50%;
+                                    margin-right: 10px;
+                                    @include responsive(large-screens) {
+                                        width: 50%; 
+                                        height: 50%;
+                                        margin-right: 50px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                   
+                    //////////////////////////
+                    
+
                     .banner-box {
-                        cursor: pointer;
-                        margin-left:15%; 
+                        cursor: pointer;                  
                         .banner {
                             overflow: hidden;
                             background-size: cover;
                             background-position-y: -50px;
+                            
                             img {
+                              
                                 &:hover {
                                     animation-name: detail;
                                     animation-timing-function: ease-in-out;
@@ -2264,47 +2316,7 @@ main {
                         } 
                     }
 
-                    .po-modal-box {
-                        position: fixed;
-                        bottom: -100%; /* 초기에는 숨김 */
-                        left: 0;
-                        width: 100%; height: 100%;
-                        background: rgba(0, 0, 0, 0.7);
-                        padding: 20px;
-                        transition: bottom 0.3s ease;
-                        box-shadow: 0px -2px 10px rgba(255, 255, 255, 0.1);
-                        overflow-y: auto;
-                        z-index: 1000;
-                        .po-modal {
-                            text-align: center;
-                            .img-box {
-                                width: 80%; 
-                                margin: auto;
-                                cursor: grab; 
-                                img {
-                                    width: 40%;
-                                    height: auto;
-                                    
-                                    transition: transform 0.3s ease-out;
-                                }
-                                img:active {
-                                    cursor: grabbing; /* 드래그 중인 커서 설정 */
-                                }
-                            }
-                        }
-                        .close-modal {
-                            display: none;
-                            position: fixed; top: 0; right: 2%;
-                            padding: 10px 20px;
-                            background: none;
-                            font-size: 40px;
-                            color: white;
-                            border: none;
-                            cursor: pointer;
-                        }
-                    }
-                   
-                    //////////////////////////
+                     
                         .detail-box {
                             margin-left:50%;
                             .detail {
@@ -2312,6 +2324,7 @@ main {
                                 background-size: cover;
                                 background-position-y: -50px;
                                 img {
+                                   
                                 &:hover {
                                     animation-name: detail;
                                     animation-timing-function: ease-in-out;
