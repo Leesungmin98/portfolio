@@ -1,23 +1,23 @@
+
+
+////////////////////////////////////////////
+
 let slider = document.querySelector('.slider');
 let innerSlider = document.querySelector('.slider-inner');
-
 let pressed = false;
 let startX;
 let x;
 
 slider.addEventListener('mousedown', handleStart);
-slider.addEventListener('touchstart', handleStart, {passive: true});
-
+slider.addEventListener('touchstart', handleStart, {passive: false});
 slider.addEventListener('mouseenter', () => {
     slider.style.cursor = 'grab';
 });
-
 slider.addEventListener('mouseup', handleEnd);
 slider.addEventListener('mouseleave', handleEnd);
 slider.addEventListener('touchend', handleEnd);
-
 slider.addEventListener('mousemove', handleMove);
-slider.addEventListener('touchmove', handleMove, {passive: true});
+slider.addEventListener('touchmove', handleMove, {passive: false});
 
 let rafId = null;
 
@@ -34,13 +34,15 @@ function handleEnd() {
 
 function handleMove(e) {
     if (!pressed) return;
-    e.preventDefault();
-    x = (e.type === 'touchmove') ? e.touches[0].clientX : e.clientX;
     
+    if (e.cancelable) {
+        e.preventDefault();
+    }
+    
+    x = (e.type === 'touchmove') ? e.touches[0].clientX : e.clientX;
     if (rafId) {
         cancelAnimationFrame(rafId);
     }
-    
     rafId = requestAnimationFrame(() => {
         updatePosition(x - startX);
     });
@@ -60,7 +62,6 @@ function getTranslateX() {
 function checkBoundary() {
     const outer = slider.getBoundingClientRect();
     const inner = innerSlider.getBoundingClientRect();
-    
     const currentTranslateX = getTranslateX();
     
     if (currentTranslateX > 0) {
@@ -69,7 +70,3 @@ function checkBoundary() {
         updatePosition(outer.width - inner.width);
     }
 }
-
-////////////////////////////////////////////
-
-
