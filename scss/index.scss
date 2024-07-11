@@ -1596,7 +1596,7 @@ main {
                             transform: translate(-50%, -50%);
                             text-align: center;
                           
-                            width: 80%; height: 50%;
+                            width: 80%; height: 90vw;
                             background: rgba(255, 255, 255, 0.9);
                             padding: 20px;
                             border-radius: 5px;
@@ -1607,7 +1607,7 @@ main {
                             h2 {
                                 position: absolute; top: 20%; left: 50%;
                                 transform: translate(-50%);
-                                font-size: 3.5rem;
+                                font-size: 12vw;  
                                 text-align: center;
                                 padding: 0;
                                 
@@ -1617,7 +1617,8 @@ main {
                                 width: 80%;
                                 position: absolute; top: 50%; left: 50%;
                                 transform: translate(-50%);
-                                font-family: "pretendard";     
+                                font-family: "pretendard"; 
+                                font-size: 3.4vw;    
                                 @include responsive(large-screens) {
                                     font-size: 1.5rem;
                                 }         
@@ -1634,6 +1635,7 @@ main {
                                 border-radius: 5px;
                                 cursor: pointer;
                                 font-family: "pretendard";
+                                font-size: 3vw; 
                                 &:hover {
                                     background-color: #93E4FF;
                                 }

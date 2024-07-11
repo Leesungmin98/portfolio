@@ -1,4 +1,12 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "recipekorea";
+  src: local("recipekorea"), url("../font/Recipekorea 레코체 FONT.otf") format("opentype"), url("../font/Recipekorea 레코체 FONT.ttf") format("truetype");
+}
+@font-face {
+  font-family: "crunch chips";
+  src: local("crunch chips"), url("../font/Crunch Chips.otf") format("opentype");
+}
 * {
   box-sizing: border-box;
   -webkit-user-select: none;
@@ -62,14 +70,6 @@ footer {
   display: block;
 }
 
-@font-face {
-  font-family: "recipekorea";
-  src: local("recipekorea"), url("../font/Recipekorea 레코체 FONT.otf") format("opentype"), url("../font/Recipekorea 레코체 FONT.ttf") format("truetype");
-}
-@font-face {
-  font-family: "crunch chips";
-  src: local("crunch chips"), url("../font/Crunch Chips-3D.otf") format("opentype"), url("../font/Crunch Chips.otf") format("opentype");
-}
 header .wave {
   position: relative;
   z-index: 1;
@@ -1566,7 +1566,7 @@ main .main-bg .container .skill .skill-box .modal-box .modal {
   transform: translate(-50%, -50%);
   text-align: center;
   width: 80%;
-  height: 50%;
+  height: 90vw;
   background: rgba(255, 255, 255, 0.9);
   padding: 20px;
   border-radius: 5px;
@@ -1582,7 +1582,7 @@ main .main-bg .container .skill .skill-box .modal-box .modal h2 {
   top: 20%;
   left: 50%;
   transform: translate(-50%);
-  font-size: 3.5rem;
+  font-size: 12vw;
   text-align: center;
   padding: 0;
 }
@@ -1593,6 +1593,7 @@ main .main-bg .container .skill .skill-box .modal-box .modal p {
   left: 50%;
   transform: translate(-50%);
   font-family: "pretendard";
+  font-size: 3.4vw;
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .skill .skill-box .modal-box .modal p {
@@ -1614,6 +1615,7 @@ main .main-bg .container .skill .skill-box .modal-box .modal .close {
   border-radius: 5px;
   cursor: pointer;
   font-family: "pretendard";
+  font-size: 3vw;
 }
 main .main-bg .container .skill .skill-box .modal-box .modal .close:hover {
   background-color: #93E4FF;
