@@ -1865,6 +1865,36 @@ main .main-bg .container .portfolio .po-box .box-button a::after {
     width: 600px;
   }
 }
+main .main-bg .container .portfolio .po-box .b1-b2 .b1 .inner-box1 img {
+  animation-name: po-move0;
+  animation-duration: 40s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes po-move0 {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-83%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@media only screen and (min-width: 1024px) {
+  @keyframes po-move {
+    0% {
+      transform: translateY(0%);
+    }
+    50% {
+      transform: translateY(-90%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+}
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .portfolio .po-box .b1-b2 .box-button1 {
     top: 480px;
@@ -1979,6 +2009,36 @@ main .main-bg .container .portfolio .po-box .b3-b4 .b3 .inner-box3 img {
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .portfolio .po-box .b3-b4 .b4 .box4 {
     width: 600px;
+  }
+}
+main .main-bg .container .portfolio .po-box .b3-b4 .b4 .inner-box4 img {
+  animation-name: po-move4;
+  animation-duration: 40s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes po-move4 {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-83%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@media only screen and (min-width: 1024px) {
+  @keyframes po-move4 {
+    0% {
+      transform: translateY(0%);
+    }
+    50% {
+      transform: translateY(-90%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
   }
 }
 @media only screen and (min-width: 1024px) {

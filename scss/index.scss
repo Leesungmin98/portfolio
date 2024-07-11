@@ -1878,12 +1878,40 @@ main {
                                     
                                 }
                                 }
-                                // .inner-box1 {
-                            
-                                // }
-                                // .box-txt {
+                                .inner-box1 {
                                   
-                                // }
+                                    img {
+                                        animation-name: po-move0;
+                                        animation-duration: 40s;
+                                        animation-timing-function: ease-in-out;
+                                        animation-iteration-count: infinite;
+                                    }
+                                  }
+                                  @keyframes po-move0 {
+                                    0% {
+                                        transform: translateY(0%);
+                                    }
+                                    50% {
+                                        transform: translateY(-83%);
+                                    }
+                                    100% {
+                                        transform: translateY(0%);
+                                    }
+                                  }
+                                  @include responsive(large-screens) {
+                                    @keyframes po-move {
+                                        0% {
+                                            transform: translateY(0%);
+                                        }
+                                        50% {
+                                            transform: translateY(-90%);
+                                        }
+                                        100% {
+                                            transform: translateY(0%);
+                                        }
+                                      }
+                                  }
+                             
                             } // b1
                             .box-button1 {
                                 @include responsive(large-screens) {
@@ -1939,9 +1967,7 @@ main {
                                         }
                                       }
                                   }
-                                //   .box-txt {
-                                    
-                                //   }
+                              
                               } // b2
                               .box-button2 {
                                 @include responsive(large-screens) {
@@ -2026,12 +2052,39 @@ main {
                                     
                                 }
                                 }
-                                // .inner-box4 {
-                            
-                                // }
-                                // .box-txt {
+                                .inner-box4 {
                                   
-                                // }
+                                    img {
+                                        animation-name: po-move4;
+                                        animation-duration: 40s;
+                                        animation-timing-function: ease-in-out;
+                                        animation-iteration-count: infinite;
+                                    }
+                                  }
+                                  @keyframes po-move4 {
+                                    0% {
+                                        transform: translateY(0%);
+                                    }
+                                    50% {
+                                        transform: translateY(-83%);
+                                    }
+                                    100% {
+                                        transform: translateY(0%);
+                                    }
+                                  }
+                                  @include responsive(large-screens) {
+                                    @keyframes po-move4 {
+                                        0% {
+                                            transform: translateY(0%);
+                                        }
+                                        50% {
+                                            transform: translateY(-90%);
+                                        }
+                                        100% {
+                                            transform: translateY(0%);
+                                        }
+                                      }
+                                  }
                             } // b4
                             .box-button4 {
                                 @include responsive(large-screens) {
