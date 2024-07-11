@@ -2164,7 +2164,7 @@ main {
                         cursor: pointer;
                         border-radius: 50%;
                         border: 3px solid #ffffff;
-                        background-color: #ffffff;
+                        background-color: #9c9c9c;
                         @include responsive(large-screens) {
                             width: 15vw; height: 15vw;
                         }
@@ -2563,7 +2563,7 @@ main {
             50% {
                 transform: scale(1); 
                 transform: rotate(20deg);
-                opacity:100;
+                opacity:1;
 
             }
             100% {
@@ -2594,7 +2594,7 @@ main {
             50% {
                 transform: scale(1);
                 transform: rotate(-20deg);
-                opacity:100;
+                opacity:1;
 
             }
             100% {

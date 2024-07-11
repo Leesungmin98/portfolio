@@ -9,13 +9,8 @@
 }
 * {
   box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-  outline: 0;
   margin: 0;
   padding: 0;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body {
@@ -2116,7 +2111,7 @@ main .main-bg .container .portfolio .design .ds {
   cursor: pointer;
   border-radius: 50%;
   border: 3px solid #ffffff;
-  background-color: #ffffff;
+  background-color: #9c9c9c;
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .portfolio .design .ds {
@@ -2464,7 +2459,7 @@ main .contact .eye1 {
   50% {
     transform: scale(1);
     transform: rotate(20deg);
-    opacity: 100;
+    opacity: 1;
   }
   100% {
     transform: scale(0);
@@ -2498,7 +2493,7 @@ main .contact .eye2 {
   50% {
     transform: scale(1);
     transform: rotate(-20deg);
-    opacity: 100;
+    opacity: 1;
   }
   100% {
     transform: scale(0);
