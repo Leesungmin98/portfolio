@@ -10,557 +10,582 @@
     <meta name="Author" content="이성민">
 
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/ocean.css">
+    <link rel="stylesheet" href="./css/index.css">
     <script src="./js/jquery.js"></script>
     <script src="./js/index.js"></script>
   
     <title>Wave</title>
 </head>
 <body>
-  <header>
-      <div class="wave">
-          <!-- JavaScript에서 생성되는 canvas는 여기에 추가될 것입니다 -->
-          
-          <div class="box">
-            <div class="sun">
-              <div class="face">
-                <div class="pupil-left"></div>
-                <div class="pupil-right"></div>
-                <div class="smile"></div>
-              </div>
-              
-              <div class="ray">
-                <div class="beam r1"></div>
-                <div class="beam r2"></div>
-                <div class="beam r3"></div>
-                <div class="beam r4"></div>
-                <div class="beam r5"></div>
-                <div class="beam r6"></div>
-                <div class="beam r7"></div>
-                <div class="beam r8"></div>
-                <div class="beam r9"></div>
-                <div class="beam r10"></div>
-              </div>
-            </div> 
-          </div> <!-- box -->
-      <div class="img-box">
-        <img src="./images/cloud1.png" alt="구름1" class="cloud1">
-        <img src="./images/cloud2.png" alt="구름2" class="cloud2">
+    <header>
+        <div class="wave">
+            <div class="box">
+                <div class="sun">
+                <div class="face">
+                    <div class="pupil-left"></div>
+                    <div class="pupil-right"></div>
+                    <div class="smile"></div>
+                </div>
+                
+                <div class="ray">
+                    <div class="beam r1"></div>
+                    <div class="beam r2"></div>
+                    <div class="beam r3"></div>
+                    <div class="beam r4"></div>
+                    <div class="beam r5"></div>
+                    <div class="beam r6"></div>
+                    <div class="beam r7"></div>
+                    <div class="beam r8"></div>
+                    <div class="beam r9"></div>
+                    <div class="beam r10"></div>
+                </div>
+                </div> 
+            </div> <!-- box -->
+        <div class="img-box">
+            <img src="./images/cloud1.png" alt="구름1" class="cloud1">
+            <img src="./images/cloud2.png" alt="구름2" class="cloud2">
+            <img src="./images/bird.png" alt="갈매기1" class="bird1">
+            <img src="./images/bird2.png" alt="갈매기2" class="bird2">
+            <img src="./images/paper-ship.png" alt="종이배" class="paper-ship">
+
+            <img src="./images/island.png" alt="섬" class="island">
+            <img src="./images/ball.png" alt="공" class="ball">
         
-        <img src="./images/bird.png" alt="갈매기1" class="bird1">
-        <img src="./images/bird2.png" alt="갈매기2" class="bird2">
-        <img src="./images/paper-ship.png" alt="종이배" class="paper-ship">
- 
-        <img src="./images/island.png" alt="섬" class="island">
-        <img src="./images/ball.png" alt="공" class="ball">
-       
-    </div>
-
-    <div class="container">
-      <h1><span>SUNGMIN'S</span> <br> 
-          Portfolio
-      </h1>
-
-    <div class="logo-btn-screen">
-        <div class="header-logo">
-            <h2>SUNGMIN</h2>
         </div>
-        <div class="btn_container" id="toggle">   <!-- 버튼 만들기 위한 큰 틀  버튼 활성화를 위한 토글 -->
-            <span class="top"></span>         <!-- 햄버거의 맨 위 막대기 -->
-            <span class="middle"></span>    <!-- 햄버거의 가운데 막대기 -->
-            <span class="bottom"></span>    <!-- 햄버거의 맨 아래 막대기 -->
-        </div> <!-- btn_container -->
-
-        <div class="fullscreen" id="fullscreen">    <!-- 풀스크린 메뉴 만들기 위한 큰 틀 토글 활성화시 풀스크린 메뉴 열기 -->
-          <nav class="fullscreen-menu">          <!-- 풀스크린 메뉴 만들기 -->
-            <ul class="mobile-menu">
-              <li><a href="#about-me">ABOUT ME</a></li>  <!-- 각 목차 이름 지정 -->
-              <li><a href="#skill">SKILL</a></li>
-              <li><a href="#portfolio">PORTFOLIO</a></li>
-              <li><a href="#contact">CONTACT</a></li>
-            </ul>
-
-            <ul class="pc-menu">
-                <li><a href="#about-me">About Me</a></li>  <!-- 각 목차 이름 지정 -->
-                <li><a href="#skill">Skill</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
-        </div> <!-- fullscreen -->      
-    </div> <!-- logo-btn-screen --> 
-
-
-  </div> <!-- container -->
-    <script type="module" src="./js/app.js"></script>
-
-  
-  </div>
-
-  </header>
-
-  <main>
-   
-    <section class="main-bg">
-        <img src="./images/buble.png" alt="비눗방울" class="buble0 buble">
-        <img src="./images/buble.png" alt="비눗방울" class="buble1 buble">
-        <img src="./images/buble.png" alt="비눗방울" class="buble2 buble">
-        <img src="./images/buble.png" alt="비눗방울" class="buble3 buble">
-        <img src="./images/buble.png" alt="비눗방울" class="buble4 buble">
-        <img src="./images/buble.png" alt="비눗방울" class="buble5 buble">
-        <img src="./images/buble.png" alt="비눗방울" class="buble6 buble">
-        <img src="./images/buble.png" alt="비눗방울" class="buble7 buble"> 
-        <img src="./images/buble.png" alt="비눗방울" class="buble8 buble"> 
-        <img src="./images/buble.png" alt="비눗방울" class="buble9 buble">  
-        <img src="./images/buble.png" alt="비눗방울" class="buble10 buble"> 
-        <img src="./images/buble.png" alt="비눗방울" class="buble11 buble">
-        <img src="./images/buble.png" alt="비눗방울" class="buble12 buble">
-        <img src="./images/buble.png" alt="비눗방울" class="buble13 buble">
-        <img src="./images/buble.png" alt="비눗방울" class="buble14 buble">
-
-        <div id="top-bt">
-            <img src="./images/submarin.png" alt="잠수함">
-            <p> TOP</p>
-        </div>
-
-        <div class="fishs">
-            <img src="./images/killer.png" alt="범고래" class="killer">
-            <img src="./images/Whale.png" alt="고래" class="whale">
-             <div class="fish1-box"> 
-               <img src="./images/fish1.png" alt="멸치" class="fish1-1">
-                <img src="./images/fish1.png" alt="멸치" class="fish1-2">
-            </div>
-                 <img src="./images/fish2.png" alt="물고기 때" class="fish2"> 
-             <div class="fish3-box">
-                <img src="./images/fish3.png" alt="광어" class="fish3-1">
-                <img src="./images/fish3.png" alt="광어" class="fish3-2">
-                <img src="./images/fish3.png" alt="광어" class="fish3-3">
-            </div>
-           <div class="fish4-box">
-                <img src="./images/fish4.png" alt="새우" class="fish4-1">
-                <img src="./images/fish4.png" alt="새우" class="fish4-2">
-            </div>
-        </div> <!-- fishs -->
-
 
         <div class="container">
-            <h2>About Me</h2>
-            <div class="about-me" id="about-me">
-                <div class="picture">
-                    <img src="./images/me.jpg" alt="나">
+        <h1><span>SUNGMIN'S</span> <br> 
+            Portfolio
+        </h1>
+
+        <div class="logo-btn-screen">
+            <div class="header-logo">
+                <h2>SUNGMIN</h2>
+            </div>
+            <div class="btn_container" id="toggle"> 
+                <span class="top"></span>         
+                <span class="middle"></span>    
+                <span class="bottom"></span>    
+            </div> <!-- btn_container -->
+
+            <div class="fullscreen" id="fullscreen">   
+            <nav class="fullscreen-menu">          
+                <ul class="mobile-menu">
+                <li><a href="#about-me">ABOUT ME</a></li>  
+                <li><a href="#skill">SKILL</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                </ul>
+
+                <ul class="pc-menu">
+                    <li><a href="#about-me">About Me</a></li> 
+                    <li><a href="#skill">Skill</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            </div> <!-- fullscreen -->      
+        </div> <!-- logo-btn-screen --> 
+
+
+    </div> <!-- container -->
+        <script type="module" src="./js/app.js"></script>
+
+
+    </div>
+
+    </header>
+
+    <main>
+
+        <section class="main-bg">
+            <img src="./images/buble.png" alt="비눗방울" class="buble0 buble">
+            <img src="./images/buble.png" alt="비눗방울" class="buble1 buble">
+            <img src="./images/buble.png" alt="비눗방울" class="buble2 buble">
+            <img src="./images/buble.png" alt="비눗방울" class="buble3 buble">
+            <img src="./images/buble.png" alt="비눗방울" class="buble4 buble">
+            <img src="./images/buble.png" alt="비눗방울" class="buble5 buble">
+            <img src="./images/buble.png" alt="비눗방울" class="buble6 buble">
+            <img src="./images/buble.png" alt="비눗방울" class="buble7 buble"> 
+            <img src="./images/buble.png" alt="비눗방울" class="buble8 buble"> 
+            <img src="./images/buble.png" alt="비눗방울" class="buble9 buble">  
+            <img src="./images/buble.png" alt="비눗방울" class="buble10 buble"> 
+            <img src="./images/buble.png" alt="비눗방울" class="buble11 buble">
+            <img src="./images/buble.png" alt="비눗방울" class="buble12 buble">
+            <img src="./images/buble.png" alt="비눗방울" class="buble13 buble">
+            <img src="./images/buble.png" alt="비눗방울" class="buble14 buble">
+
+            <div id="top-bt">
+                <img src="./images/submarin.png" alt="잠수함">
+                <p> TOP</p>
+            </div>
+
+            <div class="fishs">
+                <img src="./images/killer.png" alt="범고래" class="killer">
+                <img src="./images/Whale.png" alt="고래" class="whale">
+                <div class="fish1-box"> 
+                <img src="./images/fish1.png" alt="멸치" class="fish1-1">
+                    <img src="./images/fish1.png" alt="멸치" class="fish1-2">
                 </div>
-                <div class="letter">
-                    <div class="letter-box">
-                        <h2 class="letter-title">생각하는 디자이너 "이성민 입니다"</h2>
-                        <p>
-                         나이 : 1998년 12월 31일생 <br>
-                         나이 : 1998년 12월 31일생 <br>
-                         나이 : 1998년 12월 31일생 <br>
-                         나이 : 1998년 12월 31일생 <br>
-                         나이 : 1998년 12월 31일생 <br>
-                         </p>
-                    </div>
+                    <img src="./images/fish2.png" alt="물고기 때" class="fish2"> 
+                <div class="fish3-box">
+                    <img src="./images/fish3.png" alt="광어" class="fish3-1">
+                    <img src="./images/fish3.png" alt="광어" class="fish3-2">
+                    <img src="./images/fish3.png" alt="광어" class="fish3-3">
                 </div>
-            </div> <!-- about-me -->
+            <div class="fish4-box">
+                    <img src="./images/fish4.png" alt="새우" class="fish4-1">
+                    <img src="./images/fish4.png" alt="새우" class="fish4-2">
+                </div>
+            </div> <!-- fishs -->
 
-            <div class="skill" id="skill">
-                <h2>Skill</h2>
-                <div class="skill-box">
 
-                    <div class="skill-item ai">
-                        <img src="./images/ai.png" alt="일러스트" class="ai-img icon">
-                        <div class="overlay">90%</div>
-                    </div>
-                    <div class="modal-box">
-                        <div class="modal ai-modal hidden">
-                            <h2>90%</h2>
-                            <p>일러스트의 기능을 능숙하게 다룰 줄 알고, 응용이 가능합니다</p>
-                            <button class="close">닫기</button>
+            <div class="container">
+                <!-- <h2>About Me</h2> -->
+                <div class="about-me" id="about-me">
+                <div class="submarin-atxt">
+                        <div class="submarin">
+                            <img src="./images/me.png" alt="me" class="submarin-img">
                         </div>
-                    </div>
-
-                    <div class="skill-item pr">
-                        <img src="./images/pr.png" alt="프리미어프로" class="pr-img icon">
-                        <div class="overlay">70%</div>
-                    </div>
-                    <div class="modal-box">
-                        <div class="modal pr-modal hidden">
-                            <h2>70%</h2>
-                            <p>멀티 캠 편집, 자막 넣기 등등 간단한 영상편집이 가능합니다</p>
-                            <button class="close">닫기</button>
+                        <div class="atxt">
+                            <h3>일하는 디자이너 <br>
+                                <span class="name">"이성민"</span>입니다.</h3>
+                            <strong>#성실 #집중력 #문제해결</strong>
+                            <br>
+                            <p>
+                                안녕하세요! 저는 <span class="name2">이성민</span>이라고 합니다. 웹 디자인을 사랑하며, 실력을 늘리기 위해 끊임없이 공부하고 
+                                있는 신입 웹 디자이너입니다. <br>
+                                <br>
+                                제 <span class="advantage">강점</span>은 <span class="focus">집중력</span>과 <span class="resolution">문제해결</span> 능력입니다. 한 번 집중하면 쉬는 시간에도 디자인 작업을 중단하지 않고
+                                이어가며, 막히는 부분에서는 한 자리에서 움직이지 않고 생각하며 해결해 나갑니다. 또한
+                                디자인툴들을 능숙하게 사용하고 HTML, CSS, JavaScript를 통해 구현해 내고 있습니다. <br>
+                                <br>
+                                저는 디자인 프로세스를 좋아하며, 문제 해결 능력과 협업 능력을 중요시 여깁니다. 함께 일하면서 더 
+                                나은 경험을 만들어 나가고 싶습니다. 감사합니다!
+                            </p>
                         </div>
-                    </div>
+                </div>
+                </div> <!-- about-me -->
+
+                <div class="skill" id="skill">
+                    <!-- <h2>Skill</h2> -->
+                    <div class="skill-box">
+
+                        <div class="skill-item ai">
+                            <img src="./images/ai.png" alt="일러스트" class="ai-img icon">
+                            <div class="overlay">90%</div>
+                        </div>
+                        <div class="modal-box">
+                            <div class="modal ai-modal hidden">
+                                <h2>90%</h2>
+                                <p>
+                                    일러스트를 능숙하게 활용하여 창의적이고 독창적인 디자인을 구현할 수 있습니다.</p>
+                                <button class="close">닫기</button>
+                            </div>
+                        </div>
+
+                        <div class="skill-item pr">
+                            <img src="./images/pr.png" alt="프리미어프로" class="pr-img icon">
+                            <div class="overlay">70%</div>
+                        </div>
+                        <div class="modal-box">
+                            <div class="modal pr-modal hidden">
+                                <h2>70%</h2>
+                                <p>멀티 캠 편집과 자막 삽입 등 간단한 영상 편집을 할 수 있습니다.</p>
+                                <button class="close">닫기</button>
+                            </div>
+                        </div>
+                    
+
+                        <div class="skill-item html">
+                            <img src="./images/html.png" alt="html" class="html-img icon">
+                            <div class="overlay">90%</div>
+                        </div>
+                        <div class="modal-box">
+                            <div class="modal html-modal hidden">
+                                <h2>90%</h2>
+                                <p>HTML의 다양한 태그와 기능을 정확하게 이해하고, 구조를 잘 짜서 웹 페이지를 구현할 수 있습니다.</p>
+                                <button class="close">닫기</button>
+                            </div>
+                        </div>
+
+                        <div class="skill-item sass">
+                            <img src="./images/sass.png" alt="sass" class="sass-img icon">
+                            <div class="overlay">90%</div>
+                        </div>
+                        <div class="modal-box">
+                            <div class="modal sass-modal hidden">
+                                <h2>90%</h2>
+                                <p>Sass의 다양한 기능을 잘 알고 있으며, 효율적인 CSS 작성과 코드 재사용을 위해 능숙하게 활용할 수 있습니다.</p>
+                                <button class="close">닫기</button>
+                            </div>
+                        </div>
+
+                        <div class="skill-item js">
+                            <img src="./images/js.png" alt="자바스크립트" class="js-img icon" >
+                            <div class="overlay">50%</div>
+                        </div>
+                        <div class="modal-box">
+                            <div class="modal js-modal hidden">
+                                <h2>50%</h2>
+                                <p>자바스크립트의 기본 문법을 이해하고 있어서,개발에서 필요한 기본적인 기능들을 구현할 수 있습니다.</p>
+                                <button class="close">닫기</button>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item ps">
+                            <img src="./images/ps.png" alt="포토샵" class="ps-img icon">
+                            <div class="overlay">90%</div>
+                        </div>
+                        <div class="modal-box">
+                            <div class="modal ps-modal hidden">
+                                <h2>90%</h2>
+                                <p>포토샵의 다양한 기능들을 잘 알고 있으며, 프로젝트에서 필요한 이미지 편집 및 디자인 작업을 능숙하게 수행할 수 있습니다</p>
+                                <button class="close">닫기</button>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item jquery">
+                            <img src="./images/jquery.png" alt="제이쿼리" class="jquery-img icon">
+                            <div class="overlay">50%</div>
+                        </div>
+                        <div class="modal-box">
+                            <div class="modal jquery-modal hidden">
+                                <h2>50%</h2>
+                                <p>제이쿼리의 기본적인 문법과 기능을 숙지하고 있어서, 웹 개발 프로젝트에서 필요한 간단한 인터랙티브 요소들을 구현할 수 있습니다.</p>
+                                <button class="close">닫기</button>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item react">
+                            <img src="./images/react.png" alt="리액트" class="react-img icon">
+                            <div class="overlay">30%</div>
+                        </div>
+                        <div class="modal-box">
+                            <div class="modal react-modal hidden">
+                                <h2>30%</h2>
+                                <p>
+                                    리액트의 기본적인 문법을 보고 이해할 수 있으며, 간단한 컴포넌트를 작성하고 상태 관리를 할 수 있습니다.</p>
+                                <button class="close">닫기</button>
+                            </div>
+                        </div>
+                        
+
+                        <div class="skill-item git">
+                        <img src="./images/git.png" alt="깃" class="git-img icon"> 
+                            <div class="overlay">50%</div>
+                        </div> 
+                        <div class="modal-box">
+                            <div class="modal git-modal hidden">
+                                <h2>50%</h2>
+                                <p>
+                                    깃(Git)의 기본적인 기능들을 잘 사용할 수 있습니다. 저장소 생성,커밋, 브랜치 관리 등의 작업을 수행할 수 있으며, 기본적인 충돌 해결과 협업을 위한 기능도 사용할 수있습니다</p>
+                                <button class="close">닫기</button>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item css">
+                            <img src="./images/css.png" alt="css" class="css-img icon"> 
+                            <div class="overlay">90%</div>
+                        </div>
+                        <div class="modal-box">
+                            <div class="modal css-modal hidden">
+                                <h2>90%</h2>
+                                <p>
+                                    CSS로 다양한 애니메이션과 효과를 구현하며, 복잡한 레이아웃도 설계할 수 있습니다.</p>
+                                <button class="close">닫기</button>
+                            </div>
+                        </div>
+                            
+                        <div class="skill-item figma">
+                            <img src="./images/figma.png" alt="피그마" class="figma-img icon">
+                            <div class="overlay">90%</div>
+                        </div>
+                        <div class="modal-box">
+                            <div class="modal figma-modal hidden">
+                                <h2>90%</h2>
+                                <p>피그마의 다양한 기능을 잘 숙지하고, 능숙하게 활용할 수 있습니다.</p>
+                                <button class="close">닫기</button>
+                            </div>
+                        </div>
+                            
+                        <div class="skill-item ae">
+                            <img src="./images/ae.png" alt="애프터이펙트" class="ae-img icon">
+                            <div class="overlay">70%</div>
+                        </div>
+                        <div class="modal-box">
+                            <div class="modal ae-modal hidden">
+                                <h2>70%</h2>
+                                <p>
+                                    간단한 모션 그래픽과 영상 제작을 할 수 있습니다. 다양한 효과와 애니메이션을 추가하여 콘텐츠를 만들어낼 수있습니다.</p>
+                                <button class="close">닫기</button>
+                            </div>
+                        </div>
+                    </div> <!-- skill-box -->
+                </div> <!-- skill --> 
+
+                <div class="portfolio" id="portfolio">
+                    <!-- <h2>Portfolio</h2> -->
+                    <div class="po-box">
+                        <div class="b1-b2">
+                            <div class="b1">
+                                <div class="box1 box">
+                                    <div class="inner-box1 inner-box">
+                                        <div class="box1-txt box-txt" >
+                                            <h3>개인포트폴리오</h3>
+                                            <p>
+                                                작업기간 : 30일 <br>
+                                                인원 : 1명
+                                            </p>
+                                        </div>
+                                    </div> <!-- inner-box1 -->
+                                </div> <!-- box1 -->
+                                <div class="box-button box-button1">
+                                    <a href="index.html">링크</a>
+                                    <a href="https://www.figma.com/design/3kENI6CJGcTMzbAYUmCCMp/%EA%B0%9C%EC%9D%B8%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4-%EB%94%94%EC%9E%90%EC%9D%B8-%EA%B0%80%EC%9D%B4%EB%93%9C?node-id=0-1&t=Wlx7hes85MAYppSS-0" target="_blank">가이드</a>
+                                    <a href="https://github.com/Leesungmin98/portfolio/tree/master" target="_blank">깃허브</a>
+                                </div>
+                            </div> <!-- b1 -->
+
+                            <div class="b2">
+
+                                <div class="box2 box">
+                                    <div class="inner-box2 inner-box">
+                                        <img src="./images/Seoul284.png" alt="문화역서울 284">
+                                        <div class="box2-txt box-txt">
+                                            <h3>문화역서울 284</h3>
+                                            <p>
+                                                작업기간 : 30일 <br>
+                                                인원 : 3명
+                                            </p>
+                                        </div>
+                                    </div> <!-- inner-box2 -->
+                                </div> <!-- box2 -->
+                                <div class="box-button box-button2">
+                                    <a href="http://placidus00.dothome.co.kr/Seoul284/index.html" target="_blank">링크</a>
+                                    <a href="https://www.figma.com/design/6HkPFUMteHW5sbvtOUtRq6/%EC%A1%B0%EB%B3%84%EA%B3%BC%EC%A0%9C-%EB%94%94%EC%9E%90%EC%9D%B8%EA%B0%80%EC%9D%B4%EB%93%9C?node-id=0-1&t=MplJqV61noONe86C-0">가이드</a>
+                                    <a href="https://github.com/jeonghae98/Seoul284/tree/master" target="_blank">깃허브</a>
+                                    <a href="https://www.figma.com/design/LOjjB7CCdCIDUe84qdgki3/%EC%A1%B0%EB%B3%84%EA%B3%BC%EC%A0%9C-%EA%B8%B0%ED%9A%8D%EC%84%9C?node-id=0-1&t=PX6jPgNes93xPmkV-0">기획서</a>
+
+                                </div>
+                            </div> <!-- b2 -->
+                        </div> <!-- b1-b2 -->
+
+                        <div class="b3-b4">
+                            <div class="b3">
+                                <div class="box3 box">
+                                    <div class="inner-box3 inner-box">s
+                                        <img src="./images/vips.png" alt="빕스">
+                                        <div class="box3-txt box-txt" >
+                                            <h3>VIPS 리뉴얼페이지</h3>
+                                            <p>
+                                                작업기간 : 30일 <br>
+                                                인원 : 1명
+                                            </p>
+                                        </div>
+                                    </div> <!-- inner-box1 -->
+                                </div> <!-- box1 -->
+                                <div class="box-button box-button3">
+                                    <a href="http://placidus00.dothome.co.kr/vips/index.html" target="_blank">링크</a>
+                                    <a href="https://www.figma.com/design/GtCEjxjo8LxhvzKBxl7MK9/%EB%A6%AC%EB%89%B4%EC%96%BC-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%94%94%EC%9E%90%EC%9D%B8%EA%B0%80%EC%9D%B4%EB%93%9C?node-id=0-1&t=E4jUhQkSQuQkbvSH-0">가이드</a>
+                                    <a href="https://github.com/Leesungmin98/vips" target="_blank">깃허브</a>
+                                </div>
+                            </div> <!-- b1 -->
+
+                            <div class="b4">
+
+                                <div class="box4 box">
+                                    <div class="inner-box4 inner-box">
+                                        
+                                        <div class="box4-txt box-txt">
+                                            <h3>리뉴얼 페이지2</h3>
+                                            <p>
+                                                작업기간 : 30일 <br>
+                                                인원 : 1명
+                                            </p>
+                                        </div>
+                                    </div> <!-- inner-box2 -->
+                                </div> <!-- box2 -->
+                                <div class="box-button box-button4">
+                                    <a href="#">링크</a>
+                                    <a href="#">가이드</a>
+                                    <a href="#">깃허브</a>
+                                </div>
+                            </div> <!-- b4 -->
+                        </div> <!-- b3-b4 -->
+                    </div> <!-- po-box -->
+
+                    <div class="slider">
+                        <div class="slider-inner">
+                            <div class="slider-item">
+                                <div class="slide-box box">
+                                    <video src="./videos/video1.mp4" type="video/mp4" controls></video>
+                                    <div class="inner-box5 inner-box">
+                                    </div> 
+                                </div> 
+                                <div class="box-txt">
+                                    <h3>29cm 소개영상</h3>
+                                    <p>작업기간 : 5일</p>
+                                    <p>인원 : 1명</p>
+                                </div>
+                            </div>
                 
-
-                    <div class="skill-item html">
-                        <img src="./images/html.png" alt="html" class="html-img icon">
-                        <div class="overlay">90%</div>
-                    </div>
-                    <div class="modal-box">
-                        <div class="modal html-modal hidden">
-                            <h2>90%</h2>
-                            <p>html의 태그와 기능을 잘 알고 정확하게 구조를 짤 수 있습니다</p>
-                            <button class="close">닫기</button>
-                        </div>
-                    </div>
-
-                    <div class="skill-item sass">
-                        <img src="./images/sass.png" alt="sass" class="sass-img icon">
-                        <div class="overlay">90%</div>
-                    </div>
-                    <div class="modal-box">
-                        <div class="modal sass-modal hidden">
-                            <h2>90%</h2>
-                            <p>sass의 기능을 알고 능숙하게 사용할 수 있습니다</p>
-                            <button class="close">닫기</button>
-                        </div>
-                    </div>
-
-                    <div class="skill-item js">
-                        <img src="./images/js.png" alt="자바스크립트" class="js-img icon" >
-                        <div class="overlay">60%</div>
-                    </div>
-                    <div class="modal-box">
-                        <div class="modal js-modal hidden">
-                            <h2>60%</h2>
-                            <p>자바스크립트의 문법을 알고 사용할 수 있습니다</p>
-                            <button class="close">닫기</button>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-item ps">
-                        <img src="./images/ps.png" alt="포토샵" class="ps-img icon">
-                        <div class="overlay">90%</div>
-                    </div>
-                    <div class="modal-box">
-                        <div class="modal ps-modal hidden">
-                            <h2>90%</h2>
-                            <p>포토샵의 기능들을 알고 능숙하게 사용할 수 있습니다</p>
-                            <button class="close">닫기</button>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-item jquery">
-                        <img src="./images/jquery.png" alt="제이쿼리" class="jquery-img icon">
-                        <div class="overlay">60%</div>
-                    </div>
-                    <div class="modal-box">
-                        <div class="modal jquery-modal hidden">
-                            <h2>60%</h2>
-                            <p>제이쿼리의 문법을 알고 사용할 수 있습니다</p>
-                            <button class="close">닫기</button>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-item react">
-                        <img src="./images/react.png" alt="리액트" class="react-img icon">
-                        <div class="overlay">50%</div>
-                    </div>
-                    <div class="modal-box">
-                        <div class="modal react-modal hidden">
-                            <h2>40%</h2>
-                            <p>리액트의 문법을 보고 이해할 수 있습니다</p>
-                            <button class="close">닫기</button>
-                        </div>
-                    </div>
-                    
-
-                    <div class="skill-item git">
-                    <img src="./images/git.png" alt="깃" class="git-img icon"> 
-                        <div class="overlay">70%</div>
-                    </div> 
-                    <div class="modal-box">
-                        <div class="modal git-modal hidden">
-                            <h2>70%</h2>
-                            <p>깃에 기능들을 사용할 수 있습니다</p>
-                            <button class="close">닫기</button>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-item css">
-                        <img src="./images/css.png" alt="css" class="css-img icon"> 
-                        <div class="overlay">90%</div>
-                    </div>
-                    <div class="modal-box">
-                        <div class="modal css-modal hidden">
-                            <h2>90%</h2>
-                            <p>css로 다양한 애니메이션과 효과들, 레이아웃을 구현할 수 있습니다</p>
-                            <button class="close">닫기</button>
-                        </div>
-                    </div>
-                        
-                    <div class="skill-item figma">
-                        <img src="./images/figma.png" alt="피그마" class="figma-img icon">
-                        <div class="overlay">90%</div>
-                    </div>
-                    <div class="modal-box">
-                        <div class="modal figma-modal hidden">
-                            <h2>90%</h2>
-                            <p>피그마의 기능을 잘 알고 능숙하게 사용 가능합니다</p>
-                            <button class="close">닫기</button>
-                        </div>
-                    </div>
-                        
-                    <div class="skill-item ae">
-                        <img src="./images/ae.png" alt="애프터이펙트" class="ae-img icon">
-                        <div class="overlay">70%</div>
-                    </div>
-                    <div class="modal-box">
-                        <div class="modal ae-modal hidden">
-                            <h2>70%</h2>
-                            <p>간단한 모션그래픽과 영상 제작이 가능합니다</p>
-                            <button class="close">닫기</button>
-                        </div>
-                    </div>
-                 </div> <!-- skill-box -->
-            </div> <!-- skill --> 
-
-            <div class="portfolio" id="portfolio">
-                <h2>Portfolio</h2>
-                <div class="po-box">
-                    <div class="b1-b2">
-                        <div class="b1">
-                            <div class="box1 box">
-                                <div class="inner-box1 inner-box">
-                                    <div class="box1-txt box-txt" >
-                                        <h3>개인포트폴리오</h3>
-                                        <p>
-                                            작업기간 : 30일 <br>
-                                            인원 : 1명
-                                        </p>
-                                    </div>
-                                </div> <!-- inner-box1 -->
-                            </div> <!-- box1 -->
-                            <div class="box-button box-button1">
-                                
-                                <button>가이드</button>
-                                <button>깃허브</button>
-                            </div>
-                        </div> <!-- b1 -->
-
-                        <div class="b2">
-
-                            <div class="box2 box">
-                                <div class="inner-box2 inner-box">
-                                    <img src="./images/Seoul284.png" alt="문화역서울 284">
-                                    <div class="box2-txt box-txt">
-                                        <h3>문화역서울 284</h3>
-                                        <p>
-                                            작업기간 : 30일 <br>
-                                            인원 : 1명
-                                        </p>
-                                    </div>
-                                </div> <!-- inner-box2 -->
-                            </div> <!-- box2 -->
-                            <div class="box-button box-button2">
-                                <button>홈페이지</button>
-                                <button>가이드</button>
-                                <button>깃허브</button>
-                            </div>
-                        </div> <!-- b2 -->
-                    </div> <!-- b1-b2 -->
-
-                    <div class="b3-b4">
-                        <div class="b3">
-                            <div class="box3 box">
-                                <div class="inner-box3 inner-box">
-                                    <img src="./images/vips.png" alt="빕스">
-                                    <div class="box3-txt box-txt" >
-                                        <h3>VIPS 리뉴얼페이지</h3>
-                                        <p>
-                                            작업기간 : 30일 <br>
-                                            인원 : 1명
-                                        </p>
-                                    </div>
-                                </div> <!-- inner-box1 -->
-                            </div> <!-- box1 -->
-                            <div class="box-button box-button3">
-                                <button>홈페이지</button>
-                                <button>가이드</button>
-                                <button>깃허브</button>
-                            </div>
-                        </div> <!-- b1 -->
-
-                        <div class="b4">
-
-                            <div class="box4 box">
-                                <div class="inner-box4 inner-box">
-                                     
-                                    <div class="box4-txt box-txt">
-                                        <h3>ToDo 리스트</h3>
-                                        <p>
-                                            작업기간 : 30일 <br>
-                                            인원 : 1명
-                                        </p>
-                                    </div>
-                                </div> <!-- inner-box2 -->
-                            </div> <!-- box2 -->
-                            <div class="box-button box-button4">
-                                <button>홈페이지</button>
-                                <button>가이드</button>
-                                <button>깃허브</button>
-                            </div>
-                        </div> <!-- b4 -->
-                    </div> <!-- b3-b4 -->
-                </div> <!-- po-box -->
-
-                <div class="slider">
-                    <div class="slider-inner">
-                        <div class="slider-item">
-                            <div class="slide-box box">
-                                <video src="./videos/video1.mp4"></video>
-                                <div class="inner-box5 inner-box">
+                            <div class="slider-item">
+                                <div class="slide-box box">
+                                    <video src="./videos/video2.mp4" type="video/mp4" controls></video>
+                                    <div class="inner-box6 inner-box">
+                                    </div> 
                                 </div> 
+                                <div class="box-txt">
+                                    <h3>아디다스 타이포그래피</h3>
+                                    <p>작업기간 : 5일</p>
+                                    <p>인원 : 1명</p>
+                                </div>
                             </div> 
-                            <div class="box-txt">
-                                <h3>29cm 소개영상</h3>
-                                <p>작업기간 : 5일</p>
-                                <p>인원 : 1명</p>
-                            </div>
-                        </div>
-            
-                        <div class="slider-item">
-                            <div class="slide-box box">
-                                <video src="./videos/video2.mp4"></video>
-                                <div class="inner-box6 inner-box">
-                                </div> 
-                            </div> 
-                            <div class="box-txt">
-                                <h3>아디다스 타이포그래피</h3>
-                                <p>작업기간 : 5일</p>
-                                <p>인원 : 1명</p>
-                            </div>
                         </div> 
                     </div> 
-                </div> 
 
 
-                <div class="design">
+                    <div class="design">
 
-                    <div class="banner-box d-box" >
-                            <div class="banner ds">
-                                <img src="./images/starbucks.png" alt="스타벅스 배너">
-                            </div>
-                        <p>배너 디자인</p>
-                    </div>
-                    <div class="po-modal-box banner-modal-box">
-                        <div class="po-modal banner-modal">
-                            <div class="img-box">
-                                <img src="./images/starbucks.png" alt="스타벅스 배너" >
-                                <img src="./images/sony.png" alt="소니 배너">
-                                <img src="./images/apple.jpg" alt="애플 배너">
-                            </div>
+                        <div class="banner-box d-box" >
+                                <div class="banner ds">
+                                    <img src="./images/starbucks.png" alt="스타벅스 배너">
+                                </div>
+                            <p>배너 디자인</p>
                         </div>
-                        <button class="close-modal">x</button>
-                    </div> 
-                        
-                    <div class="detail-box d-box">
-                            <div class="detail ds">
-                                <img src="./images/beauty.png" alt="상세페이지">
+                        <div class="po-modal-box banner-modal-box">
+                            <div class="po-modal banner-modal">
+                                <div class="img-box">
+                                    <img src="./images/starbucks.png" alt="스타벅스 배너" >
+                                    <div class="img-inner-box">
+                                        <img src="./images/sony.png" alt="소니 배너">
+                                        <img src="./images/apple.jpg" alt="애플 배너">
+                                    </div>
+                                </div>
                             </div>
+                            <button class="close-modal">x</button>
+                        </div> 
                             
-                        <p>상세페이지</p>
-                    </div>
-                    <div class="po-modal-box detail-modal-box">
-                        <div class="po-modal detail-modal">
+                        <div class="detail-box d-box">
+                                <div class="detail ds">
+                                    <img src="./images/beauty.png" alt="상세페이지">
+                                </div>
+                                
+                            <p>상세페이지</p>
+                        </div>
+                        <div class="po-modal-box detail-modal-box">
+                            <div class="po-modal detail-modal">
+                                <div class="img-box">
+                                    <img src="./images/beauty.png" alt="상세페이지 배너" >
+                                    <img src="./images/sofa.png" alt="소파">
+                                </div>
+                            </div>
+                            <button class="close-modal">x</button>
+                        </div> 
+                            
+                        <div class="package-box d-box">
+                                <div class="package ds">
+                                    <img src="./images/package.png" alt="빠다코코넛">
+                                </div> 
+                            <p>패키지 디자인</p>
+                        </div>
+                        <div class="po-modal-box package-modal-box">
+                            <div class="po-modal package-modal">
+                                <div class="img-box">
+                                    <img src="./images/package-group.png" alt="빠다코코넛 모음">
+                                </div>
+                            </div>
+                            <button class="close-modal">x</button>
+                        </div> 
+
+                        <div class="logo-box d-box">
+                                <div class="logo ds">
+            
+                                </div>
+                            <p>로고</p>
+                        </div> 
+                        <div class="po-modal-box logo-modal-box">
+                            <div class="po-modal logo-modal">
+                                <div class="img-box ">
+                                    <img src="./images/beauty.png" alt="상세페이지 배너" >
+                                </div>
+                            </div>
+                            <button class="close-modal">x</button>
+                        </div> 
+
+
+                        <div class="mobile-box d-box">
+                                <div class="mobile ds">
+            
+                                </div>
+                            <p>모바일</p>
+                        </div>
+                        <div class="po-modal-box mobile-modal-box">
+                            <div class="po-modal mobile-modal">
+                                <div class="img-box">
+                                    <img src="./images/beauty.png" alt="상세페이지 배너" >
+                                </div>
+                            </div>
+                            <button class="close-modal">x</button>
+                        </div> 
+
+
+                        <div class="info-box d-box">  
+                                <div class="info ds">
+                                    <img src="./images/info.png" alt="인포그래픽">
+                                </div>
+                            <p>인포그래픽</p>
+                        </div>
+                        <div class="po-modal-box info-modal-box">
+                            <div class="po-modal info-modal">
+                                <div class="img-box">
+                                    <img src="./images/info.png" alt="인포그래픽" class="info-img" >
+                                </div>
+                            </div>
+                            <button class="close-modal">x</button>
+                        </div> 
+
+                        <div class="character-box d-box">  
+                            <div class="character ds">
+                                <img src="./images/character.png" alt="짱구" class="character-img" >
+                            </div>
+                            <p>캐릭터</p>
+                        </div>
+                    <div class="po-modal-box character-modal-box">
+                        <div class="po-modal character-modal">
                             <div class="img-box">
-                                <img src="./images/beauty.png" alt="상세페이지 배너" >
-                                <img src="./images/sofa.png" alt="소파">
-                            </div>
-                        </div>
-                        <button class="close-modal">x</button>
-                    </div> 
-                        
-                    <div class="package-box d-box">
-                            <div class="package ds">
-
-                            </div> 
-                        <p>패키지 디자인</p>
-                    </div>
-                    <div class="po-modal-box package-modal-box">
-                        <div class="po-modal package-modal">
-                            <div class="img-box">
-                                <img src="./images/beauty.png" alt="상세페이지 배너" >
+                                <img src="./images/character.png" alt="짱구" class="character-img" >
                             </div>
                         </div>
                         <button class="close-modal">x</button>
                     </div> 
 
-                    <div class="logo-box d-box">
-                            <div class="logo ds">
-        
-                            </div>
-                        <p>로고</p>
-                    </div> 
-                    <div class="po-modal-box logo-modal-box">
-                        <div class="po-modal logo-modal">
-                            <div class="img-box ">
-                                <img src="./images/beauty.png" alt="상세페이지 배너" >
-                            </div>
-                        </div>
-                        <button class="close-modal">x</button>
-                    </div> 
+                </div> <!-- design -->
+                    
+                </div> <!-- portfolio -->
+            </div> <!-- container -->
 
-
-                    <div class="mobile-box d-box">
-                            <div class="mobile ds">
-        
-                            </div>
-                        <p>모바일</p>
-                    </div>
-                    <div class="po-modal-box mobile-modal-box">
-                        <div class="po-modal mobile-modal">
-                            <div class="img-box">
-                                <img src="./images/beauty.png" alt="상세페이지 배너" >
-                            </div>
-                        </div>
-                        <button class="close-modal">x</button>
-                    </div> 
-
-
-                    <div class="info-box d-box">  
-                            <div class="info ds">
-                                <img src="./images/info.png" alt="인포그래픽">
-                            </div>
-                        <p>인포그래픽</p>
-                    </div>
-                    <div class="po-modal-box info-modal-box">
-                        <div class="po-modal info-modal">
-                            <div class="img-box">
-                                <img src="./images/info.png" alt="인포그래픽" class="info-img" >
-                            </div>
-                        </div>
-                        <button class="close-modal">x</button>
-                    </div> 
-
-             </div> <!-- design -->
+            <div class="contact" id="contact">
+                <div class="bg-img-box">
+                    <img src="./images/sea-bottom.png" alt="바다" class="sea">
                 
-            </div> <!-- portfolio -->
-        </div> <!-- container -->
-
-        <div class="contact" id="contact">
-            <div class="bg-img-box">
-                <img src="./images/sea-bottom.png" alt="바다" class="sea">
-               
+                </div>
+                <div class="contact-box">
+                    <h2>Contact</h2>
+                    <p>E-mail : cjrdl22@naver.com</p>
+                    <p>Phone : 010-5766-8428</p>
+                </div>
+                <img src="./images/eye.png" alt="눈1" class="eye1">
+                <img src="./images/eye.png" alt="눈2" class="eye2">
             </div>
-            <div class="contact-box">
-                <h2>Contact</h2>
-                <p>E-mail : cjrdl22@naver.com</p>
-                <p>Phone : 010-5766-8428</p>
-            </div>
-            <img src="./images/eye.png" alt="눈1" class="eye1">
-            <img src="./images/eye.png" alt="눈2" class="eye2">
-        </div>
-        
-    </section> <!-- main-bg -->
-</main>
-<!-- -------------------------------------------- -->
+            
+        </section> <!-- main-bg -->
+    </main> <!-- main -->
 
-<footer>
-       
-    
-</footer>
-
-<script src="./js/slider.js"></script>
+    <footer>
+        <h2>성민이의 포트폴리오</h2>
+    </footer>
+    <script src="./js/slider.js"></script>
 </body>
 </html>

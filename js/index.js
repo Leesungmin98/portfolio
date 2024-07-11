@@ -3,16 +3,16 @@ $(function() {
 
     
     $(document).ready(function() {
-        // 스킬 아이템 클릭 시 모달 열기
+        
         $('.skill-item').click(function() {
             var modalClass = $(this).attr('class').split(' ')[1] + '-modal';
-            // 모든 모달 숨기기
+           
             $('.modal').addClass('hidden');
-            // 클릭한 스킬 아이템에 해당하는 모달 열기
+            
             $('.' + modalClass).removeClass('hidden');
         });
     
-        // 닫기 버튼 클릭 시 모달 닫기
+        
         $('.close').click(function() {
             $(this).closest('.modal').addClass('hidden');
         });
@@ -27,7 +27,7 @@ $(function() {
 
 $(document).ready(function() {
     
-    // 클릭 이벤트
+  
     $('.info-box').click(function() {
         openModal('.info-modal-box');
     });
@@ -52,6 +52,10 @@ $(document).ready(function() {
         openModal('.banner-modal-box');
     });
 
+    $('.character-box').click(function() {
+        openModal('.character-modal-box');
+    });
+
     // 닫기 버튼
     $('.close-modal').click(function() {
         closeModal();
@@ -67,7 +71,7 @@ $(document).ready(function() {
     // 모달 닫기
     function closeModal() {
         $('.close-modal').css('display', 'none');
-        $('.info-modal-box, .logo-modal-box, .mobile-modal-box, .package-modal-box, .detail-modal-box, .banner-modal-box').css('bottom', '-100%');
+        $('.info-modal-box, .character-modal-box, .logo-modal-box, .mobile-modal-box, .package-modal-box, .detail-modal-box, .banner-modal-box').css('bottom', '-100%');
         $('body').css('overflow', 'auto');
     }
 });
@@ -79,7 +83,7 @@ $(function() {
         $(this).toggleClass('active');
         $('#fullscreen').toggleClass('open');
 
-        // PC 버전이 아닌 경우에만 body의 오버플로우 스타일을 변경
+        
         if (!isPcVersion()) {
             if (!$('#fullscreen').hasClass('open')) {
                 $('body').css('overflow', 'auto');
@@ -89,16 +93,16 @@ $(function() {
         }
     });
 
-    // PC 버전인지 확인하는 함수
+    // PC 
     function isPcVersion() {
         return window.innerWidth >= 768;
     }
 
-    // mobile-menu의 링크를 클릭했을 때 fullscreen을 닫음
+  
     $('.mobile-menu a').click(function() {
         $('#toggle').removeClass('active');
         $('#fullscreen').removeClass('open');
-        $('body').css('overflow', 'auto'); // body의 overflow를 다시 auto로 설정
+        $('body').css('overflow', 'auto'); 
     });
 });
 
@@ -108,7 +112,7 @@ $(function() {
 $(function() {
     const gnbA = $('.mobile-menu > li > a');
     gnbA.click(function() {    
-        const target = $(this).attr('href'); // 메뉴를 클릭했을 때 해당 섹션의 ID (예: #m2)
+        const target = $(this).attr('href');
         $('html').animate({ scrollTop: $(target).offset().top }, 1000);
         e.preventDefault();
     });
@@ -116,7 +120,7 @@ $(function() {
     const gnbB = $('.pc-menu > li > a');
     gnbB.click(function() {
         
-        const target = $(this).attr('href'); // 메뉴를 클릭했을 때 해당 섹션의 ID (예: #m2)
+        const target = $(this).attr('href'); 
         $('html').animate({ scrollTop: $(target).offset().top }, 1000);
        e.preventDefault();
     });
@@ -125,16 +129,15 @@ $(function() {
 //////////////////////////////////////////////////////////////////////////////////
 // 탑 버튼 
 $(function(){
-    // scrollTop() 의 위치가 200을 초과하면, top-bt가 서서히 드러남
-    // 200을 초과하지 않으면 서서히 사라짐.
-    $(window).scroll(function() { // 스크롤이 되면,
+   
+    $(window).scroll(function() {
          if ($(this).scrollTop() > 200) {
             $('#top-bt').fadeIn();
          } else {
             $('#top-bt').fadeOut();
          }
     })
-    // top-bt를 클릭하면 scollTop의 위치가 0으로 부드럽게 문서가 이동
+   
     $('#top-bt').click(function(e) {
         e.preventDefault(); // 버블링 금지
         $('html').animate({ scrollTop:0 }, 300);

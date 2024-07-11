@@ -2,36 +2,32 @@ let slider = document.querySelector('.slider');
 let innerSlider = document.querySelector('.slider-inner');
 
 let pressed = false;
-let startx;
+let startX;
 let x;
 
-// 모바일과 PC 모두에서 동작할 수 있도록 이벤트 처리
 slider.addEventListener('mousedown', handleStart);
-slider.addEventListener('touchstart', handleStart);
+slider.addEventListener('touchstart', handleStart, {passive: true});
 
-slider.addEventListener('mouseenter', (e) => {
+slider.addEventListener('mouseenter', () => {
     slider.style.cursor = 'grab';
 });
 
-// 모바일과 PC 모두에서 동작할 수 있도록 이벤트 처리
 slider.addEventListener('mouseup', handleEnd);
+slider.addEventListener('mouseleave', handleEnd);
 slider.addEventListener('touchend', handleEnd);
 
-// 모바일과 PC 모두에서 동작할 수 있도록 이벤트 처리
 slider.addEventListener('mousemove', handleMove);
-slider.addEventListener('touchmove', handleMove);
+slider.addEventListener('touchmove', handleMove, {passive: true});
+
+let rafId = null;
 
 function handleStart(e) {
     pressed = true;
-    if (e.type === 'touchstart') {
-        startx = e.touches[0].clientX - innerSlider.offsetLeft;
-    } else {
-        startx = e.offsetX - innerSlider.offsetLeft;
-    }
+    startX = (e.type === 'touchstart') ? e.touches[0].clientX - getTranslateX() : e.clientX - getTranslateX();
     slider.style.cursor = 'grabbing';
 }
 
-function handleEnd(e) {
+function handleEnd() {
     pressed = false;
     slider.style.cursor = 'grab';
 }
@@ -39,31 +35,41 @@ function handleEnd(e) {
 function handleMove(e) {
     if (!pressed) return;
     e.preventDefault();
-    if (e.type === 'touchmove') {
-        x = e.touches[0].clientX;
-    } else {
-        x = e.offsetX;
+    x = (e.type === 'touchmove') ? e.touches[0].clientX : e.clientX;
+    
+    if (rafId) {
+        cancelAnimationFrame(rafId);
     }
-    innerSlider.style.left = `${x - startx}px`;
+    
+    rafId = requestAnimationFrame(() => {
+        updatePosition(x - startX);
+    });
+}
+
+function updatePosition(position) {
+    innerSlider.style.transform = `translateX(${position}px)`;
     checkBoundary();
 }
 
-function checkBoundary() {
-    let outer = slider.getBoundingClientRect();
-    let inner = innerSlider.getBoundingClientRect();
+function getTranslateX() {
+    const style = window.getComputedStyle(innerSlider);
+    const matrix = new WebKitCSSMatrix(style.transform);
+    return matrix.m41;
+}
 
-    // Media Query: Adjust behavior based on screen width
-    if (window.innerWidth < 768) { // For mobile devices
-        if (parseInt(innerSlider.style.left) > 0) {
-            innerSlider.style.left = '0px';
-        } else if (inner.right < outer.right) {
-            innerSlider.style.left = `-${inner.width - outer.width + 38}px`;
-        }
-    } else { // For desktop (assuming screen width >= 768px)
-        if (parseInt(innerSlider.style.left) > 0) {
-            innerSlider.style.left = '0px';
-        } else if (inner.right < outer.right) {
-            innerSlider.style.left = `-${inner.width - outer.width}px`;
-        }
+function checkBoundary() {
+    const outer = slider.getBoundingClientRect();
+    const inner = innerSlider.getBoundingClientRect();
+    
+    const currentTranslateX = getTranslateX();
+    
+    if (currentTranslateX > 0) {
+        updatePosition(0);
+    } else if (inner.right < outer.right) {
+        updatePosition(outer.width - inner.width);
     }
 }
+
+////////////////////////////////////////////
+
+
