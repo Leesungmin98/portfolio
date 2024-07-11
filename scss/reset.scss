@@ -64,11 +64,15 @@ footer {
 
 @font-face {
     font-family: 'recipekorea';
-    src: local('recipekorea'), local('crunch chips'),
+    src: local('recipekorea'), 
          url('../font/Recipekorea 레코체 FONT.otf') format('opentype'),
          url('../font/Recipekorea 레코체 FONT.ttf') format('truetype'),
-         url('../font/Crunch Chips-3D.otf') format('opentype'),
-         url('../font/Crunch Chips.otf') format('opentype');
+       
 }
 
-
+@font-face {
+    font-family: 'crunch chips';
+    src:local('crunch chips'),
+        url('../font/Crunch Chips-3D.otf') format('opentype'),
+        url('../font/Crunch Chips.otf') format('opentype');
+}
