@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'recipekorea';
+    src: local('recipekorea'), 
+         url('../font/Recipekorea 레코체 FONT.otf') format('opentype'),
+         url('../font/Recipekorea 레코체 FONT.ttf') format('truetype'),
+       
+}
+
+@font-face {
+    font-family: 'crunch chips';
+    src:local('crunch chips'),
+        url('../font/Crunch Chips.otf') format('opentype');
+}
+
 * {
     box-sizing: border-box;
     -webkit-user-select: none;
@@ -62,17 +76,3 @@ footer {
     display: block;
 }
 
-@font-face {
-    font-family: 'recipekorea';
-    src: local('recipekorea'), 
-         url('../font/Recipekorea 레코체 FONT.otf') format('opentype'),
-         url('../font/Recipekorea 레코체 FONT.ttf') format('truetype'),
-       
-}
-
-@font-face {
-    font-family: 'crunch chips';
-    src:local('crunch chips'),
-        url('../font/Crunch Chips-3D.otf') format('opentype'),
-        url('../font/Crunch Chips.otf') format('opentype');
-}
