@@ -1367,7 +1367,7 @@ main .main-bg .container .about-me .submarin-atxt .atxt strong {
 main .main-bg .container .about-me .submarin-atxt .atxt p {
   text-align: left;
   margin-bottom: 5%;
-  font-size: 3.3vw;
+  font-size: 4vw;
   font-weight: 300;
   color: #000000;
 }
@@ -1569,6 +1569,7 @@ main .main-bg .container .skill .skill-box .modal-box .modal {
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .skill .skill-box .modal-box .modal {
     width: 60%;
+    height: 60%;
   }
 }
 main .main-bg .container .skill .skill-box .modal-box .modal h2 {
@@ -1579,6 +1580,11 @@ main .main-bg .container .skill .skill-box .modal-box .modal h2 {
   font-size: 12vw;
   text-align: center;
   padding: 0;
+}
+@media only screen and (min-width: 1024px) {
+  main .main-bg .container .skill .skill-box .modal-box .modal h2 {
+    font-size: 5rem;
+  }
 }
 main .main-bg .container .skill .skill-box .modal-box .modal p {
   width: 80%;
@@ -1613,6 +1619,11 @@ main .main-bg .container .skill .skill-box .modal-box .modal .close {
 }
 main .main-bg .container .skill .skill-box .modal-box .modal .close:hover {
   background-color: #93E4FF;
+}
+@media only screen and (min-width: 1024px) {
+  main .main-bg .container .skill .skill-box .modal-box .modal .close {
+    font-size: 1.5rem;
+  }
 }
 main .main-bg .container .skill .skill-box .modal-box .hidden {
   display: none;

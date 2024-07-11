@@ -1396,7 +1396,7 @@ main {
                         p {
                             text-align: left;
                             margin-bottom: 5%;
-                            font-size: 3.3vw;
+                            font-size: 4vw;
                             font-weight: 300;
                             color: #000000;
                             @include responsive(large-screens) {
@@ -1601,7 +1601,7 @@ main {
                             border-radius: 5px;
                             z-index: 1000; /* z-index 추가 */
                             @include responsive(large-screens) {
-                                width: 60%;
+                                width: 60%; height:60%;
                             }
                             h2 {
                                 position: absolute; top: 20%; left: 50%;
@@ -1609,7 +1609,9 @@ main {
                                 font-size: 12vw;  
                                 text-align: center;
                                 padding: 0;
-                                
+                                @include responsive(large-screens) {
+                                    font-size: 5rem; 
+                                }
                               
                             }
                             p {
@@ -1638,6 +1640,10 @@ main {
                                 &:hover {
                                     background-color: #93E4FF;
                                 }
+                                @include responsive(large-screens) {
+                                    font-size: 1.5rem; 
+                                }
+                              
                             }
                         }
                         .hidden {
