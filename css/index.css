@@ -1027,7 +1027,7 @@ main .main-bg .fishs .fish4-box .fish4-2 {
 }
 main .main-bg .buble {
   position: absolute;
-  z-index: 50;
+  z-index: 0;
   width: 100px;
   animation-name: buble-move;
   animation-iteration-count: infinite;
