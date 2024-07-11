@@ -1287,7 +1287,7 @@ main .main-bg .buble14 {
 main .main-bg .container {
   width: 100%;
   height: 100%;
-  max-width: 1580px;
+  max-width: 1560px;
   margin: auto;
 }
 main .main-bg .container h2 {
@@ -2334,6 +2334,9 @@ main .main-bg .container .portfolio .design .logo-box {
 main .main-bg .container .portfolio .design .logo-box .logo {
   overflow: hidden;
   background-size: cover;
+}
+main .main-bg .container .portfolio .design .logo-box .logo img {
+  width: 200%;
 }
 main .main-bg .container .portfolio .design .logo-box .logo img:hover {
   animation-name: detail;

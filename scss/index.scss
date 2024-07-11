@@ -1323,7 +1323,7 @@ main {
         .container {
             width: 100%;
             height: 100%;
-            max-width: 1580px;
+            max-width: 1560px;
             margin: auto;
             h2 {
                 padding: 200px 0 50px 0;
@@ -2410,6 +2410,7 @@ main {
                             overflow: hidden;
                             background-size: cover;
                             img {
+                                width: 200%; // 다시 수정할 것!!! 임시 사진
                                 &:hover {
                                     animation-name: detail;
                                     animation-timing-function: ease-in-out;
