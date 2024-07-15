@@ -444,7 +444,6 @@ header .container {
   height: 100%;
   max-width: 1580px;
   margin: auto;
-  /* 키프레임으로 메뉴들이 나타날때 효과를 줌 */
 }
 header .container h1 {
   position: absolute;
@@ -486,13 +485,21 @@ header .container .logo-btn-screen {
     border-radius: 50px;
   }
 }
-header .container .logo-btn-screen .header-logo h2 {
+header .container .logo-btn-screen .header-logo a {
+  cursor: pointer;
+}
+header .container .logo-btn-screen .header-logo a h2 {
   color: #00A3A0;
   font-size: 1.5rem;
   font-family: "crunch chips";
 }
 @media only screen and (min-width: 1024px) {
-  header .container .logo-btn-screen .header-logo h2 {
+  header .container .logo-btn-screen .header-logo a h2 {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    transform: translate(-50%);
+    z-index: 100000;
     font-size: 1.7rem;
   }
 }
@@ -705,9 +712,13 @@ main .main-bg #top-bt {
   width: 15%;
   height: auto;
   margin-right: 20px;
-  z-index: 998;
+  z-index: 20000;
   text-align: center;
   cursor: pointer;
+}
+main .main-bg #top-bt:hover {
+  transform: scale(1.2);
+  color: #ffffff;
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg #top-bt {
@@ -1370,6 +1381,7 @@ main .main-bg .container .about-me .submarin-atxt .atxt p {
   font-size: 4vw;
   font-weight: 300;
   color: #000000;
+  line-height: 155%;
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .about-me .submarin-atxt .atxt p {
@@ -1410,6 +1422,10 @@ main .main-bg .container .about-me .submarin-atxt .atxt p .resolution {
     font-size: 20px;
   }
 }
+main .main-bg .container .skill {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
 main .main-bg .container .skill .skill-box {
   width: 90%;
   margin: auto;
@@ -1418,7 +1434,7 @@ main .main-bg .container .skill .skill-box {
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .skill .skill-box {
     position: relative;
-    height: 400px;
+    height: 550px;
   }
 }
 main .main-bg .container .skill .skill-box .skill-item {
@@ -1529,7 +1545,7 @@ main .main-bg .container .skill .skill-box .skill-item .figma-img {
   }
 }
 main .main-bg .container .skill .skill-box .skill-item .ae-img {
-  width: 250vw;
+  width: 20vw;
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .skill .skill-box .skill-item .ae-img {
@@ -1633,7 +1649,7 @@ main .main-bg .container .skill .skill-box .ai {
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .skill .skill-box .ai {
-    transform: translateX(50%) translateY(-300%);
+    transform: translateX(50%) translateY(-200%);
   }
 }
 main .main-bg .container .skill .skill-box .pr {
@@ -1641,7 +1657,7 @@ main .main-bg .container .skill .skill-box .pr {
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .skill .skill-box .pr {
-    transform: translateX(600%) translateY(-200%);
+    transform: translateX(600%) translateY(-100%);
   }
 }
 main .main-bg .container .skill .skill-box .html {
@@ -1657,7 +1673,7 @@ main .main-bg .container .skill .skill-box .sass {
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .skill .skill-box .sass {
-    transform: translateX(300%) translateY(-20%);
+    transform: translateX(300%) translateY(60%);
   }
 }
 main .main-bg .container .skill .skill-box .js {
@@ -1665,7 +1681,7 @@ main .main-bg .container .skill .skill-box .js {
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .skill .skill-box .js {
-    transform: translateX(750%) translateY(-30%);
+    transform: translateX(750%) translateY(70%);
   }
 }
 main .main-bg .container .skill .skill-box .ps {
@@ -1673,7 +1689,7 @@ main .main-bg .container .skill .skill-box .ps {
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .skill .skill-box .ps {
-    transform: translateX(340%) translateY(-220%);
+    transform: translateX(340%) translateY(-120%);
   }
 }
 main .main-bg .container .skill .skill-box .jquery {
@@ -1681,7 +1697,7 @@ main .main-bg .container .skill .skill-box .jquery {
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .skill .skill-box .jquery {
-    transform: translateX(300%) translateY(-220%);
+    transform: translateX(300%) translateY(-120%);
   }
 }
 main .main-bg .container .skill .skill-box .react {
@@ -1689,7 +1705,7 @@ main .main-bg .container .skill .skill-box .react {
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .skill .skill-box .react {
-    transform: translateX(600%) translateY(-120%);
+    transform: translateX(650%) translateY(60%);
   }
 }
 main .main-bg .container .skill .skill-box .git {
@@ -1697,7 +1713,7 @@ main .main-bg .container .skill .skill-box .git {
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .skill .skill-box .git {
-    transform: translateX(800%) translateY(-400%);
+    transform: translateX(800%) translateY(-300%);
   }
 }
 main .main-bg .container .skill .skill-box .css {
@@ -1705,7 +1721,7 @@ main .main-bg .container .skill .skill-box .css {
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .skill .skill-box .css {
-    transform: translateX(350%) translateY(-420%);
+    transform: translateX(350%) translateY(-320%);
   }
 }
 main .main-bg .container .skill .skill-box .figma {
@@ -1713,15 +1729,15 @@ main .main-bg .container .skill .skill-box .figma {
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .skill .skill-box .figma {
-    transform: translateX(550%) translateY(-370%);
+    transform: translateX(550%) translateY(-270%);
   }
 }
 main .main-bg .container .skill .skill-box .ae {
-  transform: translateX(130%) translateY(-370%);
+  transform: translateX(100%) translateY(-360%);
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .skill .skill-box .ae {
-    transform: translateX(70%) translateY(-30%);
+    transform: translateX(70%) translateY(70%);
   }
 }
 main .main-bg .container .portfolio {

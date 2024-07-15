@@ -1,35 +1,33 @@
 
 
-////////////////////////////////////////////
-
 let slider = document.querySelector('.slider');
 let innerSlider = document.querySelector('.slider-inner');
 let pressed = false;
 let startX;
 let x;
 
-slider.addEventListener('mousedown', handleStart);
-slider.addEventListener('touchstart', handleStart, {passive: false});
-slider.addEventListener('mouseenter', () => {
-    slider.style.cursor = 'grab';
+innerSlider.addEventListener('mousedown', handleStart);
+innerSlider.addEventListener('touchstart', handleStart, {passive: false});
+innerSlider.addEventListener('mouseenter', () => {
+    innerSlider.style.cursor = 'grab';
 });
-slider.addEventListener('mouseup', handleEnd);
-slider.addEventListener('mouseleave', handleEnd);
-slider.addEventListener('touchend', handleEnd);
-slider.addEventListener('mousemove', handleMove);
-slider.addEventListener('touchmove', handleMove, {passive: false});
+document.addEventListener('mouseup', handleEnd);
+document.addEventListener('touchend', handleEnd);
+document.addEventListener('mousemove', handleMove);
+document.addEventListener('touchmove', handleMove, {passive: false});
 
 let rafId = null;
 
 function handleStart(e) {
     pressed = true;
     startX = (e.type === 'touchstart') ? e.touches[0].clientX - getTranslateX() : e.clientX - getTranslateX();
-    slider.style.cursor = 'grabbing';
+    innerSlider.style.cursor = 'grabbing';
+    e.preventDefault(); 
 }
 
 function handleEnd() {
     pressed = false;
-    slider.style.cursor = 'grab';
+    innerSlider.style.cursor = 'grab';
 }
 
 function handleMove(e) {

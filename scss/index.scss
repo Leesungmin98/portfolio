@@ -437,12 +437,20 @@ header {
             border-radius: 50px;
         }
         .header-logo {
-            h2 {
-                color: #00A3A0;
-                font-size: 1.5rem;
-                font-family: 'crunch chips';
-                @include responsive(large-screens) {
-                    font-size: 1.7rem;
+            a {
+                cursor: pointer;
+                h2 {
+                    
+                    color: #00A3A0;
+                    font-size: 1.5rem;
+                    font-family: 'crunch chips';
+                    @include responsive(large-screens) {
+                        position: absolute;
+                        top: 30%; left: 5%;
+                        transform: translate(-50%);
+                        z-index: 100000;
+                        font-size: 1.7rem;
+                    }
                 }
             }
         }
@@ -642,7 +650,6 @@ header {
             }
         }
 
-        /* 키프레임으로 메뉴들이 나타날때 효과를 줌 */
         @keyframes fadeInRight {
         0% {
             opacity: 0;
@@ -683,11 +690,15 @@ main {
             width: 15%;
             height: auto; 
             margin-right: 20px;
-            z-index: 998; 
+            z-index: 20000; 
             text-align: center;   
             cursor: pointer; 
             // background-color: #00A3A0;
-    
+            &:hover {
+                transform: scale(1.2);
+                color: #ffffff;
+            }
+
             @include responsive(large-screens) {
                 width: 5%;
                 margin-right: 50px;
@@ -705,7 +716,8 @@ main {
                     font-size: 1.5rem;
                 }
             }
-            }
+        }
+
 
         .fishs {
             position: absolute; 
@@ -1399,6 +1411,7 @@ main {
                             font-size: 4vw;
                             font-weight: 300;
                             color: #000000;
+                            line-height: 155%;
                             @include responsive(large-screens) {
                                 font-size: 20px;
                             }
@@ -1437,14 +1450,21 @@ main {
             } //about-me
 
             .skill {
+                margin-top: 100px;
+                margin-bottom: 100px;
+                
+                @include responsive(large-screens) {
+                    
+                    
+                }
                 .skill-box {
                     width: 90%;
                     margin: auto;
                     height: 160vw;
-                    // background-color: #00A3A0;
+                   
                     @include responsive(large-screens) {
                         position: relative;
-                        height: 400px;
+                        height: 550px;
                         // background-color: #F0F0F0;
                     }          
                     .skill-item {
@@ -1558,7 +1578,7 @@ main {
 
                       
                         .ae-img {
-                            width: 250vw;
+                            width: 20vw;
                             @include responsive(large-screens) {
                                 width: 10vw;
                             }
@@ -1656,14 +1676,14 @@ main {
                      
                         @include responsive(large-screens) {
                            
-                            transform: translateX(50%) translateY(-300%);
+                            transform: translateX(50%) translateY(-200%);
                         }
                         
                     }
                     .pr {
                         transform: translateX(70%) translateY(-70%);
                         @include responsive(large-screens) {
-                            transform: translateX(600%) translateY(-200%);
+                            transform: translateX(600%) translateY(-100%);
                          
                         }
                     }
@@ -1677,56 +1697,56 @@ main {
                     .sass {
                         transform: translateX(70%) translateY(-90%);
                         @include responsive(large-screens) {
-                            transform: translateX(300%) translateY(-20%);
+                            transform: translateX(300%) translateY(60%);
                         }
                     }
                     .js {
                         transform: translateX(300%) translateY(-220%);
                      
                         @include responsive(large-screens) {
-                            transform: translateX(750%) translateY(-30%);
+                            transform: translateX(750%) translateY(70%);
                         }
                     }
                     .ps {
                         transform: translateX(130%) translateY(-180%);
                         @include responsive(large-screens) {
-                            transform: translateX(340%) translateY(-220%);
+                            transform: translateX(340%) translateY(-120%);
                         }
                     }
                     .jquery {
                         transform: translateX(110%) translateY(-190%);
                         @include responsive(large-screens) {
-                            transform: translateX(300%) translateY(-220%);
+                            transform: translateX(300%) translateY(-120%);
                         }
                     }
                     .react {
                         transform: translateX(300%) translateY(-370%);
                         @include responsive(large-screens) {
-                            transform: translateX(600%) translateY(-120%);
+                            transform: translateX(650%) translateY(60%);
                         }
                     }
                     .git {
                         transform: translateX(220%) translateY(-310%);
                         @include responsive(large-screens) {
-                            transform: translateX(800%) translateY(-400%);
+                            transform: translateX(800%) translateY(-300%);
                         }
                     }
                     .css {
                         transform: translateX(50%) translateY(-330%);
                         @include responsive(large-screens) {
-                            transform: translateX(350%) translateY(-420%);
+                            transform: translateX(350%) translateY(-320%);
                         }
                     }
                     .figma {
                         transform: translateX(260%) translateY(-350%);
                         @include responsive(large-screens) {
-                            transform: translateX(550%) translateY(-370%);
+                            transform: translateX(550%) translateY(-270%);
                         }
                     }
                     .ae {
-                        transform: translateX(130%) translateY(-370%);
+                        transform: translateX(100%) translateY(-360%);
                         @include responsive(large-screens) {
-                            transform: translateX(70%) translateY(-30%);
+                            transform: translateX(70%) translateY(70%);
                         }
                     }
 
