@@ -2336,6 +2336,25 @@ main .main-bg .container .portfolio .design .character-modal-box .character-moda
     height: 50%;
   }
 }
+@media only screen and (min-width: 1024px) {
+  main .main-bg .container .portfolio .design .mobile-modal-box .mobile-modal .img-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+  }
+}
+main .main-bg .container .portfolio .design .mobile-modal-box .mobile-modal .img-box img {
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (min-width: 1024px) {
+  main .main-bg .container .portfolio .design .mobile-modal-box .mobile-modal .img-box img {
+    width: 13%;
+    height: auto;
+    margin-right: 10px;
+  }
+}
 main .main-bg .container .portfolio .design .banner-box {
   margin-left: 20%;
   cursor: pointer;
@@ -2463,18 +2482,23 @@ main .main-bg .container .portfolio .design .mobile-box .mobile {
   overflow: hidden;
   background-size: cover;
 }
+main .main-bg .container .portfolio .design .mobile-box .mobile img {
+  width: 100%;
+  margin: auto;
+  transform: translateY(-25%);
+}
 main .main-bg .container .portfolio .design .mobile-box .mobile img:hover {
-  animation-name: detail;
+  animation-name: detail11;
   animation-timing-function: ease-in-out;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
 }
-@keyframes detail {
+@keyframes detail11 {
   0% {
-    transform: scale(1);
+    transform: scale(1) translateY(-25%);
   }
   100% {
-    transform: scale(1.2);
+    transform: scale(1.1) translateY(-25%);
   }
 }
 @media only screen and (min-width: 1024px) {

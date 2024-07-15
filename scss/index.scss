@@ -2403,6 +2403,32 @@ main {
                             }
                         }
                     }
+
+                    .mobile-modal-box {
+                        .mobile-modal {
+                            .img-box {
+                               
+                                @include responsive(large-screens) {
+                                    width: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    margin-top: 100px;
+                                    // background-color: #007EA8;
+                                }
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    @include responsive(large-screens) {
+                                        
+                                        width: 13%;
+                                        height: auto;
+                                        margin-right: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
                     
                    
                     //////////////////////////
@@ -2557,19 +2583,22 @@ main {
                             overflow: hidden;
                             background-size: cover;
                             img {
+                                width: 100%;
+                                margin: auto;
+                                transform: translateY(-25%);
                                 &:hover {
-                                    animation-name: detail;
+                                    animation-name: detail11;
                                     animation-timing-function: ease-in-out;
                                     animation-duration: 0.5s;
                                     animation-fill-mode: forwards;
                                     
-                                    @keyframes detail {
+                                    @keyframes detail11 {
                                         0% {
-                                            transform: scale(1); 
+                                            transform: scale(1) translateY(-25%); 
                                             
                                         }
                                         100% {
-                                            transform: scale(1.2); 
+                                            transform: scale(1.1) translateY(-25%); 
                                             
                                         }
                                     }
