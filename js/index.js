@@ -138,35 +138,6 @@ $(document).ready(function() {
 });
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/// 햄버거 메뉴
-$(function() {
-    $('#toggle').click(function() {
-        $(this).toggleClass('active');
-        $('#fullscreen').toggleClass('open');
-
-        
-        if (!isPcVersion()) {
-            if (!$('#fullscreen').hasClass('open')) {
-                $('body').css('overflow', 'auto');
-            } else {
-                $('body').css('overflow', 'hidden');
-            }
-        }
-    });
-
-    // PC 
-    function isPcVersion() {
-        return window.innerWidth >= 768;
-    }
-
-  
-    $('.mobile-menu a').click(function() {
-        $('#toggle').removeClass('active');
-        $('#fullscreen').removeClass('open');
-        $('body').css('overflow', 'auto'); 
-    });
-});
-
 ///////////////////////////////////////////////////////////////////////
 // 스크롤 이동
 
