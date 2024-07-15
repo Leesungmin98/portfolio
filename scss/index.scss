@@ -2372,7 +2372,9 @@ main {
                                     height: 100%;
                                     margin-top: 45%;
                                     @include responsive(large-screens) {
-                                    
+                                        margin: 0 auto;
+                                        width: 50%;
+                                        height: 50%;
                                     }
                                 }
                             }
@@ -2393,7 +2395,9 @@ main {
                                     height: 100%;
                                     margin-top: 45%;
                                     @include responsive(large-screens) {
-                                    
+                                        margin: 0 auto;
+                                        width: 50%;
+                                        height: 50%;
                                     }
                                 }
                             }
