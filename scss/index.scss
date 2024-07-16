@@ -2443,16 +2443,16 @@ main {
                             background-position-y: -50px;
                             
                             img {
-                              
+                                transform: scale(1.1);
                                 &:hover {
-                                    animation-name: detail;
+                                    animation-name: detail123;
                                     animation-timing-function: ease-in-out;
                                     animation-duration: 0.5s;
                                     animation-fill-mode: forwards;
                                     
-                                    @keyframes detail {
+                                    @keyframes detail123 {
                                         0% {
-                                            transform: scale(1); 
+                                            transform: scale(1.1); 
                                         }
                                         100% {
                                             transform: scale(1.2); 
@@ -2478,12 +2478,12 @@ main {
                                 img {
                                    
                                 &:hover {
-                                    animation-name: detail;
+                                    animation-name: detail413;
                                     animation-timing-function: ease-in-out;
                                     animation-duration: 0.5s;
                                     animation-fill-mode: forwards;
                                     
-                                    @keyframes detail {
+                                    @keyframes detail413 {
                                         0% {
                                             transform: scale(1); 
                                             
@@ -2550,20 +2550,22 @@ main {
                             overflow: hidden;
                             background-size: cover;
                             img {
-                                width: 200%; // 다시 수정할 것!!! 임시 사진
+                                width: 190%;
+                                margin: 0 auto;
+                                transform: translatex(-23%);
                                 &:hover {
-                                    animation-name: detail;
+                                    animation-name: detail44;
                                     animation-timing-function: ease-in-out;
                                     animation-duration: 0.5s;
                                     animation-fill-mode: forwards;
                                     
-                                    @keyframes detail {
+                                    @keyframes detail44 {
                                         0% {
-                                            transform: scale(1); 
+                                            transform: scale(1) translatex(-23%); 
                                             
                                         }
                                         100% {
-                                            transform: scale(1.2); 
+                                            transform: scale(1.1) translatex(-22%); 
                                             
                                         }
                                     }
