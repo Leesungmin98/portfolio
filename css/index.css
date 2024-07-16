@@ -1951,7 +1951,7 @@ main .main-bg .container .portfolio .po-box .b1-b2 .b2 .inner-box2 img {
       transform: translateY(0%);
     }
     50% {
-      transform: translateY(-90%);
+      transform: translateY(-89%);
     }
     100% {
       transform: translateY(0%);
