@@ -20,9 +20,6 @@ $(function() {
     });
 
 });
-
-
-//////////////////////////////////////////////////////////////////////////////
 // 포트폴리오-디자인
 
 $(document).ready(function() {
@@ -137,43 +134,3 @@ $(document).ready(function() {
     });
 });
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////
-// 스크롤 이동
-
-$(function() {
-    const gnbA = $('.mobile-menu > li > a');
-    gnbA.click(function() {    
-        const target = $(this).attr('href');
-        $('html').animate({ scrollTop: $(target).offset().top }, 1000);
-        e.preventDefault();
-    });
-
-    const gnbB = $('.pc-menu > li > a');
-    gnbB.click(function() {
-        
-        const target = $(this).attr('href'); 
-        $('html').animate({ scrollTop: $(target).offset().top }, 1000);
-       e.preventDefault();
-    });
-});
-
-//////////////////////////////////////////////////////////////////////////////////
-// 탑 버튼 
-$(function(){
-   
-    $(window).scroll(function() {
-         if ($(this).scrollTop() > 200) {
-            $('#top-bt').fadeIn();
-         } else {
-            $('#top-bt').fadeOut();
-         }
-    })
-   
-    $('#top-bt').click(function(e) {
-        e.preventDefault(); 
-        $('html').animate({ scrollTop:0 }, 300);
-    })
-});
-
-/////////////////////////////////////////////////////////////////////////////////

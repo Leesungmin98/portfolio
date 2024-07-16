@@ -1452,7 +1452,7 @@ main .main-bg .container .skill .skill-box .skill-item:hover .overlay {
   opacity: 1;
 }
 main .main-bg .container .skill .skill-box .skill-item .icon {
-  width: 30vw; /* 이미지 크기 조절 */
+  width: 30vw;
   height: auto;
   display: block;
 }
@@ -1558,7 +1558,7 @@ main .main-bg .container .skill .skill-box .skill-item .overlay {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.7); /* 검은색 반투명 배경 */
+  background: rgba(0, 0, 0, 0.7);
   color: white;
   font-size: 1.5rem;
   font-weight: bold;
@@ -1580,7 +1580,7 @@ main .main-bg .container .skill .skill-box .modal-box .modal {
   background: rgba(255, 255, 255, 0.9);
   padding: 20px;
   border-radius: 5px;
-  z-index: 1000; /* z-index 추가 */
+  z-index: 1000;
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .skill .skill-box .modal-box .modal {
@@ -1892,7 +1892,7 @@ main .main-bg .container .portfolio .po-box .b1-b2 .b1 .inner-box1 img {
     transform: translateY(0%);
   }
   50% {
-    transform: translateY(-83%);
+    transform: translateY(-80%);
   }
   100% {
     transform: translateY(0%);
@@ -2029,7 +2029,7 @@ main .main-bg .container .portfolio .po-box .b3-b4 .b3 .inner-box3 img {
 }
 main .main-bg .container .portfolio .po-box .b3-b4 .b4 .inner-box4 img {
   animation-name: po-move4;
-  animation-duration: 40s;
+  animation-duration: 25s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
@@ -2038,7 +2038,7 @@ main .main-bg .container .portfolio .po-box .b3-b4 .b4 .inner-box4 img {
     transform: translateY(0%);
   }
   50% {
-    transform: translateY(-83%);
+    transform: translateY(-68%);
   }
   100% {
     transform: translateY(0%);
@@ -2050,7 +2050,7 @@ main .main-bg .container .portfolio .po-box .b3-b4 .b4 .inner-box4 img {
       transform: translateY(0%);
     }
     50% {
-      transform: translateY(-90%);
+      transform: translateY(-68%);
     }
     100% {
       transform: translateY(0%);
@@ -2213,7 +2213,7 @@ main .main-bg .container .portfolio .design .ds::after {
 }
 main .main-bg .container .portfolio .design .po-modal-box {
   position: fixed;
-  bottom: -100%; /* 초기에는 숨김 */
+  bottom: -100%;
   left: 0;
   width: 100%;
   height: 100%;
@@ -2246,7 +2246,7 @@ main .main-bg .container .portfolio .design .po-modal-box .po-modal .img-box img
   }
 }
 main .main-bg .container .portfolio .design .po-modal-box .po-modal .img-box img:active {
-  cursor: grabbing; /* 드래그 중인 커서 설정 */
+  cursor: grabbing;
 }
 main .main-bg .container .portfolio .design .po-modal-box .close-modal {
   display: none;
