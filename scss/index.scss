@@ -410,12 +410,28 @@ header {
             font-family: 'crunch chips';
             text-align: center;
             -webkit-text-stroke: 1px white;
+
+            animation-name: title22;
+            animation-timing-function: ease-in;
+            animation-duration: 1s;
+            
             @include responsive(large-screens) {
                 -webkit-text-stroke: 3px white;
                 font-size: 150px;
             } 
             span {
                 color: #00A3A0;
+            }
+
+            @keyframes title22 {
+                0% {
+                    opacity: 0;
+                   
+                }
+                100% {
+                    opacity: 1;
+                   
+                }
             }
         } // h1
 //-----------------------------------------------------------------------------------------//
@@ -452,6 +468,8 @@ header {
                         font-size: 1.7rem;
                     }
                 }
+
+
             }
         }
         

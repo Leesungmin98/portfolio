@@ -455,6 +455,9 @@ header .container h1 {
   font-family: "crunch chips";
   text-align: center;
   -webkit-text-stroke: 1px white;
+  animation-name: title22;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
 }
 @media only screen and (min-width: 1024px) {
   header .container h1 {
@@ -464,6 +467,14 @@ header .container h1 {
 }
 header .container h1 span {
   color: #00A3A0;
+}
+@keyframes title22 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 header .container .logo-btn-screen {
   position: relative;
