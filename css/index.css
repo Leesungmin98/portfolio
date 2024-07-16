@@ -2338,10 +2338,21 @@ main .main-bg .container .portfolio .design .character-modal-box .character-moda
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .portfolio .design .mobile-modal-box .mobile-modal .img-box {
-    width: 100%;
+    width: 45%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  main .main-bg .container .portfolio .design .mobile-modal-box .mobile-modal .img-box .img-box-inner1 {
     display: flex;
-    align-items: center;
-    margin-top: 100px;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  main .main-bg .container .portfolio .design .mobile-modal-box .mobile-modal .img-box .img-box-inner2 {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
   }
 }
 main .main-bg .container .portfolio .design .mobile-modal-box .mobile-modal .img-box img {
@@ -2350,8 +2361,7 @@ main .main-bg .container .portfolio .design .mobile-modal-box .mobile-modal .img
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .portfolio .design .mobile-modal-box .mobile-modal .img-box img {
-    width: 13%;
-    height: auto;
+    width: 50%;
     margin-right: 10px;
   }
 }
