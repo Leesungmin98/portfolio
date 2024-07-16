@@ -2437,6 +2437,27 @@ main {
                             }
                         }
                     }
+
+                    .logo-modal-box {
+                        .logo-modal {
+                            .img-box {
+                                
+                                @include responsive(large-screens) {
+                                
+                                   
+                                
+                                }
+                                img {
+                               
+                                    @include responsive(large-screens) {
+                                        margin: 0 auto;
+                                        width: 90%;
+                                        height: 90%;
+                                    }
+                                }
+                            }
+                        }
+                    }
                     
                     
                    
@@ -2632,16 +2653,16 @@ main {
                             background-size: cover;
                            
                             img {
-                                
+                                transform: scale(1.02);
                                 &:hover {
-                                    animation-name: detail;
+                                    animation-name: detail321;
                                     animation-timing-function: ease-in-out;
                                     animation-duration: 0.5s;
                                     animation-fill-mode: forwards;
                                     
-                                    @keyframes detail {
+                                    @keyframes detail321 {
                                         0% {
-                                            transform: scale(1); 
+                                            transform: scale(1.02); 
                                             
                                         }
                                         100% {
