@@ -2826,11 +2826,15 @@ main {
                     font-size: 5rem;
                 }
             }
-            p {
+            a {
+                color: white;
                 font-size: 3vw;
                 @include responsive(large-screens) {
                     font-size: 3rem;
                 }
+            }
+            a:hover {
+                color: #007EA8;
             }
         }
         

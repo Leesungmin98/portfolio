@@ -2694,13 +2694,17 @@ main .contact .contact-box h2 {
     font-size: 5rem;
   }
 }
-main .contact .contact-box p {
+main .contact .contact-box a {
+  color: white;
   font-size: 3vw;
 }
 @media only screen and (min-width: 1024px) {
-  main .contact .contact-box p {
+  main .contact .contact-box a {
     font-size: 3rem;
   }
+}
+main .contact .contact-box a:hover {
+  color: #007EA8;
 }
 
 footer h2 {
