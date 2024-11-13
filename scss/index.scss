@@ -409,14 +409,14 @@ header {
             font-size: 14vw;
             font-family: 'crunch chips';
             text-align: center;
-            -webkit-text-stroke: 1px white;
+            // -webkit-text-stroke: 1px white;
 
             animation-name: title22;
             animation-timing-function: ease-in;
             animation-duration: 1s;
             
             @include responsive(large-screens) {
-                -webkit-text-stroke: 3px white;
+                // -webkit-text-stroke: 3px white;
                 font-size: 150px;
             } 
             span {
@@ -449,7 +449,7 @@ header {
             justify-content: space-between;
             margin-top: 20px;
             height: 80px;
-            border: 3px solid black;
+            // border: 3px solid black;
             border-radius: 50px;
         }
         .header-logo {
@@ -477,8 +477,8 @@ header {
             position: absolute;
             top: 30%;
             right: 20px;
-            height: $button-height;
-            width: $button-width;
+            height: 20px;
+            width: 35px;
             cursor: pointer;
             z-index: 100;
             transition: opacity .25s ease;
@@ -1412,16 +1412,20 @@ main {
                         }
                         h3 {
                             font-size: 9vw;
-                            font-weight: bold;
+                            font-weight: 400;
                             @include responsive(large-screens) {
-                                font-size: 50px;
+                                font-size: 48px;
+                                font-weight: 400;
                             }
                             .name {
-                                color: #00A3A0;
+                                font-size: 56px;
+                                font-weight: 600;
+                                color: #000000;
                             }
                         }
                         strong {
                             margin: 12px 0 24px 0;
+                            color: #767676;
                         }
                         p {
                             text-align: left;
@@ -1429,20 +1433,21 @@ main {
                             font-size: 4vw;
                             font-weight: 300;
                             color: #000000;
-                            line-height: 155%;
+                            line-height: 145%;
                             @include responsive(large-screens) {
                                 font-size: 20px;
+                                line-height: 32px;
                             }
                             .name2 {
-                                font-weight: bold;
+                                font-weight: 600;
                                 color: black;
                             }
                             .advantage {
                                 font-size: 5vw;
                                 font-weight: bold;
-                                color: red;
+                                color: rgb(219, 16, 16);
                                 @include responsive(large-screens) {
-                                    font-size: 40px;
+                                    font-size: 32px;
                                 }
                             }
                             .focus {
@@ -1637,18 +1642,18 @@ main {
                             background: rgba(255, 255, 255, 0.9);
                             padding: 20px;
                             border-radius: 5px;
-                            z-index: 1000; 
+                            z-index: 1000000; 
                             @include responsive(large-screens) {
                                 width: 60%; height:60%;
                             }
                             h2 {
                                 position: absolute; top: 20%; left: 50%;
                                 transform: translate(-50%);
-                                font-size: 12vw;  
+                                font-size: 18vw;  
                                 text-align: center;
                                 padding: 0;
                                 @include responsive(large-screens) {
-                                    font-size: 5rem; 
+                                    font-size: 6rem; 
                                 }
                               
                             }
@@ -1659,7 +1664,7 @@ main {
                                 font-family: "pretendard"; 
                                 font-size: 3.4vw;    
                                 @include responsive(large-screens) {
-                                    font-size: 1.5rem;
+                                    font-size: 24px;
                                 }         
                             }
                             .close {
@@ -1781,7 +1786,7 @@ main {
                 .box {
                     position: relative;
                     width: 100%;
-                    border: 3px solid #ffffff;
+                    // border: 3px solid #ffffff;
                     border-radius: 20px;
                    z-index: 100;
                     overflow: hidden;
@@ -1825,34 +1830,36 @@ main {
                         z-index: 10;
                         width: 100%;
                         background: rgba(#ffffff, 0.8);
-                
+                        display: flex;
+                        align-items: center;
                         @include responsive(large-screens) {
                             padding-left: 20px;
                             height: 150px;
                             text-align: left;
                         }
-                
-                        h3 {
-                            margin-bottom: 3px;
-                            font-size: 4.5vw;
-                            font-weight: bold;
-                            font-family: 'Pretendard';
-                
-                            @include responsive(large-screens) {
-                                margin-top: 20px;
-                                height: 50px;
-                                font-size: 32px;
-                                text-align: left;
+                        .box-inner-txt {
+                            width: 100%;
+                            padding: 6px;
+                            h3 {
+                                font-size: 20px;
+                               font-weight: 600;
+                                font-family: 'Pretendard';
+                                padding-bottom: 6px;
+                                @include responsive(large-screens) {
+                                    
+                                    text-align: left;
+                                    // background-color: #00A3A0;
+                                }
                             }
-                        }
-                
-                        p {
-                            font-size: 3vw;
-                            font-weight: 400;
-                            font-family: 'Pretendard';
-                
-                            @include responsive(large-screens) {
-                                font-size: 1rem;
+                    
+                            p {
+                                font-size: 16px;
+                                font-weight: 400;
+                                font-family: 'Pretendard';
+                    
+                                @include responsive(large-screens) {
+                                    font-size: 1rem;
+                                }
                             }
                         }
                     }
@@ -2079,7 +2086,7 @@ main {
                     //     }
                     // }
                     .b3-b4 {
-                        // 공통 애니메이션 정의
+                       
                         @keyframes po-move-common {
                             0% {
                                 transform: translateY(0%);
@@ -2186,7 +2193,7 @@ main {
                         }
                         .slider-item {
                             width: 100%; height: 60vw;    
-                            border: 3px solid white;
+                            // border: 3px solid white;
                             border-radius: 20px;
                             background-color: rgb(0, 0, 0);
                             overflow: hidden;
@@ -2214,26 +2221,26 @@ main {
                                          margin-top: 10px;
                                          margin-left: 10px;
                                          margin-bottom: 2%;
-                                         font-weight: bold;
+                                         font-weight: 600;
                                          color: black;
                                          @include responsive(large-screens) {
                                              margin-left: 20px;
-                                             margin-top: 20px;
-                                             margin-bottom: 6px;
-                                             font-size: 32px;
-                                             
+                                            //  margin-top: 5px;
+                                             margin-bottom: 12px;
+                                             font-size: 20px;
+                                            //  background-color: #00A3A0;
                                          }
                                      }
                                      p {
                                          margin-left: 10px;
                                          font-size: 3vw;
-                                         font-weight: 700;
+                                         font-weight: 600;
                                          line-height: 120%;
                                          color: black;
                                          @include responsive(large-screens) {
                                              margin-left: 20px;
                                              font-size:20px;
-                                             font-weight: 700;
+                                             font-weight: 600;
                                              line-height: 110%;    
                                          }
                                      }
@@ -2831,15 +2838,15 @@ main {
         .contact-box {
             position: absolute; bottom: 20%; left: 50%;
             transform: translate(-50%);
-            color: white;
+            color: rgb(255, 255, 255);
             
             h2 {
                 text-align: center;
-                margin-bottom: 10px;
+                margin-bottom: 16px;
                 font-size: 8vw;
                 font-family: 'pretendard';
-                text-shadow:  -1px 0px white, 0px 1px white, 1px 0px white, 0px -1px white; ;
-                color: black;
+                // text-shadow:  -1px 0px white, 0px 1px white, 1px 0px white, 0px -1px white; ;
+                color: rgb(255, 255, 255);
                 @include responsive(large-screens) {
                     font-size: 5rem;
                 }
@@ -2847,8 +2854,9 @@ main {
             a {
                 color: white;
                 font-size: 3vw;
+                margin-bottom: 6px;
                 @include responsive(large-screens) {
-                    font-size: 3rem;
+                    font-size: 2rem;
                 }
             }
             a:hover {
