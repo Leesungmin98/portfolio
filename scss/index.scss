@@ -239,15 +239,16 @@ header {
                 width: 35%;
 
                 animation-name: move ;
-                animation-duration: 11s;
+                animation-duration: 20s;
                 animation-iteration-count: infinite;
+                animation-timing-function: linear;
 
                 @keyframes move {
                     0% {
-                        transform: translateX(550%);
+                        transform: translateX(450%);
                     }
                     100% {
-                        transform: translateX(-220%);
+                        transform: translateX(-180%);
                     }
                 }
                 @include responsive(large-screens) {
@@ -260,15 +261,15 @@ header {
                 width: 30%;
 
                 animation-name: move2 ;
-                animation-duration: 13s;
+                animation-duration: 20s;
                 animation-iteration-count: infinite;
-
+                 animation-timing-function: linear;
                 @keyframes move2 {
                     0% {
                         transform: translateX(-220%);
                     }
                     100% {
-                        transform: translateX(500%);
+                        transform: translateX(600%);
                     }
                 }
                 @include responsive(large-screens) {
@@ -477,8 +478,8 @@ header {
             position: absolute;
             top: 30%;
             right: 20px;
-            height: 20px;
-            width: 35px;
+            height: $button-height;
+            width: $button-width;
             cursor: pointer;
             z-index: 100;
             transition: opacity .25s ease;
@@ -697,7 +698,7 @@ main {
         z-index: 0;
         @include responsive(large-screens) {
             height: 100%;
-            background:linear-gradient( #93E4FF 17%, #4AB2D4 34%, #007EA8 100% );
+            background:linear-gradient( #93E4FF 17%, #20599C 34% );
         }
 
         #top-bt { 
@@ -709,7 +710,8 @@ main {
             height: auto; 
             margin-right: 20px;
             z-index: 20000; 
-            text-align: center;   
+            text-align: center;
+            color: black;   
             cursor: pointer; 
             // background-color: #00A3A0;
             &:hover {
@@ -1647,12 +1649,14 @@ main {
                                 width: 60%; height:60%;
                             }
                             h2 {
-                                position: absolute; top: 20%; left: 50%;
+                                position: absolute; top: 30%; left: 50%;
                                 transform: translate(-50%);
-                                font-size: 18vw;  
+                                font-size: 12vw;
+                                font-weight: 600;
                                 text-align: center;
                                 padding: 0;
                                 @include responsive(large-screens) {
+                                    position: absolute; top: 25%;
                                     font-size: 6rem; 
                                 }
                               
@@ -1665,6 +1669,7 @@ main {
                                 font-size: 3.4vw;    
                                 @include responsive(large-screens) {
                                     font-size: 24px;
+                                    width: 45%;
                                 }         
                             }
                             .close {
@@ -1829,7 +1834,7 @@ main {
                         padding: 5px;
                         z-index: 10;
                         width: 100%;
-                        background: rgba(#ffffff, 0.8);
+                        background: rgba(#ffffff, 0.9);
                         display: flex;
                         align-items: center;
                         @include responsive(large-screens) {
@@ -1841,19 +1846,19 @@ main {
                             width: 100%;
                             padding: 6px;
                             h3 {
-                                font-size: 20px;
+                                font-size: 3.5vw;
                                font-weight: 600;
                                 font-family: 'Pretendard';
                                 padding-bottom: 6px;
                                 @include responsive(large-screens) {
-                                    
+                                    font-size: 24px;
                                     text-align: left;
                                     // background-color: #00A3A0;
                                 }
                             }
                     
                             p {
-                                font-size: 16px;
+                                font-size: 3vw;
                                 font-weight: 400;
                                 font-family: 'Pretendard';
                     
@@ -2169,7 +2174,9 @@ main {
                     z-index: 995;
                     @include responsive(large-screens) {
                         padding-left: 0px;
-                        height: 17.8%;  
+                        height: 17.8%;
+                        width: 101.3%;
+                        // background-color: #00A3A0;  
                     }
                     .slider-inner {
                         // background-color: antiquewhite;
@@ -2284,7 +2291,7 @@ main {
                         width: 25vw; height: 25vw;
                         cursor: pointer;
                         border-radius: 50%;
-                        border: 3px solid #ffffff;
+                        // border: 3px solid #ffffff;
                         background-color: #9c9c9c;
                         @include responsive(large-screens) {
                             width: 15vw; height: 15vw;

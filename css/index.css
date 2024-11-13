@@ -285,15 +285,16 @@ header .wave .img-box .cloud1 {
   left: 50px;
   width: 35%;
   animation-name: move;
-  animation-duration: 11s;
+  animation-duration: 20s;
   animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 @keyframes move {
   0% {
-    transform: translateX(550%);
+    transform: translateX(450%);
   }
   100% {
-    transform: translateX(-220%);
+    transform: translateX(-180%);
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -308,15 +309,16 @@ header .wave .img-box .cloud2 {
   left: 200px;
   width: 30%;
   animation-name: move2;
-  animation-duration: 13s;
+  animation-duration: 20s;
   animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 @keyframes move2 {
   0% {
     transform: translateX(-220%);
   }
   100% {
-    transform: translateX(500%);
+    transform: translateX(600%);
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -709,7 +711,7 @@ main .main-bg {
 @media only screen and (min-width: 1024px) {
   main .main-bg {
     height: 100%;
-    background: linear-gradient(#93E4FF 17%, #4AB2D4 34%, #007EA8 100%);
+    background: linear-gradient(#93E4FF 17%, #20599C 34%);
   }
 }
 main .main-bg #top-bt {
@@ -722,6 +724,7 @@ main .main-bg #top-bt {
   margin-right: 20px;
   z-index: 20000;
   text-align: center;
+  color: black;
   cursor: pointer;
 }
 main .main-bg #top-bt:hover {
@@ -1603,15 +1606,18 @@ main .main-bg .container .skill .skill-box .modal-box .modal {
 }
 main .main-bg .container .skill .skill-box .modal-box .modal h2 {
   position: absolute;
-  top: 20%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%);
-  font-size: 18vw;
+  font-size: 12vw;
+  font-weight: 600;
   text-align: center;
   padding: 0;
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .skill .skill-box .modal-box .modal h2 {
+    position: absolute;
+    top: 25%;
     font-size: 6rem;
   }
 }
@@ -1627,6 +1633,7 @@ main .main-bg .container .skill .skill-box .modal-box .modal p {
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .skill .skill-box .modal-box .modal p {
     font-size: 24px;
+    width: 45%;
   }
 }
 main .main-bg .container .skill .skill-box .modal-box .modal .close {
@@ -1809,7 +1816,7 @@ main .main-bg .container .portfolio .po-box .box-txt {
   padding: 5px;
   z-index: 10;
   width: 100%;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.9);
   display: flex;
   align-items: center;
 }
@@ -1825,18 +1832,19 @@ main .main-bg .container .portfolio .po-box .box-txt .box-inner-txt {
   padding: 6px;
 }
 main .main-bg .container .portfolio .po-box .box-txt .box-inner-txt h3 {
-  font-size: 20px;
+  font-size: 3.5vw;
   font-weight: 600;
   font-family: "Pretendard";
   padding-bottom: 6px;
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .portfolio .po-box .box-txt .box-inner-txt h3 {
+    font-size: 24px;
     text-align: left;
   }
 }
 main .main-bg .container .portfolio .po-box .box-txt .box-inner-txt p {
-  font-size: 16px;
+  font-size: 3vw;
   font-weight: 400;
   font-family: "Pretendard";
 }
@@ -2013,6 +2021,7 @@ main .main-bg .container .portfolio .slider {
   main .main-bg .container .portfolio .slider {
     padding-left: 0px;
     height: 17.8%;
+    width: 101.3%;
   }
 }
 main .main-bg .container .portfolio .slider .slider-inner {
@@ -2133,7 +2142,6 @@ main .main-bg .container .portfolio .design .ds {
   height: 25vw;
   cursor: pointer;
   border-radius: 50%;
-  border: 3px solid #ffffff;
   background-color: #9c9c9c;
 }
 @media only screen and (min-width: 1024px) {
