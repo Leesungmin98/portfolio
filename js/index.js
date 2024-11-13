@@ -134,3 +134,16 @@ $(document).ready(function() {
     });
 });
 
+document.querySelectorAll('.inner-box1 img, .inner-box2 img, .inner-box3 img, .inner-box4 img').forEach((img) => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.style.animationPlayState = 'running';  
+        } else {
+          entry.target.style.animationPlayState = 'paused';  
+        }
+      });
+    });
+
+    observer.observe(img); 
+  });
