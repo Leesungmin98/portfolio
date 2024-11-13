@@ -1842,15 +1842,16 @@ main {
                         }
                         .box-inner-txt {
                             width: 100%;
-                            padding: 6px;
+                            padding: 2px;
                             h3 {
                                 font-size: 3.5vw;
-                               font-weight: 600;
+                                font-weight: 600;
                                 font-family: 'Pretendard';
-                                padding-bottom: 6px;
+                                padding-bottom: 4px;
                                 @include responsive(large-screens) {
                                     font-size: 24px;
                                     text-align: left;
+                                    padding-bottom: 6px;
                                     // background-color: #00A3A0;
                                 }
                             }

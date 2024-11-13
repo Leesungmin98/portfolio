@@ -1828,18 +1828,19 @@ main .main-bg .container .portfolio .po-box .box-txt {
 }
 main .main-bg .container .portfolio .po-box .box-txt .box-inner-txt {
   width: 100%;
-  padding: 6px;
+  padding: 2px;
 }
 main .main-bg .container .portfolio .po-box .box-txt .box-inner-txt h3 {
   font-size: 3.5vw;
   font-weight: 600;
   font-family: "Pretendard";
-  padding-bottom: 6px;
+  padding-bottom: 4px;
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .portfolio .po-box .box-txt .box-inner-txt h3 {
     font-size: 24px;
     text-align: left;
+    padding-bottom: 6px;
   }
 }
 main .main-bg .container .portfolio .po-box .box-txt .box-inner-txt p {
