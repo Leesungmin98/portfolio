@@ -13,9 +13,9 @@ class App {
 
     
     this.waves = [
-      new Wave('#93E4FF', -900, 1, 0.5),
-      new Wave('#93E4FF', -1000, 0.5, 0.3),
-      new Wave('#93E4FF', -1100, 0.2, 0.4),
+      new Wave('#1eb6e9 ', -900, 1, 0.5),
+      new Wave('#1eb6e9', -1000, 0.5, 0.3),
+      new Wave('#1eb6e9 ', -1100, 0.2, 0.4),
     ];
 
     

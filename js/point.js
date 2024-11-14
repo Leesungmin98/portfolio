@@ -24,7 +24,7 @@ export class Point {
     this.fieldY = y;
     this.speed = 0.04 + Math.random() * 0.001;
     this.cur = Math.random() * Math.PI * 6; 
-    this.max = Math.random() * 300 + 100; 
+    this.max = Math.random() * 100 + 100; 
   }
   }
 
