@@ -312,23 +312,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
 /////////////////////////////////////////
 
-document.addEventListener("DOMContentLoaded", () => {
-    const icons = document.querySelectorAll(".skill-item");
-
-    // 아이콘이 상하좌우로 흔들리는 애니메이션 함수
-    function animateIcon(icon) {
-        // 무작위로 이동할 x, y 좌표 (-10px에서 10px 사이)
-        const randomX = Math.random() * 11 - 10;
-        const randomY = Math.random() * 11 - 10;
-
-        // 아이콘에 적용할 transform 스타일
-        icon.style.transform = `translate(${randomX}px, ${randomY}px)`;
-        icon.style.transition = `transform 0.5s ease-in-out`;
-
-        // 0.5초 후에 다시 애니메이션 반복
-        setTimeout(() => animateIcon(icon), 500);
-    }
-
-    // 모든 아이콘에 애니메이션 적용
-    icons.forEach(icon => animateIcon(icon));
-});

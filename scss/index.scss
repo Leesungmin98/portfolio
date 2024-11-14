@@ -516,7 +516,7 @@ header {
                 background: black;
                 border: none;
                 border-radius: 50px;
-                height: 5px;
+                height: 3px;
                 width: 100%;
                 position: absolute;
                 top: 0;
@@ -620,8 +620,8 @@ header {
                 display: block;
                 position: relative;
                 color: $color-link;
-                font-weight: bold;
-                font-size: 2.5rem;
+                font-weight: 600;
+                font-size: 1.3rem;
                 font-family: 'pretendard';
                 text-decoration: none;
                 overflow: hidden;
@@ -1837,6 +1837,7 @@ main {
                             @include responsive(large-screens) {
                                 position: absolute;
                             }
+                            
 
                             &:hover .overlay {
                                 opacity: 1;
@@ -2032,7 +2033,7 @@ main {
                                     left: 50%;
                                     transform: translate(-50%);
                                     width: 20%;
-                                    height: 15%;
+                                    height: 3.5vh;
                                     background-color: #000;
                                     color: white;
                                     margin-top: 10%;
@@ -2058,97 +2059,386 @@ main {
                             }
                         }
 
-                        // 각 기술 항목별 transform 값
-                        .ai {
-                            transform: translateX(260%);
-                            @include responsive(large-screens) {
-                                transform: translateX(50%) translateY(-200%);
-                            }
-                        }
+                    
+                                             
+                        .ai {          
+                            animation: aiUpDown 2s ease-in-out infinite;
 
-                        .pr {
-                            transform: translateX(70%) translateY(-70%);
-                            @include responsive(large-screens) {
-                                transform: translateX(600%) translateY(-100%);
+                            @keyframes aiUpDown {
+                                0% {
+                                    transform: translateY(0) translateX(260%); 
+                                }
+                                50% {
+                                    transform: translateY(-10px) translateX(260%); 
+                                }
+                                100% {
+                                    transform: translateY(0) translateX(260%); 
+                                }
                             }
-                        }
 
-                        .html {
-                            transform: translateX(180%) translateY(-90%);
                             @include responsive(large-screens) {
-                                transform: translateX(600%) translateY(-100%);
+                                @keyframes aiUpDown {
+                                    0% {
+                                        transform: translateY(0) translateX(50%); 
+                                    }
+                                    50% {
+                                        transform: translateY(-10px) translateX(50%); 
+                                    }
+                                    100% {
+                                        transform: translateY(0) translateX(50%); 
+                                    }
+                                }
                             }
-                        }
+                        } // ai
 
-                        .sass {
-                            transform: translateX(70%) translateY(-90%);
-                            @include responsive(large-screens) {
-                                transform: translateX(300%) translateY(60%);
-                            }
-                        }
+                       
+                        .pr {          
+                            animation: prUpDown 2s ease-in-out infinite;
 
-                        .js {
-                            transform: translateX(300%) translateY(-220%);
-                            @include responsive(large-screens) {
-                                transform: translateX(750%) translateY(70%);
+                            @keyframes prUpDown {
+                                0% {
+                                    transform: translateY(0) translateX(260%); 
+                                }
+                                50% {
+                                    transform: translateY(-10px) translateX(260%); 
+                                }
+                                100% {
+                                    transform: translateY(0) translateX(260%); 
+                                }
                             }
-                        }
 
-                        .ps {
-                            transform: translateX(130%) translateY(-180%);
                             @include responsive(large-screens) {
-                                transform: translateX(340%) translateY(-120%);
+                                @keyframes prUpDown {
+                                    0% {
+                                        transform: translateY(0) translateX(50%); 
+                                    }
+                                    50% {
+                                        transform: translateY(-10px) translateX(50%); 
+                                    }
+                                    100% {
+                                        transform: translateY(0) translateX(50%); 
+                                    }
+                                }
                             }
-                        }
+                        } //pr
 
-                        .jquery {
-                            transform: translateX(110%) translateY(-190%);
-                            @include responsive(large-screens) {
-                                transform: translateX(300%) translateY(-120%);
-                            }
-                        }
+                       
+                        .html {          
+                            animation: htmlUpDown 2s ease-in-out infinite;
 
-                        .react {
-                            transform: translateX(300%) translateY(-370%);
-                            @include responsive(large-screens) {
-                                transform: translateX(650%) translateY(60%);
+                            @keyframes htmlUpDown {
+                                0% {
+                                    transform: translateY(0) translateX(180%); 
+                                }
+                                50% {
+                                    transform: translateY(-10px) translateX(180%); 
+                                }
+                                100% {
+                                    transform: translateY(0) translateX(180%);
+                                }
                             }
-                        }
 
-                        .git {
-                            transform: translateX(220%) translateY(-310%);
                             @include responsive(large-screens) {
-                                transform: translateX(800%) translateY(-300%);
+                                @keyframes htmlUpDown {
+                                    0% {
+                                        transform: translateY(0) translateX(600%); 
+                                    }
+                                    50% {
+                                        transform: translateY(-10px) translateX(600%); 
+                                    }
+                                    100% {
+                                        transform: translateY(0) translateX(600%); 
+                                    }
+                                }
                             }
-                        }
+                        } // html
 
-                        .css {
-                            transform: translateX(50%) translateY(-330%);
-                            @include responsive(large-screens) {
-                                transform: translateX(350%) translateY(-320%);
-                            }
-                        }
+                      
+                        .sass {          
+                            animation: sassUpDown 2s ease-in-out infinite;
 
-                        .figma {
-                            transform: translateX(260%) translateY(-350%);
-                            @include responsive(large-screens) {
-                                transform: translateX(550%) translateY(-270%);
+                            @keyframes sassUpDown {
+                                0% {
+                                    transform: translateY(0) translateX(70%); 
+                                }
+                                50% {
+                                    transform: translateY(-10px) translateX(70%);
+                                }
+                                100% {
+                                    transform: translateY(0) translateX(70%); 
+                                }
                             }
-                        }
 
-                        .ae {
-                            transform: translateX(100%) translateY(-360%);
                             @include responsive(large-screens) {
-                                transform: translateX(70%) translateY(70%);
+                                @keyframes sassUpDown {
+                                    0% {
+                                        transform: translateY(0) translateX(300%); 
+                                    }
+                                    50% {
+                                        transform: translateY(-10px) translateX(300%); 
+                                    }
+                                    100% {
+                                        transform: translateY(0) translateX(300%); 
+                                    }
+                                }
                             }
-                        }
-                    }
+                        } //html
+
+                        
+                        .js {          
+                            animation: jsUpDown 2s ease-in-out infinite;
+
+                            @keyframes jsUpDown {
+                                0% {
+                                    transform: translateY(0) translateX(300%); 
+                                }
+                                50% {
+                                    transform: translateY(-10px) translateX(300%); 
+                                }
+                                100% {
+                                    transform: translateY(0) translateX(300%); 
+                                }
+                            }
+
+                            @include responsive(large-screens) {
+                                @keyframes jsUpDown {
+                                    0% {
+                                        transform: translateY(0) translateX(750%); 
+                                    }
+                                    50% {
+                                        transform: translateY(-10px) translateX(750%); 
+                                    }
+                                    100% {
+                                        transform: translateY(0) translateX(750%); 
+                                    }
+                                }
+                            }
+                        } //js
+
+                       
+                        .ps {          
+                            animation: psUpDown 2s ease-in-out infinite;
+
+                            @keyframes psUpDown {
+                                0% {
+                                    transform: translateY(-300%) translateX(270%); 
+                                }
+                                50% {
+                                    transform: translateY(-285%) translateX(270%); 
+                                }
+                                100% {
+                                    transform: translateY(-300%) translateX(270%); 
+                                }
+                            }
+
+                            @include responsive(large-screens) {
+                                @keyframes psUpDown {
+                                    0% {
+                                        transform: translateY(0) translateX(340%); 
+                                    }
+                                    50% {
+                                        transform: translateY(-10px) translateX(340%); 
+                                    }
+                                    100% {
+                                        transform: translateY(0) translateX(340%); 
+                                    }
+                                }
+                            }
+                        } //ps
+
+                        
+                        .jquery {          
+                            animation: jqueryUpDown 2s ease-in-out infinite;
+
+                            @keyframes jqueryUpDown {
+                                0% {
+                                    transform: translateY(0) translateX(110%); 
+                                }
+                                50% {
+                                    transform: translateY(-10px) translateX(110%); 
+                                }
+                                100% {
+                                    transform: translateY(0) translateX(110%); 
+                                }
+                            }
+
+                            @include responsive(large-screens) {
+                                @keyframes jqueryUpDown {
+                                    0% {
+                                        transform: translateY(0) translateX(300%); 
+                                    }
+                                    50% {
+                                        transform: translateY(-10px) translateX(300%); 
+                                    }
+                                    100% {
+                                        transform: translateY(0) translateX(300%); 
+                                    }
+                                }
+                            }
+                        }// jquery 
+
+                       
+                        .react {          
+                            animation: reactUpDown 2s ease-in-out infinite;
+
+                            @keyframes reactUpDown {
+                                0% {
+                                    transform: translateY(0) translateX(300%); 
+                                }
+                                50% {
+                                    transform: translateY(-10px) translateX(300%); 
+                                }
+                                100% {
+                                    transform: translateY(0) translateX(300%); 
+                                }
+                            }
+
+                            @include responsive(large-screens) {
+                                @keyframes reactUpDown {
+                                    0% {
+                                        transform: translateY(0) translateX(650%); 
+                                    }
+                                    50% {
+                                        transform: translateY(-10px) translateX(650%); 
+                                    }
+                                    100% {
+                                        transform: translateY(0) translateX(650%); 
+                                    }
+                                }
+                            }
+                        } // react
+
+                       
+                        .git {          
+                            animation: gitUpDown 2s ease-in-out infinite;
+
+                            @keyframes gitUpDown {
+                                0% {
+                                    transform: translateY(0) translateX(220%); 
+                                }
+                                50% {
+                                    transform: translateY(-10px) translateX(220%); 
+                                }
+                                100% {
+                                    transform: translateY(0) translateX(220%);
+                                }
+                            }
+
+                            @include responsive(large-screens) {
+                                @keyframes gitUpDown {
+                                    0% {
+                                        transform: translateY(0) translateX(800%); 
+                                    }
+                                    50% {
+                                        transform: translateY(-10px) translateX(800%); 
+                                    }
+                                    100% {
+                                        transform: translateY(0) translateX(800%); 
+                                    }
+                                }
+                            }
+                        }  // git 
+
+                      
+                        .css {          
+                            animation: cssUpDown 2s ease-in-out infinite;
+
+                            @keyframes cssUpDown {
+                                0% {
+                                    transform: translateY(0) translateX(50%); 
+                                }
+                                50% {
+                                    transform: translateY(-10px) translateX(50%); 
+                                }
+                                100% {
+                                    transform: translateY(0) translateX(50%); 
+                                }
+                            }
+
+                            @include responsive(large-screens) {
+                                @keyframes cssUpDown {
+                                    0% {
+                                        transform: translateY(0) translateX(350%); 
+                                    }
+                                    50% {
+                                        transform: translateY(-10px) translateX(350%); 
+                                    }
+                                    100% {
+                                        transform: translateY(0) translateX(350%); 
+                                    }
+                                }
+                            }
+                        }   // css 
+
+                        
+                        .figma {          
+                            animation: figmaUpDown 2s ease-in-out infinite;
+
+                            @keyframes figmaUpDown {
+                                0% {
+                                    transform: translateY(-950%) translateX(230%); 
+                                }
+                                50% {
+                                    transform: translateY(-940%) translateX(230%); 
+                                }
+                                100% {
+                                    transform: translateY(-950%) translateX(230%); 
+                                }
+                            }
+
+                            @include responsive(large-screens) {
+                                @keyframes figmaUpDown {
+                                    0% {
+                                        transform: translateY(0) translateX(550%);
+                                    }
+                                    50% {
+                                        transform: translateY(-10px) translateX(550%); 
+                                    }
+                                    100% {
+                                        transform: translateY(0) translateX(550%); 
+                                    }
+                                }
+                            }
+                        } // figma
+
+                      
+                        .ae {          
+                            animation: aeUpDown 2s ease-in-out infinite;
+
+                            @keyframes aeUpDown {
+                                0% {
+                                    transform: translateY(0) translateX(100%); 
+                                }
+                                50% {
+                                    transform: translateY(-10px) translateX(100%); 
+                                }
+                                100% {
+                                    transform: translateY(0) translateX(100%); 
+                                }
+                            }
+
+                            @include responsive(large-screens) {
+                                @keyframes aeUpDown {
+                                    0% {
+                                        transform: translateY(0) translateX(70%); 
+                                    }
+                                    50% {
+                                        transform: translateY(-10px) translateX(70%); 
+                                    }
+                                    100% {
+                                        transform: translateY(0) translateX(70%); 
+                                    }
+                                }
+                            }
+                        }   // ae
+
+                    } // skill-box
                 }
 
 
             .portfolio {
                 width: 100%; height: 100%;
-             
+                
                 @include responsive(large-screens) {
                     // background-color: aquamarine;
                     width: 100%; height: 4000px;
@@ -2158,7 +2448,7 @@ main {
                     width: 100%;
                     // border: 3px solid #ffffff;
                     border-radius: 20px;
-                   z-index: 100;
+                    z-index: 100;
                     overflow: hidden;
                     @include responsive(large-screens) {
                         width: 100%;
@@ -2187,7 +2477,6 @@ main {
                     padding: 20px;
                     grid-template-columns: repeat(2, 1fr);
                     grid-column-gap: 20px;
-                
                     @include responsive(large-screens) {
                         padding: 0;
                     }
@@ -2259,9 +2548,10 @@ main {
                             font-size: 2.5vw;
                             font-weight: bold;
                             text-align: center;
-                            color: white;
-                            background-color: black;
-                            border-radius: 6px;
+                            color: #767676;
+                            background-color: rgb(255, 255, 255);
+                            border-radius: 20px;
+                            border: 2px solid #dbdbdb;
                 
                             @include responsive(large-screens) {
                                 font-size: 1rem;
