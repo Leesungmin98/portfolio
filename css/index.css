@@ -2077,6 +2077,7 @@ main .main-bg .container .portfolio .po-box .box-txt .box-inner-txt p {
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .portfolio .po-box .box-txt .box-inner-txt p {
     font-size: 1rem;
+    line-height: 22px;
   }
 }
 main .main-bg .container .portfolio .po-box .box-button {

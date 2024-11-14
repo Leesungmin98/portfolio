@@ -2517,8 +2517,10 @@ main {
                                 font-weight: 400;
                                 font-family: 'Pretendard';
                                 color: #505050;
+                               
                                 @include responsive(large-screens) {
                                     font-size: 1rem;
+                                    line-height: 22px;
                                 }
                             }
                         }
