@@ -1977,7 +1977,7 @@ main {
                                 left: 50%;
                                 transform: translate(-50%, -50%);
                                 text-align: center;
-                                width: 50%;
+                                width: 70%;
                                 height: 200px;
                                 background: rgba(255, 255, 255, 0.9);
                                 padding: 20px;
@@ -2494,7 +2494,6 @@ main {
                             padding: 2px;
                             h3 {
                                 font-size: 4vw;
-                                font-weight: 600;
                                 font-family: 'Pretendard';
                                 padding-bottom: 4px;
                                 @include responsive(large-screens) {

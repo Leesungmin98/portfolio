@@ -1602,7 +1602,7 @@ main .main-bg .container .skill .skill-box .modal-box .modal {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  width: 50%;
+  width: 70%;
   height: 200px;
   background: rgba(255, 255, 255, 0.9);
   padding: 20px;
@@ -2071,7 +2071,6 @@ main .main-bg .container .portfolio .po-box .box-txt .box-inner-txt {
 }
 main .main-bg .container .portfolio .po-box .box-txt .box-inner-txt h3 {
   font-size: 4vw;
-  font-weight: 600;
   font-family: "Pretendard";
   padding-bottom: 4px;
 }
