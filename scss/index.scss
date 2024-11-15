@@ -2496,6 +2496,7 @@ main {
                                 font-size: 4vw;
                                 font-family: 'Pretendard';
                                 padding-bottom: 4px;
+                                font-weight: 600;
                                 @include responsive(large-screens) {
                                     font-size: 20px;
                                     text-align: left;
