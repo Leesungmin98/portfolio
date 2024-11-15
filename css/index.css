@@ -1638,7 +1638,7 @@ main .main-bg .container .skill .skill-box .modal-box .modal p {
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: "pretendard";
-  font-size: 3vw;
+  font-size: 3.8vw;
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .skill .skill-box .modal-box .modal p {
@@ -2070,7 +2070,7 @@ main .main-bg .container .portfolio .po-box .box-txt .box-inner-txt {
   padding: 2px;
 }
 main .main-bg .container .portfolio .po-box .box-txt .box-inner-txt h3 {
-  font-size: 3vw;
+  font-size: 4vw;
   font-weight: 600;
   font-family: "Pretendard";
   padding-bottom: 4px;
@@ -2083,7 +2083,7 @@ main .main-bg .container .portfolio .po-box .box-txt .box-inner-txt h3 {
   }
 }
 main .main-bg .container .portfolio .po-box .box-txt .box-inner-txt p {
-  font-size: 3vw;
+  font-size: 3.5vw;
   font-weight: 400;
   font-family: "Pretendard";
   color: #505050;
@@ -2118,7 +2118,7 @@ main .main-bg .container .portfolio .po-box .box-button a {
   justify-content: center;
   margin-left: 2px;
   margin-right: 2px;
-  font-size: 2.5vw;
+  font-size: 3.5vw;
   text-align: center;
   color: #767676;
   background-color: rgb(255, 255, 255);
