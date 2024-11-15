@@ -358,9 +358,9 @@ header {
 
             .paper-ship {
                 position: absolute;
-                bottom: 0;  
-                right: 30%; 
-                width: 40%;  
+                bottom: 0.3%;  
+                right: 55%; 
+                width: 23%;  
                 z-index: 5;
                 transform-origin: center center;
                 will-change: transform;
@@ -378,17 +378,17 @@ header {
                     }
                 }
                 @include responsive(large-screens) {
-                    bottom: 10%; right: 45%;
-                    width: 20%;
+                    bottom: 12%; right: 50%;
+                    width: 14%;
                 }
             }
 
             .island {
-                bottom: -4%;
+                bottom: -2%;
                 width: 100%; right: 0%;
                
                 @include responsive(large-screens) {
-                    bottom: 6%; right: 10%;
+                    bottom: 8%; right: 10%;
                     width: 50%;
                 }
             }
@@ -2538,10 +2538,12 @@ main {
                         @include responsive(large-screens) {
                             position: absolute;
                             width: 30%;
+                            justify-content: right;
                             margin: auto;
                             z-index: 20;
                             padding-top: 20px;
                             padding-bottom: 20px;
+                            // background-color: #18267F;
                         }
                 
                         a {

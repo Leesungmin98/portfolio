@@ -396,9 +396,9 @@ header .wave .img-box .bird2 {
 }
 header .wave .img-box .paper-ship {
   position: absolute;
-  bottom: 0;
-  right: 30%;
-  width: 40%;
+  bottom: 0.3%;
+  right: 55%;
+  width: 23%;
   z-index: 5;
   transform-origin: center center;
   will-change: transform;
@@ -417,19 +417,19 @@ header .wave .img-box .paper-ship {
 }
 @media only screen and (min-width: 1024px) {
   header .wave .img-box .paper-ship {
-    bottom: 10%;
-    right: 45%;
-    width: 20%;
+    bottom: 12%;
+    right: 50%;
+    width: 14%;
   }
 }
 header .wave .img-box .island {
-  bottom: -4%;
+  bottom: -2%;
   width: 100%;
   right: 0%;
 }
 @media only screen and (min-width: 1024px) {
   header .wave .img-box .island {
-    bottom: 6%;
+    bottom: 8%;
     right: 10%;
     width: 50%;
   }
@@ -2104,6 +2104,7 @@ main .main-bg .container .portfolio .po-box .box-button {
   main .main-bg .container .portfolio .po-box .box-button {
     position: absolute;
     width: 30%;
+    justify-content: right;
     margin: auto;
     z-index: 20;
     padding-top: 20px;
