@@ -39,6 +39,7 @@ header {
                     left: -12%;
                     transform: scale(0.5); 
                     transform-origin: center center; 
+                    z-index: 10;
                     // background-color: #00A3A0;
                     @include responsive(large-screens) {
                         transform: scale(1);
