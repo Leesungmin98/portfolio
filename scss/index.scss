@@ -599,7 +599,7 @@ header {
             margin: 0 auto;
             display: inline-block;
             position: relative;
-            height: 50%; 
+            height:40vh; 
             @include responsive(large-screens) {
                display: none;
             }

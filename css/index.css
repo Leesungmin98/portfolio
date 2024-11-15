@@ -599,7 +599,7 @@ header .container .fullscreen .mobile-menu {
   margin: 0 auto;
   display: inline-block;
   position: relative;
-  height: 50%;
+  height: 40vh;
 }
 @media only screen and (min-width: 1024px) {
   header .container .fullscreen .mobile-menu {
