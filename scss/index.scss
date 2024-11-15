@@ -2369,13 +2369,13 @@ main {
 
                             @keyframes figmaUpDown {
                                 0% {
-                                    transform: translateY(-470%) translateX(270%); 
+                                    transform: translateY(0) translateX(270%); 
                                 }
                                 50% {
-                                    transform: translateY(-280px) translateX(270%); 
+                                    transform: translateY(-10px) translateX(270%); 
                                 }
                                 100% {
-                                    transform: translateY(-470%) translateX(270%); 
+                                    transform: translateY(0) translateX(270%); 
                                 }
                             }
 
@@ -2400,13 +2400,13 @@ main {
 
                             @keyframes aeUpDown {
                                 0% {
-                                    transform: translateY(-150%) translateX(260%); 
+                                    transform: translateY(0) translateX(20%); 
                                 }
                                 50% {
-                                    transform: translateY(-100px) translateX(260%); 
+                                    transform: translateY(-10px) translateX(20%); 
                                 }
                                 100% {
-                                    transform: translateY(-150%) translateX(260%); 
+                                    transform: translateY(0) translateX(20%); 
                                 }
                             }
 
