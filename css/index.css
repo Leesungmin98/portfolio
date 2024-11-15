@@ -415,7 +415,7 @@ header .wave .img-box .bird2 {
 }
 header .wave .img-box .paper-ship {
   position: absolute;
-  bottom: 0.3%;
+  bottom: -10%;
   right: 55%;
   width: 23%;
   z-index: 5;
@@ -436,7 +436,7 @@ header .wave .img-box .paper-ship {
 }
 @media only screen and (min-width: 1024px) {
   header .wave .img-box .paper-ship {
-    bottom: 12%;
+    bottom: -3%;
     right: 50%;
     width: 14%;
   }

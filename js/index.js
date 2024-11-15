@@ -258,7 +258,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
         const floatY =
             Math.sin(time * floatSpeed) * floatAmplitude +
-            Math.sin(time * floatSpeed * 1.5) * (floatAmplitude * 0.3);
+            Math.sin(time * floatSpeed * 1) * (floatAmplitude * 4.5);
 
         const rotation =
             Math.sin(time * floatSpeed) * rotateAmplitude +
