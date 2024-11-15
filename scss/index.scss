@@ -310,7 +310,7 @@ header {
                     }
                 }
                 @include responsive(large-screens) {
-                    top: 15%; left: 20%;
+                    top: 20%; left: 25%;
                     width: 3%;
                     transform: rotate(20deg);
                 }
@@ -378,7 +378,7 @@ header {
                     }
                 }
                 @include responsive(large-screens) {
-                    bottom: 10%; right: 40%;
+                    bottom: 10%; right: 45%;
                     width: 20%;
                 }
             }
@@ -416,7 +416,7 @@ header {
             position: absolute; top: 50%; left: 50%;
             transform: translate(-50%, -50%);
             z-index: 10;
-            font-size: 14vw;
+            font-size: 10vw;
             font-family: 'crunch chips';
             text-align: center;
             // -webkit-text-stroke: 1px white;
@@ -427,7 +427,7 @@ header {
             
             @include responsive(large-screens) {
                 // -webkit-text-stroke: 3px white;
-                font-size: 150px;
+                font-size: 110px;
             } 
             span {
                 color: #00A3A0;
