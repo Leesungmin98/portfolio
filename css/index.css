@@ -1434,9 +1434,9 @@ main .main-bg .container .skill {
   margin-bottom: 100px;
 }
 main .main-bg .container .skill .skill-box {
-  width: 90%;
-  margin: auto;
-  height: 160vw;
+  width: 60%;
+  margin: 0 auto;
+  height: 190vw;
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .skill .skill-box {
@@ -1679,40 +1679,40 @@ main .main-bg .container .skill .skill-box .ai {
 }
 @keyframes aiUpDown {
   0% {
-    transform: translateY(0) translateX(260%);
+    transform: translateY(0) translateX(100%);
   }
   50% {
-    transform: translateY(-10px) translateX(260%);
+    transform: translateY(-10px) translateX(100%);
   }
   100% {
-    transform: translateY(0) translateX(260%);
+    transform: translateY(0) translateX(100%);
   }
 }
 @media only screen and (min-width: 1024px) {
   @keyframes aiUpDown {
     0% {
-      transform: translateY(0) translateX(50%);
+      transform: translateY(-280%) translateX(50%);
     }
     50% {
-      transform: translateY(-10px) translateX(50%);
+      transform: translateY(-280%) translateX(50%);
     }
     100% {
-      transform: translateY(0) translateX(50%);
+      transform: translateY(-280%) translateX(50%);
     }
   }
 }
 main .main-bg .container .skill .skill-box .pr {
-  animation: prUpDown 2s ease-in-out infinite;
+  animation: prUpDown 3s ease-in-out infinite;
 }
 @keyframes prUpDown {
   0% {
-    transform: translateY(0) translateX(260%);
+    transform: translateY(0) translateX(200%);
   }
   50% {
-    transform: translateY(-10px) translateX(260%);
+    transform: translateY(-10px) translateX(200%);
   }
   100% {
-    transform: translateY(0) translateX(260%);
+    transform: translateY(0) translateX(200%);
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -1729,17 +1729,17 @@ main .main-bg .container .skill .skill-box .pr {
   }
 }
 main .main-bg .container .skill .skill-box .html {
-  animation: htmlUpDown 2s ease-in-out infinite;
+  animation: htmlUpDown 2.5s ease-in-out infinite;
 }
 @keyframes htmlUpDown {
   0% {
-    transform: translateY(0) translateX(180%);
+    transform: translateY(0) translateX(30%);
   }
   50% {
-    transform: translateY(-10px) translateX(180%);
+    transform: translateY(-10px) translateX(30%);
   }
   100% {
-    transform: translateY(0) translateX(180%);
+    transform: translateY(0) translateX(30%);
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -1756,17 +1756,17 @@ main .main-bg .container .skill .skill-box .html {
   }
 }
 main .main-bg .container .skill .skill-box .sass {
-  animation: sassUpDown 2s ease-in-out infinite;
+  animation: sassUpDown 3.5s ease-in-out infinite;
 }
 @keyframes sassUpDown {
   0% {
-    transform: translateY(0) translateX(70%);
+    transform: translateY(0) translateX(130%);
   }
   50% {
-    transform: translateY(-10px) translateX(70%);
+    transform: translateY(-10px) translateX(130%);
   }
   100% {
-    transform: translateY(0) translateX(70%);
+    transform: translateY(0) translateX(130%);
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -1783,17 +1783,17 @@ main .main-bg .container .skill .skill-box .sass {
   }
 }
 main .main-bg .container .skill .skill-box .js {
-  animation: jsUpDown 2s ease-in-out infinite;
+  animation: jsUpDown 3.2s ease-in-out infinite;
 }
 @keyframes jsUpDown {
   0% {
-    transform: translateY(0) translateX(300%);
+    transform: translateY(0) translateX(230%);
   }
   50% {
-    transform: translateY(-10px) translateX(300%);
+    transform: translateY(-10px) translateX(230%);
   }
   100% {
-    transform: translateY(0) translateX(300%);
+    transform: translateY(0) translateX(230%);
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -1810,7 +1810,7 @@ main .main-bg .container .skill .skill-box .js {
   }
 }
 main .main-bg .container .skill .skill-box .ps {
-  animation: psUpDown 2s ease-in-out infinite;
+  animation: psUpDown 3s ease-in-out infinite;
 }
 @keyframes psUpDown {
   0% {
@@ -1864,17 +1864,17 @@ main .main-bg .container .skill .skill-box .jquery {
   }
 }
 main .main-bg .container .skill .skill-box .react {
-  animation: reactUpDown 2s ease-in-out infinite;
+  animation: reactUpDown 3.5s ease-in-out infinite;
 }
 @keyframes reactUpDown {
   0% {
-    transform: translateY(0) translateX(300%);
+    transform: translateY(0) translateX(270%);
   }
   50% {
-    transform: translateY(-10px) translateX(300%);
+    transform: translateY(-10px) translateX(270%);
   }
   100% {
-    transform: translateY(0) translateX(300%);
+    transform: translateY(0) translateX(270%);
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -1891,17 +1891,17 @@ main .main-bg .container .skill .skill-box .react {
   }
 }
 main .main-bg .container .skill .skill-box .git {
-  animation: gitUpDown 2s ease-in-out infinite;
+  animation: gitUpDown 3s ease-in-out infinite;
 }
 @keyframes gitUpDown {
   0% {
-    transform: translateY(0) translateX(220%);
+    transform: translateY(0) translateX(150%);
   }
   50% {
-    transform: translateY(-10px) translateX(220%);
+    transform: translateY(-10px) translateX(150%);
   }
   100% {
-    transform: translateY(0) translateX(220%);
+    transform: translateY(0) translateX(150%);
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -1945,17 +1945,17 @@ main .main-bg .container .skill .skill-box .css {
   }
 }
 main .main-bg .container .skill .skill-box .figma {
-  animation: figmaUpDown 2s ease-in-out infinite;
+  animation: figmaUpDown 3.5s ease-in-out infinite;
 }
 @keyframes figmaUpDown {
   0% {
-    transform: translateY(0) translateX(230%);
+    transform: translateY(-470%) translateX(270%);
   }
   50% {
-    transform: translateY(-10px) translateX(230%);
+    transform: translateY(-280px) translateX(270%);
   }
   100% {
-    transform: translateY(0) translateX(230%);
+    transform: translateY(-470%) translateX(270%);
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -1972,17 +1972,17 @@ main .main-bg .container .skill .skill-box .figma {
   }
 }
 main .main-bg .container .skill .skill-box .ae {
-  animation: aeUpDown 2s ease-in-out infinite;
+  animation: aeUpDown 3s ease-in-out infinite;
 }
 @keyframes aeUpDown {
   0% {
-    transform: translateY(0) translateX(100%);
+    transform: translateY(-150%) translateX(260%);
   }
   50% {
-    transform: translateY(-10px) translateX(100%);
+    transform: translateY(-100px) translateX(260%);
   }
   100% {
-    transform: translateY(0) translateX(100%);
+    transform: translateY(-150%) translateX(260%);
   }
 }
 @media only screen and (min-width: 1024px) {
