@@ -5,7 +5,7 @@
 }
 @font-face {
   font-family: "Pretendard";
-  src: local("Pretendard"), url("../font/Pretendard-Light.otf") format("opentype"), url("../font/Pretendard-Medium.otf") format("opentype"), url("../font/Pretendard-Regular.otf") format("opentype"), url("../font/Pretendard-SemiBold.otf") format("opentype");
+  src: local("Pretendard"), url("../font/Pretendard-Medium.otf") format("opentype"), url("../font/Pretendard-Regular.otf") format("opentype"), url("../font/Pretendard-SemiBold.otf") format("opentype");
 }
 @font-face {
   font-family: "crunch chips";
