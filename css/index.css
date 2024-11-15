@@ -2090,7 +2090,7 @@ main .main-bg .container .portfolio .po-box .box-txt .box-inner-txt {
   padding: 2px;
 }
 main .main-bg .container .portfolio .po-box .box-txt .box-inner-txt h3 {
-  font-size: 4vw;
+  font-size: 3.5vw;
   font-family: "Pretendard";
   padding-bottom: 4px;
   font-weight: 600;
@@ -2138,7 +2138,7 @@ main .main-bg .container .portfolio .po-box .box-button a {
   justify-content: center;
   margin-left: 2px;
   margin-right: 2px;
-  font-size: 3.5vw;
+  font-size: 3vw;
   text-align: center;
   color: #767676;
   background-color: rgb(255, 255, 255);
