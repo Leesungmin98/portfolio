@@ -590,7 +590,7 @@ header .container .fullscreen nav {
 }
 @media only screen and (min-width: 1024px) {
   header .container .fullscreen nav {
-    top: 47%;
+    top: 50%;
   }
 }
 header .container .fullscreen .mobile-menu {
@@ -647,14 +647,14 @@ header .container .pc-menu {
 @media only screen and (min-width: 1024px) {
   header .container .pc-menu {
     position: absolute;
-    top: 10%;
     left: 50%;
     transform: translate(-50%);
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-size: 1.1rem;
-    font-family: "recipekorea";
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: "pretendard";
     width: 50%;
     height: 100%;
   }
@@ -1800,13 +1800,13 @@ main .main-bg .container .skill .skill-box .ps {
 }
 @keyframes psUpDown {
   0% {
-    transform: translateY(-300%) translateX(270%);
+    transform: translateY(0) translateX(0);
   }
   50% {
-    transform: translateY(-285%) translateX(270%);
+    transform: translateY(-10px) translateX(0);
   }
   100% {
-    transform: translateY(-300%) translateX(270%);
+    transform: translateY(0) translateX(0);
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -1935,13 +1935,13 @@ main .main-bg .container .skill .skill-box .figma {
 }
 @keyframes figmaUpDown {
   0% {
-    transform: translateY(-950%) translateX(230%);
+    transform: translateY(0) translateX(230%);
   }
   50% {
-    transform: translateY(-940%) translateX(230%);
+    transform: translateY(-10px) translateX(230%);
   }
   100% {
-    transform: translateY(-950%) translateX(230%);
+    transform: translateY(0) translateX(230%);
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -2098,16 +2098,18 @@ main .main-bg .container .portfolio .po-box .box-button a {
   position: relative;
   width: 50%;
   height: 8vw;
-  line-height: 8vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left: 2px;
   margin-right: 2px;
   font-size: 2.5vw;
-  font-weight: bold;
+  font-weight: 600;
   text-align: center;
   color: #767676;
   background-color: rgb(255, 255, 255);
   border-radius: 20px;
-  border: 2px solid #dbdbdb;
+  border: 1px solid #dbdbdb;
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .portfolio .po-box .box-button a {
@@ -2115,6 +2117,10 @@ main .main-bg .container .portfolio .po-box .box-button a {
     height: 50px;
     line-height: 50px;
   }
+}
+main .main-bg .container .portfolio .po-box .box-button a:hover {
+  color: #111111;
+  border: 1px solid #111111;
 }
 main .main-bg .container .portfolio .po-box .box-button a::after {
   content: "";

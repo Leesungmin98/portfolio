@@ -457,7 +457,6 @@ header {
             justify-content: space-between;
             margin-top: 20px;
             height: 80px;
-            // border: 3px solid black;
             border-radius: 50px;
         }
         .header-logo {
@@ -589,8 +588,9 @@ header {
             font-size: 50px;
             font-weight: 400;
             text-align: center;
+            // background-color: #007EA8;
             @include responsive(large-screens) {
-                top: 47%;
+                top: 50%;
             }
         }
         .mobile-menu {
@@ -656,13 +656,14 @@ header {
         .pc-menu {
             display: none;
             @include responsive(large-screens) {
-                position: absolute; top: 10%; left: 50%;
+                position: absolute; left: 50%;
                 transform: translate(-50%);
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
-                font-size: 1.1rem;
-                font-family: 'recipekorea';
+                font-size: 1.2rem;
+                font-weight: 600;
+                font-family: 'pretendard';
                 width: 50%;
                 height: 100%;
                 // background-color: #00A3A0;
@@ -2221,13 +2222,13 @@ main {
 
                             @keyframes psUpDown {
                                 0% {
-                                    transform: translateY(-300%) translateX(270%); 
+                                    transform: translateY(0) translateX(0); 
                                 }
                                 50% {
-                                    transform: translateY(-285%) translateX(270%); 
+                                    transform: translateY(-10px) translateX(0); 
                                 }
                                 100% {
-                                    transform: translateY(-300%) translateX(270%); 
+                                    transform: translateY(0) translateX(0); 
                                 }
                             }
 
@@ -2376,13 +2377,13 @@ main {
 
                             @keyframes figmaUpDown {
                                 0% {
-                                    transform: translateY(-950%) translateX(230%); 
+                                    transform: translateY(0) translateX(230%); 
                                 }
                                 50% {
-                                    transform: translateY(-940%) translateX(230%); 
+                                    transform: translateY(-10px) translateX(230%); 
                                 }
                                 100% {
-                                    transform: translateY(-950%) translateX(230%); 
+                                    transform: translateY(0) translateX(230%); 
                                 }
                             }
 
@@ -2545,22 +2546,28 @@ main {
                             position: relative;
                             width: 50%;
                             height: 8vw;
-                            line-height: 8vw;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
                             margin-left: 2px;
                             margin-right: 2px;
                             font-size: 2.5vw;
-                            font-weight: bold;
+                            font-weight: 600;
                             text-align: center;
                             color: #767676;
                             background-color: rgb(255, 255, 255);
                             border-radius: 20px;
-                            border: 2px solid #dbdbdb;
+                            border: 1px solid #dbdbdb;
                 
                             @include responsive(large-screens) {
                                 font-size: 1rem;
                                 height: 50px;
                                 line-height: 50px;
                             }
+                        }
+                        a:hover {
+                            color: #111111;
+                            border: 1px solid #111111;
                         }
                 
                         a::after {
