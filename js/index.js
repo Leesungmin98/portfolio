@@ -189,9 +189,9 @@ document.querySelectorAll('.inner-box1 img, .inner-box2 img, .inner-box3 img, .i
         
         
         if (isLeftStart) {
-            cloud.style.left = `-${cloud.offsetWidth + 50}px`; // 여유 공간 추가
+            cloud.style.left = `-${cloud.offsetWidth + 50}px`; 
         } else {
-            cloud.style.left = `${screenWidth + 50}px`; // 여유 공간 추가
+            cloud.style.left = `${screenWidth + 50}px`; 
         }
 
         if (!withAnimation) {
@@ -202,7 +202,7 @@ document.querySelectorAll('.inner-box1 img, .inner-box2 img, .inner-box3 img, .i
     }
 
     function animateCloud(cloud) {
-        const speed = Math.random() * (20 - 10) + 50; // 속도 범위 조정
+        const speed = Math.random() * (20 - 10) + 50; 
         let start = null;
         let initialPosition = parseInt(cloud.style.left);
 
@@ -222,7 +222,7 @@ document.querySelectorAll('.inner-box1 img, .inner-box2 img, .inner-box3 img, .i
                 (direction === -1 && currentPosition < -cloud.offsetWidth - 100)) {
                 
                 const isMobile = screenWidth <= 768;
-                const maxDelay = isMobile ? 300 : 600; // 딜레이 시간 줄임
+                const maxDelay = isMobile ? 300 : 600;
                 const randomDelay = Math.random() * maxDelay;
 
                 
@@ -281,31 +281,30 @@ document.addEventListener("DOMContentLoaded", () => {
 /////////////////////////////////
 
 document.addEventListener("DOMContentLoaded", () => {
-    const skillItems = document.querySelectorAll(".skill-item");  // .skill-item 클래스를 가진 모든 요소를 선택
+    const skillItems = document.querySelectorAll(".skill-item"); 
 
     skillItems.forEach(skillItem => {
-        const icon = skillItem.querySelector(".icon");  // .icon 클래스를 가진 요소를 선택
         const overlay = skillItem.querySelector(".overlay");
 
         skillItem.addEventListener("click", () => {
-            // '펑!' 효과를 위해 .explode 추가
+          
             icon.classList.add("explode");
             overlay.classList.add("explode");
 
-            // 0.3초 후에 이미지와 오버레이를 다시 보이게 설정
+         
             setTimeout(() => {
                 icon.classList.remove("explode");
                 overlay.classList.remove("explode");
 
-                // 부드럽게 나타나게 하기 위해 클릭 상태를 활성화
+                
                 skillItem.classList.add("clicked");
 
-                // 다시 보이게 하기 위한 타이밍 설정
+               
                 setTimeout(() => {
-                    // 부드럽게 나타나는 효과
+                   
                     skillItem.classList.remove("clicked");
-                }, 1000); // 부드럽게 나타나기 위한 0.5초 지연
-            }, 1500); // 0.3초 후에 '펑!' 효과 종료 후 나타나기 시작
+                }, 1000); 
+            }, 1500); 
         });
     });
 });
