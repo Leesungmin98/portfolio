@@ -1659,7 +1659,7 @@ main .main-bg .container .skill .skill-box .modal-box .modal p {
   transform: translate(-50%, -50%);
   font-family: "pretendard";
   font-size: 4vw;
-  line-height: 135%;
+  line-height: 150%;
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .skill .skill-box .modal-box .modal p {
