@@ -1712,13 +1712,13 @@ main .main-bg .container .skill .skill-box .ai {
 @media only screen and (min-width: 1024px) {
   @keyframes aiUpDown {
     0% {
-      transform: translateY(-280%) translateX(50%);
+      transform: translateY(-200px) translateX(50%);
     }
     50% {
-      transform: translateY(-280%) translateX(50%);
+      transform: translateY(-210px) translateX(50%);
     }
     100% {
-      transform: translateY(-280%) translateX(50%);
+      transform: translateY(-200px) translateX(50%);
     }
   }
 }
@@ -1739,13 +1739,13 @@ main .main-bg .container .skill .skill-box .pr {
 @media only screen and (min-width: 1024px) {
   @keyframes prUpDown {
     0% {
-      transform: translateY(0) translateX(50%);
+      transform: translateY(-130px) translateX(200px);
     }
     50% {
-      transform: translateY(-10px) translateX(50%);
+      transform: translateY(-140px) translateX(200px);
     }
     100% {
-      transform: translateY(0) translateX(50%);
+      transform: translateY(-130px) translateX(200px);
     }
   }
 }
@@ -1766,13 +1766,13 @@ main .main-bg .container .skill .skill-box .html {
 @media only screen and (min-width: 1024px) {
   @keyframes htmlUpDown {
     0% {
-      transform: translateY(0) translateX(600%);
+      transform: translateY(-100px) translateX(600%);
     }
     50% {
-      transform: translateY(-10px) translateX(600%);
+      transform: translateY(-90px) translateX(600%);
     }
     100% {
-      transform: translateY(0) translateX(600%);
+      transform: translateY(-100px) translateX(600%);
     }
   }
 }
@@ -1793,13 +1793,13 @@ main .main-bg .container .skill .skill-box .sass {
 @media only screen and (min-width: 1024px) {
   @keyframes sassUpDown {
     0% {
-      transform: translateY(0) translateX(300%);
+      transform: translateY(130px) translateX(300%);
     }
     50% {
-      transform: translateY(-10px) translateX(300%);
+      transform: translateY(120px) translateX(300%);
     }
     100% {
-      transform: translateY(0) translateX(300%);
+      transform: translateY(130px) translateX(300%);
     }
   }
 }
@@ -1874,13 +1874,13 @@ main .main-bg .container .skill .skill-box .jquery {
 @media only screen and (min-width: 1024px) {
   @keyframes jqueryUpDown {
     0% {
-      transform: translateY(0) translateX(300%);
+      transform: translateY(0) translateX(-200px);
     }
     50% {
-      transform: translateY(-10px) translateX(300%);
+      transform: translateY(-10px) translateX(-200px);
     }
     100% {
-      transform: translateY(0) translateX(300%);
+      transform: translateY(0) translateX(-200px);
     }
   }
 }
@@ -1901,13 +1901,13 @@ main .main-bg .container .skill .skill-box .react {
 @media only screen and (min-width: 1024px) {
   @keyframes reactUpDown {
     0% {
-      transform: translateY(0) translateX(650%);
+      transform: translateY(-200px) translateX(800px);
     }
     50% {
-      transform: translateY(-10px) translateX(650%);
+      transform: translateY(-210px) translateX(800px);
     }
     100% {
-      transform: translateY(0) translateX(650%);
+      transform: translateY(-200px) translateX(800px);
     }
   }
 }
@@ -1928,13 +1928,13 @@ main .main-bg .container .skill .skill-box .git {
 @media only screen and (min-width: 1024px) {
   @keyframes gitUpDown {
     0% {
-      transform: translateY(0) translateX(800%);
+      transform: translateY(0) translateX(900px);
     }
     50% {
-      transform: translateY(-10px) translateX(800%);
+      transform: translateY(-10px) translateX(900px);
     }
     100% {
-      transform: translateY(0) translateX(800%);
+      transform: translateY(0) translateX(900px);
     }
   }
 }
@@ -1955,13 +1955,13 @@ main .main-bg .container .skill .skill-box .css {
 @media only screen and (min-width: 1024px) {
   @keyframes cssUpDown {
     0% {
-      transform: translateY(0) translateX(350%);
+      transform: translateY(-220px) translateX(400px);
     }
     50% {
-      transform: translateY(-10px) translateX(350%);
+      transform: translateY(-210px) translateX(400px);
     }
     100% {
-      transform: translateY(0) translateX(350%);
+      transform: translateY(-220px) translateX(400px);
     }
   }
 }
@@ -1982,13 +1982,13 @@ main .main-bg .container .skill .skill-box .figma {
 @media only screen and (min-width: 1024px) {
   @keyframes figmaUpDown {
     0% {
-      transform: translateY(0) translateX(550%);
+      transform: translateY(80px) translateX(550%);
     }
     50% {
-      transform: translateY(-10px) translateX(550%);
+      transform: translateY(90px) translateX(550%);
     }
     100% {
-      transform: translateY(0) translateX(550%);
+      transform: translateY(80px) translateX(550%);
     }
   }
 }
