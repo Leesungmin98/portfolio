@@ -385,8 +385,8 @@ header {
                     }
                 }
                 @include responsive(large-screens) {
-                    bottom: -3%; right: 50%;
-                    width: 14%;
+                    bottom: -2%; right: 50%;
+                    width: 10%;
                 }
             }
 
@@ -395,7 +395,7 @@ header {
                 width: 100%; right: 0%;
                
                 @include responsive(large-screens) {
-                    bottom: 8%; right: 10%;
+                    bottom: 6.5%; right: 10%;
                     width: 50%;
                 }
             }
