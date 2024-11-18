@@ -19,7 +19,7 @@ header {
                 height: 10%;
                 // background-color: #00A3A0;
                 @include responsive(large-screens) {
-                    height: 1350px;
+                    height: 1200px;
                 }
             }
             ///////////////////////////////
@@ -365,7 +365,7 @@ header {
 
             .paper-ship {
                 position: absolute;
-                bottom: -10%;  
+                bottom: -6%;  
                 right: 55%; 
                 width: 23%;  
                 z-index: 5;
@@ -385,7 +385,7 @@ header {
                     }
                 }
                 @include responsive(large-screens) {
-                    bottom: -2%; right: 50%;
+                    bottom: 5%; right: 50%;
                     width: 10%;
                 }
             }
@@ -2555,7 +2555,7 @@ main {
                             margin-right: 2px;
                             font-size: 3vw;
                             text-align: center;
-                            color: #767676;
+                            color: #111111;
                             background-color: rgb(255, 255, 255);
                             border-radius: 20px;
                             border: 1px solid #dbdbdb;

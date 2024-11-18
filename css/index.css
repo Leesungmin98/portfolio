@@ -92,7 +92,7 @@ header .wave canvas {
 }
 @media only screen and (min-width: 1024px) {
   header .wave canvas {
-    height: 1350px;
+    height: 1200px;
   }
 }
 header .wave .box {
@@ -415,7 +415,7 @@ header .wave .img-box .bird2 {
 }
 header .wave .img-box .paper-ship {
   position: absolute;
-  bottom: -10%;
+  bottom: -6%;
   right: 55%;
   width: 23%;
   z-index: 5;
@@ -436,7 +436,7 @@ header .wave .img-box .paper-ship {
 }
 @media only screen and (min-width: 1024px) {
   header .wave .img-box .paper-ship {
-    bottom: -2%;
+    bottom: 5%;
     right: 50%;
     width: 10%;
   }
@@ -2141,7 +2141,7 @@ main .main-bg .container .portfolio .po-box .box-button a {
   margin-right: 2px;
   font-size: 3vw;
   text-align: center;
-  color: #767676;
+  color: #111111;
   background-color: rgb(255, 255, 255);
   border-radius: 20px;
   border: 1px solid #dbdbdb;

@@ -243,40 +243,94 @@ document.querySelectorAll('.inner-box1 img, .inner-box2 img, .inner-box3 img, .i
 });
 
 ///////////////////////////////////////////////
-
+// 잠수함
 document.addEventListener("DOMContentLoaded", () => {
     const paperShip = document.querySelector(".paper-ship");
 
-   
     let time = 0;
-    const floatAmplitude = 10;  
-    const rotateAmplitude = 5;  
-    const floatSpeed = 0.005;   
 
- 
+    // 화면 크기에 따라 다르게 설정
+    const mql = window.matchMedia("screen and (max-width: 768px)");  // 모바일 크기 설정
+
+    // 모바일 환경에서는 진폭과 깊이를 적게 설정, PC에서는 더 크게 설정
+    let floatAmplitude, floatSpeed, diveDepth, riseSpeed;
+
+    if (mql.matches) {
+        // 모바일
+        floatAmplitude = 0.1;  // 떠다니는 진폭 (작게 설정)
+        floatSpeed = 0.005;    // 떠다니는 속도
+        diveDepth = 15;        // 잠수 깊이 (모바일에서는 잠수 깊이를 적게 설정)
+        riseSpeed = 0.009;     // 상승 속도
+    } else {
+        // PC
+        floatAmplitude = 1;  // 떠다니는 진폭 (크게 설정)
+        floatSpeed = 0.004;    // 떠다니는 속도
+        diveDepth = 15;        // 잠수 깊이 (PC에서는 잠수 깊이를 크게 설정)
+        riseSpeed = 0.009;     // 상승 속도
+    }
+
     function animateShip() {
-        
-        const floatY =
-            Math.sin(time * floatSpeed) * floatAmplitude +
-            Math.sin(time * floatSpeed * 1) * (floatAmplitude * 4.5);
+        // 수면 위에서 떠다니는 효과 (위아래로)
+        const floatY = Math.sin(time * floatSpeed) * floatAmplitude;
 
-        const rotation =
-            Math.sin(time * floatSpeed) * rotateAmplitude +
-            Math.sin(time * floatSpeed * 2) * (rotateAmplitude * 0.2);
+        // 잠수 효과 (잠수 및 상승 반복)
+        const diveY = Math.sin(time * riseSpeed) * diveDepth;  // 깊이 따라 움직이기
 
-     
+        // 잠수하고 떠오르는 움직임을 합쳐서 계산
+        const finalY = floatY + diveY;
+
+        // 회전 효과 (선택 사항)
+        const rotation = Math.sin(time * floatSpeed) * 5; // 회전 각도 설정
+
+        // CSS 트랜스폼으로 위치와 회전 설정
         paperShip.style.transform = `
-            translateY(${floatY}px)
+            translateY(${finalY}px)
             rotate(${rotation}deg)
         `;
 
+        // 시간 증가
         time += 1;
         requestAnimationFrame(animateShip);
     }
 
- 
     animateShip();
 });
+
+
+
+// document.addEventListener("DOMContentLoaded", () => {
+//     const paperShip = document.querySelector(".paper-ship");
+
+   
+//     let time = 0;
+//     const floatAmplitude = 10;  
+//     const rotateAmplitude = 5;  
+//     const floatSpeed = 0.005;   
+
+ 
+//     function animateShip() {
+        
+//         const floatY =
+//             Math.sin(time * floatSpeed) * floatAmplitude +
+//             Math.sin(time * floatSpeed * 1) * (floatAmplitude * 4.5);
+
+//         const rotation =
+//             Math.sin(time * floatSpeed) * rotateAmplitude +
+//             Math.sin(time * floatSpeed * 2) * (rotateAmplitude * 0.2);
+
+     
+//         paperShip.style.transform = `
+//             translateY(${floatY}px)
+//             rotate(${rotation}deg)
+//         `;
+
+//         time += 1;
+//         requestAnimationFrame(animateShip);
+//     }
+
+ 
+//     animateShip();
+// });
 
 /////////////////////////////////
 
