@@ -448,7 +448,7 @@ header .wave .img-box .island {
 }
 @media only screen and (min-width: 1024px) {
   header .wave .img-box .island {
-    bottom: 6.5%;
+    bottom: 7%;
     right: 10%;
     width: 50%;
   }
@@ -2162,7 +2162,7 @@ main .main-bg .container .portfolio .po-box .box-button a::after {
   content: "";
   display: block;
 }
-@keyframes po-move {
+@keyframes po-move-js {
   0% {
     transform: translateY(0%);
   }
@@ -2187,10 +2187,7 @@ main .main-bg .container .portfolio .po-box .b1-b2 .b1 {
   }
 }
 main .main-bg .container .portfolio .po-box .b1-b2 .b1 .inner-box1 img {
-  animation-name: po-move;
-  animation-duration: 120s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  animation: none;
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .portfolio .po-box .b1-b2 .box-button1 {
@@ -2211,10 +2208,7 @@ main .main-bg .container .portfolio .po-box .b1-b2 .b1 .inner-box1 img {
   }
 }
 main .main-bg .container .portfolio .po-box .b1-b2 .b2 .inner-box2 img {
-  animation-name: po-move;
-  animation-duration: 150s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  animation: none;
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .portfolio .po-box .b1-b2 .box-button2 {
@@ -2223,7 +2217,7 @@ main .main-bg .container .portfolio .po-box .b1-b2 .b2 .inner-box2 img {
     z-index: 100;
   }
 }
-@keyframes po-move-common {
+@keyframes po-move-js {
   0% {
     transform: translateY(0%);
   }
@@ -2250,10 +2244,7 @@ main .main-bg .container .portfolio .po-box .b3-b4 .b3 {
   }
 }
 main .main-bg .container .portfolio .po-box .b3-b4 .b3 .inner-box3 img {
-  animation-name: po-move-common;
-  animation-duration: 120s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  animation: none;
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .portfolio .po-box .b3-b4 .box-button3 {
@@ -2274,10 +2265,7 @@ main .main-bg .container .portfolio .po-box .b3-b4 .b3 .inner-box3 img {
   }
 }
 main .main-bg .container .portfolio .po-box .b3-b4 .b4 .inner-box4 img {
-  animation-name: po-move-common;
-  animation-duration: 100s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  animation: none;
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .portfolio .po-box .b3-b4 .box-button4 {

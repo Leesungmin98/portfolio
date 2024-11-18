@@ -312,3 +312,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
 /////////////////////////////////////////
 
+document.addEventListener("DOMContentLoaded", () => {
+    const animatedElements = document.querySelectorAll(".inner-box1 img, .inner-box2 img, .inner-box3 img, .inner-box4 img");
+  
+    const observerOptions = {
+      root: null, // 뷰포트를 기준으로 함
+      threshold: 0.1, // 요소의 10%가 보일 때 애니메이션 시작
+    };
+  
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.style.animation = "po-move-js 70s ease-in-out infinite";
+        } else {
+          entry.target.style.animation = "none";
+        }
+      });
+    }, observerOptions);
+  
+    animatedElements.forEach((element) => {
+      observer.observe(element);
+    });
+  });
+  

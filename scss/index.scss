@@ -395,7 +395,7 @@ header {
                 width: 100%; right: 0%;
                
                 @include responsive(large-screens) {
-                    bottom: 6.5%; right: 10%;
+                    bottom: 7%; right: 10%;
                     width: 50%;
                 }
             }
@@ -2580,7 +2580,7 @@ main {
                 
 
                     .b1-b2 {
-                        @keyframes po-move {
+                        @keyframes po-move-js {
                             0% {
                                 transform: translateY(0%);
                             }
@@ -2605,10 +2605,7 @@ main {
                             }
                     
                             .inner-box1 img {
-                                animation-name: po-move;
-                                animation-duration: 120s;
-                                animation-timing-function: ease-in-out;
-                                animation-iteration-count: infinite;
+                                animation: none;
                             }
                         }
                     
@@ -2635,10 +2632,8 @@ main {
                             }
                     
                             .inner-box2 img {
-                                animation-name: po-move;
-                                animation-duration: 150s;
-                                animation-timing-function: ease-in-out;
-                                animation-iteration-count: infinite;
+                                animation: none;
+                               
                             }
                         }
                     
@@ -2653,7 +2648,7 @@ main {
                     
                     .b3-b4 {
                     //    background-color: #00A3A0;
-                        @keyframes po-move-common {
+                        @keyframes po-move-js {
                             0% {
                                 transform: translateY(0%);
                             }
@@ -2680,10 +2675,8 @@ main {
                             }
                     
                             .inner-box3 img {
-                                animation-name: po-move-common;
-                                animation-duration: 120s;
-                                animation-timing-function: ease-in-out;
-                                animation-iteration-count: infinite;
+                                animation: none;
+                               
                             }
                         }
                     
@@ -2708,10 +2701,8 @@ main {
                             }
                     
                             .inner-box4 img {
-                                animation-name: po-move-common;
-                                animation-duration: 100s;
-                                animation-timing-function: ease-in-out;
-                                animation-iteration-count: infinite;
+                                animation: none;
+                               
                             }
                         }
                     
