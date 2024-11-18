@@ -1816,7 +1816,7 @@ main {
                     margin-bottom: 100px;
 
                     @include responsive(large-screens) {
-                        // large screens에 대한 추가 설정이 필요한 경우 추가
+                       
                     }
 
                     .skill-box {
@@ -2019,7 +2019,8 @@ main {
                                     left: 50%;
                                     transform: translate(-50% , -50%);
                                     font-family: "pretendard";
-                                    font-size: 3.8vw;
+                                    font-size: 4vw;
+                                    line-height: 135%;
 
                                     @include responsive(large-screens) {
                                         font-size: 1.2rem;
