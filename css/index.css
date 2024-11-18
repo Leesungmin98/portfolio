@@ -2405,7 +2405,8 @@ main .main-bg .container .portfolio .design .ds {
   width: 25vw;
   height: 25vw;
   cursor: pointer;
-  border-radius: 20px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
   background-color: #9c9c9c;
 }
 @media only screen and (min-width: 1024px) {
