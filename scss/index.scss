@@ -2266,13 +2266,13 @@ main {
                             @include responsive(large-screens) {
                                 @keyframes jqueryUpDown {
                                     0% {
-                                        transform: translateY(0) translateX(-200px); 
+                                        transform: translateY(30px) translateX(-120px); 
                                     }
                                     50% {
-                                        transform: translateY(-10px) translateX(-200px); 
+                                        transform: translateY(40px) translateX(-120px); 
                                     }
                                     100% {
-                                        transform: translateY(0) translateX(-200px); 
+                                        transform: translateY(30px) translateX(-120px); 
                                     }
                                 }
                             }
