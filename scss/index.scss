@@ -1825,7 +1825,8 @@ main {
                         height: 190vw;
                         // background-color: #00A3A0;
                         @include responsive(large-screens) {
-                            height: 550px;
+                            height: 400px;
+                            // background-color: #00A3A0;
                         }
 
                         .skill-item {

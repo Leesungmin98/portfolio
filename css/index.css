@@ -1460,7 +1460,7 @@ main .main-bg .container .skill .skill-box {
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .skill .skill-box {
-    height: 550px;
+    height: 400px;
   }
 }
 main .main-bg .container .skill .skill-box .skill-item {
