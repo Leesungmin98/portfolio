@@ -11,6 +11,10 @@
   font-family: "crunch chips";
   src: local("crunch chips"), url("../font/Crunch Chips.otf") format("opentype");
 }
+@font-face {
+  font-family: "Super Shiny";
+  src: local("Super Shiny"), url("../font/Super Shiny.ttf") format("opentype");
+}
 * {
   box-sizing: border-box;
   margin: 0;
