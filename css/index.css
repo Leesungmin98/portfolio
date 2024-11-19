@@ -2144,6 +2144,7 @@ main .main-bg .container .portfolio .po-box .box-button a {
   margin-left: 2px;
   margin-right: 2px;
   font-size: 3vw;
+  font-weight: 600;
   text-align: center;
   color: #111111;
   background-color: rgb(255, 255, 255);
@@ -2158,9 +2159,9 @@ main .main-bg .container .portfolio .po-box .box-button a {
   }
 }
 main .main-bg .container .portfolio .po-box .box-button a:hover {
-  font-weight: 570;
+  font-weight: 600;
   color: #111111;
-  border: 2px solid #111111;
+  border: 3px solid #111111;
 }
 main .main-bg .container .portfolio .po-box .box-button a::after {
   content: "";
@@ -2409,7 +2410,7 @@ main .main-bg .container .portfolio .design .ds {
   width: 25vw;
   height: 25vw;
   cursor: pointer;
-  border-radius: 20px;
+  border-radius: 30%;
   background-color: #9c9c9c;
 }
 @media only screen and (min-width: 1024px) {
