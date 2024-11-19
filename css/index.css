@@ -483,7 +483,7 @@ header .container h1 {
   }
 }
 header .container h1 span {
-  color: #e539ee;
+  color: #5a27d4;
 }
 @keyframes title22 {
   0% {
@@ -721,13 +721,13 @@ main .main-bg {
   overflow: hidden;
   width: 100%;
   height: 100%;
-  background: linear-gradient(#E8DE68 10%, #e64aa2 30%, #e539ee 40%, #f64296 80%);
+  background: linear-gradient(#E8DE68 10%, #e64aa2 30%, #da5fea 40%, #5a27d4 80%);
   z-index: 0;
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg {
     height: 100%;
-    background: linear-gradient(#E8DE68 10%, #e64aa2 30%, #e539ee 40%, #f64296 80%);
+    background: linear-gradient(#E8DE68 10%, #e64aa2 30%, #da5fea 40%, #5a27d4 80%);
   }
 }
 main .main-bg #top-bt {
