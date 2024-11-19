@@ -95,7 +95,7 @@ header .wave canvas {
 }
 @media only screen and (min-width: 1024px) {
   header .wave canvas {
-    height: 2000px;
+    height: 1800px;
   }
 }
 header .wave .box {
