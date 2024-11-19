@@ -1512,7 +1512,8 @@ main {
                             display: inline-block;
                             z-index: 550;
                             cursor: pointer;
-
+                            outline: none;
+                            -webkit-tap-highlight-color: transparent;
                             @include responsive(large-screens) {
                                 position: absolute;
                             }
@@ -1527,9 +1528,12 @@ main {
                                 height: auto;
                                 display: block; 
                                 transition: opacity 0.3s ease, transform 0.3s ease;
+                                outline: none;
+                                -webkit-tap-highlight-color: transparent;
+                                // background-color: transparent;
                             }
                         
-
+                            
                             .ai-img {
                                 width: 15vw;
                                 @include responsive(large-screens) {
@@ -1630,6 +1634,8 @@ main {
                                 opacity: 0;
                                 transition: opacity 0.3s ease, transform 0.3s ease;
                                 border-radius: 50%;
+                                outline: none;
+                                -webkit-tap-highlight-color: transparent;
                                 @include responsive(large-screens) {
                                     font-size: 1vw;
                                 }

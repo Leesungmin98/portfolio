@@ -262,26 +262,26 @@ document.addEventListener("DOMContentLoaded", () => {
         riseSpeed = 0.009;     // 상승 속도
     } else {
         // PC
-        floatAmplitude = 1;  // 떠다니는 진폭 (크게 설정)
-        floatSpeed = 0.004;    // 떠다니는 속도
-        diveDepth = 15;        // 잠수 깊이 (PC에서는 잠수 깊이를 크게 설정)
-        riseSpeed = 0.009;     // 상승 속도
+        floatAmplitude = 1;  
+        floatSpeed = 0.004;  
+        diveDepth = 15;        
+        riseSpeed = 0.009;     
     }
 
     function animateShip() {
-        // 수면 위에서 떠다니는 효과 (위아래로)
+        
         const floatY = Math.sin(time * floatSpeed) * floatAmplitude;
 
-        // 잠수 효과 (잠수 및 상승 반복)
-        const diveY = Math.sin(time * riseSpeed) * diveDepth;  // 깊이 따라 움직이기
+      
+        const diveY = Math.sin(time * riseSpeed) * diveDepth;  
 
-        // 잠수하고 떠오르는 움직임을 합쳐서 계산
+       
         const finalY = floatY + diveY;
 
-        // 회전 효과 (선택 사항)
-        const rotation = Math.sin(time * floatSpeed) * 5; // 회전 각도 설정
+      
+        const rotation = Math.sin(time * floatSpeed) * 5; 
 
-        // CSS 트랜스폼으로 위치와 회전 설정
+
         paperShip.style.transform = `
             translateY(${finalY}px)
             rotate(${rotation}deg)
