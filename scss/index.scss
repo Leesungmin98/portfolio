@@ -8,7 +8,7 @@ header {
             width: 100%;
             height: 170vw;
             overflow: hidden; 
-            background:radial-gradient(ellipse at center, #ceecf7 0%, #a6e5fa 35%, #1eb6e9 100%);
+            // background:radial-gradient(ellipse at center, #ceecf7 0%, #c5eefb 35%, #63acff 100%);
             @include responsive(large-screens) {
                 height: 1000px;
             }
@@ -16,10 +16,10 @@ header {
                 position: absolute; bottom: 0px; left: 0px;
                 z-index: 10;
                 width: 100%;
-                height: 10%;
+                height: 100%;
                 // background-color: #00A3A0;
                 @include responsive(large-screens) {
-                    height: 1200px;
+                    height: 2000px;
                 }
             }
             ///////////////////////////////
@@ -42,9 +42,9 @@ header {
                     z-index: 10;
                     // background-color: #00A3A0;
                     @include responsive(large-screens) {
-                        transform: scale(1);
-                        left: 0px;
-                        top: 0px;
+                        transform: scale(0.7);
+                        left: -100px;
+                        top: -100px;
                     }
                     .sun{
                       position: absolute;
@@ -262,7 +262,7 @@ header {
             }
             .cloud1 {
                 top: 200px; left: 50px;
-                width: 25%;
+                width: 20%;
 
 
                 @keyframes move {
@@ -275,12 +275,12 @@ header {
                 }
                 @include responsive(large-screens) {
                     top: 300px; left: -200px;
-                    width: 10%;
+                    width: 5%;
                 }
             }
             .cloud2 {
                 top: 150px; left: 200px;
-                width: 20%;
+                width: 15%;
 
                 @keyframes move2 {
                     0% {
@@ -297,8 +297,8 @@ header {
             }
           
             .bird1 {
-                top: 15%; left: 20%;
-                width: 10%;
+                top: 25%; left: 20%;
+                width: 4%;
                 transform: rotate(1deg);
 
                 animation-name: bird1;
@@ -322,15 +322,15 @@ header {
                     }
                 }
                 @include responsive(large-screens) {
-                    top: 20%; left: 25%;
-                    width: 3%;
+                    top: 23%; left: 50%;
+                    width: 1.5%;
                     transform: rotate(20deg);
                 }
             }
 
             .bird2 {
                 top: 30%; left: 55%;
-                width: 8%;
+                width: 7%;
                 transform: rotate(1.5deg);
 
                 
@@ -357,7 +357,7 @@ header {
                 }
                 @include responsive(large-screens) {
                     top: 27%; left: 45%;
-                    width: 4%;
+                    width: 2%;
                 }
             }
 
@@ -365,9 +365,9 @@ header {
 
             .paper-ship {
                 position: absolute;
-                bottom: -6%;  
+                bottom: 15%;  
                 right: 55%; 
-                width: 23%;  
+                width: 15%;  
                 z-index: 5;
                 transform-origin: center center;
                 will-change: transform;
@@ -385,18 +385,18 @@ header {
                     }
                 }
                 @include responsive(large-screens) {
-                    bottom: 5%; right: 50%;
+                    bottom: 10%; right: 23%;
                     width: 10%;
                 }
             }
 
             .island {
-                bottom: -2%;
-                width: 100%; right: 0%;
+                bottom: 6%;
+                width: 70%; right: 10%;
                
                 @include responsive(large-screens) {
-                    bottom: 7%; right: 10%;
-                    width: 50%;
+                    bottom: 15%; right: 20%;
+                    width: 30%;
                 }
             }
         } // img box
@@ -410,12 +410,13 @@ header {
         margin: auto;
 
         h1 {
-            position: absolute; top: 51%; left: 50%;
+            position: absolute; top: 50%; left: 50%;
             transform: translate(-50%, -50%);
             z-index: 10;
-            font-size: 10vw;
-            font-family: 'crunch chips';
+            font-size: 13vw;
+            font-family: 'Super Shiny';
             text-align: center;
+           
             // -webkit-text-stroke: 1px white;
 
             animation-name: title22;
@@ -424,10 +425,11 @@ header {
             
             @include responsive(large-screens) {
                 top: 47%;
-                font-size: 110px;
+                font-size: 150px;
             } 
             span {
-                color: #00A3A0;
+                color: #9611e9;
+
             }
 
             @keyframes title22 {
@@ -701,11 +703,11 @@ main {
         overflow: hidden;
         width: 100%;
         height: 100%;
-        background:linear-gradient( #1eb6e9 17%, #20599C 40%,#2b6db9 60%,#18267F 100%);
+        background:linear-gradient( #E8DE68 10%, #e64aa2 30%,#1eb6e9 60%,#0487b3 80%);
         z-index: 0;
         @include responsive(large-screens) {
             height: 100%;
-            background:linear-gradient( #1eb6e9 17%, #20599C 40%,#2b6db9 60%,#18267F 100% );
+            background:linear-gradient( #E8DE68 10%, #e64aa2 30%,#1eb6e9 60%,#0487b3 80% );
         }
 
         #top-bt { 
@@ -1396,48 +1398,52 @@ main {
                     }
                     .submarin {
                         width: 100%; height: 100%;
+                        margin-top: 120px;
                         // background-color: antiquewhite;
                         @include responsive(large-screens) {
                             
                         }
                         .submarin-img {
-                            width: 300%;
-                            transform: translateX(-11%) translateY(32%);
+                            width: 55%;
+                            margin: auto;
+                            // transform: translateX(-11%) translateY(32%);
                             @include responsive(large-screens) {
-                                width: 480%;
-                                transform: translateX(-650px) translateY(200px);
+                                width: 60%;
+                                // transform: translateX(-650px) translateY(200px);
                             }
                         }
                     }
                     .atxt {
                         width: 100%; height: 100%;
-                        padding-left: 20px;
-                        padding-right: 20px;
+                        padding: 20px;
                         font-family: 'pretendard';
-                        // background-color: #fa85dd;
+                        border-radius: 20px;
+                        background-color: #ffffff;
                         @include responsive(large-screens) {
                          position: relative; z-index: 10;
                         }
                         h3 {
-                            font-size: 9vw;
-                            font-weight: 400;
+                            font-size: 6vw;
+                            font-weight: 600;
                             @include responsive(large-screens) {
-                                font-size: 48px;
+                                font-size: 32px;
                                 font-weight: 400;
                             }
                             .name {
-                                font-size: 56px;
+                                font-size: 6vw;
                                 font-weight: 600;
                                 color: #000000;
+                                @include responsive(large-screens) {
+
+                                }
                             }
                         }
                         strong {
-                            margin: 12px 0 24px 0;
+                            // margin: 12px 0 24px 0;
                             color: #767676;
                         }
                         p {
                             text-align: left;
-                            margin-bottom: 5%;
                             font-size: 4vw;
                             font-weight: 300;
                             color: #000000;
@@ -2844,8 +2850,8 @@ main {
                     .ds {
                         width: 25vw; height: 25vw;
                         cursor: pointer;
-                        border-radius: 50%;
-                        border: 1px solid #ffffff;
+                        border-radius: 20px;
+                        // border: 1px solid #ffffff;
                         background-color: #9c9c9c;
                         @include responsive(large-screens) {
                             width: 15vw; height: 15vw;
@@ -3068,7 +3074,7 @@ main {
                     
 
                     .banner-box {
-                        margin-left:20%;
+                        // margin-left:20%;
                         cursor: pointer;                  
                         .banner {
                             overflow: hidden;
@@ -3096,14 +3102,14 @@ main {
                                 }
                         }   
                         @include responsive(large-screens) {
-                            margin-left:10%;
+                            // margin-left:10%;
                             
                         } 
                     }
 
                      
                         .detail-box {
-                            margin-left:55%;
+                            // margin-left:55%;
                             .detail {
                                 overflow: hidden;
                                 background-size: cover;
@@ -3130,8 +3136,8 @@ main {
                                 }
                             }
                             @include responsive(large-screens) {
-                                transform: translateY(-200px);
-                                margin-left:42%;
+                                // transform: translateY(-200px);
+                                // margin-left:42%;
                             } 
                     }
 
@@ -3140,7 +3146,7 @@ main {
                     
 
                     .package-box {
-                        margin-left:20%;
+                        // margin-left:20%;
                   
                         .package {
                             overflow: hidden;
@@ -3170,14 +3176,14 @@ main {
                                 }
                         }
                         @include responsive(large-screens) {
-                            transform: translateY(-350px);
-                            margin-top: 8%;
-                            margin-left:70%;
+                            // transform: translateY(-350px);
+                            // margin-top: 8%;
+                            // margin-left:70%;
                         } 
                     }
 
                     .logo-box {
-                        margin-left:55%;
+                        // margin-left:55%;
                    
                         .logo {
                             overflow: hidden;
@@ -3206,14 +3212,14 @@ main {
                                 }
                         }
                         @include responsive(large-screens) {
-                            transform: translateY(-450px);
-                            margin-top: 4%;
-                            margin-left:42%;
+                            // transform: translateY(-450px);
+                            // margin-top: 4%;
+                            // margin-left:42%;
                         } 
                     }
 
                     .mobile-box {
-                        margin-left:20%;
+                        // margin-left:20%;
                         .mobile {
                             overflow: hidden;
                             background-size: cover;
@@ -3242,14 +3248,14 @@ main {
                         }
                        
                         @include responsive(large-screens) {
-                            transform: translateY(-550px);
-                            margin-top: 13%;
-                            margin-left:25%;
+                            // transform: translateY(-550px);
+                            // margin-top: 13%;
+                            // margin-left:25%;
                         } 
                     }
 
                     .info-box {
-                        margin-left:55%;
+                        // margin-left:55%;
                         cursor: pointer;
                         .info {
                             overflow: hidden;
@@ -3277,15 +3283,15 @@ main {
                                 }
                            }
                         @include responsive(large-screens) {
-                            transform: translateY(-550px);
-                            margin-left:50%;
+                            // transform: translateY(-550px);
+                            // margin-left:50%;
                         } 
                     }
 
 
                     
                     .character-box {
-                        margin-left:20%;  
+                        // margin-left:20%;  
                         cursor: pointer;
                         .character {
                             overflow: hidden;
@@ -3313,8 +3319,8 @@ main {
                                 }
                            }
                         @include responsive(large-screens) {
-                            transform: translateY(-550px);
-                            margin-left:30%;
+                            // transform: translateY(-550px);
+                            // margin-left:30%;
                         } 
                     }
                 }

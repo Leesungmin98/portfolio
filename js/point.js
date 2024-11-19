@@ -13,7 +13,7 @@ export class Point {
     this.fieldY = y;
     this.speed = 0.04 + Math.random() * 0.0005;
     this.cur = Math.random() * Math.PI * 6; 
-    this.max = Math.random() * 200 + 300; 
+    this.max = Math.random() * 60 + 60; 
 
   } else {
     this.index = index;
@@ -24,7 +24,7 @@ export class Point {
     this.fieldY = y;
     this.speed = 0.04 + Math.random() * 0.001;
     this.cur = Math.random() * Math.PI * 6; 
-    this.max = Math.random() * 60 + 60; 
+    this.max = Math.random() * 100 + 100; 
   }
   }
 

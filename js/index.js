@@ -249,10 +249,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let time = 0;
 
-    // 화면 크기에 따라 다르게 설정
     const mql = window.matchMedia("screen and (max-width: 768px)");  // 모바일 크기 설정
 
-    // 모바일 환경에서는 진폭과 깊이를 적게 설정, PC에서는 더 크게 설정
+    
     let floatAmplitude, floatSpeed, diveDepth, riseSpeed;
 
     if (mql.matches) {
