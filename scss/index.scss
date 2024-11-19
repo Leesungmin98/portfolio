@@ -6,7 +6,7 @@ header {
             position: relative; 
             z-index: 0; 
             width: 100%;
-            height: 170vw;
+            height: 180vw;
             overflow: hidden; 
             background-color: #FAF7F5;
             // background:radial-gradient(ellipse at center, #ceecf7 0%, #c5eefb 35%, #63acff 100%);
@@ -414,7 +414,7 @@ header {
             position: absolute; top: 50%; left: 50%;
             transform: translate(-50%, -50%);
             z-index: 10;
-            font-size: 14vw;
+            font-size: 15vw;
             font-family: 'Super Shiny';
             text-align: center;
            
@@ -542,7 +542,7 @@ header {
 
         .fullscreen {
             position: fixed;
-            background: $color-main;
+            background: white;
             top: 0;
             left: 0;
             width: 100%;
@@ -624,7 +624,7 @@ header {
                 position: relative;
                 color: $color-link;
                 
-                font-size: 1.3rem;
+                font-size: 1.5rem;
                 font-family: 'Pretendard';
                 text-decoration: none;
                 overflow: hidden;
