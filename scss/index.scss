@@ -8,6 +8,7 @@ header {
             width: 100%;
             height: 170vw;
             overflow: hidden; 
+            background-color: #FAF7F5;
             // background:radial-gradient(ellipse at center, #ceecf7 0%, #c5eefb 35%, #63acff 100%);
             @include responsive(large-screens) {
                 height: 1000px;
@@ -35,9 +36,9 @@ header {
                     width: 100%;
                     height: 100%;
                     position: relative;
-                    top: -4%;
-                    left: -12%;
-                    transform: scale(0.5); 
+                    top: -7%;
+                    left: -20%;
+                    transform: scale(0.3); 
                     transform-origin: center center; 
                     z-index: 10;
                     // background-color: #00A3A0;
@@ -413,7 +414,7 @@ header {
             position: absolute; top: 50%; left: 50%;
             transform: translate(-50%, -50%);
             z-index: 10;
-            font-size: 13vw;
+            font-size: 14vw;
             font-family: 'Super Shiny';
             text-align: center;
            
@@ -452,13 +453,14 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-
+        // background-color: #FAF7F5;
         @include responsive(large-screens) {
             display: flex;
             justify-content: space-between;
             margin-top: 20px;
             height: 80px;
             border-radius: 50px;
+            background-color: #FAF7F5;
         }
         .header-logo {
             a {
