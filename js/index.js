@@ -370,7 +370,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     const observerOptions = {
       root: null, // 뷰포트를 기준으로 함
-      threshold: 0.1, // 요소의 10%가 보일 때 애니메이션 시작
+      threshold: 0.01, // 요소의 10%가 보일 때 애니메이션 시작
     };
   
     const observer = new IntersectionObserver((entries) => {
