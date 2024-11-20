@@ -21,7 +21,7 @@ header {
                 height: 70%;
                 // background-color: #00A3A0;
                 @include responsive(large-screens) {
-                    height: 1800px;
+                    height: 170%;
                 }
             }
             ///////////////////////////////
@@ -387,7 +387,7 @@ header {
                     }
                 }
                 @include responsive(large-screens) {
-                    bottom: 10%; right: 23%;
+                    bottom: 13%; right: 23%;
                     width: 10%;
                 }
             }
@@ -718,6 +718,8 @@ main {
             text-align: center;
             color: black;   
             cursor: pointer; 
+            outline: none;
+            -webkit-tap-highlight-color: transparent;
             // background-color: #00A3A0;
             &:hover {
                 transform: scale(1.2);
@@ -743,6 +745,12 @@ main {
             }
         }
 
+        @media (hover: none) {
+            #top-bt:hover {
+                transform: none;
+                color: black;
+            }
+        }
 
         .fishs {
             position: absolute; 
@@ -2650,6 +2658,7 @@ main {
 
                     .info-modal-box {
                         .info-modal {
+                            
                             .img-box {
                            
                                 img {

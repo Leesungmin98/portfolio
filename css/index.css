@@ -96,7 +96,7 @@ header .wave canvas {
 }
 @media only screen and (min-width: 1024px) {
   header .wave canvas {
-    height: 1800px;
+    height: 170%;
   }
 }
 header .wave .box {
@@ -440,7 +440,7 @@ header .wave .img-box .paper-ship {
 }
 @media only screen and (min-width: 1024px) {
   header .wave .img-box .paper-ship {
-    bottom: 10%;
+    bottom: 13%;
     right: 23%;
     width: 10%;
   }
@@ -740,6 +740,8 @@ main .main-bg #top-bt {
   text-align: center;
   color: black;
   cursor: pointer;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 main .main-bg #top-bt:hover {
   transform: scale(1.2);
@@ -765,6 +767,12 @@ main .main-bg #top-bt p {
 @media only screen and (min-width: 1024px) {
   main .main-bg #top-bt p {
     font-size: 1.5rem;
+  }
+}
+@media (hover: none) {
+  main .main-bg #top-bt:hover {
+    transform: none;
+    color: black;
   }
 }
 main .main-bg .fishs {
@@ -2445,7 +2453,7 @@ main .main-bg .container .portfolio .design .po-modal-box {
   transition: bottom 0.3s ease;
   box-shadow: 0px -2px 10px rgba(255, 255, 255, 0.1);
   overflow-y: auto;
-  z-index: 30000;
+  z-index: 3000000000;
 }
 main .main-bg .container .portfolio .design .po-modal-box .po-modal {
   text-align: center;

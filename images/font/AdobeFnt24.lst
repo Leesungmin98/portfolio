@@ -1,0 +1,443 @@
+%!Adobe-FontList 1.24
+%Locale:0x412
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:BubbleGum
+FamilyName:BubbleGum
+StyleName:Regular
+FullName:BubbleGum
+MenuName:BubbleGum
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Alex\Desktop\portfoilo\images\Font\Bubblegum.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:24080
+FileModTime:1732021588
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,BubbleGum
+NameArray:0,Win,1,BubbleGum
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:CrunchChips3D
+FamilyName:Crunch Chips
+StyleName:3D
+FullName:Crunch Chips 3D
+MenuName:Crunch Chips 3D
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Alex\Desktop\portfoilo\images\Font\Crunch Chips-3D.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:199592
+FileModTime:1730701541
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Crunch Chips 3D
+NameArray:0,Win,1,Crunch Chips 3D
+NameArray:0,Win,16,Crunch Chips
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:CrunchChipsRegular
+FamilyName:Crunch Chips
+StyleName:Regular
+FullName:Crunch Chips
+MenuName:Crunch Chips
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Alex\Desktop\portfoilo\images\Font\Crunch Chips.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:86188
+FileModTime:1730701541
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Crunch Chips
+NameArray:0,Win,1,Crunch Chips
+NameArray:0,Win,16,Crunch Chips
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Halo-Dek
+FamilyName:Halo Dek
+StyleName:Regular
+FullName:Halo Dek
+MenuName:Halo Dek
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Alex\Desktop\portfoilo\images\Font\Halo Dek.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:51156
+FileModTime:1732021880
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Halo Dek
+NameArray:0,Win,1,Halo Dek
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:CID
+FontName:Pretendard-Black
+FamilyName:Pretendard
+StyleName:Black
+FullName:Pretendard Black
+MenuName:Pretendard Black
+StyleBits:0
+FamilyNameNative:Pretendard
+StyleNameNative:Black
+FullNameNative:Pretendard Black
+WritingScript:Korean
+OutlineFileName:C:\Users\Alex\Desktop\portfoilo\images\Font\Pretendard-Black.otf
+DataFormat:sfntData
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:1559552
+FileModTime:1730701541
+WeightClass:900
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Pretendard Black
+NameArray:0,Win,16,Pretendard
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:CID
+FontName:Pretendard-Bold
+FamilyName:Pretendard
+StyleName:Bold
+FullName:Pretendard Bold
+MenuName:Pretendard
+StyleBits:2
+FamilyNameNative:Pretendard
+StyleNameNative:Bold
+FullNameNative:Pretendard Bold
+WritingScript:Korean
+OutlineFileName:C:\Users\Alex\Desktop\portfoilo\images\Font\Pretendard-Bold.otf
+DataFormat:sfntData
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:1576660
+FileModTime:1730701541
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Pretendard
+NameArray:0,Win,16,Pretendard
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:CID
+FontName:Pretendard-ExtraBold
+FamilyName:Pretendard
+StyleName:ExtraBold
+FullName:Pretendard ExtraBold
+MenuName:Pretendard ExtraBold
+StyleBits:0
+FamilyNameNative:Pretendard
+StyleNameNative:ExtraBold
+FullNameNative:Pretendard ExtraBold
+WritingScript:Korean
+OutlineFileName:C:\Users\Alex\Desktop\portfoilo\images\Font\Pretendard-ExtraBold.otf
+DataFormat:sfntData
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:1568512
+FileModTime:1730701541
+WeightClass:800
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Pretendard ExtraBold
+NameArray:0,Win,16,Pretendard
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:CID
+FontName:Pretendard-ExtraLight
+FamilyName:Pretendard
+StyleName:ExtraLight
+FullName:Pretendard ExtraLight
+MenuName:Pretendard ExtraLight
+StyleBits:0
+FamilyNameNative:Pretendard
+StyleNameNative:ExtraLight
+FullNameNative:Pretendard ExtraLight
+WritingScript:Korean
+OutlineFileName:C:\Users\Alex\Desktop\portfoilo\images\Font\Pretendard-ExtraLight.otf
+DataFormat:sfntData
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:1544180
+FileModTime:1730701541
+WeightClass:200
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Pretendard ExtraLight
+NameArray:0,Win,16,Pretendard
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:CID
+FontName:Pretendard-Light
+FamilyName:Pretendard
+StyleName:Light
+FullName:Pretendard Light
+MenuName:Pretendard Light
+StyleBits:0
+FamilyNameNative:Pretendard
+StyleNameNative:Light
+FullNameNative:Pretendard Light
+WritingScript:Korean
+OutlineFileName:C:\Users\Alex\Desktop\portfoilo\images\Font\Pretendard-Light.otf
+DataFormat:sfntData
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:1599968
+FileModTime:1730701541
+WeightClass:300
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Pretendard Light
+NameArray:0,Win,16,Pretendard
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:CID
+FontName:Pretendard-Medium
+FamilyName:Pretendard
+StyleName:Medium
+FullName:Pretendard Medium
+MenuName:Pretendard Medium
+StyleBits:0
+FamilyNameNative:Pretendard
+StyleNameNative:Medium
+FullNameNative:Pretendard Medium
+WritingScript:Korean
+OutlineFileName:C:\Users\Alex\Desktop\portfoilo\images\Font\Pretendard-Medium.otf
+DataFormat:sfntData
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:1584068
+FileModTime:1730701542
+WeightClass:500
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Pretendard Medium
+NameArray:0,Win,16,Pretendard
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:CID
+FontName:Pretendard-Regular
+FamilyName:Pretendard
+StyleName:Regular
+FullName:Pretendard
+MenuName:Pretendard
+StyleBits:0
+FamilyNameNative:Pretendard
+StyleNameNative:Regular
+FullNameNative:Pretendard Regular
+WritingScript:Korean
+OutlineFileName:C:\Users\Alex\Desktop\portfoilo\images\Font\Pretendard-Regular.otf
+DataFormat:sfntData
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:1574352
+FileModTime:1730701542
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Pretendard
+NameArray:0,Win,16,Pretendard
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:CID
+FontName:Pretendard-SemiBold
+FamilyName:Pretendard
+StyleName:SemiBold
+FullName:Pretendard SemiBold
+MenuName:Pretendard SemiBold
+StyleBits:0
+FamilyNameNative:Pretendard
+StyleNameNative:SemiBold
+FullNameNative:Pretendard SemiBold
+WritingScript:Korean
+OutlineFileName:C:\Users\Alex\Desktop\portfoilo\images\Font\Pretendard-SemiBold.otf
+DataFormat:sfntData
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:1583704
+FileModTime:1730701542
+WeightClass:600
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Pretendard SemiBold
+NameArray:0,Win,16,Pretendard
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:CID
+FontName:Pretendard-Thin
+FamilyName:Pretendard
+StyleName:Thin
+FullName:Pretendard Thin
+MenuName:Pretendard Thin
+StyleBits:0
+FamilyNameNative:Pretendard
+StyleNameNative:Thin
+FullNameNative:Pretendard Thin
+WritingScript:Korean
+OutlineFileName:C:\Users\Alex\Desktop\portfoilo\images\Font\Pretendard-Thin.otf
+DataFormat:sfntData
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:1487484
+FileModTime:1730701542
+WeightClass:100
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Pretendard Thin
+NameArray:0,Win,16,Pretendard
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:CID
+FontName:OTRecipekoreaM
+FamilyName:RecipekoreaOTF
+StyleName:Medium
+FullName:RecipekoreaOTF Medium
+MenuName:레시피코리아OTF Medium
+StyleBits:2
+FamilyNameNative:레시피코리아OTF
+StyleNameNative:Medium
+FullNameNative:레시피코리아OTF Medium
+WritingScript:Korean
+OutlineFileName:C:\Users\Alex\Desktop\portfoilo\images\Font\Recipekorea 레코체 FONT.otf
+DataFormat:sfntData
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:770164
+FileModTime:1730701542
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,RecipekoreaOTF Medium
+NameArray:3,Mac,4,레시피코리아OTF Medium
+NameArray:3,Mac,18,레시피코리아OTF Medium
+NameArray:0,Win,1,RecipekoreaOTF Medium
+NameArray:0,Win,16,RecipekoreaOTF
+NameArray:3,Win,1,레시피코리아OTF Medium
+NameArray:3,Win,16,레시피코리아OTF
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:RecipekoreaM
+FamilyName:Recipekorea
+StyleName:Medium
+FullName:Recipekorea Medium
+MenuName:레시피코리아 Medium
+StyleBits:0
+FamilyNameNative:레시피코리아
+StyleNameNative:Medium
+FullNameNative:레시피코리아 Medium
+WritingScript:Korean
+OutlineFileName:C:\Users\Alex\Desktop\portfoilo\images\Font\Recipekorea 레코체 FONT.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:946300
+FileModTime:1730701542
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Recipekorea Medium
+NameArray:0,Win,16,Recipekorea
+NameArray:3,Win,1,레시피코리아 Medium
+NameArray:3,Win,16,레시피코리아
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:SuperShiny
+FamilyName:Super Shiny
+StyleName:Regular
+FullName:Super Shiny
+MenuName:Super Shiny
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Alex\Desktop\portfoilo\images\Font\Super Shiny.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:147796
+FileModTime:1732021898
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Super Shiny
+NameArray:0,Win,1,Super Shiny
+%EndFont
+

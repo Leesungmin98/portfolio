@@ -152,7 +152,8 @@ document.querySelectorAll('.inner-box1 img, .inner-box2 img, .inner-box3 img, .i
 
     observer.observe(img); 
   });
-
+  
+  
   ////////
 
   document.addEventListener("DOMContentLoaded", () => {
@@ -259,13 +260,13 @@ document.addEventListener("DOMContentLoaded", () => {
         floatAmplitude = 0.1;  // 떠다니는 진폭 (작게 설정)
         floatSpeed = 0.005;    // 떠다니는 속도
         diveDepth = 15;        // 잠수 깊이 (모바일에서는 잠수 깊이를 적게 설정)
-        riseSpeed = 0.009;     // 상승 속도
+        riseSpeed = 0.019;     // 상승 속도
     } else {
         // PC
         floatAmplitude = 1;  
         floatSpeed = 0.004;  
         diveDepth = 15;        
-        riseSpeed = 0.009;     
+        riseSpeed = 0.029;     
     }
 
     function animateShip() {
@@ -294,42 +295,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     animateShip();
 });
-
-
-
-// document.addEventListener("DOMContentLoaded", () => {
-//     const paperShip = document.querySelector(".paper-ship");
-
-   
-//     let time = 0;
-//     const floatAmplitude = 10;  
-//     const rotateAmplitude = 5;  
-//     const floatSpeed = 0.005;   
-
- 
-//     function animateShip() {
-        
-//         const floatY =
-//             Math.sin(time * floatSpeed) * floatAmplitude +
-//             Math.sin(time * floatSpeed * 1) * (floatAmplitude * 4.5);
-
-//         const rotation =
-//             Math.sin(time * floatSpeed) * rotateAmplitude +
-//             Math.sin(time * floatSpeed * 2) * (rotateAmplitude * 0.2);
-
-     
-//         paperShip.style.transform = `
-//             translateY(${floatY}px)
-//             rotate(${rotation}deg)
-//         `;
-
-//         time += 1;
-//         requestAnimationFrame(animateShip);
-//     }
-
- 
-//     animateShip();
-// });
 
 /////////////////////////////////
 
