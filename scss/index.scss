@@ -466,16 +466,11 @@ header {
         .header-logo {
             a {
                 cursor: pointer;
-                h2 {
-                    
-                    color: #00A3A0;
-                    font-size: 1.2rem;
-                    font-family: 'crunch chips';
+                img {
+                    width: 20%;
                     @include responsive(large-screens) {   
-                        top: 50%; left: 5%;
-                        z-index: 100000;
-                        font-size: 1.5rem;
-                        // background-color: #007EA8;
+                        width: 30%;
+                        background-color: #007EA8;//
                     }
                 }
 

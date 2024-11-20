@@ -516,17 +516,13 @@ header .container .logo-btn-screen {
 header .container .logo-btn-screen .header-logo a {
   cursor: pointer;
 }
-header .container .logo-btn-screen .header-logo a h2 {
-  color: #00A3A0;
-  font-size: 1.2rem;
-  font-family: "crunch chips";
+header .container .logo-btn-screen .header-logo a img {
+  width: 20%;
 }
 @media only screen and (min-width: 1024px) {
-  header .container .logo-btn-screen .header-logo a h2 {
-    top: 50%;
-    left: 5%;
-    z-index: 100000;
-    font-size: 1.5rem;
+  header .container .logo-btn-screen .header-logo a img {
+    width: 30%;
+    background-color: #007EA8;
   }
 }
 header .container .logo-btn-screen .btn_container {
