@@ -1681,7 +1681,7 @@ main .main-bg .container .skill .skill-box .modal-box .modal .close {
   left: 50%;
   transform: translate(-50%);
   width: 20%;
-  height: 3.5vh;
+  height: 4vh;
   background-color: #000;
   color: white;
   margin-top: 10%;
@@ -1690,14 +1690,15 @@ main .main-bg .container .skill .skill-box .modal-box .modal .close {
   border-radius: 5px;
   cursor: pointer;
   font-family: "pretendard";
-  font-size: 3vw;
+  font-size: 3.5vw;
 }
 main .main-bg .container .skill .skill-box .modal-box .modal .close:hover {
-  background-color: #93E4FF;
+  background-color: #5a27d4;
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .skill .skill-box .modal-box .modal .close {
     font-size: 1.2rem;
+    height: 4vh;
   }
 }
 main .main-bg .container .skill .skill-box .modal-box .hidden {

@@ -1712,7 +1712,7 @@ main {
                                     left: 50%;
                                     transform: translate(-50%);
                                     width: 20%;
-                                    height: 3.5vh;
+                                    height: 4vh;
                                     background-color: #000;
                                     color: white;
                                     margin-top: 10%;
@@ -1721,14 +1721,15 @@ main {
                                     border-radius: 5px;
                                     cursor: pointer;
                                     font-family: "pretendard";
-                                    font-size: 3vw;
+                                    font-size: 3.5vw;
 
                                     &:hover {
-                                        background-color: #93E4FF;
+                                        background-color: #5a27d4;
                                     }
 
                                     @include responsive(large-screens) {
                                         font-size: 1.2rem;
+                                        height: 4vh;
                                     }
                                 }
                             }
