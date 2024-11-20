@@ -718,6 +718,8 @@ main {
             text-align: center;
             color: black;   
             cursor: pointer; 
+            outline: none;
+            -webkit-tap-highlight-color: transparent;
             // background-color: #00A3A0;
             &:hover {
                 transform: scale(1.2);
@@ -2504,31 +2506,33 @@ main {
                     }
                     .d-box {
                         width: 25vw;
-                        
+                        outline: none;
+                        -webkit-tap-highlight-color: transparent;
                         @include responsive(large-screens) {
                             width: 15vw;
                         }
                     }
                     p {
+                        position: absolute;
                         width: 100%;
                         text-align: center;
                         font-size: 3vw;
                         font-weight: bold;
                         font-family: 'pretendard';
-                        margin-top: 10%;
-
+                        color: white;
+                        
                         @include responsive(large-screens) {
                             font-size: 1.5rem;
                             color: rgb(0, 0, 0);
                         }
-
-                    }
+                    } // p
                     .ds {
                         width: 25vw; height: 25vw;
                         cursor: pointer;
                         border-radius: 50%;
                         border: 1px solid #ffffff;
                         background-color: #9c9c9c;
+                       
                         @include responsive(large-screens) {
                             width: 15vw; height: 15vw;
                         }
@@ -2537,6 +2541,7 @@ main {
                         content: "";
                         padding-bottom: 100%;
                         display: block;
+                        
                     }
 
 
@@ -2776,8 +2781,11 @@ main {
                                         }
                                     }
                                     }
-                                }
-                        }   
+                                }//img
+                            }// banner 
+                            p {
+                                top: 7.5%; left: 13.5%;
+                            } 
                         @include responsive(large-screens) {
                             // margin-left:10%;
                             
@@ -2814,6 +2822,9 @@ main {
                                     }
                                 }
                             }
+                            p {
+                                top:28.5%; left: -4%;
+                            } 
                             @include responsive(large-screens) {
                                 
                             } 
@@ -2856,6 +2867,9 @@ main {
                                     }
                                 }
                         }
+                        p {
+                            top:42%; left: 26%;
+                        } 
                         @include responsive(large-screens) {
                         
                         } 
@@ -2868,7 +2882,7 @@ main {
                             overflow: hidden;
                             background-size: cover;
                             width: 30vw; height: 30vw;
-                            transform: translate(50%, -80%);
+                            transform: translate(50%, -50%);
 
                             img {
                                 width: 190%;
@@ -2893,6 +2907,9 @@ main {
                                     }
                                 }
                         }
+                        p {
+                            top:54%; left: -21%;
+                        } 
                         @include responsive(large-screens) {
                             // transform: translateY(-450px);
                             // margin-top: 4%;
@@ -2906,7 +2923,7 @@ main {
                             overflow: hidden;
                             background-size: cover;
                             width: 30vw; height: 30vw;
-                            transform: translate(160%, -90%);
+                            transform: translate(160%, -60%);
 
                             img {
                                 width: 100%;
@@ -2931,7 +2948,9 @@ main {
                                     }
                                 }
                         }
-                       
+                        p {
+                            top:69.5%; left: 13%;
+                        } 
                         @include responsive(large-screens) {
                        
                         } 
@@ -2968,6 +2987,9 @@ main {
                                     }
                                 }
                            }
+                           p {
+                            top:8.5%; left: -22.5%;
+                        } 
                         @include responsive(large-screens) {
                             // transform: translateY(-550px);
                             // margin-left:50%;
@@ -2983,7 +3005,7 @@ main {
                             overflow: hidden;
                             background-size: cover;
                             width: 20vw; height: 20vw;
-                            transform: translate(110%,-240%);
+                            transform: translate(110%,-220%);
                            
                             img {
                                 
@@ -3006,6 +3028,9 @@ main {
                                     }
                                 }
                            }
+                           p {
+                            top:76%; left: -18%;
+                        } 
                         @include responsive(large-screens) {
                             // transform: translateY(-550px);
                             // margin-left:30%;

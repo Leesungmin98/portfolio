@@ -740,6 +740,8 @@ main .main-bg #top-bt {
   text-align: center;
   color: black;
   cursor: pointer;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 main .main-bg #top-bt:hover {
   transform: scale(1.2);
@@ -2396,6 +2398,8 @@ main .main-bg .container .portfolio .design {
 }
 main .main-bg .container .portfolio .design .d-box {
   width: 25vw;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .portfolio .design .d-box {
@@ -2403,12 +2407,13 @@ main .main-bg .container .portfolio .design .d-box {
   }
 }
 main .main-bg .container .portfolio .design p {
+  position: absolute;
   width: 100%;
   text-align: center;
   font-size: 3vw;
   font-weight: bold;
   font-family: "pretendard";
-  margin-top: 10%;
+  color: white;
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .portfolio .design p {
@@ -2624,6 +2629,10 @@ main .main-bg .container .portfolio .design .banner-box .banner img:hover {
     transform: scale(1.2);
   }
 }
+main .main-bg .container .portfolio .design .banner-box p {
+  top: 7.5%;
+  left: 13.5%;
+}
 main .main-bg .container .portfolio .design .detail-box .detail {
   overflow: hidden;
   background-size: cover;
@@ -2645,6 +2654,10 @@ main .main-bg .container .portfolio .design .detail-box .detail img:hover {
   100% {
     transform: scale(1.1);
   }
+}
+main .main-bg .container .portfolio .design .detail-box p {
+  top: 28.5%;
+  left: -4%;
 }
 main .main-bg .container .portfolio .design .package-box .package {
   overflow: hidden;
@@ -2672,12 +2685,16 @@ main .main-bg .container .portfolio .design .package-box .package img:hover {
     transform: scale(1.1) translateX(-17%);
   }
 }
+main .main-bg .container .portfolio .design .package-box p {
+  top: 42%;
+  left: 26%;
+}
 main .main-bg .container .portfolio .design .logo-box .logo {
   overflow: hidden;
   background-size: cover;
   width: 30vw;
   height: 30vw;
-  transform: translate(50%, -80%);
+  transform: translate(50%, -50%);
 }
 main .main-bg .container .portfolio .design .logo-box .logo img {
   width: 190%;
@@ -2698,12 +2715,16 @@ main .main-bg .container .portfolio .design .logo-box .logo img:hover {
     transform: scale(1.1) translatex(-22%);
   }
 }
+main .main-bg .container .portfolio .design .logo-box p {
+  top: 54%;
+  left: -21%;
+}
 main .main-bg .container .portfolio .design .mobile-box .mobile {
   overflow: hidden;
   background-size: cover;
   width: 30vw;
   height: 30vw;
-  transform: translate(160%, -90%);
+  transform: translate(160%, -60%);
 }
 main .main-bg .container .portfolio .design .mobile-box .mobile img {
   width: 100%;
@@ -2723,6 +2744,10 @@ main .main-bg .container .portfolio .design .mobile-box .mobile img:hover {
   100% {
     transform: scale(1.1) translateY(-25%);
   }
+}
+main .main-bg .container .portfolio .design .mobile-box p {
+  top: 69.5%;
+  left: 13%;
 }
 main .main-bg .container .portfolio .design .info-box {
   cursor: pointer;
@@ -2751,6 +2776,10 @@ main .main-bg .container .portfolio .design .info-box .info img:hover {
     transform: scale(1.2);
   }
 }
+main .main-bg .container .portfolio .design .info-box p {
+  top: 8.5%;
+  left: -22.5%;
+}
 main .main-bg .container .portfolio .design .character-box {
   cursor: pointer;
 }
@@ -2759,7 +2788,7 @@ main .main-bg .container .portfolio .design .character-box .character {
   background-size: cover;
   width: 20vw;
   height: 20vw;
-  transform: translate(110%, -240%);
+  transform: translate(110%, -220%);
 }
 main .main-bg .container .portfolio .design .character-box .character img:hover {
   animation-name: detail;
@@ -2774,6 +2803,10 @@ main .main-bg .container .portfolio .design .character-box .character img:hover 
   100% {
     transform: scale(1.2);
   }
+}
+main .main-bg .container .portfolio .design .character-box p {
+  top: 76%;
+  left: -18%;
 }
 main .contact {
   position: relative;
