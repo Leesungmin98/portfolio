@@ -464,15 +464,15 @@ header {
             background-color: #FAF7F5;
         }
         .header-logo {
+            width: 8%;
+            outline: none;
+            -webkit-tap-highlight-color: transparent;
             a {
                 cursor: pointer;
-                img {
-                    width: 15%;
-                    @include responsive(large-screens) {   
-                        width: 25%;
-                        cursor: pointer;
-                    }
-                }
+            }
+            @include responsive(large-screens) {
+                width: 3%;
+                z-index: 1000;
             }
         }
         
@@ -638,12 +638,12 @@ header {
                 width: 0%;
                 transform: translateX(-50%);
                 height: 3px;
-                background: #00A3A0;
+                background: #5a27d4;
                 transition: .35s;
                 }
 
                 &:hover {
-                    color: #00A3A0;
+                    color: #5a27d4;
                 }
 
             }
@@ -668,7 +668,7 @@ header {
             li {
                 a {
                     &:hover {
-                        color: #00A3A0;
+                        color: #5a27d4;
                     }
                 }
             }
