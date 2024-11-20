@@ -96,7 +96,7 @@ header .wave canvas {
 }
 @media only screen and (min-width: 1024px) {
   header .wave canvas {
-    height: 170%;
+    height: 1800px;
   }
 }
 header .wave .box {
@@ -440,7 +440,7 @@ header .wave .img-box .paper-ship {
 }
 @media only screen and (min-width: 1024px) {
   header .wave .img-box .paper-ship {
-    bottom: 13%;
+    bottom: 10%;
     right: 23%;
     width: 10%;
   }
@@ -740,8 +740,6 @@ main .main-bg #top-bt {
   text-align: center;
   color: black;
   cursor: pointer;
-  outline: none;
-  -webkit-tap-highlight-color: transparent;
 }
 main .main-bg #top-bt:hover {
   transform: scale(1.2);
@@ -767,12 +765,6 @@ main .main-bg #top-bt p {
 @media only screen and (min-width: 1024px) {
   main .main-bg #top-bt p {
     font-size: 1.5rem;
-  }
-}
-@media (hover: none) {
-  main .main-bg #top-bt:hover {
-    transform: none;
-    color: black;
   }
 }
 main .main-bg .fishs {
@@ -2043,7 +2035,7 @@ main .main-bg .container .portfolio {
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .portfolio {
     width: 100%;
-    height: 2500px;
+    height: 4000px;
   }
 }
 main .main-bg .container .portfolio .box {
@@ -2396,7 +2388,6 @@ main .main-bg .container .portfolio .design {
   position: relative;
   z-index: 10000;
   margin-top: 50%;
-  display: flex;
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .portfolio .design {
@@ -2408,7 +2399,7 @@ main .main-bg .container .portfolio .design .d-box {
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .portfolio .design .d-box {
-    width: 5vw;
+    width: 15vw;
   }
 }
 main .main-bg .container .portfolio .design p {
@@ -2417,11 +2408,11 @@ main .main-bg .container .portfolio .design p {
   font-size: 3vw;
   font-weight: bold;
   font-family: "pretendard";
-  margin: auto;
+  margin-top: 10%;
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .portfolio .design p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: rgb(0, 0, 0);
   }
 }
@@ -2429,17 +2420,18 @@ main .main-bg .container .portfolio .design .ds {
   width: 25vw;
   height: 25vw;
   cursor: pointer;
-  border-radius: 30%;
+  border-radius: 50%;
   background-color: #9c9c9c;
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .portfolio .design .ds {
-    width: 10vw;
-    height: 10vw;
+    width: 15vw;
+    height: 15vw;
   }
 }
 main .main-bg .container .portfolio .design .ds::after {
   content: "";
+  padding-bottom: 100%;
   display: block;
 }
 main .main-bg .container .portfolio .design .po-modal-box {
@@ -2607,9 +2599,12 @@ main .main-bg .container .portfolio .design .banner-box {
   cursor: pointer;
 }
 main .main-bg .container .portfolio .design .banner-box .banner {
+  width: 30vw;
+  height: 30vw;
   overflow: hidden;
   background-size: cover;
   background-position-y: -50px;
+  transform: translate(160%, -60%);
 }
 main .main-bg .container .portfolio .design .banner-box .banner img {
   transform: scale(1.1);
@@ -2628,15 +2623,13 @@ main .main-bg .container .portfolio .design .banner-box .banner img:hover {
     transform: scale(1.2);
   }
 }
-@media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .design .banner-box {
-    transform: translate(200px, 20px);
-  }
-}
 main .main-bg .container .portfolio .design .detail-box .detail {
   overflow: hidden;
   background-size: cover;
   background-position-y: -50px;
+  width: 27vw;
+  height: 27vw;
+  transform: translate(120%, -30%);
 }
 main .main-bg .container .portfolio .design .detail-box .detail img:hover {
   animation-name: detail413;
@@ -2652,14 +2645,12 @@ main .main-bg .container .portfolio .design .detail-box .detail img:hover {
     transform: scale(1.1);
   }
 }
-@media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .design .detail-box {
-    transform: translate(300px, 300px);
-  }
-}
 main .main-bg .container .portfolio .design .package-box .package {
   overflow: hidden;
   background-size: cover;
+  width: 23vw;
+  height: 23vw;
+  transform: translate(280%, -30%);
 }
 main .main-bg .container .portfolio .design .package-box .package img {
   width: 155%;
@@ -2680,14 +2671,12 @@ main .main-bg .container .portfolio .design .package-box .package img:hover {
     transform: scale(1.1) translateX(-17%);
   }
 }
-@media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .design .package-box {
-    transform: translate(900px, 50px);
-  }
-}
 main .main-bg .container .portfolio .design .logo-box .logo {
   overflow: hidden;
   background-size: cover;
+  width: 30vw;
+  height: 30vw;
+  transform: translate(50%, -80%);
 }
 main .main-bg .container .portfolio .design .logo-box .logo img {
   width: 190%;
@@ -2708,14 +2697,12 @@ main .main-bg .container .portfolio .design .logo-box .logo img:hover {
     transform: scale(1.1) translatex(-22%);
   }
 }
-@media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .design .logo-box {
-    transform: translate(-190px, 420px);
-  }
-}
 main .main-bg .container .portfolio .design .mobile-box .mobile {
   overflow: hidden;
   background-size: cover;
+  width: 30vw;
+  height: 30vw;
+  transform: translate(160%, -90%);
 }
 main .main-bg .container .portfolio .design .mobile-box .mobile img {
   width: 100%;
@@ -2736,17 +2723,15 @@ main .main-bg .container .portfolio .design .mobile-box .mobile img:hover {
     transform: scale(1.1) translateY(-25%);
   }
 }
-@media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .design .mobile-box {
-    transform: translate(350px, 500px);
-  }
-}
 main .main-bg .container .portfolio .design .info-box {
   cursor: pointer;
 }
 main .main-bg .container .portfolio .design .info-box .info {
   overflow: hidden;
   background-size: cover;
+  width: 18vw;
+  height: 18vw;
+  transform: translate(100%, -800%);
 }
 main .main-bg .container .portfolio .design .info-box .info img {
   transform: scale(1.02);
@@ -2765,17 +2750,15 @@ main .main-bg .container .portfolio .design .info-box .info img:hover {
     transform: scale(1.2);
   }
 }
-@media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .design .info-box {
-    transform: translate(250px, 150px);
-  }
-}
 main .main-bg .container .portfolio .design .character-box {
   cursor: pointer;
 }
 main .main-bg .container .portfolio .design .character-box .character {
   overflow: hidden;
   background-size: cover;
+  width: 20vw;
+  height: 20vw;
+  transform: translate(110%, -240%);
 }
 main .main-bg .container .portfolio .design .character-box .character img:hover {
   animation-name: detail;
@@ -2789,11 +2772,6 @@ main .main-bg .container .portfolio .design .character-box .character img:hover 
   }
   100% {
     transform: scale(1.2);
-  }
-}
-@media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .design .character-box {
-    transform: translate(700px, 350px);
   }
 }
 main .contact {

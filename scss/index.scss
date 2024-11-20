@@ -21,7 +21,7 @@ header {
                 height: 70%;
                 // background-color: #00A3A0;
                 @include responsive(large-screens) {
-                    height: 170%;
+                    height: 1800px;
                 }
             }
             ///////////////////////////////
@@ -387,7 +387,7 @@ header {
                     }
                 }
                 @include responsive(large-screens) {
-                    bottom: 13%; right: 23%;
+                    bottom: 10%; right: 23%;
                     width: 10%;
                 }
             }
@@ -718,8 +718,6 @@ main {
             text-align: center;
             color: black;   
             cursor: pointer; 
-            outline: none;
-            -webkit-tap-highlight-color: transparent;
             // background-color: #00A3A0;
             &:hover {
                 transform: scale(1.2);
@@ -745,12 +743,6 @@ main {
             }
         }
 
-        @media (hover: none) {
-            #top-bt:hover {
-                transform: none;
-                color: black;
-            }
-        }
 
         .fishs {
             position: absolute; 
@@ -2126,10 +2118,10 @@ main {
 
             .portfolio {
                 width: 100%; height: 100%;
-                
+                // background-color: #da5fea;
                 @include responsive(large-screens) {
                     // background-color: aquamarine;
-                    width: 100%; height: 2500px;
+                    width: 100%; height: 4000px;
                 }
                 .box {
                     position: relative;
@@ -2506,8 +2498,6 @@ main {
                     position: relative;
                     z-index: 10000;
                     margin-top:50%;
-                    display: flex;
-                
                     // background-color: #00A3A0;
                     @include responsive(large-screens) {
                         margin-top:25%;
@@ -2516,7 +2506,7 @@ main {
                         width: 25vw;
                         
                         @include responsive(large-screens) {
-                            width: 5vw;
+                            width: 15vw;
                         }
                     }
                     p {
@@ -2525,27 +2515,27 @@ main {
                         font-size: 3vw;
                         font-weight: bold;
                         font-family: 'pretendard';
-                        margin: auto;
-                        // background-color: #007EA8;
+                        margin-top: 10%;
+
                         @include responsive(large-screens) {
-                            font-size: 1.2rem;
+                            font-size: 1.5rem;
                             color: rgb(0, 0, 0);
                         }
 
                     }
                     .ds {
-                        width: 25vw; 
-                        height: 25vw;
+                        width: 25vw; height: 25vw;
                         cursor: pointer;
-                        border-radius: 30%;
+                        border-radius: 50%;
+                        // border: 1px solid #ffffff;
                         background-color: #9c9c9c;
                         @include responsive(large-screens) {
-                            width: 10vw; height: 10vw;
+                            width: 15vw; height: 15vw;
                         }
                     }
                     .ds::after {
                         content: "";
-                        // padding-bottom: 100%;
+                        padding-bottom: 100%;
                         display: block;
                     }
 
@@ -2763,10 +2753,11 @@ main {
                         
                         cursor: pointer;                  
                         .banner {
+                            width: 30vw; height: 30vw;
                             overflow: hidden;
                             background-size: cover;
                             background-position-y: -50px;
-                            
+                            transform: translate(160%, -60%);
                             img {
                                 transform: scale(1.1);
                                 &:hover {
@@ -2788,7 +2779,7 @@ main {
                                 }
                         }   
                         @include responsive(large-screens) {
-                            transform: translate(200px, 20px);
+                            // margin-left:10%;
                             
                         } 
                     }
@@ -2800,6 +2791,8 @@ main {
                                 overflow: hidden;
                                 background-size: cover;
                                 background-position-y: -50px;
+                                width: 27vw; height: 27vw;
+                                transform: translate(120%, -30%);
                                 img {
                                    
                                 &:hover {
@@ -2822,20 +2815,23 @@ main {
                                 }
                             }
                             @include responsive(large-screens) {
-                                transform: translate(300px,300px);
                                 
                             } 
                     }
 
                   
+                     
                     
 
                     .package-box {
-                     
+                        
                   
                         .package {
                             overflow: hidden;
                             background-size: cover;
+                            width: 23vw; height: 23vw;
+                            transform: translate(280%, -30%);
+
                             img {
                                 width: 155%; 
                                 margin: 0 auto;
@@ -2861,17 +2857,19 @@ main {
                                 }
                         }
                         @include responsive(large-screens) {
-                            transform: translate(900px, 50px);
-                           
+                        
                         } 
                     }
 
                     .logo-box {
-                        // margin-left:55%;
+                        
                    
                         .logo {
                             overflow: hidden;
                             background-size: cover;
+                            width: 30vw; height: 30vw;
+                            transform: translate(50%, -80%);
+
                             img {
                                 width: 190%;
                                 margin: 0 auto;
@@ -2896,8 +2894,9 @@ main {
                                 }
                         }
                         @include responsive(large-screens) {
-                            transform: translate(-190px, 420px);
-                          
+                            // transform: translateY(-450px);
+                            // margin-top: 4%;
+                            // margin-left:42%;
                         } 
                     }
 
@@ -2906,6 +2905,9 @@ main {
                         .mobile {
                             overflow: hidden;
                             background-size: cover;
+                            width: 30vw; height: 30vw;
+                            transform: translate(160%, -90%);
+
                             img {
                                 width: 100%;
                                 margin: auto;
@@ -2931,8 +2933,7 @@ main {
                         }
                        
                         @include responsive(large-screens) {
-                            transform: translate(350px, 500px);
-                           
+                       
                         } 
                     }
 
@@ -2942,6 +2943,9 @@ main {
                         .info {
                             overflow: hidden;
                             background-size: cover;
+                            width: 18vw; height: 18vw;
+                            transform: translate(100%, -800%);
+
                            
                             img {
                                 transform: scale(1.02);
@@ -2965,8 +2969,8 @@ main {
                                 }
                            }
                         @include responsive(large-screens) {
-                            transform: translate(250px, 150px);
-                           
+                            // transform: translateY(-550px);
+                            // margin-left:50%;
                         } 
                     }
 
@@ -2978,6 +2982,8 @@ main {
                         .character {
                             overflow: hidden;
                             background-size: cover;
+                            width: 20vw; height: 20vw;
+                            transform: translate(110%,-240%);
                            
                             img {
                                 
@@ -3001,8 +3007,8 @@ main {
                                 }
                            }
                         @include responsive(large-screens) {
-                            transform: translate(700px, 350px);
-                           
+                            // transform: translateY(-550px);
+                            // margin-left:30%;
                         } 
                     }
                 }
@@ -3093,7 +3099,8 @@ main {
                 text-align: center;
                 margin-bottom: 16px;
                 font-size: 8vw;
-                font-family: 'pretendard'; 
+                font-family: 'pretendard';
+                // text-shadow:  -1px 0px white, 0px 1px white, 1px 0px white, 0px -1px white; ;
                 color: rgb(255, 255, 255);
                 @include responsive(large-screens) {
                     font-size: 5rem;
