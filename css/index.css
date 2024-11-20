@@ -2630,8 +2630,8 @@ main .main-bg .container .portfolio .design .banner-box .banner img:hover {
   }
 }
 main .main-bg .container .portfolio .design .banner-box p {
-  top: 7.5%;
-  left: 13.5%;
+  top: 8%;
+  left: 13%;
 }
 main .main-bg .container .portfolio .design .detail-box .detail {
   overflow: hidden;
@@ -2656,8 +2656,8 @@ main .main-bg .container .portfolio .design .detail-box .detail img:hover {
   }
 }
 main .main-bg .container .portfolio .design .detail-box p {
-  top: 28.5%;
-  left: -4%;
+  top: 29%;
+  left: -4.2%;
 }
 main .main-bg .container .portfolio .design .package-box .package {
   overflow: hidden;
@@ -2686,7 +2686,7 @@ main .main-bg .container .portfolio .design .package-box .package img:hover {
   }
 }
 main .main-bg .container .portfolio .design .package-box p {
-  top: 42%;
+  top: 42.5%;
   left: 26%;
 }
 main .main-bg .container .portfolio .design .logo-box .logo {
@@ -2716,8 +2716,8 @@ main .main-bg .container .portfolio .design .logo-box .logo img:hover {
   }
 }
 main .main-bg .container .portfolio .design .logo-box p {
-  top: 54%;
-  left: -21%;
+  top: 54.5%;
+  left: -20%;
 }
 main .main-bg .container .portfolio .design .mobile-box .mobile {
   overflow: hidden;
@@ -2746,7 +2746,7 @@ main .main-bg .container .portfolio .design .mobile-box .mobile img:hover {
   }
 }
 main .main-bg .container .portfolio .design .mobile-box p {
-  top: 69.5%;
+  top: 70%;
   left: 13%;
 }
 main .main-bg .container .portfolio .design .info-box {
@@ -2777,8 +2777,8 @@ main .main-bg .container .portfolio .design .info-box .info img:hover {
   }
 }
 main .main-bg .container .portfolio .design .info-box p {
-  top: 8.5%;
-  left: -22.5%;
+  top: 9%;
+  left: -23%;
 }
 main .main-bg .container .portfolio .design .character-box {
   cursor: pointer;
@@ -2805,7 +2805,7 @@ main .main-bg .container .portfolio .design .character-box .character img:hover 
   }
 }
 main .main-bg .container .portfolio .design .character-box p {
-  top: 76%;
+  top: 76.5%;
   left: -18%;
 }
 main .contact {
