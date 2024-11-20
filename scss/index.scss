@@ -2527,7 +2527,7 @@ main {
                         width: 25vw; height: 25vw;
                         cursor: pointer;
                         border-radius: 50%;
-                        // border: 1px solid #ffffff;
+                        border: 1px solid #ffffff;
                         background-color: #9c9c9c;
                         @include responsive(large-screens) {
                             width: 15vw; height: 15vw;
