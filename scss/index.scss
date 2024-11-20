@@ -448,7 +448,7 @@ header {
 //-----------------------------------------------------------------------------------------//
       .logo-btn-screen {
         position: relative;
-        background-color: #ffffff;
+        background-color: #FAF7F5;
         width: 100%; height: 60px;
         padding: 0 20px 0 20px;
         display: flex;
@@ -467,14 +467,12 @@ header {
             a {
                 cursor: pointer;
                 img {
-                    width: 20%;
+                    width: 15%;
                     @include responsive(large-screens) {   
-                        width: 30%;
-                        background-color: #007EA8;//
+                        width: 25%;
+                        cursor: pointer;
                     }
                 }
-
-
             }
         }
         
