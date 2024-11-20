@@ -2166,7 +2166,12 @@ main .main-bg .container .portfolio .po-box .box-button a {
 main .main-bg .container .portfolio .po-box .box-button a:hover {
   font-weight: 600;
   color: #111111;
-  border: 3px solid #111111;
+  border: 2px solid #111111;
+}
+@media only screen and (min-width: 1024px) {
+  main .main-bg .container .portfolio .po-box .box-button a:hover {
+    border: 3px solid #111111;
+  }
 }
 main .main-bg .container .portfolio .po-box .box-button a::after {
   content: "";
