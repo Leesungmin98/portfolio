@@ -330,7 +330,7 @@ header .wave .img-box .paper-ship {
 }
 @media only screen and (min-width: 1024px) {
   header .wave .img-box .paper-ship {
-    bottom: 10%;
+    bottom: 12%;
     right: 23%;
     width: 10%;
   }
