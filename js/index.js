@@ -20,10 +20,6 @@ $(function() {
     });
 
     ///////////////////////////////////////////////////////////
-
-    
-    
-
 });
 // 포트폴리오-디자인
 
@@ -83,7 +79,7 @@ $(document).ready(function() {
             $('#top-bt').fadeIn();
         }
     }
-
+/////////////////////
     // 햄버거 메뉴
     $('#toggle').click(function() {
         $(this).toggleClass('active');
@@ -353,3 +349,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
   
+  //////////////////////////////////
+
+ 
