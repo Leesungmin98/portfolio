@@ -2433,7 +2433,7 @@ main .main-bg .container .portfolio .design .ds {
   main .main-bg .container .portfolio .design .ds {
     width: 15vw;
     height: 15vw;
-    border: 2px solid #ffffff;
+    border: 1px solid #ffffff;
     border-radius: 50%;
   }
 }
