@@ -765,7 +765,7 @@ main {
                 animation-iteration-count: infinite;
                 @include responsive(large-screens) {
                     width: 15%;
-                    top: 5000px; left: 0%;
+                    top: 4000px; left: 0%;
                     width: 40%;
 
                     animation-name: killer;
@@ -822,7 +822,7 @@ main {
                 animation-timing-function: ease-in-out;
                 animation-iteration-count: infinite;
                 @include responsive(large-screens) {
-                    top: 1100px; 
+                    top: 900px; 
                     width: 40%
                 }
             }
@@ -870,7 +870,7 @@ main {
                 animation-timing-function: ease-in-out;
                 animation-iteration-count: infinite;
                 @include responsive(large-screens) {
-                    top: 6000px;
+                    top: 5500px;
                     width: 20%;
 
                     animation-name: fish1-box ;
@@ -983,7 +983,7 @@ main {
                     }
                 }
                 @include responsive(large-screens) {
-                    top: 7500px; left: 78%;
+                    top: 3600px; left: 78%;
                     width: 20%;
 
                     animation-name: fish3-box ;
@@ -2522,7 +2522,7 @@ main {
                         color: white;
                         
                         @include responsive(large-screens) {
-                            font-size: 1.5rem;
+                            font-size: 1.3rem;
                             color: rgb(0, 0, 0);
                         }
                     } // p
@@ -2535,7 +2535,9 @@ main {
                        
                         @include responsive(large-screens) {
                             width: 15vw; height: 15vw;
-                            border: 2px solid #ffffff;
+                            border: 2px solid #ffffff; 
+                            border-radius: 50%; 
+                        
                         }
                     }
                     .ds::after {

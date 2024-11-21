@@ -792,7 +792,7 @@ main .main-bg .fishs .killer {
 @media only screen and (min-width: 1024px) {
   main .main-bg .fishs .killer {
     width: 15%;
-    top: 5000px;
+    top: 4000px;
     left: 0%;
     width: 40%;
     animation-name: killer;
@@ -843,7 +843,7 @@ main .main-bg .fishs .whale {
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .fishs .whale {
-    top: 1100px;
+    top: 900px;
     width: 40%;
   }
 }
@@ -890,7 +890,7 @@ main .main-bg .fishs .fish1-box {
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .fishs .fish1-box {
-    top: 6000px;
+    top: 5500px;
     width: 20%;
     animation-name: fish1-box;
     animation-duration: 12s;
@@ -998,7 +998,7 @@ main .main-bg .fishs .fish3-box {
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .fishs .fish3-box {
-    top: 7500px;
+    top: 3600px;
     left: 78%;
     width: 20%;
     animation-name: fish3-box;
@@ -2417,7 +2417,7 @@ main .main-bg .container .portfolio .design p {
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .portfolio .design p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: rgb(0, 0, 0);
   }
 }
@@ -2434,6 +2434,7 @@ main .main-bg .container .portfolio .design .ds {
     width: 15vw;
     height: 15vw;
     border: 2px solid #ffffff;
+    border-radius: 50%;
   }
 }
 main .main-bg .container .portfolio .design .ds::after {
