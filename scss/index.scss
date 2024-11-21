@@ -2502,7 +2502,7 @@ main {
                     margin-top:50%;
                     // background-color: #00A3A0;
                     @include responsive(large-screens) {
-                        margin-top:25%;
+                        margin-top:40%;
                     }
                     .d-box {
                         width: 25vw;
@@ -2787,8 +2787,15 @@ main {
                                 top: 8%; left: 13%;
                             } 
                         @include responsive(large-screens) {
-                            // margin-left:10%;
-                            
+                            .banner {
+                                width: 20vw; height: 20vw;
+                                transform: translate(240%, -60%);
+
+                            }
+                            p {
+                                top: 5.5%; left: 22%;
+                                color: white;
+                            }
                         } 
                     }
 
@@ -2826,7 +2833,15 @@ main {
                                 top:29%; left: -4.2%;
                             } 
                             @include responsive(large-screens) {
-                                
+                                .detail {
+                                    width: 17vw; height: 17vw;
+                                    transform: translate(190%, -60%);
+    
+                                }
+                                p {
+                                    top: 17.5%; left: 0.5%;
+                                    color: white;
+                                }
                             } 
                     }
 
@@ -2871,7 +2886,15 @@ main {
                             top:42.5%; left: 26%;
                         } 
                         @include responsive(large-screens) {
-                        
+                            .package {
+                                width: 20vw; height: 20vw;
+                                transform: translate(245%, -60%);
+
+                            }
+                            p {
+                                top: 29.5%; left: 29%;
+                                color: white;
+                            }
                         } 
                     }
 
@@ -2911,9 +2934,15 @@ main {
                             top:54.5%; left: -20%;
                         } 
                         @include responsive(large-screens) {
-                            // transform: translateY(-450px);
-                            // margin-top: 4%;
-                            // margin-left:42%;
+                            .logo {
+                                width: 20vw; height: 20vw;
+                                transform: translate(80%, -120%);
+
+                            }
+                            p {
+                                top: 29.5%; left: 29%;
+                                color: white;
+                            }
                         } 
                     }
 
@@ -2952,7 +2981,15 @@ main {
                             top:70%; left: 13%;
                         } 
                         @include responsive(large-screens) {
-                       
+                            .mobile {
+                                width: 17vw; height: 17vw;
+                                transform: translate(270%, -140%);
+
+                            }
+                            p {
+                                top: 29.5%; left: 29%;
+                                color: white;
+                            }
                         } 
                     }
 
@@ -2991,8 +3028,15 @@ main {
                             top:9%; left: -23%;
                         } 
                         @include responsive(large-screens) {
-                            // transform: translateY(-550px);
-                            // margin-left:50%;
+                            .info {
+                                width: 12vw; height: 12vw;
+                                transform: translate(180%, -820%);
+
+                            }
+                            p {
+                                top: 29.5%; left: 29%;
+                                color: white;
+                            }
                         } 
                     }
 
@@ -3032,8 +3076,15 @@ main {
                             top:76.5%; left: -18%;
                         } 
                         @include responsive(large-screens) {
-                            // transform: translateY(-550px);
-                            // margin-left:30%;
+                            .character {
+                                width: 12vw; height: 12vw;
+                                transform: translate(230%, -340%);
+
+                            }
+                            p {
+                                top: 29.5%; left: 29%;
+                                color: white;
+                            }
                         } 
                     }
                 }

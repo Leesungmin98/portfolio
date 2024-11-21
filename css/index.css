@@ -2393,7 +2393,7 @@ main .main-bg .container .portfolio .design {
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .portfolio .design {
-    margin-top: 25%;
+    margin-top: 40%;
   }
 }
 main .main-bg .container .portfolio .design .d-box {
@@ -2633,6 +2633,18 @@ main .main-bg .container .portfolio .design .banner-box p {
   top: 8%;
   left: 13%;
 }
+@media only screen and (min-width: 1024px) {
+  main .main-bg .container .portfolio .design .banner-box .banner {
+    width: 20vw;
+    height: 20vw;
+    transform: translate(240%, -60%);
+  }
+  main .main-bg .container .portfolio .design .banner-box p {
+    top: 5.5%;
+    left: 22%;
+    color: white;
+  }
+}
 main .main-bg .container .portfolio .design .detail-box .detail {
   overflow: hidden;
   background-size: cover;
@@ -2658,6 +2670,18 @@ main .main-bg .container .portfolio .design .detail-box .detail img:hover {
 main .main-bg .container .portfolio .design .detail-box p {
   top: 29%;
   left: -4.2%;
+}
+@media only screen and (min-width: 1024px) {
+  main .main-bg .container .portfolio .design .detail-box .detail {
+    width: 17vw;
+    height: 17vw;
+    transform: translate(190%, -60%);
+  }
+  main .main-bg .container .portfolio .design .detail-box p {
+    top: 17.5%;
+    left: 0.5%;
+    color: white;
+  }
 }
 main .main-bg .container .portfolio .design .package-box .package {
   overflow: hidden;
@@ -2689,6 +2713,18 @@ main .main-bg .container .portfolio .design .package-box p {
   top: 42.5%;
   left: 26%;
 }
+@media only screen and (min-width: 1024px) {
+  main .main-bg .container .portfolio .design .package-box .package {
+    width: 20vw;
+    height: 20vw;
+    transform: translate(245%, -60%);
+  }
+  main .main-bg .container .portfolio .design .package-box p {
+    top: 29.5%;
+    left: 29%;
+    color: white;
+  }
+}
 main .main-bg .container .portfolio .design .logo-box .logo {
   overflow: hidden;
   background-size: cover;
@@ -2719,6 +2755,18 @@ main .main-bg .container .portfolio .design .logo-box p {
   top: 54.5%;
   left: -20%;
 }
+@media only screen and (min-width: 1024px) {
+  main .main-bg .container .portfolio .design .logo-box .logo {
+    width: 20vw;
+    height: 20vw;
+    transform: translate(80%, -120%);
+  }
+  main .main-bg .container .portfolio .design .logo-box p {
+    top: 29.5%;
+    left: 29%;
+    color: white;
+  }
+}
 main .main-bg .container .portfolio .design .mobile-box .mobile {
   overflow: hidden;
   background-size: cover;
@@ -2748,6 +2796,18 @@ main .main-bg .container .portfolio .design .mobile-box .mobile img:hover {
 main .main-bg .container .portfolio .design .mobile-box p {
   top: 70%;
   left: 13%;
+}
+@media only screen and (min-width: 1024px) {
+  main .main-bg .container .portfolio .design .mobile-box .mobile {
+    width: 17vw;
+    height: 17vw;
+    transform: translate(270%, -140%);
+  }
+  main .main-bg .container .portfolio .design .mobile-box p {
+    top: 29.5%;
+    left: 29%;
+    color: white;
+  }
 }
 main .main-bg .container .portfolio .design .info-box {
   cursor: pointer;
@@ -2780,6 +2840,18 @@ main .main-bg .container .portfolio .design .info-box p {
   top: 9%;
   left: -23%;
 }
+@media only screen and (min-width: 1024px) {
+  main .main-bg .container .portfolio .design .info-box .info {
+    width: 12vw;
+    height: 12vw;
+    transform: translate(180%, -820%);
+  }
+  main .main-bg .container .portfolio .design .info-box p {
+    top: 29.5%;
+    left: 29%;
+    color: white;
+  }
+}
 main .main-bg .container .portfolio .design .character-box {
   cursor: pointer;
 }
@@ -2807,6 +2879,18 @@ main .main-bg .container .portfolio .design .character-box .character img:hover 
 main .main-bg .container .portfolio .design .character-box p {
   top: 76.5%;
   left: -18%;
+}
+@media only screen and (min-width: 1024px) {
+  main .main-bg .container .portfolio .design .character-box .character {
+    width: 12vw;
+    height: 12vw;
+    transform: translate(230%, -340%);
+  }
+  main .main-bg .container .portfolio .design .character-box p {
+    top: 29.5%;
+    left: 29%;
+    color: white;
+  }
 }
 main .contact {
   position: relative;
