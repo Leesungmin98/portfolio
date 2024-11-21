@@ -1684,13 +1684,13 @@ main .main-bg .container .skill .skill-box .sass {
 @media only screen and (min-width: 1024px) {
   @keyframes sassUpDown {
     0% {
-      transform: translateY(130px) translateX(300%);
+      transform: translateY(-160px) translateX(1100%);
     }
     50% {
-      transform: translateY(120px) translateX(300%);
+      transform: translateY(-170px) translateX(1100%);
     }
     100% {
-      transform: translateY(130px) translateX(300%);
+      transform: translateY(-160px) translateX(1100%);
     }
   }
 }
@@ -1765,13 +1765,13 @@ main .main-bg .container .skill .skill-box .jquery {
 @media only screen and (min-width: 1024px) {
   @keyframes jqueryUpDown {
     0% {
-      transform: translateY(30px) translateX(-120px);
+      transform: translateY(-100px) translateX(-170px);
     }
     50% {
-      transform: translateY(40px) translateX(-120px);
+      transform: translateY(-90px) translateX(-170px);
     }
     100% {
-      transform: translateY(30px) translateX(-120px);
+      transform: translateY(-100px) translateX(-170px);
     }
   }
 }
