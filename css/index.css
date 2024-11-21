@@ -96,7 +96,7 @@ header .wave canvas {
 }
 @media only screen and (min-width: 1024px) {
   header .wave canvas {
-    height: 1800px;
+    height: 2000px;
   }
 }
 header .wave .box {
@@ -1235,7 +1235,7 @@ main .main-bg .container .about-me .submarin-atxt {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 700px;
+    height: 550px;
   }
 }
 main .main-bg .container .about-me .submarin-atxt .submarin {
@@ -1257,8 +1257,6 @@ main .main-bg .container .about-me .submarin-atxt .atxt {
   height: 100%;
   padding: 20px;
   font-family: "pretendard";
-  border-radius: 20px;
-  background-color: #ffffff;
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .about-me .submarin-atxt .atxt {
@@ -1345,7 +1343,7 @@ main .main-bg .container .skill .skill-box {
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .skill .skill-box {
-    height: 350px;
+    height: 250px;
   }
 }
 main .main-bg .container .skill .skill-box .skill-item {

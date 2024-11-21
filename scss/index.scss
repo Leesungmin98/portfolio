@@ -21,7 +21,8 @@ header {
                 height: 70%;
                 // background-color: #00A3A0;
                 @include responsive(large-screens) {
-                    height: 1800px;
+                    height: 2000px;
+                    // background-color: #00A3A0;
                 }
             }
             ///////////////////////////////
@@ -1274,7 +1275,7 @@ main {
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
-                        height: 700px;
+                        height: 550px;
                     }
                     .submarin {
                         width: 100%; height: 100%;
@@ -1295,8 +1296,8 @@ main {
                         width: 100%; height: 100%;
                         padding: 20px;
                         font-family: 'pretendard';
-                        border-radius: 20px;
-                        background-color: #ffffff;
+                        // border-radius: 20px;
+                        // background-color: #ffffff;
                         @include responsive(large-screens) {
                          position: relative; 
                          top: 0px;
@@ -1382,7 +1383,7 @@ main {
                         height: 190vw;
                         // background-color: #00A3A0;
                         @include responsive(large-screens) {
-                            height: 350px;
+                            height: 250px;
                             // background-color: #00A3A0;
                         }
 
