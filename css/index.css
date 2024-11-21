@@ -2393,7 +2393,7 @@ main .main-bg .container .portfolio .design {
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .portfolio .design {
-    margin-top: 40%;
+    margin-top: 35%;
   }
 }
 main .main-bg .container .portfolio .design .d-box {
@@ -2433,6 +2433,7 @@ main .main-bg .container .portfolio .design .ds {
   main .main-bg .container .portfolio .design .ds {
     width: 15vw;
     height: 15vw;
+    border: 2px solid #ffffff;
   }
 }
 main .main-bg .container .portfolio .design .ds::after {
@@ -2640,8 +2641,8 @@ main .main-bg .container .portfolio .design .banner-box p {
     transform: translate(240%, -60%);
   }
   main .main-bg .container .portfolio .design .banner-box p {
-    top: 5.5%;
-    left: 22%;
+    top: 7.7%;
+    left: 21.8%;
     color: white;
   }
 }
@@ -2675,10 +2676,10 @@ main .main-bg .container .portfolio .design .detail-box p {
   main .main-bg .container .portfolio .design .detail-box .detail {
     width: 17vw;
     height: 17vw;
-    transform: translate(190%, -60%);
+    transform: translate(190%, -50%);
   }
   main .main-bg .container .portfolio .design .detail-box p {
-    top: 17.5%;
+    top: 25%;
     left: 0.5%;
     color: white;
   }
@@ -2717,11 +2718,11 @@ main .main-bg .container .portfolio .design .package-box p {
   main .main-bg .container .portfolio .design .package-box .package {
     width: 20vw;
     height: 20vw;
-    transform: translate(245%, -60%);
+    transform: translate(260%, -60%);
   }
   main .main-bg .container .portfolio .design .package-box p {
-    top: 29.5%;
-    left: 29%;
+    top: 39%;
+    left: 26.6%;
     color: white;
   }
 }
@@ -2759,11 +2760,11 @@ main .main-bg .container .portfolio .design .logo-box p {
   main .main-bg .container .portfolio .design .logo-box .logo {
     width: 20vw;
     height: 20vw;
-    transform: translate(80%, -120%);
+    transform: translate(80%, -110%);
   }
   main .main-bg .container .portfolio .design .logo-box p {
-    top: 29.5%;
-    left: 29%;
+    top: 47.5%;
+    left: -18%;
     color: white;
   }
 }
@@ -2804,8 +2805,8 @@ main .main-bg .container .portfolio .design .mobile-box p {
     transform: translate(270%, -140%);
   }
   main .main-bg .container .portfolio .design .mobile-box p {
-    top: 29.5%;
-    left: 29%;
+    top: 60.3%;
+    left: 17%;
     color: white;
   }
 }
@@ -2884,7 +2885,7 @@ main .main-bg .container .portfolio .design .character-box p {
   main .main-bg .container .portfolio .design .character-box .character {
     width: 12vw;
     height: 12vw;
-    transform: translate(230%, -340%);
+    transform: translate(230%, -330%);
   }
   main .main-bg .container .portfolio .design .character-box p {
     top: 29.5%;

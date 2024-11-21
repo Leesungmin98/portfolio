@@ -2502,7 +2502,7 @@ main {
                     margin-top:50%;
                     // background-color: #00A3A0;
                     @include responsive(large-screens) {
-                        margin-top:40%;
+                        margin-top:35%;
                     }
                     .d-box {
                         width: 25vw;
@@ -2535,6 +2535,7 @@ main {
                        
                         @include responsive(large-screens) {
                             width: 15vw; height: 15vw;
+                            border: 2px solid #ffffff;
                         }
                     }
                     .ds::after {
@@ -2793,7 +2794,7 @@ main {
 
                             }
                             p {
-                                top: 5.5%; left: 22%;
+                                top: 7.7%; left: 21.8%;
                                 color: white;
                             }
                         } 
@@ -2835,11 +2836,11 @@ main {
                             @include responsive(large-screens) {
                                 .detail {
                                     width: 17vw; height: 17vw;
-                                    transform: translate(190%, -60%);
+                                    transform: translate(190%, -50%);
     
                                 }
                                 p {
-                                    top: 17.5%; left: 0.5%;
+                                    top: 25%; left: 0.5%;
                                     color: white;
                                 }
                             } 
@@ -2888,11 +2889,11 @@ main {
                         @include responsive(large-screens) {
                             .package {
                                 width: 20vw; height: 20vw;
-                                transform: translate(245%, -60%);
+                                transform: translate(260%, -60%);
 
                             }
                             p {
-                                top: 29.5%; left: 29%;
+                                top: 39%; left: 26.6%;
                                 color: white;
                             }
                         } 
@@ -2936,11 +2937,11 @@ main {
                         @include responsive(large-screens) {
                             .logo {
                                 width: 20vw; height: 20vw;
-                                transform: translate(80%, -120%);
+                                transform: translate(80%, -110%);
 
                             }
                             p {
-                                top: 29.5%; left: 29%;
+                                top: 47.5%; left: -18%;
                                 color: white;
                             }
                         } 
@@ -2987,7 +2988,7 @@ main {
 
                             }
                             p {
-                                top: 29.5%; left: 29%;
+                                top: 60.3%; left: 17%;
                                 color: white;
                             }
                         } 
@@ -3078,7 +3079,7 @@ main {
                         @include responsive(large-screens) {
                             .character {
                                 width: 12vw; height: 12vw;
-                                transform: translate(230%, -340%);
+                                transform: translate(230%, -330%);
 
                             }
                             p {
