@@ -262,7 +262,7 @@ header {
             }
             .paper-ship {
                 position: absolute;
-                bottom: 10%;  
+                bottom: 4%;  
                 right: 55%; 
                 width: 20%;  
                 z-index: 5;
@@ -283,7 +283,7 @@ header {
                 }
                 @include responsive(large-screens) {
                     bottom: 13%; right: 23%;
-                    width: 12%;
+                    width: 10%;
                 }
             }
         } // img box
@@ -2418,12 +2418,12 @@ main {
                         width: 25vw; height: 25vw;
                         cursor: pointer;
                         border-radius: 50%;
-                        border: 15px solid transparent;
+                        border: 10px solid transparent;
                         background-color: rgba(255, 255, 255, 0.2);
                        
                         @include responsive(large-screens) {
                             width: 15vw; height: 15vw;
-                            border: 30px solid transparent; 
+                            border: 15px solid transparent; 
                             border-radius: 50%; 
                         
                         }

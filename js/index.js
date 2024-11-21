@@ -241,57 +241,143 @@ document.querySelectorAll('.inner-box1 img, .inner-box2 img, .inner-box3 img, .i
 
 ///////////////////////////////////////////////
 // 잠수함
-document.addEventListener("DOMContentLoaded", () => {
-    const paperShip = document.querySelector(".paper-ship");
+// document.addEventListener("DOMContentLoaded", () => {
+//     const paperShip = document.querySelector(".paper-ship");
 
-    let time = 0;
+//     let time = 0;
 
-    const mql = window.matchMedia("screen and (max-width: 768px)");  // 모바일 크기 설정
+//     const mql = window.matchMedia("screen and (max-width: 768px)");  // 모바일 크기 설정
 
     
-    let floatAmplitude, floatSpeed, diveDepth, riseSpeed;
+//     let floatAmplitude, floatSpeed, diveDepth, riseSpeed;
 
-    if (mql.matches) {
-        // 모바일
-        floatAmplitude = 0.1;  // 떠다니는 진폭 (작게 설정)
-        floatSpeed = 0.005;    // 떠다니는 속도
-        diveDepth = 15;        // 잠수 깊이 (모바일에서는 잠수 깊이를 적게 설정)
-        riseSpeed = 0.019;     // 상승 속도
-    } else {
-        // PC
-        floatAmplitude = 1;  
-        floatSpeed = 0.004;  
-        diveDepth = 15;        
-        riseSpeed = 0.029;     
-    }
+//     if (mql.matches) {
+//         // 모바일
+//         floatAmplitude = 0.1;  // 떠다니는 진폭 (작게 설정)
+//         floatSpeed = 0.005;    // 떠다니는 속도
+//         diveDepth = 15;        // 잠수 깊이 (모바일에서는 잠수 깊이를 적게 설정)
+//         riseSpeed = 0.019;     // 상승 속도
+//     } else {
+//         // PC
+//         floatAmplitude = 1;  
+//         floatSpeed = 0.004;  
+//         diveDepth = 15;        
+//         riseSpeed = 0.029;     
+//     }
 
-    function animateShip() {
+//     function animateShip() {
         
-        const floatY = Math.sin(time * floatSpeed) * floatAmplitude;
+//         const floatY = Math.sin(time * floatSpeed) * floatAmplitude;
 
       
-        const diveY = Math.sin(time * riseSpeed) * diveDepth;  
+//         const diveY = Math.sin(time * riseSpeed) * diveDepth;  
 
        
-        const finalY = floatY + diveY;
+//         const finalY = floatY + diveY;
 
       
-        const rotation = Math.sin(time * floatSpeed) * 5; 
+//         const rotation = Math.sin(time * floatSpeed) * 5; 
 
 
-        paperShip.style.transform = `
-            translateY(${finalY}px)
-            rotate(${rotation}deg)
-        `;
+//         paperShip.style.transform = `
+//             translateY(${finalY}px)
+//             rotate(${rotation}deg)
+//         `;
 
-        // 시간 증가
-        time += 1;
-        requestAnimationFrame(animateShip);
+//         // 시간 증가
+//         time += 1;
+//         requestAnimationFrame(animateShip);
+//     }
+
+//     animateShip();
+// });
+document.addEventListener("DOMContentLoaded", () => {
+    const paperShip = document.querySelector(".paper-ship");
+    
+    // 성능 및 반응형 최적화를 위한 클래스
+    class PaperShipAnimation {
+        constructor(element) {
+            this.element = element;
+            this.time = 0;
+            this.params = this.getAnimationParams();
+            
+            // 성능 최적화: 바인딩
+            this.animate = this.animate.bind(this);
+            
+            // 반응형 대응
+            this.resizeHandler = this.handleResize.bind(this);
+            window.addEventListener('resize', this.resizeHandler);
+            
+            // 애니메이션 시작
+            this.start();
+        }
+        
+        // 반응형 파라미터 설정
+        getAnimationParams() {
+            const isMobile = window.innerWidth <= 768;
+            return {
+                floatAmplitude: isMobile ? 0.1 : 1,
+                floatSpeed: isMobile ? 0.005 : 0.004,
+                diveDepth: 15,
+                riseSpeed: isMobile ? 0.019 : 0.029
+            };
+        }
+        
+        // 리사이즈 핸들러
+        handleResize() {
+            this.params = this.getAnimationParams();
+        }
+        
+        // 애니메이션 로직
+        animate() {
+            const { 
+                floatAmplitude, 
+                floatSpeed, 
+                diveDepth, 
+                riseSpeed 
+            } = this.params;
+
+            // 사인파 기반 모션 계산
+            const floatY = Math.sin(this.time * floatSpeed) * floatAmplitude;
+            const diveY = Math.sin(this.time * riseSpeed) * diveDepth;
+            const finalY = floatY + diveY;
+            
+            // 회전 효과 (미세 조정 가능)
+            const rotation = Math.sin(this.time * floatSpeed) * 5;
+            
+            // 트랜스폼 최적화
+            this.element.style.transform = `
+                translateY(${finalY}px)
+                rotate(${rotation}deg)
+            `;
+            
+            // 시간 증가
+            this.time += 1;
+            
+            // 애니메이션 프레임 최적화
+            this.animationFrame = requestAnimationFrame(this.animate);
+        }
+        
+        // 애니메이션 시작
+        start() {
+            this.animate();
+        }
+        
+        // 리소스 정리
+        destroy() {
+            cancelAnimationFrame(this.animationFrame);
+            window.removeEventListener('resize', this.resizeHandler);
+        }
     }
 
-    animateShip();
-});
+    // 애니메이션 인스턴스 생성
+    const shipAnimation = new PaperShipAnimation(paperShip);
 
+    // 페이지 언로드 시 리소스 정리
+    window.addEventListener('beforeunload', () => {
+        shipAnimation.destroy();
+    });
+});
 /////////////////////////////////
 
 document.addEventListener("DOMContentLoaded", () => {
