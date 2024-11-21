@@ -792,7 +792,7 @@ main .main-bg .fishs .killer {
 @media only screen and (min-width: 1024px) {
   main .main-bg .fishs .killer {
     width: 15%;
-    top: 4000px;
+    top: 4100px;
     left: 0%;
     width: 40%;
     animation-name: killer;
@@ -890,7 +890,7 @@ main .main-bg .fishs .fish1-box {
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .fishs .fish1-box {
-    top: 5500px;
+    top: 5200px;
     width: 20%;
     animation-name: fish1-box;
     animation-duration: 12s;
@@ -998,7 +998,7 @@ main .main-bg .fishs .fish3-box {
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .fishs .fish3-box {
-    top: 3600px;
+    top: 4000px;
     left: 78%;
     width: 20%;
     animation-name: fish3-box;
@@ -2037,7 +2037,7 @@ main .main-bg .container .portfolio {
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .portfolio {
     width: 100%;
-    height: 4000px;
+    height: 3500px;
   }
 }
 main .main-bg .container .portfolio .box {
@@ -2637,13 +2637,13 @@ main .main-bg .container .portfolio .design .banner-box p {
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .portfolio .design .banner-box .banner {
-    width: 20vw;
-    height: 20vw;
-    transform: translate(240%, -60%);
+    width: 15vw;
+    height: 15vw;
+    transform: translate(340%, -60%);
   }
   main .main-bg .container .portfolio .design .banner-box p {
-    top: 7.7%;
-    left: 21.8%;
+    top: 7.5%;
+    left: 22.4%;
     color: white;
   }
 }
@@ -2675,13 +2675,13 @@ main .main-bg .container .portfolio .design .detail-box p {
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .portfolio .design .detail-box .detail {
-    width: 17vw;
-    height: 17vw;
-    transform: translate(190%, -50%);
+    width: 12vw;
+    height: 12vw;
+    transform: translate(290%, -50%);
   }
   main .main-bg .container .portfolio .design .detail-box p {
-    top: 25%;
-    left: 0.5%;
+    top: 24%;
+    left: 0.3%;
     color: white;
   }
 }
@@ -2717,13 +2717,13 @@ main .main-bg .container .portfolio .design .package-box p {
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .portfolio .design .package-box .package {
-    width: 20vw;
-    height: 20vw;
-    transform: translate(260%, -60%);
+    width: 15vw;
+    height: 15vw;
+    transform: translate(360%, -60%);
   }
   main .main-bg .container .portfolio .design .package-box p {
-    top: 39%;
-    left: 26.6%;
+    top: 37%;
+    left: 26%;
     color: white;
   }
 }
@@ -2759,13 +2759,13 @@ main .main-bg .container .portfolio .design .logo-box p {
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .portfolio .design .logo-box .logo {
-    width: 20vw;
-    height: 20vw;
-    transform: translate(80%, -110%);
+    width: 15vw;
+    height: 15vw;
+    transform: translate(130%, -110%);
   }
   main .main-bg .container .portfolio .design .logo-box p {
-    top: 47.5%;
-    left: -18%;
+    top: 45.5%;
+    left: -17%;
     color: white;
   }
 }
@@ -2801,12 +2801,12 @@ main .main-bg .container .portfolio .design .mobile-box p {
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .portfolio .design .mobile-box .mobile {
-    width: 17vw;
-    height: 17vw;
-    transform: translate(270%, -140%);
+    width: 14vw;
+    height: 14vw;
+    transform: translate(340%, -120%);
   }
   main .main-bg .container .portfolio .design .mobile-box p {
-    top: 60.3%;
+    top: 60.5%;
     left: 17%;
     color: white;
   }
@@ -2844,13 +2844,13 @@ main .main-bg .container .portfolio .design .info-box p {
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .portfolio .design .info-box .info {
-    width: 12vw;
-    height: 12vw;
-    transform: translate(180%, -870%);
+    width: 10vw;
+    height: 10vw;
+    transform: translate(230%, -800%);
   }
   main .main-bg .container .portfolio .design .info-box p {
-    top: 2.3%;
-    left: -16%;
+    top: 2%;
+    left: -15.5%;
     color: white;
   }
 }
@@ -2884,13 +2884,13 @@ main .main-bg .container .portfolio .design .character-box p {
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .portfolio .design .character-box .character {
-    width: 12vw;
-    height: 12vw;
-    transform: translate(230%, -330%);
+    width: 10vw;
+    height: 10vw;
+    transform: translate(290%, -300%);
   }
   main .main-bg .container .portfolio .design .character-box p {
-    top: 67.3%;
-    left: -8.5%;
+    top: 68%;
+    left: -8%;
     color: white;
   }
 }
