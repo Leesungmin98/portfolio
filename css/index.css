@@ -309,7 +309,7 @@ header .wave .img-box img {
 }
 header .wave .img-box .paper-ship {
   position: absolute;
-  bottom: 10%;
+  bottom: 6%;
   right: 55%;
   width: 15%;
   z-index: 5;
