@@ -2845,11 +2845,11 @@ main .main-bg .container .portfolio .design .info-box p {
   main .main-bg .container .portfolio .design .info-box .info {
     width: 12vw;
     height: 12vw;
-    transform: translate(180%, -820%);
+    transform: translate(180%, -870%);
   }
   main .main-bg .container .portfolio .design .info-box p {
-    top: 29.5%;
-    left: 29%;
+    top: 2.3%;
+    left: -16%;
     color: white;
   }
 }
@@ -2888,8 +2888,8 @@ main .main-bg .container .portfolio .design .character-box p {
     transform: translate(230%, -330%);
   }
   main .main-bg .container .portfolio .design .character-box p {
-    top: 29.5%;
-    left: 29%;
+    top: 67.3%;
+    left: -8.5%;
     color: white;
   }
 }
