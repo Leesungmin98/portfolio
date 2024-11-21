@@ -1252,7 +1252,7 @@ main {
                 font-weight: bold;
                 font-family: 'pretendard';
 
-                text-shadow:  -1px 0px white, 0px 1px white, 1px 0px white, 0px -1px white;
+               
                 
 
                 @include responsive(large-screens) {
@@ -1274,6 +1274,7 @@ main {
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
+                        height: 700px;
                     }
                     .submarin {
                         width: 100%; height: 100%;
@@ -1298,9 +1299,10 @@ main {
                         background-color: #ffffff;
                         @include responsive(large-screens) {
                          position: relative; 
-                         top: 70px;
+                         top: 0px;
                          z-index: 10;
-                         width: 100%; 
+                         width: 100%;
+                         height: 400px 
                         }
                         h3 {
                             font-size: 6vw;
@@ -1369,9 +1371,9 @@ main {
                 .skill {
                     margin-top: 100px;
                     margin-bottom: 100px;
-
+                    
                     @include responsive(large-screens) {
-                       
+                        
                     }
 
                     .skill-box {
