@@ -1350,8 +1350,8 @@ main .main-bg .container .skill {
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .skill {
-    margin-top: 500px;
-    margin-bottom: 200px;
+    margin-top: 450px;
+    margin-bottom: 100px;
   }
 }
 main .main-bg .container .skill .skill-box {
