@@ -1276,7 +1276,6 @@ main .main-bg .container .about-me .submarin-atxt .atxt {
     top: 0px;
     z-index: 10;
     width: 100%;
-    height: 400px;
   }
 }
 main .main-bg .container .about-me .submarin-atxt .atxt .atxt-inner h3 {
@@ -1286,6 +1285,7 @@ main .main-bg .container .about-me .submarin-atxt .atxt .atxt-inner h3 {
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .about-me .submarin-atxt .atxt .atxt-inner h3 {
     font-size: 30px;
+    font-weight: 600;
   }
 }
 main .main-bg .container .about-me .submarin-atxt .atxt .atxt-inner p {

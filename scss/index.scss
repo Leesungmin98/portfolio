@@ -1305,21 +1305,26 @@ main {
                         font-family: 'pretendard';
                         border-radius: 20px;
                         background-color: #ffffff;
+
+                        // display: flex;
+                        // justify-content: space-between;
+                        // flex-direction: column;
                         @include responsive(large-screens) {
                          position: relative; 
                          top: 0px;
                          z-index: 10;
                          width: 100%;
-                         height: 400px 
+                        
                         }
                         .atxt-inner {
+                        //   background-color: #505050;
                             h3 {
                                 font-size: 6vw;
                                 font-family: "pretendard";
                                 // color: #380b4a;
                                 @include responsive(large-screens) {
                                     font-size: 30px;
-                                    // font-weight: 600;
+                                    font-weight: 600;
                                 }
                             }
                             p {
