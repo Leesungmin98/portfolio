@@ -15,6 +15,10 @@
   font-family: "Super Shiny";
   src: local("Super Shiny"), url("../font/Super Shiny.ttf") format("opentype");
 }
+@font-face {
+  font-family: "Yeongdeok Haeparang";
+  src: local("Yeongdeok Haeparang"), url("../font/Yeongdeok Haeparang.ttf") format("opentype");
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -1237,9 +1241,9 @@ main .main-bg .container .about-me .submarin-atxt {
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .about-me .submarin-atxt {
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
   }
 }
 main .main-bg .container .about-me .submarin-atxt .submarin {
@@ -1250,7 +1254,7 @@ main .main-bg .container .about-me .submarin-atxt .submarin {
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .about-me .submarin-atxt .submarin {
     margin-top: 0px;
-    margin-right: 80px;
+    width: 50%;
   }
 }
 main .main-bg .container .about-me .submarin-atxt .submarin .submarin-img {
@@ -1259,10 +1263,14 @@ main .main-bg .container .about-me .submarin-atxt .submarin .submarin-img {
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .about-me .submarin-atxt .submarin .submarin-img {
-    width: 70%;
+    width: 50%;
   }
 }
-main .main-bg .container .about-me .submarin-atxt .atxt {
+main .main-bg .container .about-me .submarin-atxt .atxt-box .atxt-title h3 {
+  font-family: "Super Shiny";
+  font-size: 2vw;
+}
+main .main-bg .container .about-me .submarin-atxt .atxt-box .atxt {
   width: 100%;
   height: 100%;
   padding: 20px;
@@ -1271,24 +1279,24 @@ main .main-bg .container .about-me .submarin-atxt .atxt {
   background-color: #ffffff;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .about-me .submarin-atxt .atxt {
+  main .main-bg .container .about-me .submarin-atxt .atxt-box .atxt {
     position: relative;
     top: 0px;
     z-index: 10;
     width: 100%;
   }
 }
-main .main-bg .container .about-me .submarin-atxt .atxt .atxt-inner h3 {
+main .main-bg .container .about-me .submarin-atxt .atxt-box .atxt .atxt-inner h3 {
   font-size: 6vw;
   font-family: "pretendard";
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .about-me .submarin-atxt .atxt .atxt-inner h3 {
+  main .main-bg .container .about-me .submarin-atxt .atxt-box .atxt .atxt-inner h3 {
     font-size: 30px;
     font-weight: 600;
   }
 }
-main .main-bg .container .about-me .submarin-atxt .atxt .atxt-inner p {
+main .main-bg .container .about-me .submarin-atxt .atxt-box .atxt .atxt-inner p {
   text-align: left;
   font-size: 4vw;
   font-weight: 300;
@@ -1296,7 +1304,7 @@ main .main-bg .container .about-me .submarin-atxt .atxt .atxt-inner p {
   line-height: 145%;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .about-me .submarin-atxt .atxt .atxt-inner p {
+  main .main-bg .container .about-me .submarin-atxt .atxt-box .atxt .atxt-inner p {
     font-size: 20px;
     line-height: 32px;
   }

@@ -1269,6 +1269,7 @@ main {
                 width: 100%;
                 margin-bottom: 20%;
                 margin-top: 0%;
+                // background-color: #5a27d4;
                 @include responsive(large-screens) {
                     margin-top: 4%;
                 }
@@ -1278,9 +1279,10 @@ main {
                     margin: auto;
                     // background-color: #85faf8;
                     @include responsive(large-screens) {
+                        width: 100%;
                         display: flex;
                         align-items: center;
-                        justify-content: space-between;
+                        // justify-content: space-between;
                         // height: 550px;
                     }
                     .submarin {
@@ -1289,60 +1291,107 @@ main {
                         // background-color: antiquewhite;
                         @include responsive(large-screens) {
                             margin-top: 0px;
-                            margin-right:80px;
+                            width: 50%;
+                            // margin-right:80px;
                         }
                         .submarin-img {
                             width: 55%;
                             margin: auto;
                             @include responsive(large-screens) {
-                                width: 70%;
+                                width: 50%;
                             }
                         }
                     }
-                    .atxt {
-                        width: 100%; height: 100%;
-                        padding: 20px;
-                        font-family: 'pretendard';
-                        border-radius: 20px;
-                        background-color: #ffffff;
+                    .atxt-box {
 
-                        // display: flex;
-                        // justify-content: space-between;
-                        // flex-direction: column;
-                        @include responsive(large-screens) {
-                         position: relative; 
-                         top: 0px;
-                         z-index: 10;
-                         width: 100%;
-                        
-                        }
-                        .atxt-inner {
-                        //   background-color: #505050;
+                        .atxt-title {
                             h3 {
-                                font-size: 6vw;
-                                font-family: "pretendard";
-                                // color: #380b4a;
-                                @include responsive(large-screens) {
-                                    font-size: 30px;
-                                    font-weight: 600;
+                                font-family: "Super Shiny";
+                                font-size: 2vw;
+                            }
+                        }
+                        .atxt {
+                            width: 100%; height: 100%;
+                            padding: 20px;
+                            font-family: 'pretendard';
+                            border-radius: 20px;
+                            background-color: #ffffff;
+    
+                            // display: flex;
+                            // justify-content: space-between;
+                            // flex-direction: column;
+                            @include responsive(large-screens) {
+                             position: relative; 
+                             top: 0px;
+                             z-index: 10;
+                             width: 100%;
+                            
+                            }
+                            .atxt-inner {
+                            //   background-color: #505050;
+                                h3 {
+                                    font-size: 6vw;
+                                    font-family: "pretendard";
+                                    // color: #380b4a;
+                                    @include responsive(large-screens) {
+                                        font-size: 30px;
+                                        font-weight: 600;
+                                    }
+                                }
+                                p {
+                                    text-align: left;
+                                    font-size: 4vw;
+                                    font-weight: 300;
+                                    color: #000000;
+                                    line-height: 145%;
+                                   
+                                    @include responsive(large-screens) {
+                                        font-size: 20px;
+                                        line-height: 32px;
+                                     
+                                    }
+                                } // p
+                            } // atxt-inner
+                            .a1 {
+                                h3 {
+                                    
+                                    @include responsive(large-screens) {
+                                       
+                                    }
+                                }
+                                p {
+                                    @include responsive(large-screens) {
+                                      
+                                    }
                                 }
                             }
-                            p {
-                                text-align: left;
-                                font-size: 4vw;
-                                font-weight: 300;
-                                color: #000000;
-                                line-height: 145%;
-                               
-                                @include responsive(large-screens) {
-                                    font-size: 20px;
-                                    line-height: 32px;
-                                 
+                            .a2 {
+                                h3 {
+                                    @include responsive(large-screens) {
+                                     
+                                    }
                                 }
-                            } // p
-                        } // atxt-inner
-                    } // atxt
-                }
+                                p {
+                                    @include responsive(large-screens) {
+                                      
+                                    }
+                                }
+                            }
+                            .a3 {
+                                h3 {
+                                    @include responsive(large-screens) {
+                                       
+                                    }
+                                }
+                                p {
+                                    @include responsive(large-screens) {
+                                     
+                                    }
+                                }
+                            } // a3
+                        } // atxt
+                    } // atxt-box
+                } // submarin-atxt
             } //about-me
 
                 .skill {
