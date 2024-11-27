@@ -1279,25 +1279,16 @@ main .main-bg .container .about-me .submarin-atxt .atxt {
     height: 400px;
   }
 }
-main .main-bg .container .about-me .submarin-atxt .atxt h3 {
+main .main-bg .container .about-me .submarin-atxt .atxt .atxt-inner h3 {
   font-size: 6vw;
-  font-weight: 600;
+  font-family: "pretendard";
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .about-me .submarin-atxt .atxt h3 {
-    font-size: 40px;
-    font-weight: 600;
+  main .main-bg .container .about-me .submarin-atxt .atxt .atxt-inner h3 {
+    font-size: 30px;
   }
 }
-main .main-bg .container .about-me .submarin-atxt .atxt h3 .name {
-  font-size: 6vw;
-  font-weight: 600;
-  color: #000000;
-}
-main .main-bg .container .about-me .submarin-atxt .atxt strong {
-  color: #767676;
-}
-main .main-bg .container .about-me .submarin-atxt .atxt p {
+main .main-bg .container .about-me .submarin-atxt .atxt .atxt-inner p {
   text-align: left;
   font-size: 4vw;
   font-weight: 300;
@@ -1305,43 +1296,9 @@ main .main-bg .container .about-me .submarin-atxt .atxt p {
   line-height: 145%;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .about-me .submarin-atxt .atxt p {
+  main .main-bg .container .about-me .submarin-atxt .atxt .atxt-inner p {
     font-size: 20px;
     line-height: 32px;
-  }
-}
-main .main-bg .container .about-me .submarin-atxt .atxt p .name2 {
-  font-weight: 600;
-  color: black;
-}
-main .main-bg .container .about-me .submarin-atxt .atxt p .advantage {
-  font-size: 5vw;
-  font-weight: bold;
-  color: rgb(219, 16, 16);
-}
-@media only screen and (min-width: 1024px) {
-  main .main-bg .container .about-me .submarin-atxt .atxt p .advantage {
-    font-size: 32px;
-  }
-}
-main .main-bg .container .about-me .submarin-atxt .atxt p .focus {
-  font-size: 3.5vw;
-  font-weight: bold;
-  color: black;
-}
-@media only screen and (min-width: 1024px) {
-  main .main-bg .container .about-me .submarin-atxt .atxt p .focus {
-    font-size: 20px;
-  }
-}
-main .main-bg .container .about-me .submarin-atxt .atxt p .resolution {
-  font-size: 3.5vw;
-  font-weight: bold;
-  color: black;
-}
-@media only screen and (min-width: 1024px) {
-  main .main-bg .container .about-me .submarin-atxt .atxt p .resolution {
-    font-size: 20px;
   }
 }
 main .main-bg .container .skill {
@@ -1350,8 +1307,8 @@ main .main-bg .container .skill {
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .skill {
-    margin-top: 450px;
-    margin-bottom: 100px;
+    margin-top: 550px;
+    margin-bottom: 140px;
   }
 }
 main .main-bg .container .skill .skill-box {
