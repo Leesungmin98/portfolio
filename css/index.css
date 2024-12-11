@@ -2444,7 +2444,7 @@ main .main-bg .container .portfolio .design .ds {
   height: 25vw;
   cursor: pointer;
   border-radius: 50%;
-  border: 10px solid transparent;
+  border: 5px solid transparent;
   background-color: rgba(255, 255, 255, 0.2);
   opacity: 0;
   transition: opacity 0.5s ease;
@@ -2453,7 +2453,7 @@ main .main-bg .container .portfolio .design .ds {
   main .main-bg .container .portfolio .design .ds {
     width: 15vw;
     height: 15vw;
-    border: 15px solid transparent;
+    border: 5px solid transparent;
     border-radius: 50%;
   }
 }
