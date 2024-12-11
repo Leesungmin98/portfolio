@@ -104,7 +104,7 @@ header .wave canvas {
   }
 }
 header .wave .box {
-  position: absolute;
+  position: fixed;
   margin: auto;
   display: block;
   width: 100%;
@@ -308,11 +308,11 @@ header .wave .box .sun-ray .sun .ray .r10 {
   }
 }
 header .wave .img-box img {
-  position: absolute;
+  position: fixed;
   width: 10%;
 }
 header .wave .img-box .paper-ship {
-  position: absolute;
+  position: fixed;
   bottom: 4%;
   right: 55%;
   width: 20%;
@@ -346,7 +346,7 @@ header .container {
   margin: auto;
 }
 header .container h1 {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -949,6 +949,144 @@ main .main-bg .buble {
   animation-timing-function: ease-in-out;
   animation-duration: 10s;
 }
+main .main-bg .buble00 {
+  display: none;
+}
+@media only screen and (min-width: 1024px) {
+  main .main-bg .buble00 {
+    display: block;
+    top: 0%;
+    left: 20%;
+    width: 100px;
+    animation-name: buble-move00;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 10s;
+  }
+  @keyframes buble-move00 {
+    0% {
+      transform: translateY(1800px);
+    }
+    100% {
+      transform: translateY(600px);
+    }
+  }
+}
+main .main-bg .buble01 {
+  display: none;
+}
+@media only screen and (min-width: 1024px) {
+  main .main-bg .buble01 {
+    display: block;
+    width: 60px;
+    top: 4%;
+    left: 40%;
+    animation-name: buble-move01;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 6s;
+  }
+  @keyframes buble-move01 {
+    0% {
+      transform: translateY(400px);
+    }
+    100% {
+      transform: translateY(-100px);
+    }
+  }
+}
+main .main-bg .buble02 {
+  display: none;
+}
+@media only screen and (min-width: 1024px) {
+  main .main-bg .buble02 {
+    display: block;
+    width: 70px;
+    top: 11%;
+    left: 30%;
+    animation-name: buble-move02;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 6s;
+  }
+  @keyframes buble-move02 {
+    0% {
+      transform: translateY(700px);
+    }
+    100% {
+      transform: translateY(300px);
+    }
+  }
+}
+main .main-bg .buble03 {
+  display: none;
+}
+@media only screen and (min-width: 1024px) {
+  main .main-bg .buble03 {
+    display: block;
+    top: 0%;
+    left: 10%;
+    width: 30px;
+    animation-name: buble-move03;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 10s;
+  }
+  @keyframes buble-move03 {
+    0% {
+      transform: translateY(1300px);
+    }
+    100% {
+      transform: translateY(500px);
+    }
+  }
+}
+main .main-bg .buble04 {
+  display: none;
+}
+@media only screen and (min-width: 1024px) {
+  main .main-bg .buble04 {
+    display: block;
+    width: 150px;
+    top: 4%;
+    left: 80%;
+    animation-name: buble-move04;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 10s;
+  }
+  @keyframes buble-move04 {
+    0% {
+      transform: translateY(1000px);
+    }
+    100% {
+      transform: translateY(-70px);
+    }
+  }
+}
+main .main-bg .buble05 {
+  display: none;
+}
+@media only screen and (min-width: 1024px) {
+  main .main-bg .buble05 {
+    display: block;
+    width: 3%;
+    top: 11%;
+    left: 60%;
+    animation-name: buble-move05;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 8s;
+  }
+  @keyframes buble-move05 {
+    0% {
+      transform: translateY(700px);
+    }
+    100% {
+      transform: translateY(200px);
+    }
+  }
+}
 main .main-bg .buble0 {
   top: 0%;
   left: 60%;
@@ -1315,8 +1453,7 @@ main .main-bg .container .skill {
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .skill {
-    margin-top: 550px;
-    margin-bottom: 140px;
+    margin-top: 500px;
   }
 }
 main .main-bg .container .skill .skill-box {
@@ -1326,7 +1463,7 @@ main .main-bg .container .skill .skill-box {
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .skill .skill-box {
-    height: 250px;
+    height: 70vh;
   }
 }
 main .main-bg .container .skill .skill-box .skill-item {
@@ -1568,6 +1705,15 @@ main .main-bg .container .skill .skill-box .modal-box .modal .close:hover {
 main .main-bg .container .skill .skill-box .modal-box .hidden {
   display: none;
 }
+main .main-bg .container .skill .skill-box .hidden1 {
+  opacity: 0;
+  transform: translateY(20%);
+  transition: opacity 0.6s ease, transform 2s ease-in;
+}
+main .main-bg .container .skill .skill-box .visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 main .main-bg .container .skill .skill-box .ai {
   animation: aiUpDown 2s ease-in-out infinite;
 }
@@ -1612,13 +1758,13 @@ main .main-bg .container .skill .skill-box .pr {
 @media only screen and (min-width: 1024px) {
   @keyframes prUpDown {
     0% {
-      transform: translateY(-130px) translateX(200px);
+      transform: translateY(230px) translateX(200px);
     }
     50% {
-      transform: translateY(-140px) translateX(200px);
+      transform: translateY(240px) translateX(200px);
     }
     100% {
-      transform: translateY(-130px) translateX(200px);
+      transform: translateY(230px) translateX(200px);
     }
   }
 }
@@ -1639,13 +1785,13 @@ main .main-bg .container .skill .skill-box .html {
 @media only screen and (min-width: 1024px) {
   @keyframes htmlUpDown {
     0% {
-      transform: translateY(-100px) translateX(600%);
+      transform: translateY(100px) translateX(600%);
     }
     50% {
-      transform: translateY(-90px) translateX(600%);
+      transform: translateY(90px) translateX(600%);
     }
     100% {
-      transform: translateY(-100px) translateX(600%);
+      transform: translateY(100px) translateX(600%);
     }
   }
 }
@@ -1666,13 +1812,13 @@ main .main-bg .container .skill .skill-box .sass {
 @media only screen and (min-width: 1024px) {
   @keyframes sassUpDown {
     0% {
-      transform: translateY(-160px) translateX(900%);
+      transform: translateY(160px) translateX(900%);
     }
     50% {
-      transform: translateY(-170px) translateX(900%);
+      transform: translateY(170px) translateX(900%);
     }
     100% {
-      transform: translateY(-160px) translateX(900%);
+      transform: translateY(160px) translateX(900%);
     }
   }
 }
@@ -1720,13 +1866,13 @@ main .main-bg .container .skill .skill-box .ps {
 @media only screen and (min-width: 1024px) {
   @keyframes psUpDown {
     0% {
-      transform: translateY(0) translateX(290%);
+      transform: translateY(50px) translateX(290%);
     }
     50% {
-      transform: translateY(-10px) translateX(290%);
+      transform: translateY(40px) translateX(290%);
     }
     100% {
-      transform: translateY(0) translateX(290%);
+      transform: translateY(50px) translateX(290%);
     }
   }
 }
@@ -1747,13 +1893,13 @@ main .main-bg .container .skill .skill-box .jquery {
 @media only screen and (min-width: 1024px) {
   @keyframes jqueryUpDown {
     0% {
-      transform: translateY(-100px) translateX(-170px);
+      transform: translateY(100px) translateX(-170px);
     }
     50% {
-      transform: translateY(-90px) translateX(-170px);
+      transform: translateY(90px) translateX(-170px);
     }
     100% {
-      transform: translateY(-100px) translateX(-170px);
+      transform: translateY(100px) translateX(-170px);
     }
   }
 }
@@ -1828,13 +1974,13 @@ main .main-bg .container .skill .skill-box .css {
 @media only screen and (min-width: 1024px) {
   @keyframes cssUpDown {
     0% {
-      transform: translateY(-220px) translateX(400px);
+      transform: translateY(-180px) translateX(320px);
     }
     50% {
-      transform: translateY(-210px) translateX(400px);
+      transform: translateY(-190px) translateX(320px);
     }
     100% {
-      transform: translateY(-220px) translateX(400px);
+      transform: translateY(-180px) translateX(320px);
     }
   }
 }
@@ -1855,13 +2001,13 @@ main .main-bg .container .skill .skill-box .figma {
 @media only screen and (min-width: 1024px) {
   @keyframes figmaUpDown {
     0% {
-      transform: translateY(-300px) translateX(500%);
+      transform: translateY(300px) translateX(500%);
     }
     50% {
-      transform: translateY(-290px) translateX(500%);
+      transform: translateY(290px) translateX(500%);
     }
     100% {
-      transform: translateY(-300px) translateX(500%);
+      transform: translateY(300px) translateX(500%);
     }
   }
 }
@@ -1913,6 +2059,15 @@ main .main-bg .container .portfolio .box {
   main .main-bg .container .portfolio .box {
     width: 100%;
   }
+}
+main .main-bg .container .portfolio .box-ani {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: transform 1s ease, opacity 1s ease;
+}
+main .main-bg .container .portfolio .box-ani.visible {
+  opacity: 1;
+  transform: translateX(0);
 }
 main .main-bg .container .portfolio .box::after {
   display: block;
