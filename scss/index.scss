@@ -2582,14 +2582,12 @@ main {
                         margin-top:35%;
                     }
                     .d-box {
-                        width: 25vw;
+                        width: 0;
                         outline: none;
                         -webkit-tap-highlight-color: transparent;
-                      
-                      
-                       
+                        background-color: #505050;
                         @include responsive(large-screens) {
-                            width: 15vw;
+                            width: 0;
                         }
                     }
                    

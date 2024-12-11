@@ -2414,13 +2414,14 @@ main .main-bg .container .portfolio .design {
   }
 }
 main .main-bg .container .portfolio .design .d-box {
-  width: 25vw;
+  width: 0;
   outline: none;
   -webkit-tap-highlight-color: transparent;
+  background-color: #505050;
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .portfolio .design .d-box {
-    width: 15vw;
+    width: 0;
   }
 }
 main .main-bg .container .portfolio .design p {
