@@ -2585,10 +2585,14 @@ main {
                         width: 25vw;
                         outline: none;
                         -webkit-tap-highlight-color: transparent;
+                      
+                      
+                       
                         @include responsive(large-screens) {
                             width: 15vw;
                         }
                     }
+                   
                     p {
                         position: absolute;
                         width: 100%;
@@ -2609,6 +2613,9 @@ main {
                         border-radius: 50%;
                         border: 10px solid transparent;
                         background-color: rgba(255, 255, 255, 0.2);
+
+                        opacity: 0;
+                        transition: opacity 0.5s ease;
                        
                         @include responsive(large-screens) {
                             width: 15vw; height: 15vw;
@@ -2617,14 +2624,27 @@ main {
                         
                         }
                     }
+                   
+                    .ds.visible {
+                        opacity: 1;
+                       
+                    }
+                 
                     .ds::after {
                         content: "";
                         padding-bottom: 100%;
                         display: block;
                         
                     }
-
-                  
+                    .ds-txt {
+                        opacity: 0;
+                        transform: translateY(-100%);
+                        transition: transform 1s ease, opacity 1s ease;
+                    }
+                    .ds-txt.visible {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
                    
                     .po-modal-box {
                         position: fixed;
