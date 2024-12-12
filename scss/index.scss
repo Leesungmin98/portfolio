@@ -2732,42 +2732,51 @@ main {
                         }
                         .close-modal {
                             display: none;
-                            position: fixed; top: 5%; right: 5%;
+                            position: fixed; top: 5%; right: 0%;
                             padding: 10px 20px;
                             background: none;
                             cursor: pointer;
                             border: transparent;
                             z-index: 9999;
-
                             @include responsive(large-screens) {
-                               
+                                right: 5%;
                             }
+
                             span {
                                 background: rgb(255, 255, 255);
                                 border: none;
                                 border-radius: 50px;
                                 height: 3px;
-                                width: 100%;
+                                width: 60%;
                                 position: absolute;
                                 top: 0;
                                 left: 0;
                                 transition:  all .35s ease;
                                 cursor: pointer;
-                                
+                                @include responsive(large-screens) {
+                                    width: 100%;
+                                }
                                 &:nth-of-type(2) {
-                                top: 8px;
+                                    top: 7px;
                                 }
                                 
                                 &:nth-of-type(3) {
-                                top: 16px;
+                                    top: 16px;
                                 }
                             }
+                           
                             .one {
-                                transform: translateY(5px) translateX(0) rotate(45deg);
+                                transform: translateY(5px) translateX(0) rotate(45deg);            
+                                @include responsive(large-screens) {
+                                    transform: translateY(5px) translateX(0) rotate(45deg);            
+                                }
                                 }
                              
                             .two {
                                 transform: translateY(-2px) translateX(0) rotate(-45deg);
+                                @include responsive(large-screens) {
+                                    transform: translateY(-2px) translateX(0) rotate(-45deg);
+                                }
                             }    
                         }
                     }

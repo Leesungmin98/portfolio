@@ -2581,27 +2581,37 @@ body main .main-bg .container .portfolio .design .po-modal-box .close-modal {
   display: none;
   position: fixed;
   top: 5%;
-  right: 5%;
+  right: 0%;
   padding: 10px 20px;
   background: none;
   cursor: pointer;
   border: transparent;
   z-index: 9999;
 }
+@media only screen and (min-width: 1024px) {
+  body main .main-bg .container .portfolio .design .po-modal-box .close-modal {
+    right: 5%;
+  }
+}
 body main .main-bg .container .portfolio .design .po-modal-box .close-modal span {
   background: rgb(255, 255, 255);
   border: none;
   border-radius: 50px;
   height: 3px;
-  width: 100%;
+  width: 60%;
   position: absolute;
   top: 0;
   left: 0;
   transition: all 0.35s ease;
   cursor: pointer;
 }
+@media only screen and (min-width: 1024px) {
+  body main .main-bg .container .portfolio .design .po-modal-box .close-modal span {
+    width: 100%;
+  }
+}
 body main .main-bg .container .portfolio .design .po-modal-box .close-modal span:nth-of-type(2) {
-  top: 8px;
+  top: 7px;
 }
 body main .main-bg .container .portfolio .design .po-modal-box .close-modal span:nth-of-type(3) {
   top: 16px;
@@ -2609,8 +2619,18 @@ body main .main-bg .container .portfolio .design .po-modal-box .close-modal span
 body main .main-bg .container .portfolio .design .po-modal-box .close-modal .one {
   transform: translateY(5px) translateX(0) rotate(45deg);
 }
+@media only screen and (min-width: 1024px) {
+  body main .main-bg .container .portfolio .design .po-modal-box .close-modal .one {
+    transform: translateY(5px) translateX(0) rotate(45deg);
+  }
+}
 body main .main-bg .container .portfolio .design .po-modal-box .close-modal .two {
   transform: translateY(-2px) translateX(0) rotate(-45deg);
+}
+@media only screen and (min-width: 1024px) {
+  body main .main-bg .container .portfolio .design .po-modal-box .close-modal .two {
+    transform: translateY(-2px) translateX(0) rotate(-45deg);
+  }
 }
 @media only screen and (min-width: 1024px) {
   body main .main-bg .container .portfolio .design .banner-modal-box .banner-modal .img-box {
