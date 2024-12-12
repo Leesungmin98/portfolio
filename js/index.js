@@ -59,26 +59,34 @@ $(document).ready(function() {
     $('.close-modal').click(function() {
         closeModal();
     });
+/////////////////////////////////////////////////////////////////
 
-    // 모달 열기
-    function openModal(modalClass) {
-        $('.close-modal').css('display', 'block');
-        $(modalClass).css('bottom', '0');
-        $('body').css('overflow', 'hidden');
-        $('#top-bt').fadeOut(); 
-    }
+// 모달 열기
+function openModal(modalClass) {
+    $('.close-modal').css('display', 'block');
+    $(modalClass).css('bottom', '0');
+    $('body').css('overflow', 'hidden');
+    $('#top-bt').fadeOut();
 
-    // 모달 닫기
-    function closeModal() {
-        $('.close-modal').css('display', 'none');
-        $('.info-modal-box, .character-modal-box, .logo-modal-box, .mobile-modal-box, .package-modal-box, .detail-modal-box, .banner-modal-box').css('bottom', '-100%');
-        $('body').css('overflow', 'auto');
-        
-       
-        if ($(window).scrollTop() > 200) {
-            $('#top-bt').fadeIn();
-        }
+    // 특정 타겟 요소 숨기기
+    $('.logo-btn-screen').css('display', 'none');
+}
+
+// 모달 닫기
+function closeModal() {
+    $('.close-modal').css('display', 'none');
+    $('.info-modal-box, .character-modal-box, .logo-modal-box, .mobile-modal-box, .package-modal-box, .detail-modal-box, .banner-modal-box').css('bottom', '-100%');
+    $('body').css('overflow', 'auto');
+
+    // 특정 타겟 요소 보이기
+    $('.logo-btn-screen').css('display', 'block');
+
+    if ($(window).scrollTop() > 200) {
+        $('#top-bt').fadeIn();
     }
+}
+
+
 /////////////////////
     // 햄버거 메뉴
     $('#toggle').click(function() {

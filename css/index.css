@@ -77,7 +77,7 @@ footer {
   display: block;
 }
 
-body .logo-btn-screen {
+body header .logo-btn-screen {
   position: fixed;
   z-index: 1000;
   background-color: #FAF7F5;
@@ -86,7 +86,7 @@ body .logo-btn-screen {
   padding: 0 20px 0 20px;
 }
 @media only screen and (min-width: 1024px) {
-  body .logo-btn-screen {
+  body header .logo-btn-screen {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -94,7 +94,7 @@ body .logo-btn-screen {
     background-color: #FAF7F5;
   }
 }
-body .logo-btn-screen .container {
+body header .logo-btn-screen .container {
   width: 100%;
   height: 100%;
   max-width: 1560px;
@@ -103,21 +103,21 @@ body .logo-btn-screen .container {
   justify-content: space-between;
   align-items: center;
 }
-body .logo-btn-screen .container .header-logo {
+body header .logo-btn-screen .container .header-logo {
   width: 8%;
   outline: none;
   -webkit-tap-highlight-color: transparent;
 }
-body .logo-btn-screen .container .header-logo a {
+body header .logo-btn-screen .container .header-logo a {
   cursor: pointer;
 }
 @media only screen and (min-width: 1024px) {
-  body .logo-btn-screen .container .header-logo {
+  body header .logo-btn-screen .container .header-logo {
     width: 2.5%;
     z-index: 1000;
   }
 }
-body .logo-btn-screen .container .btn_container {
+body header .logo-btn-screen .container .btn_container {
   position: absolute;
   top: 35%;
   right: 20px;
@@ -127,22 +127,22 @@ body .logo-btn-screen .container .btn_container {
   z-index: 100;
   transition: opacity 0.25s ease;
 }
-body .logo-btn-screen .container .btn_container:hover {
+body header .logo-btn-screen .container .btn_container:hover {
   opacity: 0.7;
 }
-body .logo-btn-screen .container .btn_container.active .top {
+body header .logo-btn-screen .container .btn_container.active .top {
   transform: translateY(11px) translateX(0) rotate(45deg);
   background: rgb(0, 0, 0);
 }
-body .logo-btn-screen .container .btn_container.active .middle {
+body header .logo-btn-screen .container .btn_container.active .middle {
   opacity: 0;
   background: rgb(0, 0, 0);
 }
-body .logo-btn-screen .container .btn_container.active .bottom {
+body header .logo-btn-screen .container .btn_container.active .bottom {
   transform: translateY(-5px) translateX(0) rotate(-45deg);
   background: rgb(0, 0, 0);
 }
-body .logo-btn-screen .container .btn_container span {
+body header .logo-btn-screen .container .btn_container span {
   background: black;
   border: none;
   border-radius: 50px;
@@ -154,18 +154,18 @@ body .logo-btn-screen .container .btn_container span {
   transition: all 0.35s ease;
   cursor: pointer;
 }
-body .logo-btn-screen .container .btn_container span:nth-of-type(2) {
+body header .logo-btn-screen .container .btn_container span:nth-of-type(2) {
   top: 8px;
 }
-body .logo-btn-screen .container .btn_container span:nth-of-type(3) {
+body header .logo-btn-screen .container .btn_container span:nth-of-type(3) {
   top: 16px;
 }
 @media only screen and (min-width: 1024px) {
-  body .logo-btn-screen .container .btn_container span {
+  body header .logo-btn-screen .container .btn_container span {
     display: none;
   }
 }
-body .logo-btn-screen .fullscreen {
+body header .logo-btn-screen .fullscreen {
   position: fixed;
   background: white;
   top: 0;
@@ -179,7 +179,7 @@ body .logo-btn-screen .fullscreen {
   z-index: 20;
 }
 @media only screen and (min-width: 1024px) {
-  body .logo-btn-screen .fullscreen {
+  body header .logo-btn-screen .fullscreen {
     position: absolute;
     background: none;
     opacity: 1;
@@ -188,25 +188,25 @@ body .logo-btn-screen .fullscreen {
     height: 100%;
   }
 }
-body .logo-btn-screen .fullscreen.open {
+body header .logo-btn-screen .fullscreen.open {
   opacity: 0.9;
   visibility: visible;
   height: 100%;
 }
-body .logo-btn-screen .fullscreen.open li {
+body header .logo-btn-screen .fullscreen.open li {
   animation: fadeInRight 0.5s ease forwards;
   animation-delay: 0.35s;
 }
-body .logo-btn-screen .fullscreen.open li:nth-of-type(2) {
+body header .logo-btn-screen .fullscreen.open li:nth-of-type(2) {
   animation-delay: 0.4s;
 }
-body .logo-btn-screen .fullscreen.open li:nth-of-type(3) {
+body header .logo-btn-screen .fullscreen.open li:nth-of-type(3) {
   animation-delay: 0.45s;
 }
-body .logo-btn-screen .fullscreen.open li:nth-of-type(4) {
+body header .logo-btn-screen .fullscreen.open li:nth-of-type(4) {
   animation-delay: 0.5s;
 }
-body .logo-btn-screen .fullscreen nav {
+body header .logo-btn-screen .fullscreen nav {
   position: relative;
   height: 100%;
   top: 70%;
@@ -216,11 +216,11 @@ body .logo-btn-screen .fullscreen nav {
   text-align: center;
 }
 @media only screen and (min-width: 1024px) {
-  body .logo-btn-screen .fullscreen nav {
+  body header .logo-btn-screen .fullscreen nav {
     top: 50%;
   }
 }
-body .logo-btn-screen .fullscreen .mobile-menu {
+body header .logo-btn-screen .fullscreen .mobile-menu {
   list-style: none;
   padding: 0;
   margin: 0 auto;
@@ -229,18 +229,18 @@ body .logo-btn-screen .fullscreen .mobile-menu {
   height: 40vh;
 }
 @media only screen and (min-width: 1024px) {
-  body .logo-btn-screen .fullscreen .mobile-menu {
+  body header .logo-btn-screen .fullscreen .mobile-menu {
     display: none;
   }
 }
-body .logo-btn-screen .fullscreen .mobile-menu li {
+body header .logo-btn-screen .fullscreen .mobile-menu li {
   display: block;
   height: 25%;
   min-height: 50px;
   position: relative;
   opacity: 0;
 }
-body .logo-btn-screen .fullscreen .mobile-menu li a {
+body header .logo-btn-screen .fullscreen .mobile-menu li a {
   display: block;
   position: relative;
   color: rgb(0, 0, 0);
@@ -250,10 +250,10 @@ body .logo-btn-screen .fullscreen .mobile-menu li a {
   overflow: hidden;
   padding-top: 25px;
 }
-body .logo-btn-screen .fullscreen .mobile-menu li a:hover:after, body .logo-btn-screen .fullscreen .mobile-menu li a:focus:after, body .logo-btn-screen .fullscreen .mobile-menu li a:active:after {
+body header .logo-btn-screen .fullscreen .mobile-menu li a:hover:after, body header .logo-btn-screen .fullscreen .mobile-menu li a:focus:after, body header .logo-btn-screen .fullscreen .mobile-menu li a:active:after {
   width: 100%;
 }
-body .logo-btn-screen .fullscreen .mobile-menu li a:after {
+body header .logo-btn-screen .fullscreen .mobile-menu li a:after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -264,14 +264,14 @@ body .logo-btn-screen .fullscreen .mobile-menu li a:after {
   background: #5a27d4;
   transition: 0.35s;
 }
-body .logo-btn-screen .fullscreen .mobile-menu li a:hover {
+body header .logo-btn-screen .fullscreen .mobile-menu li a:hover {
   color: #5a27d4;
 }
-body .logo-btn-screen .pc-menu {
+body header .logo-btn-screen .pc-menu {
   display: none;
 }
 @media only screen and (min-width: 1024px) {
-  body .logo-btn-screen .pc-menu {
+  body header .logo-btn-screen .pc-menu {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
@@ -285,7 +285,7 @@ body .logo-btn-screen .pc-menu {
     height: 100%;
   }
 }
-body .logo-btn-screen .pc-menu li a:hover {
+body header .logo-btn-screen .pc-menu li a:hover {
   color: #5a27d4;
 }
 @keyframes fadeInRight {
@@ -298,8 +298,7 @@ body .logo-btn-screen .pc-menu li a:hover {
     left: 0;
   }
 }
-
-header .wave {
+body header .wave {
   position: relative;
   z-index: 0;
   width: 100%;
@@ -308,11 +307,11 @@ header .wave {
   background-color: #FAF7F5;
 }
 @media only screen and (min-width: 1024px) {
-  header .wave {
+  body header .wave {
     height: 1000px;
   }
 }
-header .wave canvas {
+body header .wave canvas {
   position: absolute;
   bottom: 0px;
   left: 0px;
@@ -321,18 +320,18 @@ header .wave canvas {
   height: 70%;
 }
 @media only screen and (min-width: 1024px) {
-  header .wave canvas {
+  body header .wave canvas {
     height: 200vh;
   }
 }
-header .wave .box {
+body header .wave .box {
   position: fixed;
   margin: auto;
   display: block;
   width: 100%;
   height: 100%;
 }
-header .wave .box .sun-ray {
+body header .wave .box .sun-ray {
   width: 100%;
   height: 100%;
   position: relative;
@@ -343,13 +342,13 @@ header .wave .box .sun-ray {
   z-index: 10;
 }
 @media only screen and (min-width: 1024px) {
-  header .wave .box .sun-ray {
+  body header .wave .box .sun-ray {
     transform: scale(0.7);
     left: -100px;
     top: -100px;
   }
 }
-header .wave .box .sun-ray .sun {
+body header .wave .box .sun-ray .sun {
   position: absolute;
   z-index: 8;
   background: yellow;
@@ -362,17 +361,17 @@ header .wave .box .sun-ray .sun {
   animation: pulse 2s infinite;
 }
 @media only screen and (min-width: 1024px) {
-  header .wave .box .sun-ray .sun {
+  body header .wave .box .sun-ray .sun {
     top: 30%;
     left: 30%;
     width: 150px;
     height: 150px;
   }
 }
-header .wave .box .sun-ray .sun .face {
+body header .wave .box .sun-ray .sun .face {
   position: absolute;
 }
-header .wave .box .sun-ray .sun .face:before, header .wave .box .sun-ray .sun .face:after {
+body header .wave .box .sun-ray .sun .face:before, body header .wave .box .sun-ray .sun .face:after {
   content: "";
   position: absolute;
   width: 9px;
@@ -381,15 +380,15 @@ header .wave .box .sun-ray .sun .face:before, header .wave .box .sun-ray .sun .f
   border-radius: 50%;
   z-index: 5;
 }
-header .wave .box .sun-ray .sun .face:before {
+body header .wave .box .sun-ray .sun .face:before {
   top: 20px;
   left: 60px;
 }
-header .wave .box .sun-ray .sun .face:after {
+body header .wave .box .sun-ray .sun .face:after {
   top: 20px;
   left: 100px;
 }
-header .wave .box .sun-ray .sun .face .smile {
+body header .wave .box .sun-ray .sun .face .smile {
   position: absolute;
   top: 27px;
   left: 79px;
@@ -400,7 +399,7 @@ header .wave .box .sun-ray .sun .face .smile {
   border-color: transparent #000 #000 transparent;
   transform: rotate(45deg);
 }
-header .wave .box .sun-ray .sun .face .pupil-left {
+body header .wave .box .sun-ray .sun .face .pupil-left {
   position: absolute;
   border-radius: 50%;
   height: 3px;
@@ -410,7 +409,7 @@ header .wave .box .sun-ray .sun .face .pupil-left {
   background: #ffffff;
   z-index: 7;
 }
-header .wave .box .sun-ray .sun .face .pupil-right {
+body header .wave .box .sun-ray .sun .face .pupil-right {
   position: absolute;
   border-radius: 50%;
   height: 3px;
@@ -420,7 +419,7 @@ header .wave .box .sun-ray .sun .face .pupil-right {
   background: #ffffff;
   z-index: 7;
 }
-header .wave .box .sun-ray .sun .ray {
+body header .wave .box .sun-ray .sun .ray {
   position: absolute;
   margin: auto;
   width: 150px;
@@ -430,76 +429,76 @@ header .wave .box .sun-ray .sun .ray {
   bottom: 0;
   animation: spin 15s linear infinite;
 }
-header .wave .box .sun-ray .sun .ray .beam {
+body header .wave .box .sun-ray .sun .ray .beam {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0), yellow 40%, yellow);
   margin-left: 10px;
   border-radius: 50% 50% 0 0;
   position: absolute;
   opacity: 0.2;
 }
-header .wave .box .sun-ray .sun .ray .r1 {
+body header .wave .box .sun-ray .sun .ray .r1 {
   height: 120px;
   width: 40px;
   transform: rotate(180deg);
   top: -120px;
   left: 42px;
 }
-header .wave .box .sun-ray .sun .ray .r2 {
+body header .wave .box .sun-ray .sun .ray .r2 {
   height: 120px;
   width: 30px;
   transform: rotate(210deg);
   top: -100px;
   right: -5px;
 }
-header .wave .box .sun-ray .sun .ray .r3 {
+body header .wave .box .sun-ray .sun .ray .r3 {
   height: 120px;
   width: 50px;
   transform: rotate(255deg);
   top: -30px;
   right: -65px;
 }
-header .wave .box .sun-ray .sun .ray .r4 {
+body header .wave .box .sun-ray .sun .ray .r4 {
   height: 120px;
   width: 24px;
   transform: rotate(300deg);
   top: 60px;
   left: 150px;
 }
-header .wave .box .sun-ray .sun .ray .r5 {
+body header .wave .box .sun-ray .sun .ray .r5 {
   height: 120px;
   width: 40px;
   top: 135px;
   left: 40px;
 }
-header .wave .box .sun-ray .sun .ray .r6 {
+body header .wave .box .sun-ray .sun .ray .r6 {
   height: 120px;
   width: 30px;
   transform: rotate(-35deg);
   top: 115px;
   right: -12px;
 }
-header .wave .box .sun-ray .sun .ray .r7 {
+body header .wave .box .sun-ray .sun .ray .r7 {
   height: 120px;
   width: 45px;
   transform: rotate(45deg);
   top: 100px;
   left: -45px;
 }
-header .wave .box .sun-ray .sun .ray .r8 {
+body header .wave .box .sun-ray .sun .ray .r8 {
   height: 130px;
   width: 20px;
   transform: rotate(75deg);
   top: 40px;
   left: -70px;
 }
-header .wave .box .sun-ray .sun .ray .r9 {
+body header .wave .box .sun-ray .sun .ray .r9 {
   height: 120px;
   width: 50px;
   transform: rotate(-255deg);
   top: -30px;
   left: -80px;
 }
-header .wave .box .sun-ray .sun .ray .r10 {
+body header .wave .box .sun-ray .sun .ray .r10 {
   height: 130px;
   width: 20px;
   transform: rotate(150deg);
@@ -529,11 +528,11 @@ header .wave .box .sun-ray .sun .ray .r10 {
     transform: scale(1);
   }
 }
-header .wave .img-box img {
+body header .wave .img-box img {
   position: fixed;
   width: 10%;
 }
-header .wave .img-box .paper-ship {
+body header .wave .img-box .paper-ship {
   position: fixed;
   bottom: 4%;
   right: 55%;
@@ -555,19 +554,19 @@ header .wave .img-box .paper-ship {
   }
 }
 @media only screen and (min-width: 1024px) {
-  header .wave .img-box .paper-ship {
+  body header .wave .img-box .paper-ship {
     bottom: 8%;
     right: 23%;
     width: 10%;
   }
 }
-header .container {
+body header .container {
   width: 100%;
   height: 100%;
   max-width: 1580px;
   margin: auto;
 }
-header .container h1 {
+body header .container h1 {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -581,12 +580,12 @@ header .container h1 {
   animation-duration: 1s;
 }
 @media only screen and (min-width: 1024px) {
-  header .container h1 {
+  body header .container h1 {
     top: 47%;
     font-size: 150px;
   }
 }
-header .container h1 span {
+body header .container h1 span {
   color: #5a27d4;
 }
 @keyframes title22 {
@@ -597,13 +596,12 @@ header .container h1 span {
     opacity: 1;
   }
 }
-
-main {
+body main {
   width: 100%;
   height: 100%;
   font-family: "Pretendard";
 }
-main .main-bg {
+body main .main-bg {
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -612,12 +610,12 @@ main .main-bg {
   z-index: 0;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg {
+  body main .main-bg {
     height: 100%;
     background: linear-gradient(#E8DE68 10%, #e64aa2 30%, #da5fea 40%, #5a27d4 80%);
   }
 }
-main .main-bg #top-bt {
+body main .main-bg #top-bt {
   display: none;
   position: fixed;
   right: 0;
@@ -632,20 +630,20 @@ main .main-bg #top-bt {
   outline: none;
   -webkit-tap-highlight-color: transparent;
 }
-main .main-bg #top-bt:hover {
+body main .main-bg #top-bt:hover {
   transform: scale(1.2);
   color: #ffffff;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg #top-bt {
+  body main .main-bg #top-bt {
     width: 5%;
     margin-right: 50px;
   }
 }
-main .main-bg #top-bt img {
+body main .main-bg #top-bt img {
   width: 100%;
 }
-main .main-bg #top-bt p {
+body main .main-bg #top-bt p {
   position: absolute;
   top: 89%;
   left: 47%;
@@ -654,20 +652,20 @@ main .main-bg #top-bt p {
   font-size: 1.2rem;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg #top-bt p {
+  body main .main-bg #top-bt p {
     font-size: 1.5rem;
   }
 }
-main .main-bg .fishs {
+body main .main-bg .fishs {
   position: absolute;
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
-main .main-bg .fishs img {
+body main .main-bg .fishs img {
   width: 30%;
 }
-main .main-bg .fishs .killer {
+body main .main-bg .fishs .killer {
   position: absolute;
   top: 70%;
   left: 70%;
@@ -679,7 +677,7 @@ main .main-bg .fishs .killer {
   animation-iteration-count: infinite;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .fishs .killer {
+  body main .main-bg .fishs .killer {
     width: 15%;
     top: 4100px;
     left: 0%;
@@ -720,7 +718,7 @@ main .main-bg .fishs .killer {
     }
   }
 }
-main .main-bg .fishs .whale {
+body main .main-bg .fishs .whale {
   position: absolute;
   top: 30%;
   left: -55%;
@@ -731,7 +729,7 @@ main .main-bg .fishs .whale {
   animation-iteration-count: infinite;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .fishs .whale {
+  body main .main-bg .fishs .whale {
     top: 900px;
     width: 40%;
   }
@@ -766,7 +764,7 @@ main .main-bg .fishs .whale {
     }
   }
 }
-main .main-bg .fishs .fish1-box {
+body main .main-bg .fishs .fish1-box {
   position: absolute;
   top: 80%;
   left: 72%;
@@ -778,7 +776,7 @@ main .main-bg .fishs .fish1-box {
   animation-iteration-count: infinite;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .fishs .fish1-box {
+  body main .main-bg .fishs .fish1-box {
     top: 5200px;
     width: 20%;
     animation-name: fish1-box;
@@ -805,7 +803,7 @@ main .main-bg .fishs .fish1-box {
     }
   }
 }
-main .main-bg .fishs .fish2 {
+body main .main-bg .fishs .fish2 {
   position: absolute;
   top: 25%;
   left: 55%;
@@ -816,7 +814,7 @@ main .main-bg .fishs .fish2 {
   animation-iteration-count: infinite;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .fishs .fish2 {
+  body main .main-bg .fishs .fish2 {
     width: 20px;
     top: 1500px;
     width: 10%;
@@ -856,7 +854,7 @@ main .main-bg .fishs .fish2 {
     }
   }
 }
-main .main-bg .fishs .fish3-box {
+body main .main-bg .fishs .fish3-box {
   position: absolute;
   top: 87%;
   left: 70%;
@@ -886,7 +884,7 @@ main .main-bg .fishs .fish3-box {
   }
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .fishs .fish3-box {
+  body main .main-bg .fishs .fish3-box {
     top: 4000px;
     left: 78%;
     width: 20%;
@@ -896,17 +894,17 @@ main .main-bg .fishs .fish3-box {
     animation-iteration-count: infinite;
   }
 }
-main .main-bg .fishs .fish3-box .fish3-1 {
+body main .main-bg .fishs .fish3-box .fish3-1 {
   position: absolute;
   top: -60%;
   left: -25%;
 }
-main .main-bg .fishs .fish3-box .fish3-3 {
+body main .main-bg .fishs .fish3-box .fish3-3 {
   position: absolute;
   top: 90%;
   left: -25%;
 }
-main .main-bg .fishs .fish4-box {
+body main .main-bg .fishs .fish4-box {
   position: absolute;
   top: 73%;
   left: 80%;
@@ -935,19 +933,19 @@ main .main-bg .fishs .fish4-box {
   }
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .fishs .fish4-box {
+  body main .main-bg .fishs .fish4-box {
     top: 5500px;
     left: 75%;
     width: 10%;
   }
 }
-main .main-bg .fishs .fish4-box .fish4-1 {
+body main .main-bg .fishs .fish4-box .fish4-1 {
   transform: rotate(-40deg);
 }
-main .main-bg .fishs .fish4-box .fish4-2 {
+body main .main-bg .fishs .fish4-box .fish4-2 {
   transform: rotate(-35deg);
 }
-main .main-bg .buble {
+body main .main-bg .buble {
   position: absolute;
   z-index: 100;
   width: 10px;
@@ -956,11 +954,11 @@ main .main-bg .buble {
   animation-timing-function: ease-in-out;
   animation-duration: 10s;
 }
-main .main-bg .buble00 {
+body main .main-bg .buble00 {
   display: none;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .buble00 {
+  body main .main-bg .buble00 {
     display: block;
     top: 0%;
     left: 20%;
@@ -979,11 +977,11 @@ main .main-bg .buble00 {
     }
   }
 }
-main .main-bg .buble01 {
+body main .main-bg .buble01 {
   display: none;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .buble01 {
+  body main .main-bg .buble01 {
     display: block;
     width: 60px;
     top: 4%;
@@ -1002,11 +1000,11 @@ main .main-bg .buble01 {
     }
   }
 }
-main .main-bg .buble02 {
+body main .main-bg .buble02 {
   display: none;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .buble02 {
+  body main .main-bg .buble02 {
     display: block;
     width: 70px;
     top: 11%;
@@ -1025,11 +1023,11 @@ main .main-bg .buble02 {
     }
   }
 }
-main .main-bg .buble03 {
+body main .main-bg .buble03 {
   display: none;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .buble03 {
+  body main .main-bg .buble03 {
     display: block;
     top: 0%;
     left: 10%;
@@ -1048,11 +1046,11 @@ main .main-bg .buble03 {
     }
   }
 }
-main .main-bg .buble04 {
+body main .main-bg .buble04 {
   display: none;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .buble04 {
+  body main .main-bg .buble04 {
     display: block;
     width: 150px;
     top: 4%;
@@ -1071,11 +1069,11 @@ main .main-bg .buble04 {
     }
   }
 }
-main .main-bg .buble05 {
+body main .main-bg .buble05 {
   display: none;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .buble05 {
+  body main .main-bg .buble05 {
     display: block;
     width: 3%;
     top: 11%;
@@ -1094,11 +1092,11 @@ main .main-bg .buble05 {
     }
   }
 }
-main .main-bg .buble0 {
+body main .main-bg .buble0 {
   display: none;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .buble0 {
+  body main .main-bg .buble0 {
     display: block;
     top: 0%;
     left: 60%;
@@ -1117,11 +1115,11 @@ main .main-bg .buble0 {
     transform: translateY(0px);
   }
 }
-main .main-bg .buble1 {
+body main .main-bg .buble1 {
   display: none;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .buble1 {
+  body main .main-bg .buble1 {
     display: block;
     width: 80px;
     top: 4%;
@@ -1140,11 +1138,11 @@ main .main-bg .buble1 {
     transform: translateY(-100px);
   }
 }
-main .main-bg .buble2 {
+body main .main-bg .buble2 {
   display: none;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .buble2 {
+  body main .main-bg .buble2 {
     display: block;
     width: 100px;
     top: 11%;
@@ -1163,11 +1161,11 @@ main .main-bg .buble2 {
     transform: translateY(0px);
   }
 }
-main .main-bg .buble3 {
+body main .main-bg .buble3 {
   display: none;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .buble3 {
+  body main .main-bg .buble3 {
     display: block;
     width: 60px;
     top: 28.5%;
@@ -1186,11 +1184,11 @@ main .main-bg .buble3 {
     transform: translateY(0px);
   }
 }
-main .main-bg .buble4 {
+body main .main-bg .buble4 {
   display: none;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .buble4 {
+  body main .main-bg .buble4 {
     display: block;
     width: 20px;
     top: 30%;
@@ -1209,11 +1207,11 @@ main .main-bg .buble4 {
     transform: translateY(0px);
   }
 }
-main .main-bg .buble5 {
+body main .main-bg .buble5 {
   display: none;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .buble5 {
+  body main .main-bg .buble5 {
     display: block;
     width: 70px;
     top: 40%;
@@ -1232,11 +1230,11 @@ main .main-bg .buble5 {
     transform: translateY(0px);
   }
 }
-main .main-bg .buble6 {
+body main .main-bg .buble6 {
   display: none;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .buble6 {
+  body main .main-bg .buble6 {
     display: block;
     width: 30px;
     top: 49%;
@@ -1255,11 +1253,11 @@ main .main-bg .buble6 {
     transform: translateY(0px);
   }
 }
-main .main-bg .buble7 {
+body main .main-bg .buble7 {
   display: none;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .buble7 {
+  body main .main-bg .buble7 {
     display: block;
     width: 100px;
     top: 61%;
@@ -1278,11 +1276,11 @@ main .main-bg .buble7 {
     transform: translateY(0px);
   }
 }
-main .main-bg .buble8 {
+body main .main-bg .buble8 {
   display: none;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .buble8 {
+  body main .main-bg .buble8 {
     display: block;
     width: 120px;
     top: 71%;
@@ -1301,7 +1299,7 @@ main .main-bg .buble8 {
     transform: translateY(0px);
   }
 }
-main .main-bg .buble9 {
+body main .main-bg .buble9 {
   width: 100px;
   top: 79%;
   left: 20%;
@@ -1318,7 +1316,7 @@ main .main-bg .buble9 {
     transform: translateY(-1800px);
   }
 }
-main .main-bg .buble10 {
+body main .main-bg .buble10 {
   width: 100px;
   top: 85%;
   left: 20%;
@@ -1335,7 +1333,7 @@ main .main-bg .buble10 {
     transform: translateY(-1000px);
   }
 }
-main .main-bg .buble11 {
+body main .main-bg .buble11 {
   width: 100px;
   top: 90%;
   left: 60%;
@@ -1352,7 +1350,7 @@ main .main-bg .buble11 {
     transform: translateY(-300px);
   }
 }
-main .main-bg .buble12 {
+body main .main-bg .buble12 {
   width: 80px;
   top: 99%;
   left: 60%;
@@ -1369,7 +1367,7 @@ main .main-bg .buble12 {
     transform: translateY(-500px);
   }
 }
-main .main-bg .buble13 {
+body main .main-bg .buble13 {
   width: 30px;
   top: 96%;
   left: 30%;
@@ -1386,7 +1384,7 @@ main .main-bg .buble13 {
     transform: translateY(-1000px);
   }
 }
-main .main-bg .buble14 {
+body main .main-bg .buble14 {
   width: 50px;
   top: 94%;
   left: 30%;
@@ -1403,13 +1401,13 @@ main .main-bg .buble14 {
     transform: translateY(-600px);
   }
 }
-main .main-bg .container {
+body main .main-bg .container {
   width: 100%;
   height: 100%;
   max-width: 1560px;
   margin: auto;
 }
-main .main-bg .container h2 {
+body main .main-bg .container h2 {
   padding: 200px 0 50px 0;
   text-align: center;
   font-size: 2rem;
@@ -1417,67 +1415,67 @@ main .main-bg .container h2 {
   font-family: "pretendard";
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container h2 {
+  body main .main-bg .container h2 {
     text-align: left;
     font-size: 4.5rem;
     padding: 300px 0 140px 0;
   }
 }
-main .main-bg .container .about-me {
+body main .main-bg .container .about-me {
   width: 100%;
   margin-bottom: 20%;
   margin-top: 0%;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .about-me {
+  body main .main-bg .container .about-me {
     margin-top: 4%;
   }
 }
-main .main-bg .container .about-me .submarin-atxt {
+body main .main-bg .container .about-me .submarin-atxt {
   width: 85%;
   height: 100%;
   margin: auto;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .about-me .submarin-atxt {
+  body main .main-bg .container .about-me .submarin-atxt {
     width: 100%;
     display: flex;
     align-items: center;
   }
 }
-main .main-bg .container .about-me .submarin-atxt .submarin {
+body main .main-bg .container .about-me .submarin-atxt .submarin {
   width: 100%;
   height: 100%;
   margin-top: 120px;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .about-me .submarin-atxt .submarin {
+  body main .main-bg .container .about-me .submarin-atxt .submarin {
     margin-top: 0px;
     width: 50%;
   }
 }
-main .main-bg .container .about-me .submarin-atxt .submarin .submarin-img {
+body main .main-bg .container .about-me .submarin-atxt .submarin .submarin-img {
   width: 55%;
   margin: auto;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .about-me .submarin-atxt .submarin .submarin-img {
+  body main .main-bg .container .about-me .submarin-atxt .submarin .submarin-img {
     width: 55%;
   }
 }
-main .main-bg .container .about-me .submarin-atxt .atxt-box .atxt-title h3 {
+body main .main-bg .container .about-me .submarin-atxt .atxt-box .atxt-title h3 {
   font-family: "Super Shiny";
   font-size: 25vw;
   text-align: center;
   color: #ceab0f;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .about-me .submarin-atxt .atxt-box .atxt-title h3 {
+  body main .main-bg .container .about-me .submarin-atxt .atxt-box .atxt-title h3 {
     text-align: left;
     font-size: 8vw;
   }
 }
-main .main-bg .container .about-me .submarin-atxt .atxt-box .atxt {
+body main .main-bg .container .about-me .submarin-atxt .atxt-box .atxt {
   width: 100%;
   height: 100%;
   padding: 20px;
@@ -1486,24 +1484,24 @@ main .main-bg .container .about-me .submarin-atxt .atxt-box .atxt {
   display: flex;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .about-me .submarin-atxt .atxt-box .atxt {
+  body main .main-bg .container .about-me .submarin-atxt .atxt-box .atxt {
     position: relative;
     top: 0px;
     z-index: 10;
     width: 100%;
   }
 }
-main .main-bg .container .about-me .submarin-atxt .atxt-box .atxt .atxt-inner h3 {
+body main .main-bg .container .about-me .submarin-atxt .atxt-box .atxt .atxt-inner h3 {
   font-size: 6vw;
   font-family: "pretendard";
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .about-me .submarin-atxt .atxt-box .atxt .atxt-inner h3 {
+  body main .main-bg .container .about-me .submarin-atxt .atxt-box .atxt .atxt-inner h3 {
     font-size: 30px;
     font-weight: 600;
   }
 }
-main .main-bg .container .about-me .submarin-atxt .atxt-box .atxt .atxt-inner p {
+body main .main-bg .container .about-me .submarin-atxt .atxt-box .atxt .atxt-inner p {
   text-align: left;
   font-size: 4vw;
   font-weight: 300;
@@ -1511,34 +1509,34 @@ main .main-bg .container .about-me .submarin-atxt .atxt-box .atxt .atxt-inner p 
   line-height: 145%;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .about-me .submarin-atxt .atxt-box .atxt .atxt-inner p {
+  body main .main-bg .container .about-me .submarin-atxt .atxt-box .atxt .atxt-inner p {
     font-size: 20px;
     line-height: 32px;
   }
 }
-main .main-bg .container .about-me .submarin-atxt .atxt-box .atxt .a1 h3 {
+body main .main-bg .container .about-me .submarin-atxt .atxt-box .atxt .a1 h3 {
   font-size: 100px;
 }
-main .main-bg .container .skill {
+body main .main-bg .container .skill {
   margin-top: 100px;
   margin-bottom: 100px;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .skill {
+  body main .main-bg .container .skill {
     margin-top: 500px;
   }
 }
-main .main-bg .container .skill .skill-box {
+body main .main-bg .container .skill .skill-box {
   width: 60%;
   margin: 0 auto;
   height: 190vw;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .skill .skill-box {
+  body main .main-bg .container .skill .skill-box {
     height: 50vh;
   }
 }
-main .main-bg .container .skill .skill-box .skill-item {
+body main .main-bg .container .skill .skill-box .skill-item {
   position: relative;
   display: inline-block;
   z-index: 550;
@@ -1547,14 +1545,14 @@ main .main-bg .container .skill .skill-box .skill-item {
   -webkit-tap-highlight-color: transparent;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .skill .skill-box .skill-item {
+  body main .main-bg .container .skill .skill-box .skill-item {
     position: absolute;
   }
 }
-main .main-bg .container .skill .skill-box .skill-item:hover .overlay {
+body main .main-bg .container .skill .skill-box .skill-item:hover .overlay {
   opacity: 1;
 }
-main .main-bg .container .skill .skill-box .skill-item .icon {
+body main .main-bg .container .skill .skill-box .skill-item .icon {
   width: 30vw;
   height: auto;
   display: block;
@@ -1562,103 +1560,103 @@ main .main-bg .container .skill .skill-box .skill-item .icon {
   outline: none;
   -webkit-tap-highlight-color: transparent;
 }
-main .main-bg .container .skill .skill-box .skill-item .ai-img {
+body main .main-bg .container .skill .skill-box .skill-item .ai-img {
   width: 15vw;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .skill .skill-box .skill-item .ai-img {
+  body main .main-bg .container .skill .skill-box .skill-item .ai-img {
     width: 6vw;
   }
 }
-main .main-bg .container .skill .skill-box .skill-item .pr-img {
+body main .main-bg .container .skill .skill-box .skill-item .pr-img {
   width: 15vw;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .skill .skill-box .skill-item .pr-img {
+  body main .main-bg .container .skill .skill-box .skill-item .pr-img {
     width: 5vw;
   }
 }
-main .main-bg .container .skill .skill-box .skill-item .html-img {
+body main .main-bg .container .skill .skill-box .skill-item .html-img {
   width: 15vw;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .skill .skill-box .skill-item .html-img {
+  body main .main-bg .container .skill .skill-box .skill-item .html-img {
     width: 6vw;
   }
 }
-main .main-bg .container .skill .skill-box .skill-item .sass-img {
+body main .main-bg .container .skill .skill-box .skill-item .sass-img {
   width: 15vw;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .skill .skill-box .skill-item .sass-img {
+  body main .main-bg .container .skill .skill-box .skill-item .sass-img {
     width: 6vw;
   }
 }
-main .main-bg .container .skill .skill-box .skill-item .js-img {
+body main .main-bg .container .skill .skill-box .skill-item .js-img {
   width: 15vw;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .skill .skill-box .skill-item .js-img {
+  body main .main-bg .container .skill .skill-box .skill-item .js-img {
     width: 5vw;
   }
 }
-main .main-bg .container .skill .skill-box .skill-item .ps-img {
+body main .main-bg .container .skill .skill-box .skill-item .ps-img {
   width: 15vw;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .skill .skill-box .skill-item .ps-img {
+  body main .main-bg .container .skill .skill-box .skill-item .ps-img {
     width: 6vw;
   }
 }
-main .main-bg .container .skill .skill-box .skill-item .jquery-img {
+body main .main-bg .container .skill .skill-box .skill-item .jquery-img {
   width: 15vw;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .skill .skill-box .skill-item .jquery-img {
+  body main .main-bg .container .skill .skill-box .skill-item .jquery-img {
     width: 5vw;
   }
 }
-main .main-bg .container .skill .skill-box .skill-item .react-img {
+body main .main-bg .container .skill .skill-box .skill-item .react-img {
   width: 15vw;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .skill .skill-box .skill-item .react-img {
+  body main .main-bg .container .skill .skill-box .skill-item .react-img {
     width: 5vw;
   }
 }
-main .main-bg .container .skill .skill-box .skill-item .git-img {
+body main .main-bg .container .skill .skill-box .skill-item .git-img {
   width: 15vw;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .skill .skill-box .skill-item .git-img {
+  body main .main-bg .container .skill .skill-box .skill-item .git-img {
     width: 5vw;
   }
 }
-main .main-bg .container .skill .skill-box .skill-item .css-img {
+body main .main-bg .container .skill .skill-box .skill-item .css-img {
   width: 15vw;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .skill .skill-box .skill-item .css-img {
+  body main .main-bg .container .skill .skill-box .skill-item .css-img {
     width: 6vw;
   }
 }
-main .main-bg .container .skill .skill-box .skill-item .figma-img {
+body main .main-bg .container .skill .skill-box .skill-item .figma-img {
   width: 15vw;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .skill .skill-box .skill-item .figma-img {
+  body main .main-bg .container .skill .skill-box .skill-item .figma-img {
     width: 6vw;
   }
 }
-main .main-bg .container .skill .skill-box .skill-item .ae-img {
+body main .main-bg .container .skill .skill-box .skill-item .ae-img {
   width: 15vw;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .skill .skill-box .skill-item .ae-img {
+  body main .main-bg .container .skill .skill-box .skill-item .ae-img {
     width: 5vw;
   }
 }
-main .main-bg .container .skill .skill-box .skill-item .overlay {
+body main .main-bg .container .skill .skill-box .skill-item .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -1678,26 +1676,26 @@ main .main-bg .container .skill .skill-box .skill-item .overlay {
   -webkit-tap-highlight-color: transparent;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .skill .skill-box .skill-item .overlay {
+  body main .main-bg .container .skill .skill-box .skill-item .overlay {
     font-size: 1vw;
   }
 }
-main .main-bg .container .skill .skill-box .skill-item .overlay.explode {
+body main .main-bg .container .skill .skill-box .skill-item .overlay.explode {
   opacity: 0;
   transform: scale(1.2);
 }
-main .main-bg .container .skill .skill-box .skill-item .icon.explode {
+body main .main-bg .container .skill .skill-box .skill-item .icon.explode {
   opacity: 0;
   transform: scale(1.2);
 }
-main .main-bg .container .skill .skill-box .skill-item .skill-item.clicked .overlay {
+body main .main-bg .container .skill .skill-box .skill-item .skill-item.clicked .overlay {
   opacity: 1;
 }
-main .main-bg .container .skill .skill-box .skill-item .skill-item.clicked .ai-img {
+body main .main-bg .container .skill .skill-box .skill-item .skill-item.clicked .ai-img {
   opacity: 0;
   visibility: hidden;
 }
-main .main-bg .container .skill .skill-box .modal-box .modal {
+body main .main-bg .container .skill .skill-box .modal-box .modal {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -1711,12 +1709,12 @@ main .main-bg .container .skill .skill-box .modal-box .modal {
   z-index: 1000000;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .skill .skill-box .modal-box .modal {
+  body main .main-bg .container .skill .skill-box .modal-box .modal {
     width: 25%;
     height: 30%;
   }
 }
-main .main-bg .container .skill .skill-box .modal-box .modal h2 {
+body main .main-bg .container .skill .skill-box .modal-box .modal h2 {
   position: absolute;
   top: 30%;
   left: 50%;
@@ -1727,12 +1725,12 @@ main .main-bg .container .skill .skill-box .modal-box .modal h2 {
   padding: 0;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .skill .skill-box .modal-box .modal h2 {
+  body main .main-bg .container .skill .skill-box .modal-box .modal h2 {
     top: 25%;
     font-size: 6rem;
   }
 }
-main .main-bg .container .skill .skill-box .modal-box .modal p {
+body main .main-bg .container .skill .skill-box .modal-box .modal p {
   width: 90%;
   position: absolute;
   top: 50%;
@@ -1743,12 +1741,12 @@ main .main-bg .container .skill .skill-box .modal-box .modal p {
   line-height: 146%;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .skill .skill-box .modal-box .modal p {
+  body main .main-bg .container .skill .skill-box .modal-box .modal p {
     font-size: 1.2rem;
     width: 70%;
   }
 }
-main .main-bg .container .skill .skill-box .modal-box .modal .close {
+body main .main-bg .container .skill .skill-box .modal-box .modal .close {
   position: absolute;
   bottom: 8%;
   left: 50%;
@@ -1765,28 +1763,28 @@ main .main-bg .container .skill .skill-box .modal-box .modal .close {
   font-family: "pretendard";
   font-size: 3.5vw;
 }
-main .main-bg .container .skill .skill-box .modal-box .modal .close:hover {
+body main .main-bg .container .skill .skill-box .modal-box .modal .close:hover {
   background-color: #5a27d4;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .skill .skill-box .modal-box .modal .close {
+  body main .main-bg .container .skill .skill-box .modal-box .modal .close {
     font-size: 1.2rem;
     height: 4vh;
   }
 }
-main .main-bg .container .skill .skill-box .modal-box .hidden {
+body main .main-bg .container .skill .skill-box .modal-box .hidden {
   display: none;
 }
-main .main-bg .container .skill .skill-box .hidden1 {
+body main .main-bg .container .skill .skill-box .hidden1 {
   opacity: 0;
   transform: translateY(20%);
   transition: opacity 0.6s ease, transform 2s ease-in;
 }
-main .main-bg .container .skill .skill-box .visible {
+body main .main-bg .container .skill .skill-box .visible {
   opacity: 1;
   transform: translateY(0);
 }
-main .main-bg .container .skill .skill-box .ai {
+body main .main-bg .container .skill .skill-box .ai {
   animation: aiUpDown 2s ease-in-out infinite;
 }
 @keyframes aiUpDown {
@@ -1813,7 +1811,7 @@ main .main-bg .container .skill .skill-box .ai {
     }
   }
 }
-main .main-bg .container .skill .skill-box .pr {
+body main .main-bg .container .skill .skill-box .pr {
   animation: prUpDown 3s ease-in-out infinite;
 }
 @keyframes prUpDown {
@@ -1840,7 +1838,7 @@ main .main-bg .container .skill .skill-box .pr {
     }
   }
 }
-main .main-bg .container .skill .skill-box .html {
+body main .main-bg .container .skill .skill-box .html {
   animation: htmlUpDown 2.5s ease-in-out infinite;
 }
 @keyframes htmlUpDown {
@@ -1867,7 +1865,7 @@ main .main-bg .container .skill .skill-box .html {
     }
   }
 }
-main .main-bg .container .skill .skill-box .sass {
+body main .main-bg .container .skill .skill-box .sass {
   animation: sassUpDown 3.5s ease-in-out infinite;
 }
 @keyframes sassUpDown {
@@ -1894,7 +1892,7 @@ main .main-bg .container .skill .skill-box .sass {
     }
   }
 }
-main .main-bg .container .skill .skill-box .js {
+body main .main-bg .container .skill .skill-box .js {
   animation: jsUpDown 3.2s ease-in-out infinite;
 }
 @keyframes jsUpDown {
@@ -1921,7 +1919,7 @@ main .main-bg .container .skill .skill-box .js {
     }
   }
 }
-main .main-bg .container .skill .skill-box .ps {
+body main .main-bg .container .skill .skill-box .ps {
   animation: psUpDown 3s ease-in-out infinite;
 }
 @keyframes psUpDown {
@@ -1948,7 +1946,7 @@ main .main-bg .container .skill .skill-box .ps {
     }
   }
 }
-main .main-bg .container .skill .skill-box .jquery {
+body main .main-bg .container .skill .skill-box .jquery {
   animation: jqueryUpDown 2s ease-in-out infinite;
 }
 @keyframes jqueryUpDown {
@@ -1975,7 +1973,7 @@ main .main-bg .container .skill .skill-box .jquery {
     }
   }
 }
-main .main-bg .container .skill .skill-box .react {
+body main .main-bg .container .skill .skill-box .react {
   animation: reactUpDown 3.5s ease-in-out infinite;
 }
 @keyframes reactUpDown {
@@ -2002,7 +2000,7 @@ main .main-bg .container .skill .skill-box .react {
     }
   }
 }
-main .main-bg .container .skill .skill-box .git {
+body main .main-bg .container .skill .skill-box .git {
   animation: gitUpDown 3s ease-in-out infinite;
 }
 @keyframes gitUpDown {
@@ -2029,7 +2027,7 @@ main .main-bg .container .skill .skill-box .git {
     }
   }
 }
-main .main-bg .container .skill .skill-box .css {
+body main .main-bg .container .skill .skill-box .css {
   animation: cssUpDown 2s ease-in-out infinite;
 }
 @keyframes cssUpDown {
@@ -2056,7 +2054,7 @@ main .main-bg .container .skill .skill-box .css {
     }
   }
 }
-main .main-bg .container .skill .skill-box .figma {
+body main .main-bg .container .skill .skill-box .figma {
   animation: figmaUpDown 3.5s ease-in-out infinite;
 }
 @keyframes figmaUpDown {
@@ -2083,7 +2081,7 @@ main .main-bg .container .skill .skill-box .figma {
     }
   }
 }
-main .main-bg .container .skill .skill-box .ae {
+body main .main-bg .container .skill .skill-box .ae {
   animation: aeUpDown 3s ease-in-out infinite;
 }
 @keyframes aeUpDown {
@@ -2110,17 +2108,17 @@ main .main-bg .container .skill .skill-box .ae {
     }
   }
 }
-main .main-bg .container .portfolio {
+body main .main-bg .container .portfolio {
   width: 100%;
   height: 100%;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio {
+  body main .main-bg .container .portfolio {
     width: 100%;
     height: 3200px;
   }
 }
-main .main-bg .container .portfolio .box {
+body main .main-bg .container .portfolio .box {
   position: relative;
   width: 100%;
   border-radius: 20px;
@@ -2128,25 +2126,25 @@ main .main-bg .container .portfolio .box {
   overflow: hidden;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .box {
+  body main .main-bg .container .portfolio .box {
     width: 100%;
   }
 }
-main .main-bg .container .portfolio .box-ani {
+body main .main-bg .container .portfolio .box-ani {
   opacity: 0;
   transform: translateX(-100%);
   transition: transform 1s ease, opacity 1s ease;
 }
-main .main-bg .container .portfolio .box-ani.visible {
+body main .main-bg .container .portfolio .box-ani.visible {
   opacity: 1;
   transform: translateX(0);
 }
-main .main-bg .container .portfolio .box::after {
+body main .main-bg .container .portfolio .box::after {
   display: block;
   content: "";
   padding-bottom: 100%;
 }
-main .main-bg .container .portfolio .inner-box {
+body main .main-bg .container .portfolio .inner-box {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -2156,7 +2154,7 @@ main .main-bg .container .portfolio .inner-box {
      object-fit: cover;
   border-radius: 50px;
 }
-main .main-bg .container .portfolio .po-box {
+body main .main-bg .container .portfolio .po-box {
   width: 100%;
   display: grid;
   padding: 20px;
@@ -2164,11 +2162,11 @@ main .main-bg .container .portfolio .po-box {
   grid-column-gap: 20px;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .po-box {
+  body main .main-bg .container .portfolio .po-box {
     padding: 0;
   }
 }
-main .main-bg .container .portfolio .po-box .box-txt {
+body main .main-bg .container .portfolio .po-box .box-txt {
   position: absolute;
   bottom: 0;
   text-align: center;
@@ -2180,47 +2178,47 @@ main .main-bg .container .portfolio .po-box .box-txt {
   align-items: center;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .po-box .box-txt {
+  body main .main-bg .container .portfolio .po-box .box-txt {
     padding-left: 20px;
     height: 150px;
     text-align: left;
   }
 }
-main .main-bg .container .portfolio .po-box .box-txt .box-inner-txt {
+body main .main-bg .container .portfolio .po-box .box-txt .box-inner-txt {
   width: 100%;
   padding: 2px;
 }
-main .main-bg .container .portfolio .po-box .box-txt .box-inner-txt h3 {
+body main .main-bg .container .portfolio .po-box .box-txt .box-inner-txt h3 {
   font-size: 4vw;
   font-family: "Pretendard";
   padding-bottom: 4px;
   font-weight: 600;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .po-box .box-txt .box-inner-txt h3 {
+  body main .main-bg .container .portfolio .po-box .box-txt .box-inner-txt h3 {
     font-size: 20px;
     text-align: left;
     padding-bottom: 6px;
   }
 }
-main .main-bg .container .portfolio .po-box .box-txt .box-inner-txt p {
+body main .main-bg .container .portfolio .po-box .box-txt .box-inner-txt p {
   font-size: 3.5vw;
   font-weight: 400;
   font-family: "Pretendard";
   color: #505050;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .po-box .box-txt .box-inner-txt p {
+  body main .main-bg .container .portfolio .po-box .box-txt .box-inner-txt p {
     font-size: 1rem;
     line-height: 22px;
   }
 }
-main .main-bg .container .portfolio .po-box .box-button {
+body main .main-bg .container .portfolio .po-box .box-button {
   display: flex;
   padding-top: 12px;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .po-box .box-button {
+  body main .main-bg .container .portfolio .po-box .box-button {
     position: absolute;
     width: 30%;
     justify-content: right;
@@ -2230,7 +2228,7 @@ main .main-bg .container .portfolio .po-box .box-button {
     padding-bottom: 20px;
   }
 }
-main .main-bg .container .portfolio .po-box .box-button a {
+body main .main-bg .container .portfolio .po-box .box-button a {
   position: relative;
   width: 50%;
   height: 8vw;
@@ -2248,23 +2246,23 @@ main .main-bg .container .portfolio .po-box .box-button a {
   border: 1px solid #dbdbdb;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .po-box .box-button a {
+  body main .main-bg .container .portfolio .po-box .box-button a {
     font-size: 1rem;
     height: 50px;
     line-height: 50px;
   }
 }
-main .main-bg .container .portfolio .po-box .box-button a:hover {
+body main .main-bg .container .portfolio .po-box .box-button a:hover {
   font-weight: 600;
   color: #111111;
   border: 2px solid #111111;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .po-box .box-button a:hover {
+  body main .main-bg .container .portfolio .po-box .box-button a:hover {
     border: 3px solid #111111;
   }
 }
-main .main-bg .container .portfolio .po-box .box-button a::after {
+body main .main-bg .container .portfolio .po-box .box-button a::after {
   content: "";
   display: block;
 }
@@ -2279,45 +2277,45 @@ main .main-bg .container .portfolio .po-box .box-button a::after {
     transform: translateY(0%);
   }
 }
-main .main-bg .container .portfolio .po-box .b1-b2 .b1 {
+body main .main-bg .container .portfolio .po-box .b1-b2 .b1 {
   margin-bottom: 20px;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .po-box .b1-b2 .b1 {
+  body main .main-bg .container .portfolio .po-box .b1-b2 .b1 {
     position: relative;
   }
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .po-box .b1-b2 .b1 .box1 {
+  body main .main-bg .container .portfolio .po-box .b1-b2 .b1 .box1 {
     width: 600px;
   }
 }
-main .main-bg .container .portfolio .po-box .b1-b2 .b1 .inner-box1 img {
+body main .main-bg .container .portfolio .po-box .b1-b2 .b1 .inner-box1 img {
   animation: none;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .po-box .b1-b2 .box-button1 {
+  body main .main-bg .container .portfolio .po-box .b1-b2 .box-button1 {
     top: 480px;
     left: 290px;
     z-index: 100;
   }
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .po-box .b1-b2 .b2 {
+  body main .main-bg .container .portfolio .po-box .b1-b2 .b2 {
     position: relative;
   }
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .po-box .b1-b2 .b2 .box2 {
+  body main .main-bg .container .portfolio .po-box .b1-b2 .b2 .box2 {
     width: 970px;
     height: 600px;
   }
 }
-main .main-bg .container .portfolio .po-box .b1-b2 .b2 .inner-box2 img {
+body main .main-bg .container .portfolio .po-box .b1-b2 .b2 .inner-box2 img {
   animation: none;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .po-box .b1-b2 .box-button2 {
+  body main .main-bg .container .portfolio .po-box .b1-b2 .box-button2 {
     top: 480px;
     left: 660px;
     z-index: 100;
@@ -2334,53 +2332,53 @@ main .main-bg .container .portfolio .po-box .b1-b2 .b2 .inner-box2 img {
     transform: translateY(0%);
   }
 }
-main .main-bg .container .portfolio .po-box .b3-b4 .b3 {
+body main .main-bg .container .portfolio .po-box .b3-b4 .b3 {
   margin-bottom: 20px;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .po-box .b3-b4 .b3 {
+  body main .main-bg .container .portfolio .po-box .b3-b4 .b3 {
     position: relative;
   }
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .po-box .b3-b4 .b3 .box3 {
+  body main .main-bg .container .portfolio .po-box .b3-b4 .b3 .box3 {
     width: 970px;
     height: 600px;
     right: 370px;
   }
 }
-main .main-bg .container .portfolio .po-box .b3-b4 .b3 .inner-box3 img {
+body main .main-bg .container .portfolio .po-box .b3-b4 .b3 .inner-box3 img {
   animation: none;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .po-box .b3-b4 .box-button3 {
+  body main .main-bg .container .portfolio .po-box .b3-b4 .box-button3 {
     top: 480px;
     left: 290px;
     z-index: 100;
   }
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .po-box .b3-b4 .b4 {
+  body main .main-bg .container .portfolio .po-box .b3-b4 .b4 {
     position: relative;
     margin-top: 10px;
   }
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .po-box .b3-b4 .b4 .box4 {
+  body main .main-bg .container .portfolio .po-box .b3-b4 .b4 .box4 {
     width: 600px;
   }
 }
-main .main-bg .container .portfolio .po-box .b3-b4 .b4 .inner-box4 img {
+body main .main-bg .container .portfolio .po-box .b3-b4 .b4 .inner-box4 img {
   animation: none;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .po-box .b3-b4 .box-button4 {
+  body main .main-bg .container .portfolio .po-box .b3-b4 .box-button4 {
     top: 480px;
     left: 290px;
     z-index: 100;
   }
 }
-main .main-bg .container .portfolio .slider {
+body main .main-bg .container .portfolio .slider {
   position: relative;
   width: 100%;
   height: 60vw;
@@ -2388,13 +2386,13 @@ main .main-bg .container .portfolio .slider {
   z-index: 995;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .slider {
+  body main .main-bg .container .portfolio .slider {
     padding-left: 0px;
     height: 17.8%;
     width: 101.3%;
   }
 }
-main .main-bg .container .portfolio .slider .slider-inner {
+body main .main-bg .container .portfolio .slider .slider-inner {
   position: absolute;
   top: 0;
   left: 0;
@@ -2408,13 +2406,13 @@ main .main-bg .container .portfolio .slider .slider-inner {
   transition: 0s ease-in;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .slider .slider-inner {
+  body main .main-bg .container .portfolio .slider .slider-inner {
     width: 140%;
     height: 43vw;
     padding: 0px;
   }
 }
-main .main-bg .container .portfolio .slider .slider-inner .slider-item {
+body main .main-bg .container .portfolio .slider .slider-inner .slider-item {
   width: 100%;
   height: 60vw;
   border-radius: 20px;
@@ -2422,30 +2420,30 @@ main .main-bg .container .portfolio .slider .slider-inner .slider-item {
   overflow: hidden;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .slider .slider-inner .slider-item {
+  body main .main-bg .container .portfolio .slider .slider-inner .slider-item {
     margin-top: 20px;
     height: 700px;
   }
 }
-main .main-bg .container .portfolio .slider .slider-inner .slider-item .slide-box {
+body main .main-bg .container .portfolio .slider .slider-inner .slider-item .slide-box {
   border: none;
 }
-main .main-bg .container .portfolio .slider .slider-inner .slider-item .slide-box video {
+body main .main-bg .container .portfolio .slider .slider-inner .slider-item .slide-box video {
   position: absolute;
   z-index: 999;
   width: 100%;
   height: 59.5vw;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .slider .slider-inner .slider-item .slide-box video {
+  body main .main-bg .container .portfolio .slider .slider-inner .slider-item .slide-box video {
     height: 700px;
   }
 }
-main .main-bg .container .portfolio .slider .slider-inner .slider-item .box-txt {
+body main .main-bg .container .portfolio .slider .slider-inner .slider-item .box-txt {
   position: absolute;
   bottom: 0;
 }
-main .main-bg .container .portfolio .slider .slider-inner .slider-item .box-txt h3 {
+body main .main-bg .container .portfolio .slider .slider-inner .slider-item .box-txt h3 {
   font-size: 4vw;
   margin-top: 10px;
   margin-left: 10px;
@@ -2454,13 +2452,13 @@ main .main-bg .container .portfolio .slider .slider-inner .slider-item .box-txt 
   color: black;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .slider .slider-inner .slider-item .box-txt h3 {
+  body main .main-bg .container .portfolio .slider .slider-inner .slider-item .box-txt h3 {
     margin-left: 20px;
     margin-bottom: 12px;
     font-size: 20px;
   }
 }
-main .main-bg .container .portfolio .slider .slider-inner .slider-item .box-txt p {
+body main .main-bg .container .portfolio .slider .slider-inner .slider-item .box-txt p {
   margin-left: 10px;
   font-size: 3vw;
   font-weight: 600;
@@ -2468,35 +2466,35 @@ main .main-bg .container .portfolio .slider .slider-inner .slider-item .box-txt 
   color: black;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .slider .slider-inner .slider-item .box-txt p {
+  body main .main-bg .container .portfolio .slider .slider-inner .slider-item .box-txt p {
     margin-left: 20px;
     font-size: 20px;
     font-weight: 600;
     line-height: 110%;
   }
 }
-main .main-bg .container .portfolio .design {
+body main .main-bg .container .portfolio .design {
   position: relative;
   z-index: 10000;
   margin-top: 50%;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .design {
+  body main .main-bg .container .portfolio .design {
     margin-top: 35%;
   }
 }
-main .main-bg .container .portfolio .design .d-box {
+body main .main-bg .container .portfolio .design .d-box {
   width: 0;
   outline: none;
   -webkit-tap-highlight-color: transparent;
   background-color: #505050;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .design .d-box {
+  body main .main-bg .container .portfolio .design .d-box {
     width: 0;
   }
 }
-main .main-bg .container .portfolio .design p {
+body main .main-bg .container .portfolio .design p {
   position: absolute;
   width: 100%;
   text-align: center;
@@ -2506,12 +2504,12 @@ main .main-bg .container .portfolio .design p {
   color: white;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .design p {
+  body main .main-bg .container .portfolio .design p {
     font-size: 1.3rem;
     color: rgb(0, 0, 0);
   }
 }
-main .main-bg .container .portfolio .design .ds {
+body main .main-bg .container .portfolio .design .ds {
   width: 25vw;
   height: 25vw;
   cursor: pointer;
@@ -2522,31 +2520,31 @@ main .main-bg .container .portfolio .design .ds {
   transition: opacity 0.5s ease;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .design .ds {
+  body main .main-bg .container .portfolio .design .ds {
     width: 15vw;
     height: 15vw;
     border: 5px solid transparent;
     border-radius: 50%;
   }
 }
-main .main-bg .container .portfolio .design .ds.visible {
+body main .main-bg .container .portfolio .design .ds.visible {
   opacity: 1;
 }
-main .main-bg .container .portfolio .design .ds::after {
+body main .main-bg .container .portfolio .design .ds::after {
   content: "";
   padding-bottom: 100%;
   display: block;
 }
-main .main-bg .container .portfolio .design .ds-txt {
+body main .main-bg .container .portfolio .design .ds-txt {
   opacity: 0;
   transform: translateY(-100%);
   transition: transform 1s ease, opacity 1s ease;
 }
-main .main-bg .container .portfolio .design .ds-txt.visible {
+body main .main-bg .container .portfolio .design .ds-txt.visible {
   opacity: 1;
   transform: translateY(0);
 }
-main .main-bg .container .portfolio .design .po-modal-box {
+body main .main-bg .container .portfolio .design .po-modal-box {
   position: fixed;
   bottom: -100%;
   left: 0;
@@ -2557,33 +2555,33 @@ main .main-bg .container .portfolio .design .po-modal-box {
   transition: bottom 0.3s ease;
   box-shadow: 0px -2px 10px rgba(255, 255, 255, 0.1);
   overflow-y: auto;
-  z-index: 30000;
+  z-index: 100000000;
 }
-main .main-bg .container .portfolio .design .po-modal-box .po-modal {
+body main .main-bg .container .portfolio .design .po-modal-box .po-modal {
   text-align: center;
 }
-main .main-bg .container .portfolio .design .po-modal-box .po-modal .img-box {
+body main .main-bg .container .portfolio .design .po-modal-box .po-modal .img-box {
   width: 80%;
   margin: auto;
   cursor: grab;
 }
-main .main-bg .container .portfolio .design .po-modal-box .po-modal .img-box img {
+body main .main-bg .container .portfolio .design .po-modal-box .po-modal .img-box img {
   width: 100%;
   height: auto;
   margin-bottom: 50px;
   transition: transform 0.3s ease-out;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .design .po-modal-box .po-modal .img-box img {
+  body main .main-bg .container .portfolio .design .po-modal-box .po-modal .img-box img {
     width: 50%;
     margin: 0 auto;
     margin-bottom: 50px;
   }
 }
-main .main-bg .container .portfolio .design .po-modal-box .po-modal .img-box img:active {
+body main .main-bg .container .portfolio .design .po-modal-box .po-modal .img-box img:active {
   cursor: grabbing;
 }
-main .main-bg .container .portfolio .design .po-modal-box .close-modal {
+body main .main-bg .container .portfolio .design .po-modal-box .close-modal {
   display: none;
   position: fixed;
   top: 0;
@@ -2597,120 +2595,120 @@ main .main-bg .container .portfolio .design .po-modal-box .close-modal {
   z-index: 9999;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .design .banner-modal-box .banner-modal .img-box {
+  body main .main-bg .container .portfolio .design .banner-modal-box .banner-modal .img-box {
     display: flex;
     align-items: center;
   }
 }
-main .main-bg .container .portfolio .design .banner-modal-box .banner-modal .img-box .img-inner-box {
+body main .main-bg .container .portfolio .design .banner-modal-box .banner-modal .img-box .img-inner-box {
   width: 100%;
   height: 100%;
 }
-main .main-bg .container .portfolio .design .banner-modal-box .banner-modal .img-box .img-inner-box img {
+body main .main-bg .container .portfolio .design .banner-modal-box .banner-modal .img-box .img-inner-box img {
   width: 100%;
   height: 100%;
   margin-right: 10px;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .design .banner-modal-box .banner-modal .img-box .img-inner-box img {
+  body main .main-bg .container .portfolio .design .banner-modal-box .banner-modal .img-box .img-inner-box img {
     width: 100%;
     height: 100%;
     margin-right: 50px;
   }
 }
-main .main-bg .container .portfolio .design .banner-modal-box .banner-modal .img-box img {
+body main .main-bg .container .portfolio .design .banner-modal-box .banner-modal .img-box img {
   width: 100%;
   height: 100%;
   margin-right: 10px;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .design .banner-modal-box .banner-modal .img-box img {
+  body main .main-bg .container .portfolio .design .banner-modal-box .banner-modal .img-box img {
     width: 50%;
     height: 50%;
     margin-right: 50px;
   }
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .design .detail-modal-box .detail-modal .img-box {
+  body main .main-bg .container .portfolio .design .detail-modal-box .detail-modal .img-box {
     display: flex;
   }
 }
-main .main-bg .container .portfolio .design .detail-modal-box .detail-modal .img-box img {
+body main .main-bg .container .portfolio .design .detail-modal-box .detail-modal .img-box img {
   width: 100%;
   height: 50%;
   margin-right: 10px;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .design .detail-modal-box .detail-modal .img-box img {
+  body main .main-bg .container .portfolio .design .detail-modal-box .detail-modal .img-box img {
     width: 50%;
     height: 50%;
     margin-right: 50px;
   }
 }
-main .main-bg .container .portfolio .design .info-modal-box .info-modal .img-box img {
+body main .main-bg .container .portfolio .design .info-modal-box .info-modal .img-box img {
   width: 100%;
   height: 100%;
   margin-top: 45%;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .design .info-modal-box .info-modal .img-box img {
+  body main .main-bg .container .portfolio .design .info-modal-box .info-modal .img-box img {
     margin: 0 auto;
     width: 50%;
     height: 50%;
   }
 }
-main .main-bg .container .portfolio .design .character-modal-box .character-modal .img-box img {
+body main .main-bg .container .portfolio .design .character-modal-box .character-modal .img-box img {
   width: 100%;
   height: 100%;
   margin-top: 45%;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .design .character-modal-box .character-modal .img-box img {
+  body main .main-bg .container .portfolio .design .character-modal-box .character-modal .img-box img {
     margin: 0 auto;
     width: 50%;
     height: 50%;
   }
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .design .mobile-modal-box .mobile-modal .img-box {
+  body main .main-bg .container .portfolio .design .mobile-modal-box .mobile-modal .img-box {
     width: 45%;
   }
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .design .mobile-modal-box .mobile-modal .img-box .img-box-inner1 {
+  body main .main-bg .container .portfolio .design .mobile-modal-box .mobile-modal .img-box .img-box-inner1 {
     display: flex;
     justify-content: center;
   }
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .design .mobile-modal-box .mobile-modal .img-box .img-box-inner2 {
+  body main .main-bg .container .portfolio .design .mobile-modal-box .mobile-modal .img-box .img-box-inner2 {
     width: 100%;
     margin: auto;
     display: flex;
     justify-content: center;
   }
 }
-main .main-bg .container .portfolio .design .mobile-modal-box .mobile-modal .img-box img {
+body main .main-bg .container .portfolio .design .mobile-modal-box .mobile-modal .img-box img {
   width: 100%;
   height: 100%;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .design .mobile-modal-box .mobile-modal .img-box img {
+  body main .main-bg .container .portfolio .design .mobile-modal-box .mobile-modal .img-box img {
     width: 50%;
     margin-right: 10px;
   }
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .design .logo-modal-box .logo-modal .img-box img {
+  body main .main-bg .container .portfolio .design .logo-modal-box .logo-modal .img-box img {
     margin: 0 auto;
     width: 90%;
     height: 90%;
   }
 }
-main .main-bg .container .portfolio .design .banner-box {
+body main .main-bg .container .portfolio .design .banner-box {
   cursor: pointer;
 }
-main .main-bg .container .portfolio .design .banner-box .banner {
+body main .main-bg .container .portfolio .design .banner-box .banner {
   width: 30vw;
   height: 30vw;
   overflow: hidden;
@@ -2718,10 +2716,10 @@ main .main-bg .container .portfolio .design .banner-box .banner {
   background-position-y: -50px;
   transform: translate(160%, -60%);
 }
-main .main-bg .container .portfolio .design .banner-box .banner img {
+body main .main-bg .container .portfolio .design .banner-box .banner img {
   transform: scale(1.1);
 }
-main .main-bg .container .portfolio .design .banner-box .banner img:hover {
+body main .main-bg .container .portfolio .design .banner-box .banner img:hover {
   animation-name: detail123;
   animation-timing-function: ease-in-out;
   animation-duration: 0.5s;
@@ -2735,23 +2733,23 @@ main .main-bg .container .portfolio .design .banner-box .banner img:hover {
     transform: scale(1.2);
   }
 }
-main .main-bg .container .portfolio .design .banner-box p {
+body main .main-bg .container .portfolio .design .banner-box p {
   top: 8%;
   left: 13%;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .design .banner-box .banner {
+  body main .main-bg .container .portfolio .design .banner-box .banner {
     width: 15vw;
     height: 15vw;
     transform: translate(340%, -60%);
   }
-  main .main-bg .container .portfolio .design .banner-box p {
+  body main .main-bg .container .portfolio .design .banner-box p {
     top: 7.5%;
     left: 22.4%;
     color: white;
   }
 }
-main .main-bg .container .portfolio .design .detail-box .detail {
+body main .main-bg .container .portfolio .design .detail-box .detail {
   overflow: hidden;
   background-size: cover;
   background-position-y: -50px;
@@ -2759,7 +2757,7 @@ main .main-bg .container .portfolio .design .detail-box .detail {
   height: 27vw;
   transform: translate(120%, -30%);
 }
-main .main-bg .container .portfolio .design .detail-box .detail img:hover {
+body main .main-bg .container .portfolio .design .detail-box .detail img:hover {
   animation-name: detail413;
   animation-timing-function: ease-in-out;
   animation-duration: 0.5s;
@@ -2773,35 +2771,35 @@ main .main-bg .container .portfolio .design .detail-box .detail img:hover {
     transform: scale(1.1);
   }
 }
-main .main-bg .container .portfolio .design .detail-box p {
+body main .main-bg .container .portfolio .design .detail-box p {
   top: 29%;
   left: -4.2%;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .design .detail-box .detail {
+  body main .main-bg .container .portfolio .design .detail-box .detail {
     width: 12vw;
     height: 12vw;
     transform: translate(290%, -50%);
   }
-  main .main-bg .container .portfolio .design .detail-box p {
+  body main .main-bg .container .portfolio .design .detail-box p {
     top: 24%;
     left: 0.3%;
     color: white;
   }
 }
-main .main-bg .container .portfolio .design .package-box .package {
+body main .main-bg .container .portfolio .design .package-box .package {
   overflow: hidden;
   background-size: cover;
   width: 23vw;
   height: 23vw;
   transform: translate(280%, -30%);
 }
-main .main-bg .container .portfolio .design .package-box .package img {
+body main .main-bg .container .portfolio .design .package-box .package img {
   width: 155%;
   margin: 0 auto;
   transform: translateX(-17%);
 }
-main .main-bg .container .portfolio .design .package-box .package img:hover {
+body main .main-bg .container .portfolio .design .package-box .package img:hover {
   animation-name: detail1;
   animation-timing-function: ease-in-out;
   animation-duration: 0.5s;
@@ -2815,35 +2813,35 @@ main .main-bg .container .portfolio .design .package-box .package img:hover {
     transform: scale(1.1) translateX(-17%);
   }
 }
-main .main-bg .container .portfolio .design .package-box p {
+body main .main-bg .container .portfolio .design .package-box p {
   top: 42.5%;
   left: 26%;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .design .package-box .package {
+  body main .main-bg .container .portfolio .design .package-box .package {
     width: 15vw;
     height: 15vw;
     transform: translate(360%, -60%);
   }
-  main .main-bg .container .portfolio .design .package-box p {
+  body main .main-bg .container .portfolio .design .package-box p {
     top: 37%;
     left: 26%;
     color: white;
   }
 }
-main .main-bg .container .portfolio .design .logo-box .logo {
+body main .main-bg .container .portfolio .design .logo-box .logo {
   overflow: hidden;
   background-size: cover;
   width: 30vw;
   height: 30vw;
   transform: translate(50%, -50%);
 }
-main .main-bg .container .portfolio .design .logo-box .logo img {
+body main .main-bg .container .portfolio .design .logo-box .logo img {
   width: 190%;
   margin: 0 auto;
   transform: translatex(-23%);
 }
-main .main-bg .container .portfolio .design .logo-box .logo img:hover {
+body main .main-bg .container .portfolio .design .logo-box .logo img:hover {
   animation-name: detail44;
   animation-timing-function: ease-in-out;
   animation-duration: 0.5s;
@@ -2857,35 +2855,35 @@ main .main-bg .container .portfolio .design .logo-box .logo img:hover {
     transform: scale(1.1) translatex(-22%);
   }
 }
-main .main-bg .container .portfolio .design .logo-box p {
+body main .main-bg .container .portfolio .design .logo-box p {
   top: 54.5%;
   left: -20%;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .design .logo-box .logo {
+  body main .main-bg .container .portfolio .design .logo-box .logo {
     width: 15vw;
     height: 15vw;
     transform: translate(130%, -110%);
   }
-  main .main-bg .container .portfolio .design .logo-box p {
+  body main .main-bg .container .portfolio .design .logo-box p {
     top: 45.5%;
     left: -17%;
     color: white;
   }
 }
-main .main-bg .container .portfolio .design .mobile-box .mobile {
+body main .main-bg .container .portfolio .design .mobile-box .mobile {
   overflow: hidden;
   background-size: cover;
   width: 30vw;
   height: 30vw;
   transform: translate(160%, -60%);
 }
-main .main-bg .container .portfolio .design .mobile-box .mobile img {
+body main .main-bg .container .portfolio .design .mobile-box .mobile img {
   width: 100%;
   margin: auto;
   transform: translateY(-25%);
 }
-main .main-bg .container .portfolio .design .mobile-box .mobile img:hover {
+body main .main-bg .container .portfolio .design .mobile-box .mobile img:hover {
   animation-name: detail11;
   animation-timing-function: ease-in-out;
   animation-duration: 0.5s;
@@ -2899,36 +2897,36 @@ main .main-bg .container .portfolio .design .mobile-box .mobile img:hover {
     transform: scale(1.1) translateY(-25%);
   }
 }
-main .main-bg .container .portfolio .design .mobile-box p {
+body main .main-bg .container .portfolio .design .mobile-box p {
   top: 70%;
   left: 13%;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .design .mobile-box .mobile {
+  body main .main-bg .container .portfolio .design .mobile-box .mobile {
     width: 14vw;
     height: 14vw;
     transform: translate(340%, -120%);
   }
-  main .main-bg .container .portfolio .design .mobile-box p {
+  body main .main-bg .container .portfolio .design .mobile-box p {
     top: 60.5%;
     left: 17%;
     color: white;
   }
 }
-main .main-bg .container .portfolio .design .info-box {
+body main .main-bg .container .portfolio .design .info-box {
   cursor: pointer;
 }
-main .main-bg .container .portfolio .design .info-box .info {
+body main .main-bg .container .portfolio .design .info-box .info {
   overflow: hidden;
   background-size: cover;
   width: 18vw;
   height: 18vw;
   transform: translate(100%, -800%);
 }
-main .main-bg .container .portfolio .design .info-box .info img {
+body main .main-bg .container .portfolio .design .info-box .info img {
   transform: scale(1.02);
 }
-main .main-bg .container .portfolio .design .info-box .info img:hover {
+body main .main-bg .container .portfolio .design .info-box .info img:hover {
   animation-name: detail321;
   animation-timing-function: ease-in-out;
   animation-duration: 0.5s;
@@ -2942,33 +2940,33 @@ main .main-bg .container .portfolio .design .info-box .info img:hover {
     transform: scale(1.2);
   }
 }
-main .main-bg .container .portfolio .design .info-box p {
+body main .main-bg .container .portfolio .design .info-box p {
   top: 9%;
   left: -23%;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .design .info-box .info {
+  body main .main-bg .container .portfolio .design .info-box .info {
     width: 10vw;
     height: 10vw;
     transform: translate(230%, -800%);
   }
-  main .main-bg .container .portfolio .design .info-box p {
+  body main .main-bg .container .portfolio .design .info-box p {
     top: 2%;
     left: -15.5%;
     color: white;
   }
 }
-main .main-bg .container .portfolio .design .character-box {
+body main .main-bg .container .portfolio .design .character-box {
   cursor: pointer;
 }
-main .main-bg .container .portfolio .design .character-box .character {
+body main .main-bg .container .portfolio .design .character-box .character {
   overflow: hidden;
   background-size: cover;
   width: 20vw;
   height: 20vw;
   transform: translate(110%, -220%);
 }
-main .main-bg .container .portfolio .design .character-box .character img:hover {
+body main .main-bg .container .portfolio .design .character-box .character img:hover {
   animation-name: detail;
   animation-timing-function: ease-in-out;
   animation-duration: 0.5s;
@@ -2982,27 +2980,27 @@ main .main-bg .container .portfolio .design .character-box .character img:hover 
     transform: scale(1.2);
   }
 }
-main .main-bg .container .portfolio .design .character-box p {
+body main .main-bg .container .portfolio .design .character-box p {
   top: 76.5%;
   left: -18%;
 }
 @media only screen and (min-width: 1024px) {
-  main .main-bg .container .portfolio .design .character-box .character {
+  body main .main-bg .container .portfolio .design .character-box .character {
     width: 10vw;
     height: 10vw;
     transform: translate(290%, -300%);
   }
-  main .main-bg .container .portfolio .design .character-box p {
+  body main .main-bg .container .portfolio .design .character-box p {
     top: 68%;
     left: -8%;
     color: white;
   }
 }
-main .contact {
+body main .contact {
   position: relative;
   z-index: 1;
 }
-main .contact .eye1 {
+body main .contact .eye1 {
   position: absolute;
   width: 10vw;
   bottom: 16%;
@@ -3013,7 +3011,7 @@ main .contact .eye1 {
   animation-iteration-count: infinite;
 }
 @media only screen and (min-width: 1024px) {
-  main .contact .eye1 {
+  body main .contact .eye1 {
     bottom: 20%;
     left: 35%;
     width: 6vw;
@@ -3036,7 +3034,7 @@ main .contact .eye1 {
     opacity: 0;
   }
 }
-main .contact .eye2 {
+body main .contact .eye2 {
   position: absolute;
   width: 10vw;
   bottom: 16%;
@@ -3047,7 +3045,7 @@ main .contact .eye2 {
   animation-iteration-count: infinite;
 }
 @media only screen and (min-width: 1024px) {
-  main .contact .eye2 {
+  body main .contact .eye2 {
     width: 6vw;
     bottom: 20%;
     left: 58%;
@@ -3070,18 +3068,18 @@ main .contact .eye2 {
     opacity: 0;
   }
 }
-main .contact .bg-img-box .sea {
+body main .contact .bg-img-box .sea {
   width: 100%;
   height: 100%;
 }
-main .contact .contact-box {
+body main .contact .contact-box {
   position: absolute;
   bottom: 30%;
   left: 50%;
   transform: translate(-50%);
   color: rgb(255, 255, 255);
 }
-main .contact .contact-box h2 {
+body main .contact .contact-box h2 {
   text-align: center;
   margin-bottom: 16px;
   font-size: 8vw;
@@ -3089,25 +3087,24 @@ main .contact .contact-box h2 {
   color: rgb(255, 255, 255);
 }
 @media only screen and (min-width: 1024px) {
-  main .contact .contact-box h2 {
+  body main .contact .contact-box h2 {
     font-size: 5rem;
   }
 }
-main .contact .contact-box a {
+body main .contact .contact-box a {
   color: white;
   font-size: 3vw;
   margin-bottom: 8px;
 }
 @media only screen and (min-width: 1024px) {
-  main .contact .contact-box a {
+  body main .contact .contact-box a {
     font-size: 2rem;
     margin-bottom: 16px;
   }
 }
-main .contact .contact-box a:hover {
+body main .contact .contact-box a:hover {
   color: #5a27d4;
 }
-
-footer h2 {
+body footer h2 {
   display: none;
 }/*# sourceMappingURL=index.css.map */
