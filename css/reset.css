@@ -15,10 +15,6 @@
   font-family: "Super Shiny";
   src: local("Super Shiny"), url("../font/Super Shiny.ttf") format("opentype");
 }
-@font-face {
-  font-family: "Yeongdeok Haeparang";
-  src: local("Yeongdeok Haeparang"), url("../font/Yeongdeok Haeparang.ttf") format("opentype");
-}
 * {
   box-sizing: border-box;
   margin: 0;

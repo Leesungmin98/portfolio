@@ -15,10 +15,6 @@
   font-family: "Super Shiny";
   src: local("Super Shiny"), url("../font/Super Shiny.ttf") format("opentype");
 }
-@font-face {
-  font-family: "Yeongdeok Haeparang";
-  src: local("Yeongdeok Haeparang"), url("../font/Yeongdeok Haeparang.ttf") format("opentype");
-}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -2584,16 +2580,37 @@ body main .main-bg .container .portfolio .design .po-modal-box .po-modal .img-bo
 body main .main-bg .container .portfolio .design .po-modal-box .close-modal {
   display: none;
   position: fixed;
-  top: 0;
-  right: 2%;
+  top: 5%;
+  right: 5%;
   padding: 10px 20px;
   background: none;
-  font-family: "pretendard";
-  font-size: 40px;
-  color: white;
-  border: none;
   cursor: pointer;
+  border: transparent;
   z-index: 9999;
+}
+body main .main-bg .container .portfolio .design .po-modal-box .close-modal span {
+  background: rgb(255, 255, 255);
+  border: none;
+  border-radius: 50px;
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+body main .main-bg .container .portfolio .design .po-modal-box .close-modal span:nth-of-type(2) {
+  top: 8px;
+}
+body main .main-bg .container .portfolio .design .po-modal-box .close-modal span:nth-of-type(3) {
+  top: 16px;
+}
+body main .main-bg .container .portfolio .design .po-modal-box .close-modal .one {
+  transform: translateY(5px) translateX(0) rotate(45deg);
+}
+body main .main-bg .container .portfolio .design .po-modal-box .close-modal .two {
+  transform: translateY(-2px) translateX(0) rotate(-45deg);
 }
 @media only screen and (min-width: 1024px) {
   body main .main-bg .container .portfolio .design .banner-modal-box .banner-modal .img-box {
