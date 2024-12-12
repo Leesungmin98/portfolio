@@ -556,7 +556,7 @@ header {
             // -webkit-text-stroke: 1px white;
 
             animation-name: title22;
-            animation-timing-function: ease-in;
+            animation-timing-function: ease-in-out;
             animation-duration: 1s;
             
             @include responsive(large-screens) {
@@ -570,6 +570,7 @@ header {
 
             @keyframes title22 {
                 0% {
+                    top: -100%;
                     opacity: 0;
                    
                 }

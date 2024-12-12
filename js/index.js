@@ -525,3 +525,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const boxes = document.querySelectorAll('.ds-txt');
     boxes.forEach(box => observer.observe(box));
 });
+
+/////////////////////////////////////////////////////////
+
