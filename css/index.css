@@ -1,20 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "recipekorea";
-  src: local("recipekorea"), url("../font/Recipekorea 레코체 FONT.otf") format("opentype"), url("../font/Recipekorea 레코체 FONT.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Pretendard";
-  src: local("Pretendard"), url("../font/Pretendard-Medium.otf") format("opentype"), url("../font/Pretendard-Regular.otf") format("opentype"), url("../font/Pretendard-SemiBold.otf") format("opentype");
-}
-@font-face {
-  font-family: "crunch chips";
-  src: local("crunch chips"), url("../font/Crunch Chips.otf") format("opentype");
-}
-@font-face {
-  font-family: "Super Shiny";
-  src: local("Super Shiny"), url("../font/Super Shiny.ttf") format("opentype");
-}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -73,6 +57,22 @@ footer {
   display: block;
 }
 
+@font-face {
+  font-family: "recipekorea";
+  src: local("recipekorea"), url("../font/Recipekorea 레코체 FONT.otf") format("opentype"), url("../font/Recipekorea 레코체 FONT.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Pretendard";
+  src: local("Pretendard"), url("../font/Pretendard-Medium.otf") format("opentype"), url("../font/Pretendard-Regular.otf") format("opentype"), url("../font/Pretendard-SemiBold.otf") format("opentype");
+}
+@font-face {
+  font-family: "crunch chips";
+  src: local("crunch chips"), url("../font/Crunch Chips.otf") format("opentype");
+}
+@font-face {
+  font-family: "Super Shiny";
+  src: local("Super Shiny"), url("../font/Super Shiny.ttf") format("opentype");
+}
 body header .logo-btn-screen {
   position: fixed;
   z-index: 1000;
@@ -583,6 +583,24 @@ body header .container h1 {
 }
 body header .container h1 span {
   color: #5a27d4;
+  animation: colorChange 7s infinite;
+}
+@keyframes colorChange {
+  0% {
+    color: #5a27d4;
+  }
+  25% {
+    color: #1eb6e9;
+  }
+  50% {
+    color: #e64aa2;
+  }
+  75% {
+    color: #da5fea;
+  }
+  100% {
+    color: #5a27d4;
+  }
 }
 @keyframes title22 {
   0% {

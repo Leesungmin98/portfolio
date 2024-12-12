@@ -565,7 +565,25 @@ header {
             } 
             span {
                 color: #5a27d4;
+                animation: colorChange 7s infinite;
 
+            }
+            @keyframes colorChange {
+                0% {
+                    color: #5a27d4; 
+                }
+                25% {
+                    color: #1eb6e9; 
+                }
+                50% {
+                    color: #e64aa2; 
+                }
+                75% {
+                    color: #da5fea; 
+                }
+                100% {
+                    color: #5a27d4; 
+                }
             }
 
             @keyframes title22 {
