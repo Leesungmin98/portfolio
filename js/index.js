@@ -109,14 +109,14 @@ $(document).ready(function() {
     const gnbA = $('.mobile-menu > li > a');
     gnbA.click(function(e) {
         const target = $(this).attr('href');
-        $('html').animate({ scrollTop: $(target).offset().top }, 1000);
+        $('html').animate({ scrollTop: $(target).offset().top - 80 }, 1000);
         e.preventDefault();
     });
 
     const gnbB = $('.pc-menu > li > a');
     gnbB.click(function(e) {
         const target = $(this).attr('href');
-        $('html').animate({ scrollTop: $(target).offset().top }, 1000);
+        $('html').animate({ scrollTop: $(target).offset().top - 180 }, 1000);
         e.preventDefault();
     });
 
