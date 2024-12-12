@@ -77,6 +77,228 @@ footer {
   display: block;
 }
 
+body .logo-btn-screen {
+  position: fixed;
+  z-index: 1000;
+  background-color: #FAF7F5;
+  width: 100%;
+  height: 60px;
+  padding: 0 20px 0 20px;
+}
+@media only screen and (min-width: 1024px) {
+  body .logo-btn-screen {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    background-color: #FAF7F5;
+  }
+}
+body .logo-btn-screen .container {
+  width: 100%;
+  height: 100%;
+  max-width: 1560px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .logo-btn-screen .container .header-logo {
+  width: 8%;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+body .logo-btn-screen .container .header-logo a {
+  cursor: pointer;
+}
+@media only screen and (min-width: 1024px) {
+  body .logo-btn-screen .container .header-logo {
+    width: 2.5%;
+    z-index: 1000;
+  }
+}
+body .logo-btn-screen .container .btn_container {
+  position: absolute;
+  top: 35%;
+  right: 20px;
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  z-index: 100;
+  transition: opacity 0.25s ease;
+}
+body .logo-btn-screen .container .btn_container:hover {
+  opacity: 0.7;
+}
+body .logo-btn-screen .container .btn_container.active .top {
+  transform: translateY(11px) translateX(0) rotate(45deg);
+  background: rgb(0, 0, 0);
+}
+body .logo-btn-screen .container .btn_container.active .middle {
+  opacity: 0;
+  background: rgb(0, 0, 0);
+}
+body .logo-btn-screen .container .btn_container.active .bottom {
+  transform: translateY(-5px) translateX(0) rotate(-45deg);
+  background: rgb(0, 0, 0);
+}
+body .logo-btn-screen .container .btn_container span {
+  background: black;
+  border: none;
+  border-radius: 50px;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 6;
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+body .logo-btn-screen .container .btn_container span:nth-of-type(2) {
+  top: 8px;
+}
+body .logo-btn-screen .container .btn_container span:nth-of-type(3) {
+  top: 16px;
+}
+@media only screen and (min-width: 1024px) {
+  body .logo-btn-screen .container .btn_container span {
+    display: none;
+  }
+}
+body .logo-btn-screen .fullscreen {
+  position: fixed;
+  background: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.35s, visibility 0.35s, height 0.35s;
+  overflow: hidden;
+  z-index: 20;
+}
+@media only screen and (min-width: 1024px) {
+  body .logo-btn-screen .fullscreen {
+    position: absolute;
+    background: none;
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+  }
+}
+body .logo-btn-screen .fullscreen.open {
+  opacity: 0.9;
+  visibility: visible;
+  height: 100%;
+}
+body .logo-btn-screen .fullscreen.open li {
+  animation: fadeInRight 0.5s ease forwards;
+  animation-delay: 0.35s;
+}
+body .logo-btn-screen .fullscreen.open li:nth-of-type(2) {
+  animation-delay: 0.4s;
+}
+body .logo-btn-screen .fullscreen.open li:nth-of-type(3) {
+  animation-delay: 0.45s;
+}
+body .logo-btn-screen .fullscreen.open li:nth-of-type(4) {
+  animation-delay: 0.5s;
+}
+body .logo-btn-screen .fullscreen nav {
+  position: relative;
+  height: 100%;
+  top: 70%;
+  transform: translateY(-50%);
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center;
+}
+@media only screen and (min-width: 1024px) {
+  body .logo-btn-screen .fullscreen nav {
+    top: 50%;
+  }
+}
+body .logo-btn-screen .fullscreen .mobile-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  height: 40vh;
+}
+@media only screen and (min-width: 1024px) {
+  body .logo-btn-screen .fullscreen .mobile-menu {
+    display: none;
+  }
+}
+body .logo-btn-screen .fullscreen .mobile-menu li {
+  display: block;
+  height: 25%;
+  min-height: 50px;
+  position: relative;
+  opacity: 0;
+}
+body .logo-btn-screen .fullscreen .mobile-menu li a {
+  display: block;
+  position: relative;
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  font-family: "Pretendard";
+  text-decoration: none;
+  overflow: hidden;
+  padding-top: 25px;
+}
+body .logo-btn-screen .fullscreen .mobile-menu li a:hover:after, body .logo-btn-screen .fullscreen .mobile-menu li a:focus:after, body .logo-btn-screen .fullscreen .mobile-menu li a:active:after {
+  width: 100%;
+}
+body .logo-btn-screen .fullscreen .mobile-menu li a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  transform: translateX(-50%);
+  height: 3px;
+  background: #5a27d4;
+  transition: 0.35s;
+}
+body .logo-btn-screen .fullscreen .mobile-menu li a:hover {
+  color: #5a27d4;
+}
+body .logo-btn-screen .pc-menu {
+  display: none;
+}
+@media only screen and (min-width: 1024px) {
+  body .logo-btn-screen .pc-menu {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: "pretendard";
+    width: 50%;
+    height: 100%;
+  }
+}
+body .logo-btn-screen .pc-menu li a:hover {
+  color: #5a27d4;
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
 header .wave {
   position: relative;
   z-index: 0;
@@ -373,221 +595,6 @@ header .container h1 span {
   }
   100% {
     opacity: 1;
-  }
-}
-header .container .logo-btn-screen {
-  position: relative;
-  background-color: #FAF7F5;
-  width: 100%;
-  height: 60px;
-  padding: 0 20px 0 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-@media only screen and (min-width: 1024px) {
-  header .container .logo-btn-screen {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    height: 80px;
-    border-radius: 50px;
-    background-color: #FAF7F5;
-  }
-}
-header .container .logo-btn-screen .header-logo {
-  width: 8%;
-  outline: none;
-  -webkit-tap-highlight-color: transparent;
-}
-header .container .logo-btn-screen .header-logo a {
-  cursor: pointer;
-}
-@media only screen and (min-width: 1024px) {
-  header .container .logo-btn-screen .header-logo {
-    width: 3%;
-    z-index: 1000;
-  }
-}
-header .container .logo-btn-screen .btn_container {
-  position: absolute;
-  top: 35%;
-  right: 20px;
-  height: 25px;
-  width: 25px;
-  cursor: pointer;
-  z-index: 100;
-  transition: opacity 0.25s ease;
-}
-header .container .logo-btn-screen .btn_container:hover {
-  opacity: 0.7;
-}
-header .container .logo-btn-screen .btn_container.active .top {
-  transform: translateY(11px) translateX(0) rotate(45deg);
-  background: rgb(0, 0, 0);
-}
-header .container .logo-btn-screen .btn_container.active .middle {
-  opacity: 0;
-  background: rgb(0, 0, 0);
-}
-header .container .logo-btn-screen .btn_container.active .bottom {
-  transform: translateY(-5px) translateX(0) rotate(-45deg);
-  background: rgb(0, 0, 0);
-}
-header .container .logo-btn-screen .btn_container span {
-  background: black;
-  border: none;
-  border-radius: 50px;
-  height: 2px;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 6;
-  transition: all 0.35s ease;
-  cursor: pointer;
-}
-header .container .logo-btn-screen .btn_container span:nth-of-type(2) {
-  top: 8px;
-}
-header .container .logo-btn-screen .btn_container span:nth-of-type(3) {
-  top: 16px;
-}
-@media only screen and (min-width: 1024px) {
-  header .container .logo-btn-screen .btn_container span {
-    display: none;
-  }
-}
-header .container .fullscreen {
-  position: fixed;
-  background: white;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 0%;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.35s, visibility 0.35s, height 0.35s;
-  overflow: hidden;
-  z-index: 20;
-}
-@media only screen and (min-width: 1024px) {
-  header .container .fullscreen {
-    position: absolute;
-    background: none;
-    opacity: 1;
-    visibility: visible;
-    width: 100%;
-    height: 100%;
-  }
-}
-header .container .fullscreen.open {
-  opacity: 0.9;
-  visibility: visible;
-  height: 100%;
-}
-header .container .fullscreen.open li {
-  animation: fadeInRight 0.5s ease forwards;
-  animation-delay: 0.35s;
-}
-header .container .fullscreen.open li:nth-of-type(2) {
-  animation-delay: 0.4s;
-}
-header .container .fullscreen.open li:nth-of-type(3) {
-  animation-delay: 0.45s;
-}
-header .container .fullscreen.open li:nth-of-type(4) {
-  animation-delay: 0.5s;
-}
-header .container .fullscreen nav {
-  position: relative;
-  height: 100%;
-  top: 70%;
-  transform: translateY(-50%);
-  font-size: 50px;
-  font-weight: 400;
-  text-align: center;
-}
-@media only screen and (min-width: 1024px) {
-  header .container .fullscreen nav {
-    top: 50%;
-  }
-}
-header .container .fullscreen .mobile-menu {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  display: inline-block;
-  position: relative;
-  height: 40vh;
-}
-@media only screen and (min-width: 1024px) {
-  header .container .fullscreen .mobile-menu {
-    display: none;
-  }
-}
-header .container .fullscreen .mobile-menu li {
-  display: block;
-  height: 25%;
-  min-height: 50px;
-  position: relative;
-  opacity: 0;
-}
-header .container .fullscreen .mobile-menu li a {
-  display: block;
-  position: relative;
-  color: rgb(0, 0, 0);
-  font-size: 1.5rem;
-  font-family: "Pretendard";
-  text-decoration: none;
-  overflow: hidden;
-  padding-top: 25px;
-}
-header .container .fullscreen .mobile-menu li a:hover:after, header .container .fullscreen .mobile-menu li a:focus:after, header .container .fullscreen .mobile-menu li a:active:after {
-  width: 100%;
-}
-header .container .fullscreen .mobile-menu li a:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0%;
-  transform: translateX(-50%);
-  height: 3px;
-  background: #5a27d4;
-  transition: 0.35s;
-}
-header .container .fullscreen .mobile-menu li a:hover {
-  color: #5a27d4;
-}
-header .container .pc-menu {
-  display: none;
-}
-@media only screen and (min-width: 1024px) {
-  header .container .pc-menu {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 1.2rem;
-    font-weight: 600;
-    font-family: "pretendard";
-    width: 50%;
-    height: 100%;
-  }
-}
-header .container .pc-menu li a:hover {
-  color: #5a27d4;
-}
-@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    left: 20%;
-  }
-  100% {
-    opacity: 1;
-    left: 0;
   }
 }
 
@@ -1476,7 +1483,6 @@ main .main-bg .container .about-me .submarin-atxt .atxt-box .atxt {
   padding: 20px;
   font-family: "pretendard";
   border-radius: 20px;
-  background-color: #ffffff;
   display: flex;
 }
 @media only screen and (min-width: 1024px) {
@@ -1529,7 +1535,7 @@ main .main-bg .container .skill .skill-box {
 }
 @media only screen and (min-width: 1024px) {
   main .main-bg .container .skill .skill-box {
-    height: 55vh;
+    height: 50vh;
   }
 }
 main .main-bg .container .skill .skill-box .skill-item {
