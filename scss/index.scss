@@ -1094,14 +1094,18 @@ main {
             }
         }
         .buble0 {
-            top: 0%; left: 60%;
-            width: 50px;
-            // display: none;
-            // background-color: #da5fea;
-            animation-name: buble-move0;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
-            animation-duration: 7s;
+            display: none;
+            @include responsive(large-screens) {
+                display: block;
+                top: 0%; left: 60%;
+                width: 50px;
+                // display: none;
+                // background-color: #da5fea;
+                animation-name: buble-move0;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+                animation-duration: 7s;
+            }
         }
           @keyframes buble-move0 {
             0% {
@@ -1114,13 +1118,17 @@ main {
             }
         }
         .buble1 {
-            width: 80px;
-            top: 4%; left: 6%;
-            // background-color: #da5fea;
-            animation-name: buble-move1;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
-            animation-duration: 5s;
+            display: none;
+            @include responsive(large-screens) {
+                display: block;
+                width: 80px;
+                top: 4%; left: 6%;
+                // background-color: #da5fea;
+                animation-name: buble-move1;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+                animation-duration: 5s;
+            }
         }
         @keyframes buble-move1 {
             0% {
@@ -1133,13 +1141,17 @@ main {
             }
         }
         .buble2 {
-            width: 100px;
-            top: 11%; left: 70%;
-            // background-color: #da5fea;
-            animation-name: buble-move2;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
-            animation-duration: 8s;;
+            display: none;
+            @include responsive(large-screens) {
+                display: block;
+                width: 100px;
+                top: 11%; left: 70%;
+                // background-color: #da5fea;
+                animation-name: buble-move2;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+                animation-duration: 8s;;
+            }
         }
         @keyframes buble-move2 {
             0% {
@@ -1152,13 +1164,17 @@ main {
             }
         }
         .buble3 {
-            width: 60px;
-            top: 28.5%; left: 23%;
-
-            animation-name: buble-move3;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
-            animation-duration: 9s;;
+            display: none;
+            @include responsive(large-screens) {
+                display: block;
+                width: 60px;
+                top: 28.5%; left: 23%;
+    
+                animation-name: buble-move3;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+                animation-duration: 9s;;
+            }
         }
         @keyframes buble-move3 {
             0% {
@@ -1171,13 +1187,17 @@ main {
             }
         }
         .buble4 {
-            width: 20px;
-            top: 30%; left: 30%;
-            
-            animation-name: buble-move4;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
-            animation-duration: 13s;;
+            display: none;
+            @include responsive(large-screens) {
+                display: block;
+                width: 20px;
+                top: 30%; left: 30%;
+                
+                animation-name: buble-move4;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+                animation-duration: 13s;;
+            }
         }
         @keyframes buble-move4 {
             0% {
@@ -1191,13 +1211,17 @@ main {
         }
 
         .buble5 {
-            width: 70px;
-            top: 40%; left: 30%;
-
-            animation-name: buble-move5;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
-            animation-duration: 9s;;
+            display: none;
+            @include responsive(large-screens) {
+                display: block;
+                width: 70px;
+                top: 40%; left: 30%;
+    
+                animation-name: buble-move5;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+                animation-duration: 9s;;
+            }
         }
         @keyframes buble-move5 {
             0% {
@@ -1210,13 +1234,17 @@ main {
             }
         }
         .buble6 {
-            width: 30px;
-            top: 49%; left: 60%;
-
-            animation-name: buble-move6;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
-            animation-duration: 10s;;
+            display: none;
+            @include responsive(large-screens) {
+                display: block;
+                width: 30px;
+                top: 49%; left: 60%;
+    
+                animation-name: buble-move6;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+                animation-duration: 10s;;
+            }
         }
 
         @keyframes buble-move6 {
@@ -1230,13 +1258,17 @@ main {
             }
         }
         .buble7 {
-            width: 100px;
-            top: 61%; left: 25%;
-
-            animation-name: buble-move7;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
-            animation-duration: 8s;;
+            display: none;
+            @include responsive(large-screens) {
+                display: block;
+                width: 100px;
+                top: 61%; left: 25%;
+    
+                animation-name: buble-move7;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+                animation-duration: 8s;;
+            }
         }
         @keyframes buble-move7 {
             0% {
@@ -1249,14 +1281,18 @@ main {
             }
         }
         .buble8 {
-            width: 120px;
-            top: 71%; left: 73%;
-           
-
-            animation-name: buble-move8;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
-            animation-duration: 18s;;
+            display: none;
+            @include responsive(large-screens) {
+                display: block;
+                width: 120px;
+                top: 71%; left: 73%;
+               
+    
+                animation-name: buble-move8;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+                animation-duration: 18s;;
+            }
         }
         @keyframes buble-move8 {
             0% {
@@ -1443,7 +1479,7 @@ main {
                             width: 55%;
                             margin: auto;
                             @include responsive(large-screens) {
-                                width: 50%;
+                                width: 55%;
                             }
                         }
                     }
@@ -1452,7 +1488,13 @@ main {
                         .atxt-title {
                             h3 {
                                 font-family: "Super Shiny";
-                                font-size: 2vw;
+                                font-size: 25vw;
+                                text-align: center;
+                                color: #ceab0f;
+                                @include responsive(large-screens) {
+                                    text-align: left;
+                                    font-size: 8vw;
+                                }
                             }
                         }
                         .atxt {
@@ -1461,10 +1503,8 @@ main {
                             font-family: 'pretendard';
                             border-radius: 20px;
                             background-color: #ffffff;
+                            display: flex;
     
-                            // display: flex;
-                            // justify-content: space-between;
-                            // flex-direction: column;
                             @include responsive(large-screens) {
                              position: relative; 
                              top: 0px;
@@ -1499,7 +1539,7 @@ main {
                             } // atxt-inner
                             .a1 {
                                 h3 {
-                                    
+                                    font-size: 100px;
                                     @include responsive(large-screens) {
                                        
                                     }
