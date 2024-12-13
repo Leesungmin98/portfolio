@@ -1,3 +1,6 @@
+// import { gsap } from "gsap";
+// import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
 $(function() {
 /// 스킬 
 
@@ -525,3 +528,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const boxes = document.querySelectorAll('.ds-txt');
     boxes.forEach(box => observer.observe(box));
 });
+
+/////////////////////////////////////////////////////////
+
+

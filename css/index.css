@@ -1,20 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "recipekorea";
-  src: local("recipekorea"), url("../font/Recipekorea 레코체 FONT.otf") format("opentype"), url("../font/Recipekorea 레코체 FONT.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Pretendard";
-  src: local("Pretendard"), url("../font/Pretendard-Medium.otf") format("opentype"), url("../font/Pretendard-Regular.otf") format("opentype"), url("../font/Pretendard-SemiBold.otf") format("opentype");
-}
-@font-face {
-  font-family: "crunch chips";
-  src: local("crunch chips"), url("../font/Crunch Chips.otf") format("opentype");
-}
-@font-face {
-  font-family: "Super Shiny";
-  src: local("Super Shiny"), url("../font/Super Shiny.ttf") format("opentype");
-}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -73,6 +57,22 @@ footer {
   display: block;
 }
 
+@font-face {
+  font-family: "recipekorea";
+  src: local("recipekorea"), url("../font/Recipekorea 레코체 FONT.otf") format("opentype"), url("../font/Recipekorea 레코체 FONT.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Pretendard";
+  src: local("Pretendard"), url("../font/Pretendard-Medium.otf") format("opentype"), url("../font/Pretendard-Regular.otf") format("opentype"), url("../font/Pretendard-SemiBold.otf") format("opentype");
+}
+@font-face {
+  font-family: "crunch chips";
+  src: local("crunch chips"), url("../font/Crunch Chips.otf") format("opentype");
+}
+@font-face {
+  font-family: "Super Shiny";
+  src: local("Super Shiny"), url("../font/Super Shiny.ttf") format("opentype");
+}
 body header .logo-btn-screen {
   position: fixed;
   z-index: 1000;
@@ -572,7 +572,7 @@ body header .container h1 {
   font-family: "Super Shiny";
   text-align: center;
   animation-name: title22;
-  animation-timing-function: ease-in;
+  animation-timing-function: ease-in-out;
   animation-duration: 1s;
 }
 @media only screen and (min-width: 1024px) {
@@ -583,9 +583,28 @@ body header .container h1 {
 }
 body header .container h1 span {
   color: #5a27d4;
+  animation: colorChange 7s infinite;
+}
+@keyframes colorChange {
+  0% {
+    color: #5a27d4;
+  }
+  25% {
+    color: #1eb6e9;
+  }
+  50% {
+    color: #e64aa2;
+  }
+  75% {
+    color: #dae604;
+  }
+  100% {
+    color: #5a27d4;
+  }
 }
 @keyframes title22 {
   0% {
+    top: -100%;
     opacity: 0;
   }
   100% {
@@ -2111,7 +2130,7 @@ body main .main-bg .container .portfolio {
 @media only screen and (min-width: 1024px) {
   body main .main-bg .container .portfolio {
     width: 100%;
-    height: 3200px;
+    height: 2000px;
   }
 }
 body main .main-bg .container .portfolio .box {
@@ -2469,43 +2488,50 @@ body main .main-bg .container .portfolio .slider .slider-inner .slider-item .box
     line-height: 110%;
   }
 }
-body main .main-bg .container .portfolio .design {
+body main .main-bg .design {
   position: relative;
-  z-index: 10000;
-  margin-top: 50%;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
 }
 @media only screen and (min-width: 1024px) {
-  body main .main-bg .container .portfolio .design {
-    margin-top: 35%;
+  body main .main-bg .design {
+    width: 100%;
+    height: 100vh;
   }
 }
-body main .main-bg .container .portfolio .design .d-box {
-  width: 0;
+body main .main-bg .design .d-box {
+  width: -moz-max-content;
+  width: max-content;
   outline: none;
   -webkit-tap-highlight-color: transparent;
-  background-color: #505050;
 }
 @media only screen and (min-width: 1024px) {
-  body main .main-bg .container .portfolio .design .d-box {
-    width: 0;
+  body main .main-bg .design .d-box {
+    width: -moz-max-content;
+    width: max-content;
   }
 }
-body main .main-bg .container .portfolio .design p {
-  position: absolute;
+body main .main-bg .design p {
   width: 100%;
   text-align: center;
   font-size: 3vw;
   font-weight: bold;
   font-family: "pretendard";
   color: white;
+  margin-top: 12px;
 }
 @media only screen and (min-width: 1024px) {
-  body main .main-bg .container .portfolio .design p {
+  body main .main-bg .design p {
     font-size: 1.3rem;
     color: rgb(0, 0, 0);
   }
 }
-body main .main-bg .container .portfolio .design .ds {
+body main .main-bg .design .ds {
   width: 25vw;
   height: 25vw;
   cursor: pointer;
@@ -2516,31 +2542,31 @@ body main .main-bg .container .portfolio .design .ds {
   transition: opacity 0.5s ease;
 }
 @media only screen and (min-width: 1024px) {
-  body main .main-bg .container .portfolio .design .ds {
+  body main .main-bg .design .ds {
     width: 15vw;
     height: 15vw;
     border: 5px solid transparent;
     border-radius: 50%;
   }
 }
-body main .main-bg .container .portfolio .design .ds.visible {
+body main .main-bg .design .ds.visible {
   opacity: 1;
 }
-body main .main-bg .container .portfolio .design .ds::after {
+body main .main-bg .design .ds::after {
   content: "";
   padding-bottom: 100%;
   display: block;
 }
-body main .main-bg .container .portfolio .design .ds-txt {
+body main .main-bg .design .ds-txt {
   opacity: 0;
   transform: translateY(-100%);
   transition: transform 1s ease, opacity 1s ease;
 }
-body main .main-bg .container .portfolio .design .ds-txt.visible {
+body main .main-bg .design .ds-txt.visible {
   opacity: 1;
   transform: translateY(0);
 }
-body main .main-bg .container .portfolio .design .po-modal-box {
+body main .main-bg .design .po-modal-box {
   position: fixed;
   bottom: -100%;
   left: 0;
@@ -2553,31 +2579,31 @@ body main .main-bg .container .portfolio .design .po-modal-box {
   overflow-y: auto;
   z-index: 100000000;
 }
-body main .main-bg .container .portfolio .design .po-modal-box .po-modal {
+body main .main-bg .design .po-modal-box .po-modal {
   text-align: center;
 }
-body main .main-bg .container .portfolio .design .po-modal-box .po-modal .img-box {
+body main .main-bg .design .po-modal-box .po-modal .img-box {
   width: 80%;
   margin: auto;
   cursor: grab;
 }
-body main .main-bg .container .portfolio .design .po-modal-box .po-modal .img-box img {
+body main .main-bg .design .po-modal-box .po-modal .img-box img {
   width: 100%;
   height: auto;
   margin-bottom: 50px;
   transition: transform 0.3s ease-out;
 }
 @media only screen and (min-width: 1024px) {
-  body main .main-bg .container .portfolio .design .po-modal-box .po-modal .img-box img {
+  body main .main-bg .design .po-modal-box .po-modal .img-box img {
     width: 50%;
     margin: 0 auto;
     margin-bottom: 50px;
   }
 }
-body main .main-bg .container .portfolio .design .po-modal-box .po-modal .img-box img:active {
+body main .main-bg .design .po-modal-box .po-modal .img-box img:active {
   cursor: grabbing;
 }
-body main .main-bg .container .portfolio .design .po-modal-box .close-modal {
+body main .main-bg .design .po-modal-box .close-modal {
   display: none;
   position: fixed;
   top: 5%;
@@ -2589,11 +2615,11 @@ body main .main-bg .container .portfolio .design .po-modal-box .close-modal {
   z-index: 9999;
 }
 @media only screen and (min-width: 1024px) {
-  body main .main-bg .container .portfolio .design .po-modal-box .close-modal {
+  body main .main-bg .design .po-modal-box .close-modal {
     right: 5%;
   }
 }
-body main .main-bg .container .portfolio .design .po-modal-box .close-modal span {
+body main .main-bg .design .po-modal-box .close-modal span {
   background: rgb(255, 255, 255);
   border: none;
   border-radius: 50px;
@@ -2606,158 +2632,157 @@ body main .main-bg .container .portfolio .design .po-modal-box .close-modal span
   cursor: pointer;
 }
 @media only screen and (min-width: 1024px) {
-  body main .main-bg .container .portfolio .design .po-modal-box .close-modal span {
+  body main .main-bg .design .po-modal-box .close-modal span {
     width: 100%;
   }
 }
-body main .main-bg .container .portfolio .design .po-modal-box .close-modal span:nth-of-type(2) {
+body main .main-bg .design .po-modal-box .close-modal span:nth-of-type(2) {
   top: 7px;
 }
-body main .main-bg .container .portfolio .design .po-modal-box .close-modal span:nth-of-type(3) {
+body main .main-bg .design .po-modal-box .close-modal span:nth-of-type(3) {
   top: 16px;
 }
-body main .main-bg .container .portfolio .design .po-modal-box .close-modal .one {
+body main .main-bg .design .po-modal-box .close-modal .one {
   transform: translateY(5px) translateX(0) rotate(45deg);
 }
 @media only screen and (min-width: 1024px) {
-  body main .main-bg .container .portfolio .design .po-modal-box .close-modal .one {
+  body main .main-bg .design .po-modal-box .close-modal .one {
     transform: translateY(5px) translateX(0) rotate(45deg);
   }
 }
-body main .main-bg .container .portfolio .design .po-modal-box .close-modal .two {
+body main .main-bg .design .po-modal-box .close-modal .two {
   transform: translateY(-2px) translateX(0) rotate(-45deg);
 }
 @media only screen and (min-width: 1024px) {
-  body main .main-bg .container .portfolio .design .po-modal-box .close-modal .two {
+  body main .main-bg .design .po-modal-box .close-modal .two {
     transform: translateY(-2px) translateX(0) rotate(-45deg);
   }
 }
 @media only screen and (min-width: 1024px) {
-  body main .main-bg .container .portfolio .design .banner-modal-box .banner-modal .img-box {
+  body main .main-bg .design .banner-modal-box .banner-modal .img-box {
     display: flex;
     align-items: center;
   }
 }
-body main .main-bg .container .portfolio .design .banner-modal-box .banner-modal .img-box .img-inner-box {
+body main .main-bg .design .banner-modal-box .banner-modal .img-box .img-inner-box {
   width: 100%;
   height: 100%;
 }
-body main .main-bg .container .portfolio .design .banner-modal-box .banner-modal .img-box .img-inner-box img {
+body main .main-bg .design .banner-modal-box .banner-modal .img-box .img-inner-box img {
   width: 100%;
   height: 100%;
   margin-right: 10px;
 }
 @media only screen and (min-width: 1024px) {
-  body main .main-bg .container .portfolio .design .banner-modal-box .banner-modal .img-box .img-inner-box img {
+  body main .main-bg .design .banner-modal-box .banner-modal .img-box .img-inner-box img {
     width: 100%;
     height: 100%;
     margin-right: 50px;
   }
 }
-body main .main-bg .container .portfolio .design .banner-modal-box .banner-modal .img-box img {
+body main .main-bg .design .banner-modal-box .banner-modal .img-box img {
   width: 100%;
   height: 100%;
   margin-right: 10px;
 }
 @media only screen and (min-width: 1024px) {
-  body main .main-bg .container .portfolio .design .banner-modal-box .banner-modal .img-box img {
+  body main .main-bg .design .banner-modal-box .banner-modal .img-box img {
     width: 50%;
     height: 50%;
     margin-right: 50px;
   }
 }
 @media only screen and (min-width: 1024px) {
-  body main .main-bg .container .portfolio .design .detail-modal-box .detail-modal .img-box {
+  body main .main-bg .design .detail-modal-box .detail-modal .img-box {
     display: flex;
   }
 }
-body main .main-bg .container .portfolio .design .detail-modal-box .detail-modal .img-box img {
+body main .main-bg .design .detail-modal-box .detail-modal .img-box img {
   width: 100%;
   height: 50%;
   margin-right: 10px;
 }
 @media only screen and (min-width: 1024px) {
-  body main .main-bg .container .portfolio .design .detail-modal-box .detail-modal .img-box img {
+  body main .main-bg .design .detail-modal-box .detail-modal .img-box img {
     width: 50%;
     height: 50%;
     margin-right: 50px;
   }
 }
-body main .main-bg .container .portfolio .design .info-modal-box .info-modal .img-box img {
+body main .main-bg .design .info-modal-box .info-modal .img-box img {
   width: 100%;
   height: 100%;
   margin-top: 45%;
 }
 @media only screen and (min-width: 1024px) {
-  body main .main-bg .container .portfolio .design .info-modal-box .info-modal .img-box img {
+  body main .main-bg .design .info-modal-box .info-modal .img-box img {
     margin: 0 auto;
     width: 50%;
     height: 50%;
   }
 }
-body main .main-bg .container .portfolio .design .character-modal-box .character-modal .img-box img {
+body main .main-bg .design .character-modal-box .character-modal .img-box img {
   width: 100%;
   height: 100%;
   margin-top: 45%;
 }
 @media only screen and (min-width: 1024px) {
-  body main .main-bg .container .portfolio .design .character-modal-box .character-modal .img-box img {
+  body main .main-bg .design .character-modal-box .character-modal .img-box img {
     margin: 0 auto;
     width: 50%;
     height: 50%;
   }
 }
 @media only screen and (min-width: 1024px) {
-  body main .main-bg .container .portfolio .design .mobile-modal-box .mobile-modal .img-box {
+  body main .main-bg .design .mobile-modal-box .mobile-modal .img-box {
     width: 45%;
   }
 }
 @media only screen and (min-width: 1024px) {
-  body main .main-bg .container .portfolio .design .mobile-modal-box .mobile-modal .img-box .img-box-inner1 {
+  body main .main-bg .design .mobile-modal-box .mobile-modal .img-box .img-box-inner1 {
     display: flex;
     justify-content: center;
   }
 }
 @media only screen and (min-width: 1024px) {
-  body main .main-bg .container .portfolio .design .mobile-modal-box .mobile-modal .img-box .img-box-inner2 {
+  body main .main-bg .design .mobile-modal-box .mobile-modal .img-box .img-box-inner2 {
     width: 100%;
     margin: auto;
     display: flex;
     justify-content: center;
   }
 }
-body main .main-bg .container .portfolio .design .mobile-modal-box .mobile-modal .img-box img {
+body main .main-bg .design .mobile-modal-box .mobile-modal .img-box img {
   width: 100%;
   height: 100%;
 }
 @media only screen and (min-width: 1024px) {
-  body main .main-bg .container .portfolio .design .mobile-modal-box .mobile-modal .img-box img {
+  body main .main-bg .design .mobile-modal-box .mobile-modal .img-box img {
     width: 50%;
     margin-right: 10px;
   }
 }
 @media only screen and (min-width: 1024px) {
-  body main .main-bg .container .portfolio .design .logo-modal-box .logo-modal .img-box img {
+  body main .main-bg .design .logo-modal-box .logo-modal .img-box img {
     margin: 0 auto;
     width: 90%;
     height: 90%;
   }
 }
-body main .main-bg .container .portfolio .design .banner-box {
+body main .main-bg .design .banner-box {
   cursor: pointer;
 }
-body main .main-bg .container .portfolio .design .banner-box .banner {
+body main .main-bg .design .banner-box .banner {
   width: 30vw;
   height: 30vw;
   overflow: hidden;
   background-size: cover;
   background-position-y: -50px;
-  transform: translate(160%, -60%);
 }
-body main .main-bg .container .portfolio .design .banner-box .banner img {
+body main .main-bg .design .banner-box .banner img {
   transform: scale(1.1);
 }
-body main .main-bg .container .portfolio .design .banner-box .banner img:hover {
+body main .main-bg .design .banner-box .banner img:hover {
   animation-name: detail123;
   animation-timing-function: ease-in-out;
   animation-duration: 0.5s;
@@ -2771,31 +2796,27 @@ body main .main-bg .container .portfolio .design .banner-box .banner img:hover {
     transform: scale(1.2);
   }
 }
-body main .main-bg .container .portfolio .design .banner-box p {
+body main .main-bg .design .banner-box p {
   top: 8%;
   left: 13%;
 }
 @media only screen and (min-width: 1024px) {
-  body main .main-bg .container .portfolio .design .banner-box .banner {
+  body main .main-bg .design .banner-box .banner {
     width: 15vw;
     height: 15vw;
-    transform: translate(340%, -60%);
   }
-  body main .main-bg .container .portfolio .design .banner-box p {
-    top: 7.5%;
-    left: 22.4%;
+  body main .main-bg .design .banner-box p {
     color: white;
   }
 }
-body main .main-bg .container .portfolio .design .detail-box .detail {
+body main .main-bg .design .detail-box .detail {
   overflow: hidden;
   background-size: cover;
   background-position-y: -50px;
   width: 27vw;
   height: 27vw;
-  transform: translate(120%, -30%);
 }
-body main .main-bg .container .portfolio .design .detail-box .detail img:hover {
+body main .main-bg .design .detail-box .detail img:hover {
   animation-name: detail413;
   animation-timing-function: ease-in-out;
   animation-duration: 0.5s;
@@ -2809,35 +2830,27 @@ body main .main-bg .container .portfolio .design .detail-box .detail img:hover {
     transform: scale(1.1);
   }
 }
-body main .main-bg .container .portfolio .design .detail-box p {
-  top: 29%;
-  left: -4.2%;
-}
 @media only screen and (min-width: 1024px) {
-  body main .main-bg .container .portfolio .design .detail-box .detail {
+  body main .main-bg .design .detail-box .detail {
     width: 12vw;
     height: 12vw;
-    transform: translate(290%, -50%);
   }
-  body main .main-bg .container .portfolio .design .detail-box p {
-    top: 24%;
-    left: 0.3%;
+  body main .main-bg .design .detail-box p {
     color: white;
   }
 }
-body main .main-bg .container .portfolio .design .package-box .package {
+body main .main-bg .design .package-box .package {
   overflow: hidden;
   background-size: cover;
   width: 23vw;
   height: 23vw;
-  transform: translate(280%, -30%);
 }
-body main .main-bg .container .portfolio .design .package-box .package img {
+body main .main-bg .design .package-box .package img {
   width: 155%;
   margin: 0 auto;
   transform: translateX(-17%);
 }
-body main .main-bg .container .portfolio .design .package-box .package img:hover {
+body main .main-bg .design .package-box .package img:hover {
   animation-name: detail1;
   animation-timing-function: ease-in-out;
   animation-duration: 0.5s;
@@ -2851,35 +2864,27 @@ body main .main-bg .container .portfolio .design .package-box .package img:hover
     transform: scale(1.1) translateX(-17%);
   }
 }
-body main .main-bg .container .portfolio .design .package-box p {
-  top: 42.5%;
-  left: 26%;
-}
 @media only screen and (min-width: 1024px) {
-  body main .main-bg .container .portfolio .design .package-box .package {
+  body main .main-bg .design .package-box .package {
     width: 15vw;
     height: 15vw;
-    transform: translate(360%, -60%);
   }
-  body main .main-bg .container .portfolio .design .package-box p {
-    top: 37%;
-    left: 26%;
+  body main .main-bg .design .package-box p {
     color: white;
   }
 }
-body main .main-bg .container .portfolio .design .logo-box .logo {
+body main .main-bg .design .logo-box .logo {
   overflow: hidden;
   background-size: cover;
   width: 30vw;
   height: 30vw;
-  transform: translate(50%, -50%);
 }
-body main .main-bg .container .portfolio .design .logo-box .logo img {
+body main .main-bg .design .logo-box .logo img {
   width: 190%;
   margin: 0 auto;
   transform: translatex(-23%);
 }
-body main .main-bg .container .portfolio .design .logo-box .logo img:hover {
+body main .main-bg .design .logo-box .logo img:hover {
   animation-name: detail44;
   animation-timing-function: ease-in-out;
   animation-duration: 0.5s;
@@ -2893,35 +2898,27 @@ body main .main-bg .container .portfolio .design .logo-box .logo img:hover {
     transform: scale(1.1) translatex(-22%);
   }
 }
-body main .main-bg .container .portfolio .design .logo-box p {
-  top: 54.5%;
-  left: -20%;
-}
 @media only screen and (min-width: 1024px) {
-  body main .main-bg .container .portfolio .design .logo-box .logo {
+  body main .main-bg .design .logo-box .logo {
     width: 15vw;
     height: 15vw;
-    transform: translate(130%, -110%);
   }
-  body main .main-bg .container .portfolio .design .logo-box p {
-    top: 45.5%;
-    left: -17%;
+  body main .main-bg .design .logo-box p {
     color: white;
   }
 }
-body main .main-bg .container .portfolio .design .mobile-box .mobile {
+body main .main-bg .design .mobile-box .mobile {
   overflow: hidden;
   background-size: cover;
   width: 30vw;
   height: 30vw;
-  transform: translate(160%, -60%);
 }
-body main .main-bg .container .portfolio .design .mobile-box .mobile img {
+body main .main-bg .design .mobile-box .mobile img {
   width: 100%;
   margin: auto;
   transform: translateY(-25%);
 }
-body main .main-bg .container .portfolio .design .mobile-box .mobile img:hover {
+body main .main-bg .design .mobile-box .mobile img:hover {
   animation-name: detail11;
   animation-timing-function: ease-in-out;
   animation-duration: 0.5s;
@@ -2935,36 +2932,28 @@ body main .main-bg .container .portfolio .design .mobile-box .mobile img:hover {
     transform: scale(1.1) translateY(-25%);
   }
 }
-body main .main-bg .container .portfolio .design .mobile-box p {
-  top: 70%;
-  left: 13%;
-}
 @media only screen and (min-width: 1024px) {
-  body main .main-bg .container .portfolio .design .mobile-box .mobile {
+  body main .main-bg .design .mobile-box .mobile {
     width: 14vw;
     height: 14vw;
-    transform: translate(340%, -120%);
   }
-  body main .main-bg .container .portfolio .design .mobile-box p {
-    top: 60.5%;
-    left: 17%;
+  body main .main-bg .design .mobile-box p {
     color: white;
   }
 }
-body main .main-bg .container .portfolio .design .info-box {
+body main .main-bg .design .info-box {
   cursor: pointer;
 }
-body main .main-bg .container .portfolio .design .info-box .info {
+body main .main-bg .design .info-box .info {
   overflow: hidden;
   background-size: cover;
   width: 18vw;
   height: 18vw;
-  transform: translate(100%, -800%);
 }
-body main .main-bg .container .portfolio .design .info-box .info img {
+body main .main-bg .design .info-box .info img {
   transform: scale(1.02);
 }
-body main .main-bg .container .portfolio .design .info-box .info img:hover {
+body main .main-bg .design .info-box .info img:hover {
   animation-name: detail321;
   animation-timing-function: ease-in-out;
   animation-duration: 0.5s;
@@ -2978,33 +2967,25 @@ body main .main-bg .container .portfolio .design .info-box .info img:hover {
     transform: scale(1.2);
   }
 }
-body main .main-bg .container .portfolio .design .info-box p {
-  top: 9%;
-  left: -23%;
-}
 @media only screen and (min-width: 1024px) {
-  body main .main-bg .container .portfolio .design .info-box .info {
+  body main .main-bg .design .info-box .info {
     width: 10vw;
     height: 10vw;
-    transform: translate(230%, -800%);
   }
-  body main .main-bg .container .portfolio .design .info-box p {
-    top: 2%;
-    left: -15.5%;
+  body main .main-bg .design .info-box p {
     color: white;
   }
 }
-body main .main-bg .container .portfolio .design .character-box {
+body main .main-bg .design .character-box {
   cursor: pointer;
 }
-body main .main-bg .container .portfolio .design .character-box .character {
+body main .main-bg .design .character-box .character {
   overflow: hidden;
   background-size: cover;
   width: 20vw;
   height: 20vw;
-  transform: translate(110%, -220%);
 }
-body main .main-bg .container .portfolio .design .character-box .character img:hover {
+body main .main-bg .design .character-box .character img:hover {
   animation-name: detail;
   animation-timing-function: ease-in-out;
   animation-duration: 0.5s;
@@ -3018,19 +2999,12 @@ body main .main-bg .container .portfolio .design .character-box .character img:h
     transform: scale(1.2);
   }
 }
-body main .main-bg .container .portfolio .design .character-box p {
-  top: 76.5%;
-  left: -18%;
-}
 @media only screen and (min-width: 1024px) {
-  body main .main-bg .container .portfolio .design .character-box .character {
+  body main .main-bg .design .character-box .character {
     width: 10vw;
     height: 10vw;
-    transform: translate(290%, -300%);
   }
-  body main .main-bg .container .portfolio .design .character-box p {
-    top: 68%;
-    left: -8%;
+  body main .main-bg .design .character-box p {
     color: white;
   }
 }

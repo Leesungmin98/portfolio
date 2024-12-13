@@ -1,20 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "recipekorea";
-  src: local("recipekorea"), url("../font/Recipekorea 레코체 FONT.otf") format("opentype"), url("../font/Recipekorea 레코체 FONT.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Pretendard";
-  src: local("Pretendard"), url("../font/Pretendard-Medium.otf") format("opentype"), url("../font/Pretendard-Regular.otf") format("opentype"), url("../font/Pretendard-SemiBold.otf") format("opentype");
-}
-@font-face {
-  font-family: "crunch chips";
-  src: local("crunch chips"), url("../font/Crunch Chips.otf") format("opentype");
-}
-@font-face {
-  font-family: "Super Shiny";
-  src: local("Super Shiny"), url("../font/Super Shiny.ttf") format("opentype");
-}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -71,4 +55,21 @@ section,
 aside,
 footer {
   display: block;
+}
+
+@font-face {
+  font-family: "recipekorea";
+  src: local("recipekorea"), url("../font/Recipekorea 레코체 FONT.otf") format("opentype"), url("../font/Recipekorea 레코체 FONT.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Pretendard";
+  src: local("Pretendard"), url("../font/Pretendard-Medium.otf") format("opentype"), url("../font/Pretendard-Regular.otf") format("opentype"), url("../font/Pretendard-SemiBold.otf") format("opentype");
+}
+@font-face {
+  font-family: "crunch chips";
+  src: local("crunch chips"), url("../font/Crunch Chips.otf") format("opentype");
+}
+@font-face {
+  font-family: "Super Shiny";
+  src: local("Super Shiny"), url("../font/Super Shiny.ttf") format("opentype");
 }/*# sourceMappingURL=reset.css.map */
