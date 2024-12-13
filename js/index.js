@@ -1,5 +1,4 @@
-// import { gsap } from "gsap";
-// import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
 
 $(function() {
 /// 스킬 
@@ -532,3 +531,33 @@ document.addEventListener('DOMContentLoaded', () => {
 /////////////////////////////////////////////////////////
 
 
+document.addEventListener('DOMContentLoaded', function() {
+    // GSAP ScrollTrigger 플러그인 등록
+    gsap.registerPlugin(ScrollTrigger);
+
+    // 요소 존재 여부 확인 및 초기화
+    const designSection = document.querySelector('.design');
+    const designBoxes = document.querySelectorAll('.design .d-box');
+
+    // designSection과 designBoxes가 존재하는지 확인
+    if (designSection && designBoxes.length) {
+        // 첫 번째 박스의 너비와 박스 개수 계산 (한 번만 계산)
+        const boxWidth = designBoxes[0].offsetWidth;
+        const totalWidth = boxWidth * (designBoxes.length - 1);
+
+        gsap.to(designBoxes, {
+            x: -totalWidth, // 이동 거리 계산
+            ease: 'none',
+            scrollTrigger: {
+                trigger: designSection,
+                pin: true,
+                scrub: 1,
+                start: 'center center',
+                end: 'bottom top',
+                markers: false
+            }
+        });
+    } else {
+        console.warn('Design sections or boxes not found');
+    }
+});
