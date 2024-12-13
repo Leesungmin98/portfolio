@@ -63,11 +63,40 @@ $(document).ready(function() {
     });
 /////////////////////////////////////////////////////////////////
 
+// // 모달 열기
+// function openModal(modalClass) {
+//     $('.close-modal').css('display', 'block');
+//     $(modalClass).css('bottom', '0');
+//     $('body').css('overflow', 'hidden');
+//     $('#top-bt').fadeOut();
+
+//     // 특정 타겟 요소 숨기기
+//     $('.logo-btn-screen').css('display', 'none');
+// }
+
+// // 모달 닫기
+// function closeModal() {
+//     $('.close-modal').css('display', 'none');
+//     $('.info-modal-box, .character-modal-box, .logo-modal-box, .mobile-modal-box, .package-modal-box, .detail-modal-box, .banner-modal-box').css('bottom', '-100%');
+//     $('body').css('overflow', 'auto');
+
+//     // 특정 타겟 요소 보이기
+//     $('.logo-btn-screen').css('display', 'block');
+
+//     if ($(window).scrollTop() > 200) {
+//         $('#top-bt').fadeIn();
+//     }
+// }
+
 // 모달 열기
 function openModal(modalClass) {
+    const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth; // 스크롤바 너비 계산
     $('.close-modal').css('display', 'block');
     $(modalClass).css('bottom', '0');
-    $('body').css('overflow', 'hidden');
+    $('body').css({
+        'overflow': 'hidden',
+        'padding-right': scrollBarWidth + 'px' // 스크롤바 너비만큼 패딩 추가
+    });
     $('#top-bt').fadeOut();
 
     // 특정 타겟 요소 숨기기
@@ -78,7 +107,10 @@ function openModal(modalClass) {
 function closeModal() {
     $('.close-modal').css('display', 'none');
     $('.info-modal-box, .character-modal-box, .logo-modal-box, .mobile-modal-box, .package-modal-box, .detail-modal-box, .banner-modal-box').css('bottom', '-100%');
-    $('body').css('overflow', 'auto');
+    $('body').css({
+        'overflow': 'auto',
+        'padding-right': '' // 추가된 패딩 제거
+    });
 
     // 특정 타겟 요소 보이기
     $('.logo-btn-screen').css('display', 'block');
@@ -531,22 +563,49 @@ document.addEventListener('DOMContentLoaded', () => {
 /////////////////////////////////////////////////////////
 
 
+// document.addEventListener('DOMContentLoaded', function() {
+//     // GSAP ScrollTrigger 플러그인 등록
+//     gsap.registerPlugin(ScrollTrigger);
+
+//     // 요소 존재 여부 확인 및 초기화
+//     const designSection = document.querySelector('.design');
+//     const designBoxes = document.querySelectorAll('.design .d-box');
+
+//     // designSection과 designBoxes가 존재하는지 확인
+//     if (designSection && designBoxes.length) {
+//         // 첫 번째 박스의 너비와 박스 개수 계산 (한 번만 계산)
+//         const boxWidth = designBoxes[0].offsetWidth;
+//         const totalWidth = boxWidth * (designBoxes.length - 1);
+
+//         gsap.to(designBoxes, {
+//             x: -totalWidth, // 이동 거리 계산
+//             ease: 'none',
+//             scrollTrigger: {
+//                 trigger: designSection,
+//                 pin: true,
+//                 scrub: 1,
+//                 start: 'center center',
+//                 end: 'bottom top',
+//                 markers: false
+//             }
+//         });
+//     } else {
+//         console.warn('Design sections or boxes not found');
+//     }
+// });
+
 document.addEventListener('DOMContentLoaded', function() {
     // GSAP ScrollTrigger 플러그인 등록
     gsap.registerPlugin(ScrollTrigger);
 
-    // 요소 존재 여부 확인 및 초기화
+    // 요소 존재 여부 확인
     const designSection = document.querySelector('.design');
     const designBoxes = document.querySelectorAll('.design .d-box');
 
-    // designSection과 designBoxes가 존재하는지 확인
-    if (designSection && designBoxes.length) {
-        // 첫 번째 박스의 너비와 박스 개수 계산 (한 번만 계산)
-        const boxWidth = designBoxes[0].offsetWidth;
-        const totalWidth = boxWidth * (designBoxes.length - 1);
-
+    // 요소가 존재하는지 확인
+    if (designSection && designBoxes.length > 0) {
         gsap.to(designBoxes, {
-            x: -totalWidth, // 이동 거리 계산
+            x: () => -designBoxes[0].offsetWidth * (designBoxes.length - 1),
             ease: 'none',
             scrollTrigger: {
                 trigger: designSection,
