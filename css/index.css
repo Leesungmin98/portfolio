@@ -2498,7 +2498,6 @@ body main .main-bg .design {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #00a362;
   overflow: hidden;
 }
 @media only screen and (min-width: 1024px) {

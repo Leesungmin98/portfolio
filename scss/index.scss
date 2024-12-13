@@ -2649,7 +2649,7 @@ main {
             display: flex;
             align-items: center;
             justify-content: space-around;
-            background-color: #00a362;
+            // background-color: #00a362;
             overflow: hidden;
             
             @include responsive(large-screens) {
