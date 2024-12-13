@@ -2252,6 +2252,8 @@ main {
 
 
             .portfolio {
+                position: relative;
+                z-index: 1;
                 width: 100%; height: 100%;
                 // background-color: #5feace;
                 @include responsive(large-screens) {
@@ -2637,58 +2639,46 @@ main {
                         }
                     }
                 }
-            } // portfolio
-        } // container
-        .design {
-            position: relative;
-            width: 100%;
-            height: 100vh;
-            z-index: 10;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            // background-color: #00a362;
-            overflow: hidden;
-            
-            @include responsive(large-screens) {
-                width: 100%;
-                height: 100vh;
-                // margin-top:35%;
-            }
-            .d-box {
-                width: max-content;
-                outline: none;
-                -webkit-tap-highlight-color: transparent;
-                // background-color: #505050;
-                // transform: translateX(100vw);
 
-                
-                @include responsive(large-screens) {
-                    // transform: translateX(100vw);
-                    width: max-content;
-                }
-            }
-           
-            p {
-                // position: absolute;
-                width: 100%;
-                text-align: center;
-                font-size: 3vw;
-                font-weight: bold;
-                font-family: 'pretendard';
-                color: white;
-                margin-top: 12px;
-                @include responsive(large-screens) {
-                    font-size: 1.3rem;
-                    color: rgb(0, 0, 0);
-                }
-            } // p
-            .ds {
-                width: 25vw; height: 25vw;
-                cursor: pointer;
-                border-radius: 50%;
-                border: 3px solid transparent;
-                background-color: rgba(255, 255, 255, 0.2);
+
+                .design {
+                    position: relative;
+                    z-index: 10000;
+                    margin-top:50%;
+                    // background-color: #00A3A0;
+                    @include responsive(large-screens) {
+                        margin-top:35%;
+                    }
+                    .d-box {
+                        width: 0;
+                        outline: none;
+                        -webkit-tap-highlight-color: transparent;
+                        background-color: #505050;
+                        @include responsive(large-screens) {
+                            width: 0;
+                        }
+                    }
+                   
+                    p {
+                        position: absolute;
+                        width: 100%;
+                        text-align: center;
+                        font-size: 3vw;
+                        font-weight: bold;
+                        font-family: 'pretendard';
+                        color: white;
+                        
+                        @include responsive(large-screens) {
+                            font-size: 1.3rem;
+                            color: rgb(0, 0, 0);
+                        }
+                    } // p
+                    .ds {
+                        width: 25vw; height: 25vw;
+                        cursor: pointer;
+                        border-radius: 50%;
+                        border: 3px solid transparent;
+                        background-color: rgba(255, 255, 255, 0.2);
 
                 opacity: 0;
                 transition: opacity 0.5s ease;

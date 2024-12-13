@@ -2124,6 +2124,8 @@ body main .main-bg .container .skill .skill-box .ae {
   }
 }
 body main .main-bg .container .portfolio {
+  position: relative;
+  z-index: 1;
   width: 100%;
   height: 100%;
 }
@@ -2490,13 +2492,8 @@ body main .main-bg .container .portfolio .slider .slider-inner .slider-item .box
 }
 body main .main-bg .design {
   position: relative;
-  width: 100%;
-  height: 100vh;
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  overflow: hidden;
+  z-index: 10000;
+  margin-top: 50%;
 }
 @media only screen and (min-width: 1024px) {
   body main .main-bg .design {
