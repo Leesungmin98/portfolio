@@ -2491,7 +2491,7 @@ body main .main-bg .container .portfolio .slider .slider-inner .slider-item .box
 body main .main-bg .wrap {
   position: relative;
   margin: 0;
-  z-index: 100;
+  z-index: 1000;
   overflow: hidden;
 }
 body main .main-bg .wrap .portfolio2 {
@@ -2707,6 +2707,11 @@ body main .main-bg .wrap .portfolio2 .list {
   display: flex;
   flex-wrap: nowrap;
   margin-left: 5%;
+}
+@media only screen and (min-width: 1024px) {
+  body main .main-bg .wrap .portfolio2 .list {
+    margin-left: 6%;
+  }
 }
 body main .main-bg .wrap .portfolio2 .list li {
   width: 70vw;

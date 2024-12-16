@@ -2642,9 +2642,8 @@ main {
         .wrap {
             position: relative;
             margin: 0;
-            z-index: 100;
+            z-index: 1000;
             overflow: hidden;
-
             .portfolio2 {
                 height: 100vh;
                 width: 100%;
@@ -2899,7 +2898,7 @@ main {
                     flex-wrap: nowrap;
                     margin-left: 5%;
                     @include responsive(large-screens) {
-
+                        margin-left: 6%;
                     }
                     li {
                         width: 70vw;
