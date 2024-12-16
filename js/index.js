@@ -61,48 +61,83 @@ $(document).ready(function() {
     });
 /////////////////////////////////////////////////////////////////
 
-// 모달 열기
-function openModal() {
+// 특정 모달 열기 함수
+function openModal(modalClass) {
+    // 모든 모달을 숨김 (하단으로 이동)
+    $('.po-modal-box').css('bottom', '-100%');
+    
+    // 닫기 버튼 보이기
     $('.close-modal').css('display', 'block');
-    $('.banner-modal-box').css({
-        'bottom': '0' // 아래에서 위로 슬라이드
+    
+    // 선택한 모달 열기 (하단에서 위로 슬라이드)
+    $(modalClass).css({
+        'bottom': '0'
     });
-
-    // body 스크롤 방지 및 스크롤바 너비 보정
+    
+    // 스크롤 방지 및 스크롤바 공간 조정
     const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
     $('html, body').css({
         'overflow': 'hidden',
         'padding-right': `${scrollbarWidth}px`
     });
-
+    
     // 로고 버튼 숨기기
     $('.logo-btn-screen').css('display', 'none');
 }
 
-// 모달 닫기
+// 모달 닫기 함수
 function closeModal() {
-    $('.banner-modal-box').css({
-        'bottom': '-100%' // 다시 아래로 슬라이드
+    // 모든 모달 하단으로 슬라이드
+    $('.po-modal-box').css({
+        'bottom': '-100%'
     });
-
-    // 0.5초 후에 display를 none으로 설정 (애니메이션 완료 후)
+    
+    // 닫기 버튼 숨기기 (0.5초 후)
     setTimeout(function () {
         $('.close-modal').css('display', 'none');
     }, 500);
-
-    // body 스크롤 가능하도록 복구
+    
+    // 스크롤 복구
     $('html, body').css({
         'overflow': 'auto',
         'padding-right': '0'
     });
-
+    
     // 로고 버튼 다시 보이기
     $('.logo-btn-screen').css('display', 'block');
 }
 
-// 이벤트 리스너 추가
-$('.box').on('click', openModal);
-$('.close-modal').on('click', closeModal);
+// 각 박스 클릭 시 해당 모달 열기 이벤트 리스너
+$('.box-banner').on('click', function() {
+    openModal('.banner-modal-box');
+});
+
+$('.box-detail').on('click', function() {
+    openModal('.detail-modal-box');
+});
+
+$('.box-package').on('click', function() {
+    openModal('.package-modal-box');
+});
+
+$('.box-logo').on('click', function() {
+    openModal('.logo-modal-box');
+});
+
+$('.box-mobile').on('click', function() {
+    openModal('.mobile-modal-box');
+});
+
+$('.box-info').on('click', function() {
+    openModal('.info-modal-box');
+});
+
+$('.box-character').on('click', function() {
+    openModal('.character-modal-box');
+});
+
+// 닫기 버튼 클릭 시 모달 닫기
+$('.po-modal-box .close-modal').on('click', closeModal);
 
 
 /////////////////////
@@ -497,7 +532,7 @@ document.addEventListener('DOMContentLoaded', function() {
             scrub: 1,
             start: 'center center',
             end: '200%',
-            markers: true
+            markers: false
         }
     });
 
