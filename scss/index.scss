@@ -3304,6 +3304,7 @@ main {
         .wrap {
         margin: 0;
         position: relative;
+        z-index: 1000000;
         overflow: hidden;
         // background-color: antiquewhite;
 
@@ -3315,9 +3316,8 @@ main {
         .list {
             display: flex;
             flex-wrap: nowrap;
-
+            margin-left: 5%;
             li {
-               
                 width: 400px;
                 height: 520px;
                 padding: 0 30px;
@@ -3331,6 +3331,7 @@ main {
                     justify-content: center;
                     align-items: center;
                     overflow: hidden;
+                    cursor: pointer;
                     &::after {
                         content: '배고팡';
                         width: 100%;
@@ -3341,13 +3342,13 @@ main {
                         opacity: 0;
                         transition: .5s;
                         color: white;
-                        font-size: 1.5rem;
+                        font-size: 1.8rem;
                         font-weight: bold;
                     }
                     &:hover {
                         img {
                             transform: scale(0.98);
-                            filter: brightness(60%);
+                            filter: brightness(30%);
                         }
                     }
                     &:hover::after {
