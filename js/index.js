@@ -531,7 +531,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const observerOptions = {
         root: null, // 뷰포트를 기준으로
         rootMargin: '0px',
-        threshold: 0.1 // 요소가 10% 이상 보이면 감지
+        threshold: 0. // 요소가 10% 이상 보이면 감지
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -560,34 +560,55 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /////////////////////////////////////////////////////////
 
-
 document.addEventListener('DOMContentLoaded', function() {
-    // GSAP ScrollTrigger 플러그인 등록
     gsap.registerPlugin(ScrollTrigger);
 
-    // 요소 존재 여부 확인 및 초기화
-    const designSection = document.querySelector('.design');
-    const designBoxes = document.querySelectorAll('.design .d-box');
+    let list = gsap.utils.toArray('.portfolio2 li');
+    let listA = gsap.utils.toArray('.portfolio2 .a');
+    let listB = gsap.utils.toArray('.portfolio2 .b');
+    let listC = gsap.utils.toArray('.portfolio2 .c');
 
-    // designSection과 designBoxes가 존재하는지 확인
-    if (designSection && designBoxes.length) {
-        // 첫 번째 박스의 너비와 박스 개수 계산 (한 번만 계산)
-        const boxWidth = designBoxes[0].offsetWidth;
-        const totalWidth = boxWidth * (designBoxes.length - 1);
+    let scrollTween = gsap.to(list, {
+        xPercent: -100 * (list.length - 1),
+        ease: 'none',
+        scrollTrigger: {
+            trigger: '.portfolio2',
+            pin: true,
+            scrub: 1,
+            start: 'center center',
+            end: '200%',
+            markers: true
+        }
+    });
 
-        gsap.to(designBoxes, {
-            x: -totalWidth, // 이동 거리 계산
-            ease: 'none',
-            scrollTrigger: {
-                trigger: designSection,
-                pin: true,
-                scrub: 1,
-                start: 'center center',
-                end: 'bottom top',
-                markers: false
-            }
-        });
-    } else {
-        console.warn('Design sections or boxes not found');
-    }
+    gsap.to(listA, {
+        y:50,
+        rotation: 10,
+        scrollTrigger: {
+            trigger:'.portfolio2',
+            scrub:2,
+            end:'200%'
+        }
+    })
+
+    gsap.to(listB, {
+        y:-50,
+        rotation: 20,
+        scrollTrigger: {
+            trigger:'.portfolio2',
+            scrub:2,
+            end:'200%'
+        }
+    })
+
+    gsap.to(listC, {
+        y:-50,
+        x:20,
+        rotation: -10,
+        scrollTrigger: {
+            trigger:'.portfolio2',
+            scrub:2,
+            end:'200%'
+        }
+    })
 });
