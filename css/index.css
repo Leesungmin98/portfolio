@@ -2497,13 +2497,10 @@ body main .main-bg .wrap {
   overflow: hidden;
 }
 body main .main-bg .wrap .portfolio2 {
-  position: relative;
-  z-index: 100000000;
   height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
-  background-color: #1eb6e9;
 }
 body main .main-bg .wrap .portfolio2 .po-modal-box {
   position: fixed;
