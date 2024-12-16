@@ -94,29 +94,65 @@ $(document).ready(function() {
 // // 클릭 이벤트 리스너 추가
 // $('.box').on('click', openModal);
 // $('.close-modal').on('click', closeModal);
+/////////////////////////////////////////////////
+// // 모달 열기
+// function openModal() {
+//     $('.close-modal').css('display', 'block');
+//     $('.banner-modal-box').css({
+//         'position': 'fixed',
+//         'top': '0',
+//         'left': '0',
+//         'right': '0',
+//         'bottom': '0',
+//         'width': '100%',
+//         'height': '100%',
+//         'background': 'rgba(0, 0, 0, 0.8)', // 배경 반투명 처리
+//         'display': 'flex',
+//         'align-items': 'center',
+//         'justify-content': 'center',
+//         'z-index': '10000'
+//     });
+
+//     // body의 overflow를 hidden으로 설정하여 스크롤바 없애기
+//     $('body').css({
+//         'overflow': 'hidden'
+        
+//     });
+
+//     // 로고 버튼 숨기기
+//     $('.logo-btn-screen').css('display', 'none');
+// }
+
+// // 모달 닫기
+// function closeModal() {
+//     $('.close-modal').css('display', 'none');
+//     $('.banner-modal-box').css('display', 'none'); // 모달을 숨김
+
+//     // body의 overflow를 auto로 되돌려 스크롤 가능하게 하기
+//     $('body').css({
+//         'overflow': 'auto',
+//         'margin-right': '' // 오른쪽 마진을 원래대로 돌려놓기
+//     });
+
+//     // 로고 버튼 다시 보이기
+//     $('.logo-btn-screen').css('display', 'block');
+// }
+
+// // 클릭 이벤트 리스너 추가
+// $('.box').on('click', openModal);
+// $('.close-modal').on('click', closeModal);
+///////////////////////////////
 
 // 모달 열기
 function openModal() {
     $('.close-modal').css('display', 'block');
     $('.banner-modal-box').css({
-        'position': 'fixed',
-        'top': '0',
-        'left': '0',
-        'right': '0',
-        'bottom': '0',
-        'width': '100%',
-        'height': '100%',
-        'background': 'rgba(0, 0, 0, 0.8)', // 배경 반투명 처리
-        'display': 'flex',
-        'align-items': 'center',
-        'justify-content': 'center',
-        'z-index': '10000'
+        'bottom': '0' // 아래에서 위로 슬라이드
     });
 
-    // body의 overflow를 hidden으로 설정하여 스크롤바 없애기
+    // body 스크롤 방지
     $('body').css({
         'overflow': 'hidden'
-        
     });
 
     // 로고 버튼 숨기기
@@ -125,20 +161,25 @@ function openModal() {
 
 // 모달 닫기
 function closeModal() {
-    $('.close-modal').css('display', 'none');
-    $('.banner-modal-box').css('display', 'none'); // 모달을 숨김
+    $('.banner-modal-box').css({
+        'bottom': '-100%' // 다시 아래로 슬라이드
+    });
 
-    // body의 overflow를 auto로 되돌려 스크롤 가능하게 하기
+    // 0.5초 후에 display를 none으로 설정 (애니메이션 완료 후)
+    setTimeout(function () {
+        $('.close-modal').css('display', 'none');
+    }, 500);
+
+    // body 스크롤 가능하도록 복구
     $('body').css({
-        'overflow': 'auto',
-        'margin-right': '' // 오른쪽 마진을 원래대로 돌려놓기
+        'overflow': 'auto'
     });
 
     // 로고 버튼 다시 보이기
     $('.logo-btn-screen').css('display', 'block');
 }
 
-// 클릭 이벤트 리스너 추가
+// 이벤트 리스너 추가
 $('.box').on('click', openModal);
 $('.close-modal').on('click', closeModal);
 
