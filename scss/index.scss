@@ -2255,7 +2255,6 @@ main {
                 position: relative;
                 z-index: 1;
                 width: 100%; height: 100%;
-                // background-color: #5feace;
                 @include responsive(large-screens) {
                     // background-color: aquamarine;
                     width: 100%; height: 2000px;
@@ -3302,17 +3301,17 @@ main {
         // }// design
 
         .wrap {
-        margin: 0;
-        position: relative;
-        z-index: 10000;
-        overflow: hidden;
-        // background-color: antiquewhite;
+            margin: 0;
+            position: relative;
+            z-index: 100000;
+            overflow: hidden;
 
             .portfolio2 {
                 height: 100vh;
                 width: 100%;
                 display: flex;
                 align-items: center;
+                overflow: hidden;
                 .po-modal-box {
                     position: fixed;
                     bottom: -100%; 
@@ -3425,8 +3424,8 @@ main {
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            overflow: hidden;
                             -webkit-tap-highlight-color: transparent;
+                            
                             cursor: pointer;
                             &::after {
                                 content: '';

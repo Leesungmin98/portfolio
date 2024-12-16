@@ -2493,7 +2493,7 @@ body main .main-bg .container .portfolio .slider .slider-inner .slider-item .box
 body main .main-bg .wrap {
   margin: 0;
   position: relative;
-  z-index: 10000;
+  z-index: 100000;
   overflow: hidden;
 }
 body main .main-bg .wrap .portfolio2 {
@@ -2501,6 +2501,7 @@ body main .main-bg .wrap .portfolio2 {
   width: 100%;
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 body main .main-bg .wrap .portfolio2 .po-modal-box {
   position: fixed;
@@ -2619,7 +2620,6 @@ body main .main-bg .wrap .portfolio2 .list li .box {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
   -webkit-tap-highlight-color: transparent;
   cursor: pointer;
 }

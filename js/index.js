@@ -60,88 +60,6 @@ $(document).ready(function() {
         closeModal();
     });
 /////////////////////////////////////////////////////////////////
-// // 모달 열기
-// function openModal() {
-//     $('.close-modal').css('display', 'block');
-//     $('.banner-modal-box').css('bottom', '0');
-    
-//     // 스크롤바 너비 계산
-//     const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
-    
-//     $('body').css({
-//         'overflow': 'hidden',
-//         'padding-right': scrollBarWidth + 'px'
-//     });
-
-//     // 로고 버튼 숨기기
-//     $('.logo-btn-screen').css('display', 'none');
-// }
-
-// // 모달 닫기
-// function closeModal() {
-//     $('.close-modal').css('display', 'none');
-//     $('.banner-modal-box').css('bottom', '-100%');
-    
-//     $('body').css({
-//         'overflow': 'auto',
-//         'padding-right': ''
-//     });
-
-//     // 로고 버튼 다시 보이기
-//     $('.logo-btn-screen').css('display', 'block');
-// }
-
-// // 클릭 이벤트 리스너 추가
-// $('.box').on('click', openModal);
-// $('.close-modal').on('click', closeModal);
-/////////////////////////////////////////////////
-// // 모달 열기
-// function openModal() {
-//     $('.close-modal').css('display', 'block');
-//     $('.banner-modal-box').css({
-//         'position': 'fixed',
-//         'top': '0',
-//         'left': '0',
-//         'right': '0',
-//         'bottom': '0',
-//         'width': '100%',
-//         'height': '100%',
-//         'background': 'rgba(0, 0, 0, 0.8)', // 배경 반투명 처리
-//         'display': 'flex',
-//         'align-items': 'center',
-//         'justify-content': 'center',
-//         'z-index': '10000'
-//     });
-
-//     // body의 overflow를 hidden으로 설정하여 스크롤바 없애기
-//     $('body').css({
-//         'overflow': 'hidden'
-        
-//     });
-
-//     // 로고 버튼 숨기기
-//     $('.logo-btn-screen').css('display', 'none');
-// }
-
-// // 모달 닫기
-// function closeModal() {
-//     $('.close-modal').css('display', 'none');
-//     $('.banner-modal-box').css('display', 'none'); // 모달을 숨김
-
-//     // body의 overflow를 auto로 되돌려 스크롤 가능하게 하기
-//     $('body').css({
-//         'overflow': 'auto',
-//         'margin-right': '' // 오른쪽 마진을 원래대로 돌려놓기
-//     });
-
-//     // 로고 버튼 다시 보이기
-//     $('.logo-btn-screen').css('display', 'block');
-// }
-
-// // 클릭 이벤트 리스너 추가
-// $('.box').on('click', openModal);
-// $('.close-modal').on('click', closeModal);
-///////////////////////////////
 
 // 모달 열기
 function openModal() {
@@ -150,9 +68,11 @@ function openModal() {
         'bottom': '0' // 아래에서 위로 슬라이드
     });
 
-    // body 스크롤 방지
-    $('body').css({
-        'overflow': 'hidden'
+    // body 스크롤 방지 및 스크롤바 너비 보정
+    const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+    $('html, body').css({
+        'overflow': 'hidden',
+        'padding-right': `${scrollbarWidth}px`
     });
 
     // 로고 버튼 숨기기
@@ -171,8 +91,9 @@ function closeModal() {
     }, 500);
 
     // body 스크롤 가능하도록 복구
-    $('body').css({
-        'overflow': 'auto'
+    $('html, body').css({
+        'overflow': 'auto',
+        'padding-right': '0'
     });
 
     // 로고 버튼 다시 보이기
