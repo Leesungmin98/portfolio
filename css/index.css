@@ -2493,7 +2493,7 @@ body main .main-bg .container .portfolio .slider .slider-inner .slider-item .box
 body main .main-bg .wrap {
   margin: 0;
   position: relative;
-  z-index: 1000000;
+  z-index: 10000;
   overflow: hidden;
 }
 body main .main-bg .wrap .portfolio2 {
@@ -2532,7 +2532,7 @@ body main .main-bg .wrap .portfolio2 .list li .box {
   cursor: pointer;
 }
 body main .main-bg .wrap .portfolio2 .list li .box::after {
-  content: "배고팡";
+  content: attr(data);
   width: 100%;
   height: 100%;
   position: absolute;

@@ -612,3 +612,17 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     })
 });
+
+///////////////////
+
+const elements = document.querySelectorAll('.box'); // 모든 .box 요소 선택
+
+elements.forEach((element) => {
+    element.addEventListener('mouseenter', () => {
+        element.setAttribute('data', '인포그래픽');
+    });
+
+    element.addEventListener('mouseleave', () => {
+        element.setAttribute('data', '');
+    });
+});

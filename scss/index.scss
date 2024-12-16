@@ -3304,86 +3304,87 @@ main {
         .wrap {
         margin: 0;
         position: relative;
-        z-index: 1000000;
+        z-index: 10000;
         overflow: hidden;
         // background-color: antiquewhite;
 
-    .portfolio2 {
-        height: 100vh;
-        width: 100%;
-        display: flex;
-        align-items: center;
+            .portfolio2 {
+                height: 100vh;
+                width: 100%;
+                display: flex;
+                align-items: center;
 
-        .list {
-            display: flex;
-            flex-wrap: nowrap;
-            margin-left: 5%;
-            @include responsive(large-screens) {
-
-            }
-            li {
-                width: 70vw;
-                height: 90vw;
-                padding: 0 30px;
-                box-sizing: border-box;
-                flex-shrink: 0!important;
-                @include responsive(large-screens) {
-                    width: 400px;
-                    height: 520px;
-                }
-                .box {
-                    position: relative;
-                    width: 100%;
-                    height: 100%;
+                .list {
                     display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    overflow: hidden;
-                    -webkit-tap-highlight-color: transparent;
-                    cursor: pointer;
-                    &::after {
-                        content: '배고팡';
-                        width: 100%;
-                        height: 100%;
-                        position: absolute;
-                        left: 40%; top: 48%;
-                        transform: translate(-50% -50%);
-                        opacity: 0;
-                        transition: .5s;
-                        color: white;
-                        font-size: 1rem;
-                        font-weight: bold;
+                    flex-wrap: nowrap;
+                    margin-left: 5%;
+                    @include responsive(large-screens) {
+
+                    }
+                    li {
+                        width: 70vw;
+                        height: 90vw;
+                        padding: 0 30px;
+                        box-sizing: border-box;
+                        flex-shrink: 0!important;
                         @include responsive(large-screens) {
-                            font-size: 1.8rem;
+                            width: 400px;
+                            height: 520px;
                         }
+                        .box {
+                            position: relative;
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            overflow: hidden;
+                            -webkit-tap-highlight-color: transparent;
+                            cursor: pointer;
+                            &::after {
+                                content: attr(data);
+                                width: 100%;
+                                height: 100%;
+                                position: absolute;
+                                left: 40%; top: 48%;
+                                transform: translate(-50% -50%);
+                                opacity: 0;
+                                transition: .5s;
+                                color: white;
+                                font-size: 1rem;
+                                font-weight: bold;
+                                @include responsive(large-screens) {
+                                    font-size: 1.8rem;
+                                }
+                            }
+                        
+                            &:hover {
+                                img {
+                                    transform: scale(0.98);
+                                    filter: brightness(30%);
+                                }
+                            }
+                            &:hover::after {
+                                opacity: 1;
+                            }
+                            img {
+                                width: 90%;
+                                box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+                            }
+                        }//box
+                    }//li
+                    li.a {
+                        transform: rotate(-15deg);
                     }
-                    &:hover {
-                        img {
-                            transform: scale(0.98);
-                            filter: brightness(30%);
-                        }
+                    li.b {
+                        transform: rotate(-10deg);
                     }
-                    &:hover::after {
-                        opacity: 1;
+                    li.c {
+                        transform: rotate(8deg);
                     }
-                    img {
-                        width: 90%;
-                        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-                    }
-                }//box
-            }//li
-            li.a {
-                transform: rotate(-15deg);
+                }//list
             }
-            li.b {
-                transform: rotate(-10deg);
-            }
-            li.c {
-                transform: rotate(8deg);
-            }
-        }//list
-    }
-}
+        }
 
 
         
