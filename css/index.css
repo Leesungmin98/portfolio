@@ -2511,9 +2511,11 @@ body main .main-bg .design .d-box {
   width: max-content;
   outline: none;
   -webkit-tap-highlight-color: transparent;
+  transform: translateX(100vw);
 }
 @media only screen and (min-width: 1024px) {
   body main .main-bg .design .d-box {
+    transform: translateX(100vw);
     width: -moz-max-content;
     width: max-content;
   }
