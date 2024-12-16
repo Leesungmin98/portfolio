@@ -3313,16 +3313,24 @@ main {
         width: 100%;
         display: flex;
         align-items: center;
+
         .list {
             display: flex;
             flex-wrap: nowrap;
             margin-left: 5%;
+            @include responsive(large-screens) {
+
+            }
             li {
-                width: 400px;
-                height: 520px;
+                width: 70vw;
+                height: 90vw;
                 padding: 0 30px;
                 box-sizing: border-box;
                 flex-shrink: 0!important;
+                @include responsive(large-screens) {
+                    width: 400px;
+                    height: 520px;
+                }
                 .box {
                     position: relative;
                     width: 100%;

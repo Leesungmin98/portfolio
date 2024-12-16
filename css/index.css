@@ -2508,11 +2508,17 @@ body main .main-bg .wrap .portfolio2 .list {
   margin-left: 5%;
 }
 body main .main-bg .wrap .portfolio2 .list li {
-  width: 400px;
-  height: 520px;
+  width: 70vw;
+  height: 90vw;
   padding: 0 30px;
   box-sizing: border-box;
   flex-shrink: 0 !important;
+}
+@media only screen and (min-width: 1024px) {
+  body main .main-bg .wrap .portfolio2 .list li {
+    width: 400px;
+    height: 520px;
+  }
 }
 body main .main-bg .wrap .portfolio2 .list li .box {
   position: relative;
