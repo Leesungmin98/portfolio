@@ -2497,10 +2497,104 @@ body main .main-bg .wrap {
   overflow: hidden;
 }
 body main .main-bg .wrap .portfolio2 {
+  position: relative;
+  z-index: 100000000;
   height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
+  background-color: #1eb6e9;
+}
+body main .main-bg .wrap .portfolio2 .po-modal-box {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  transition: bottom 0.3s ease;
+  overflow-y: auto;
+  z-index: 100000000;
+}
+body main .main-bg .wrap .portfolio2 .po-modal-box .po-modal {
+  text-align: center;
+}
+body main .main-bg .wrap .portfolio2 .po-modal-box .po-modal .img-box {
+  width: 80%;
+  margin: auto;
+  cursor: grab;
+}
+body main .main-bg .wrap .portfolio2 .po-modal-box .po-modal .img-box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+  transition: transform 0.3s ease-out;
+}
+@media only screen and (min-width: 1024px) {
+  body main .main-bg .wrap .portfolio2 .po-modal-box .po-modal .img-box img {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+}
+body main .main-bg .wrap .portfolio2 .po-modal-box .po-modal .img-box img:active {
+  cursor: grabbing;
+}
+body main .main-bg .wrap .portfolio2 .po-modal-box .close-modal {
+  display: none;
+  position: fixed;
+  top: 5%;
+  right: 0%;
+  padding: 10px 20px;
+  background: none;
+  cursor: pointer;
+  border: transparent;
+  z-index: 9999;
+}
+@media only screen and (min-width: 1024px) {
+  body main .main-bg .wrap .portfolio2 .po-modal-box .close-modal {
+    right: 5%;
+  }
+}
+body main .main-bg .wrap .portfolio2 .po-modal-box .close-modal span {
+  background: rgb(255, 255, 255);
+  border: none;
+  border-radius: 50px;
+  height: 3px;
+  width: 60%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+@media only screen and (min-width: 1024px) {
+  body main .main-bg .wrap .portfolio2 .po-modal-box .close-modal span {
+    width: 100%;
+  }
+}
+body main .main-bg .wrap .portfolio2 .po-modal-box .close-modal span:nth-of-type(2) {
+  top: 7px;
+}
+body main .main-bg .wrap .portfolio2 .po-modal-box .close-modal span:nth-of-type(3) {
+  top: 16px;
+}
+body main .main-bg .wrap .portfolio2 .po-modal-box .close-modal .one {
+  transform: translateY(5px) translateX(0) rotate(45deg);
+}
+@media only screen and (min-width: 1024px) {
+  body main .main-bg .wrap .portfolio2 .po-modal-box .close-modal .one {
+    transform: translateY(5px) translateX(0) rotate(45deg);
+  }
+}
+body main .main-bg .wrap .portfolio2 .po-modal-box .close-modal .two {
+  transform: translateY(-2px) translateX(0) rotate(-45deg);
+}
+@media only screen and (min-width: 1024px) {
+  body main .main-bg .wrap .portfolio2 .po-modal-box .close-modal .two {
+    transform: translateY(-2px) translateX(0) rotate(-45deg);
+  }
 }
 body main .main-bg .wrap .portfolio2 .list {
   display: flex;
@@ -2513,6 +2607,7 @@ body main .main-bg .wrap .portfolio2 .list li {
   padding: 0 30px;
   box-sizing: border-box;
   flex-shrink: 0 !important;
+  overflow: hidden;
 }
 @media only screen and (min-width: 1024px) {
   body main .main-bg .wrap .portfolio2 .list li {
@@ -2532,13 +2627,14 @@ body main .main-bg .wrap .portfolio2 .list li .box {
   cursor: pointer;
 }
 body main .main-bg .wrap .portfolio2 .list li .box::after {
-  content: attr(data);
+  content: "";
   width: 100%;
   height: 100%;
   position: absolute;
-  left: 40%;
-  top: 48%;
-  transform: translate(-50% -50%);
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  background: url(../images/sticker.png) no-repeat center/40%;
   opacity: 0;
   transition: 0.5s;
   color: white;

@@ -60,63 +60,87 @@ $(document).ready(function() {
         closeModal();
     });
 /////////////////////////////////////////////////////////////////
-
 // // 모달 열기
-// function openModal(modalClass) {
+// function openModal() {
 //     $('.close-modal').css('display', 'block');
-//     $(modalClass).css('bottom', '0');
-//     $('body').css('overflow', 'hidden');
-//     $('#top-bt').fadeOut();
+//     $('.banner-modal-box').css('bottom', '0');
+    
+//     // 스크롤바 너비 계산
+//     const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
+    
+//     $('body').css({
+//         'overflow': 'hidden',
+//         'padding-right': scrollBarWidth + 'px'
+//     });
 
-//     // 특정 타겟 요소 숨기기
+//     // 로고 버튼 숨기기
 //     $('.logo-btn-screen').css('display', 'none');
 // }
 
 // // 모달 닫기
 // function closeModal() {
 //     $('.close-modal').css('display', 'none');
-//     $('.info-modal-box, .character-modal-box, .logo-modal-box, .mobile-modal-box, .package-modal-box, .detail-modal-box, .banner-modal-box').css('bottom', '-100%');
-//     $('body').css('overflow', 'auto');
+//     $('.banner-modal-box').css('bottom', '-100%');
+    
+//     $('body').css({
+//         'overflow': 'auto',
+//         'padding-right': ''
+//     });
 
-//     // 특정 타겟 요소 보이기
+//     // 로고 버튼 다시 보이기
 //     $('.logo-btn-screen').css('display', 'block');
-
-//     if ($(window).scrollTop() > 200) {
-//         $('#top-bt').fadeIn();
-//     }
 // }
 
-// 모달 열기
-function openModal(modalClass) {
-    const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth; // 스크롤바 너비 계산
-    $('.close-modal').css('display', 'block');
-    $(modalClass).css('bottom', '0');
-    $('body').css({
-        'overflow': 'hidden',
-        'padding-right': scrollBarWidth + 'px' // 스크롤바 너비만큼 패딩 추가
-    });
-    $('#top-bt').fadeOut();
+// // 클릭 이벤트 리스너 추가
+// $('.box').on('click', openModal);
+// $('.close-modal').on('click', closeModal);
 
-    // 특정 타겟 요소 숨기기
+// 모달 열기
+function openModal() {
+    $('.close-modal').css('display', 'block');
+    $('.banner-modal-box').css({
+        'position': 'fixed',
+        'top': '0',
+        'left': '0',
+        'right': '0',
+        'bottom': '0',
+        'width': '100%',
+        'height': '100%',
+        'background': 'rgba(0, 0, 0, 0.8)', // 배경 반투명 처리
+        'display': 'flex',
+        'align-items': 'center',
+        'justify-content': 'center',
+        'z-index': '10000'
+    });
+
+    // body의 overflow를 hidden으로 설정하여 스크롤바 없애기
+    $('body').css({
+        'overflow': 'hidden'
+        
+    });
+
+    // 로고 버튼 숨기기
     $('.logo-btn-screen').css('display', 'none');
 }
 
 // 모달 닫기
 function closeModal() {
     $('.close-modal').css('display', 'none');
-    $('.info-modal-box, .character-modal-box, .logo-modal-box, .mobile-modal-box, .package-modal-box, .detail-modal-box, .banner-modal-box').css('bottom', '-100%');
+    $('.banner-modal-box').css('display', 'none'); // 모달을 숨김
+
+    // body의 overflow를 auto로 되돌려 스크롤 가능하게 하기
     $('body').css({
         'overflow': 'auto',
-        'padding-right': '' // 추가된 패딩 제거
+        'margin-right': '' // 오른쪽 마진을 원래대로 돌려놓기
     });
 
-    // 특정 타겟 요소 보이기
+    // 로고 버튼 다시 보이기
     $('.logo-btn-screen').css('display', 'block');
-
-    if ($(window).scrollTop() > 200) {
-        $('#top-bt').fadeIn();
-    }
 }
+
+// 클릭 이벤트 리스너 추가
+$('.box').on('click', openModal);
+$('.close-modal').on('click', closeModal);
 
 
 /////////////////////
@@ -491,72 +515,6 @@ document.addEventListener('DOMContentLoaded', () => {
     boxes.forEach(box => observer.observe(box));
 });
 
-////////////////////////////////////////////////
-
-
-document.addEventListener('DOMContentLoaded', () => {
-    const observerOptions = {
-        root: null, // 뷰포트를 기준으로
-        rootMargin: '0px',
-        threshold: 0.4 // 요소가 10% 이상 보이면 감지
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                // 랜덤 딜레이 설정
-                const randomDelay = Math.random() * 0.5; // 0 ~ 1.5초 사이 랜덤
-                entry.target.style.transitionDelay = `${randomDelay}s`;
-
-                // 화면에 보일 때 애니메이션 실행
-                entry.target.classList.add('visible');
-            } else if (entry.boundingClientRect.top > 0) {
-                // 화면에서 사라지면 애니메이션 리셋
-                entry.target.classList.remove('visible');
-
-                // 딜레이 초기화 (옵션)
-                entry.target.style.transitionDelay = '0s';
-            }
-        });
-    }, observerOptions);
-
-    // 감지 대상 추가
-    const hiddenElements = document.querySelectorAll('.ds');
-    hiddenElements.forEach(el => observer.observe(el));
-});
-
-////////////////////////////////////////////////////////
-
-document.addEventListener('DOMContentLoaded', () => {
-    const observerOptions = {
-        root: null, // 뷰포트를 기준으로
-        rootMargin: '0px',
-        threshold: 0. // 요소가 10% 이상 보이면 감지
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                // 랜덤 딜레이 설정
-                const randomDelay = Math.random() * 0.5; // 0 ~ 1.5초 사이 랜덤
-                entry.target.style.transitionDelay = `${randomDelay}s`;
-
-                // 화면에 보일 때 애니메이션 실행
-                entry.target.classList.add('visible');
-            } else if (entry.boundingClientRect.top > 0) {
-                // 화면에서 사라지면 애니메이션 리셋
-                entry.target.classList.remove('visible');
-
-                // 딜레이 초기화 (옵션)
-                entry.target.style.transitionDelay = '0s';
-            }
-        });
-    }, observerOptions);
-
-    // 애니메이션을 적용할 대상 선택
-    const boxes = document.querySelectorAll('.ds-txt');
-    boxes.forEach(box => observer.observe(box));
-});
 
 /////////////////////////////////////////////////////////
 
@@ -615,14 +573,3 @@ document.addEventListener('DOMContentLoaded', function() {
 
 ///////////////////
 
-const elements = document.querySelectorAll('.box'); // 모든 .box 요소 선택
-
-elements.forEach((element) => {
-    element.addEventListener('mouseenter', () => {
-        element.setAttribute('data', '인포그래픽');
-    });
-
-    element.addEventListener('mouseleave', () => {
-        element.setAttribute('data', '');
-    });
-});
