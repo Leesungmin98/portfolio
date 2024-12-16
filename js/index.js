@@ -18,14 +18,12 @@ $(function() {
         });
     
     });
-
-    ///////////////////////////////////////////////////////////
 });
+//////////////////////////////////////////////
+
 // 포트폴리오-디자인
 
 $(document).ready(function() {
-    
-  
      // 포트폴리오-디자인
      $('.info-box').click(function() {
         openModal('.info-modal-box');
@@ -83,6 +81,7 @@ function openModal(modalClass) {
     
     // 로고 버튼 숨기기
     $('.logo-btn-screen').css('display', 'none');
+    $('#top-bt').css('display', 'none');
 }
 
 // 모달 닫기 함수
@@ -95,7 +94,7 @@ function closeModal() {
     // 닫기 버튼 숨기기 (0.5초 후)
     setTimeout(function () {
         $('.close-modal').css('display', 'none');
-    }, 500);
+    }, 100);
     
     // 스크롤 복구
     $('html, body').css({
@@ -105,6 +104,7 @@ function closeModal() {
     
     // 로고 버튼 다시 보이기
     $('.logo-btn-screen').css('display', 'block');
+    $('#top-bt').css('display', 'block');
 }
 
 // 각 박스 클릭 시 해당 모달 열기 이벤트 리스너
@@ -138,7 +138,6 @@ $('.box-character').on('click', function() {
 
 // 닫기 버튼 클릭 시 모달 닫기
 $('.po-modal-box .close-modal').on('click', closeModal);
-
 
 /////////////////////
     // 햄버거 메뉴
