@@ -3339,6 +3339,7 @@ main {
                     justify-content: center;
                     align-items: center;
                     overflow: hidden;
+                    -webkit-tap-highlight-color: transparent;
                     cursor: pointer;
                     &::after {
                         content: '배고팡';

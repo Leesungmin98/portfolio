@@ -2528,6 +2528,7 @@ body main .main-bg .wrap .portfolio2 .list li .box {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
   cursor: pointer;
 }
 body main .main-bg .wrap .portfolio2 .list li .box::after {
