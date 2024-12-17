@@ -19,10 +19,6 @@ class App {
       new Wave('#0064a2', -80, 1, 0.1),
     ];
 
-    // 반응형 대응을 위한 리사이즈 이벤트 리스너
-    this.resizeHandler = this.resize.bind(this);
-    window.addEventListener('resize', this.resizeHandler);
-
     // 초기화
     this.init();
   }
