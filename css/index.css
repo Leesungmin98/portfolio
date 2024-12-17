@@ -2723,8 +2723,8 @@ body main .main-bg .wrap .portfolio2 .list li {
 }
 @media only screen and (min-width: 1024px) {
   body main .main-bg .wrap .portfolio2 .list li {
-    width: 400px;
-    height: 520px;
+    width: 350px;
+    height: 470px;
   }
 }
 body main .main-bg .wrap .portfolio2 .list li .box {

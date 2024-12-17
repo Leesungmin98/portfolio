@@ -18,12 +18,14 @@ $(function() {
         });
     
     });
-});
-//////////////////////////////////////////////
 
+    ///////////////////////////////////////////////////////////
+});
 // 포트폴리오-디자인
 
 $(document).ready(function() {
+    
+  
      // 포트폴리오-디자인
      $('.info-box').click(function() {
         openModal('.info-modal-box');
@@ -59,87 +61,63 @@ $(document).ready(function() {
     });
 /////////////////////////////////////////////////////////////////
 
-// 특정 모달 열기 함수
+// // 모달 열기
+// function openModal(modalClass) {
+//     $('.close-modal').css('display', 'block');
+//     $(modalClass).css('bottom', '0');
+//     $('body').css('overflow', 'hidden');
+//     $('#top-bt').fadeOut();
+
+//     // 특정 타겟 요소 숨기기
+//     $('.logo-btn-screen').css('display', 'none');
+// }
+
+// // 모달 닫기
+// function closeModal() {
+//     $('.close-modal').css('display', 'none');
+//     $('.info-modal-box, .character-modal-box, .logo-modal-box, .mobile-modal-box, .package-modal-box, .detail-modal-box, .banner-modal-box').css('bottom', '-100%');
+//     $('body').css('overflow', 'auto');
+
+//     // 특정 타겟 요소 보이기
+//     $('.logo-btn-screen').css('display', 'block');
+
+//     if ($(window).scrollTop() > 200) {
+//         $('#top-bt').fadeIn();
+//     }
+// }
+
+// 모달 열기
 function openModal(modalClass) {
-    // 모든 모달을 숨김 (하단으로 이동)
-    $('.po-modal-box').css('bottom', '-100%');
-    
-    // 닫기 버튼 보이기
+    const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth; // 스크롤바 너비 계산
     $('.close-modal').css('display', 'block');
-    
-    // 선택한 모달 열기 (하단에서 위로 슬라이드)
-    $(modalClass).css({
-        'bottom': '0'
-    });
-    
-    // 스크롤 방지 및 스크롤바 공간 조정
-    const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
-    $('html, body').css({
+    $(modalClass).css('bottom', '0');
+    $('body').css({
         'overflow': 'hidden',
-        'padding-right': `${scrollbarWidth}px`
+        'padding-right': scrollBarWidth + 'px' // 스크롤바 너비만큼 패딩 추가
     });
-    
-    // 로고 버튼 숨기기
+    $('#top-bt').fadeOut();
+
+    // 특정 타겟 요소 숨기기
     $('.logo-btn-screen').css('display', 'none');
-    $('#top-bt').css('display', 'none');
-    $('.portfolio2').css('position', 'fixed');
 }
 
-// 모달 닫기 함수
+// 모달 닫기
 function closeModal() {
-    // 모든 모달 하단으로 슬라이드
-    $('.po-modal-box').css({
-        'bottom': '-100%'
-    });
-    
-    // 닫기 버튼 숨기기 (0.5초 후)
-    setTimeout(function () {
-        $('.close-modal').css('display', 'none');
-    }, 100);
-    
-    // 스크롤 복구
-    $('html, body').css({
+    $('.close-modal').css('display', 'none');
+    $('.info-modal-box, .character-modal-box, .logo-modal-box, .mobile-modal-box, .package-modal-box, .detail-modal-box, .banner-modal-box').css('bottom', '-100%');
+    $('body').css({
         'overflow': 'auto',
-        'padding-right': '0'
+        'padding-right': '' // 추가된 패딩 제거
     });
-    
-    // 로고 버튼 다시 보이기
+
+    // 특정 타겟 요소 보이기
     $('.logo-btn-screen').css('display', 'block');
-    $('#top-bt').css('display', 'block');
-    $('.portfolio2').css('position', 'relative');
+
+    if ($(window).scrollTop() > 200) {
+        $('#top-bt').fadeIn();
+    }
 }
 
-// 각 박스 클릭 시 해당 모달 열기 이벤트 리스너
-$('.box-banner').on('click', function() {
-    openModal('.banner-modal-box');
-});
-
-$('.box-detail').on('click', function() {
-    openModal('.detail-modal-box');
-});
-
-$('.box-package').on('click', function() {
-    openModal('.package-modal-box');
-});
-
-$('.box-logo').on('click', function() {
-    openModal('.logo-modal-box');
-});
-
-$('.box-mobile').on('click', function() {
-    openModal('.mobile-modal-box');
-});
-
-$('.box-info').on('click', function() {
-    openModal('.info-modal-box');
-});
-
-$('.box-character').on('click', function() {
-    openModal('.character-modal-box');
-});
-
-// 닫기 버튼 클릭 시 모달 닫기
-$('.po-modal-box .close-modal').on('click', closeModal);
 
 /////////////////////
     // 햄버거 메뉴
@@ -513,61 +491,73 @@ document.addEventListener('DOMContentLoaded', () => {
     boxes.forEach(box => observer.observe(box));
 });
 
+////////////////////////////////////////////////
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const observerOptions = {
+        root: null, // 뷰포트를 기준으로
+        rootMargin: '0px',
+        threshold: 0.4 // 요소가 10% 이상 보이면 감지
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // 랜덤 딜레이 설정
+                const randomDelay = Math.random() * 0.5; // 0 ~ 1.5초 사이 랜덤
+                entry.target.style.transitionDelay = `${randomDelay}s`;
+
+                // 화면에 보일 때 애니메이션 실행
+                entry.target.classList.add('visible');
+            } else if (entry.boundingClientRect.top > 0) {
+                // 화면에서 사라지면 애니메이션 리셋
+                entry.target.classList.remove('visible');
+
+                // 딜레이 초기화 (옵션)
+                entry.target.style.transitionDelay = '0s';
+            }
+        });
+    }, observerOptions);
+
+    // 감지 대상 추가
+    const hiddenElements = document.querySelectorAll('.ds');
+    hiddenElements.forEach(el => observer.observe(el));
+});
+
+////////////////////////////////////////////////////////
+
+document.addEventListener('DOMContentLoaded', () => {
+    const observerOptions = {
+        root: null, // 뷰포트를 기준으로
+        rootMargin: '0px',
+        threshold: 0. // 요소가 10% 이상 보이면 감지
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // 랜덤 딜레이 설정
+                const randomDelay = Math.random() * 0.5; // 0 ~ 1.5초 사이 랜덤
+                entry.target.style.transitionDelay = `${randomDelay}s`;
+
+                // 화면에 보일 때 애니메이션 실행
+                entry.target.classList.add('visible');
+            } else if (entry.boundingClientRect.top > 0) {
+                // 화면에서 사라지면 애니메이션 리셋
+                entry.target.classList.remove('visible');
+
+                // 딜레이 초기화 (옵션)
+                entry.target.style.transitionDelay = '0s';
+            }
+        });
+    }, observerOptions);
+
+    // 애니메이션을 적용할 대상 선택
+    const boxes = document.querySelectorAll('.ds-txt');
+    boxes.forEach(box => observer.observe(box));
+});
 
 /////////////////////////////////////////////////////////
 
-document.addEventListener('DOMContentLoaded', function() {
-    gsap.registerPlugin(ScrollTrigger);
-
-    let list = gsap.utils.toArray('.portfolio2 li');
-    let listA = gsap.utils.toArray('.portfolio2 .a');
-    let listB = gsap.utils.toArray('.portfolio2 .b');
-    let listC = gsap.utils.toArray('.portfolio2 .c');
-
-    let scrollTween = gsap.to(list, {
-        xPercent: -100 * (list.length - 1),
-        ease: 'none',
-        scrollTrigger: {
-            trigger: '.portfolio2',
-            pin: true,
-            scrub: 1,
-            start: 'center center',
-            end: '200%',
-            markers: false
-        }
-    });
-
-    gsap.to(listA, {
-        y:50,
-        rotation: 10,
-        scrollTrigger: {
-            trigger:'.portfolio2',
-            scrub:2,
-            end:'200%'
-        }
-    })
-
-    gsap.to(listB, {
-        y:-50,
-        rotation: 20,
-        scrollTrigger: {
-            trigger:'.portfolio2',
-            scrub:2,
-            end:'200%'
-        }
-    })
-
-    gsap.to(listC, {
-        y:-50,
-        x:20,
-        rotation: -10,
-        scrollTrigger: {
-            trigger:'.portfolio2',
-            scrub:2,
-            end:'200%'
-        }
-    })
-});
-
-///////////////////
 
