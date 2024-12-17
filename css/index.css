@@ -582,7 +582,7 @@ body header .container h1 {
   }
 }
 body header .container h1 span {
-  color: #5a27d4;
+  color: #0064a2;
   animation: colorChange 3s infinite;
 }
 @keyframes colorChange {

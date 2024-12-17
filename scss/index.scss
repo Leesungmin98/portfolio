@@ -563,7 +563,7 @@ body {
                     font-size: 150px;
                 } 
                 span {
-                    color: #5a27d4;
+                    color: #0064a2;
                     animation: colorChange 3s infinite;
 
                 }
@@ -974,8 +974,6 @@ body {
                     display: block;
                     top: 0%; left:20%;
                     width: 100px;
-                    // display: none;
-                    // background-color: #da5fea;
                     animation-name: buble-move00;
                     animation-iteration-count: infinite;
                     animation-timing-function: ease-in-out;
@@ -999,7 +997,6 @@ body {
                     display: block;
                     width: 60px;
                     top: 4%; left: 40%;
-                    // background-color: #da5fea;
                     animation-name: buble-move01;
                     animation-iteration-count: infinite;
                     animation-timing-function: ease-in-out;
@@ -1023,7 +1020,6 @@ body {
                     display: block;
                     width: 70px;
                     top: 11%; left: 30%;
-                    // background-color: #da5fea;
                     animation-name: buble-move02;
                     animation-iteration-count: infinite;
                     animation-timing-function: ease-in-out;
@@ -1047,8 +1043,6 @@ body {
                     display: block;
                     top: 0%; left:10%;
                     width: 30px;
-                    // display: none;
-                    // background-color: #da5fea;
                     animation-name: buble-move03;
                     animation-iteration-count: infinite;
                     animation-timing-function: ease-in-out;
@@ -1072,7 +1066,6 @@ body {
                     display: block;
                     width: 150px;
                     top: 4%; left: 80%;
-                    // background-color: #da5fea;
                     animation-name: buble-move04;
                     animation-iteration-count: infinite;
                     animation-timing-function: ease-in-out;
@@ -1096,7 +1089,6 @@ body {
                     display: block;
                     width: 3%;
                     top: 11%; left: 60%;
-                    // background-color: #da5fea;
                     animation-name: buble-move05;
                     animation-iteration-count: infinite;
                     animation-timing-function: ease-in-out;
@@ -1120,8 +1112,6 @@ body {
                     display: block;
                     top: 0%; left: 60%;
                     width: 50px;
-                    // display: none;
-                    // background-color: #da5fea;
                     animation-name: buble-move0;
                     animation-iteration-count: infinite;
                     animation-timing-function: ease-in-out;
@@ -1144,7 +1134,6 @@ body {
                     display: block;
                     width: 80px;
                     top: 4%; left: 6%;
-                    // background-color: #da5fea;
                     animation-name: buble-move1;
                     animation-iteration-count: infinite;
                     animation-timing-function: ease-in-out;
@@ -1167,7 +1156,6 @@ body {
                     display: block;
                     width: 100px;
                     top: 11%; left: 70%;
-                    // background-color: #da5fea;
                     animation-name: buble-move2;
                     animation-iteration-count: infinite;
                     animation-timing-function: ease-in-out;
@@ -1190,7 +1178,6 @@ body {
                     display: block;
                     width: 60px;
                     top: 28.5%; left: 23%;
-        
                     animation-name: buble-move3;
                     animation-iteration-count: infinite;
                     animation-timing-function: ease-in-out;
@@ -1212,8 +1199,7 @@ body {
                 @include responsive(large-screens) {
                     display: block;
                     width: 20px;
-                    top: 30%; left: 30%;
-                    
+                    top: 30%; left: 30%;         
                     animation-name: buble-move4;
                     animation-iteration-count: infinite;
                     animation-timing-function: ease-in-out;
@@ -1237,7 +1223,6 @@ body {
                     display: block;
                     width: 70px;
                     top: 40%; left: 30%;
-        
                     animation-name: buble-move5;
                     animation-iteration-count: infinite;
                     animation-timing-function: ease-in-out;
@@ -1479,22 +1464,18 @@ body {
                     .submarin-atxt {
                         width: 85%; height: 100%;
                         margin: auto;
-                        // background-color: #85faf8;
                         @include responsive(large-screens) {
                             width: 100%;
                             display: flex;
                             align-items: center;
-                            // justify-content: space-between;
-                            // height: 550px;
                         }
                         .submarin {
                             width: 100%; height: 100%;
                             margin-top: 120px;
-                            // background-color: antiquewhite;
                             @include responsive(large-screens) {
                                 margin-top: 0px;
                                 width: 50%;
-                                // margin-right:80px;
+
                             }
                             .submarin-img {
                                 width: 55%;
