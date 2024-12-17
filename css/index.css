@@ -73,6 +73,10 @@ footer {
   font-family: "Super Shiny";
   src: local("Super Shiny"), url("../font/Super Shiny.ttf") format("opentype");
 }
+body {
+  touch-action: manipulation; /* 터치 이벤트 제한 */
+  overscroll-behavior: contain; /* 바운스 스크롤 제거 */
+}
 body header .logo-btn-screen {
   position: fixed;
   z-index: 1000;

@@ -3,6 +3,8 @@
 @import "./style.scss";
 
 body {
+    touch-action: manipulation; /* 터치 이벤트 제한 */
+    overscroll-behavior: contain; /* 바운스 스크롤 제거 */
     header {
         .logo-btn-screen {
             position: fixed;
