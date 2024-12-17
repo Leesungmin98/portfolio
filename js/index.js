@@ -328,7 +328,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return {
                 floatAmplitude: isMobile ? 0.1 : 1,
                 floatSpeed: isMobile ? 0.005 : 0.004,
-                diveDepth: 15,
+                diveDepth: 5,
                 riseSpeed: isMobile ? 0.019 : 0.029
             };
         }

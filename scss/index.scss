@@ -510,7 +510,7 @@ body {
                 }
                 .paper-ship {
                     position: fixed;
-                    bottom: 4%;  
+                    bottom: 1%;  
                     right: 55%; 
                     width: 20%;  
                     z-index: 5;
@@ -530,7 +530,7 @@ body {
                         }
                     }
                     @include responsive(large-screens) {
-                        bottom: 8%; right: 23%;
+                        bottom: 5%; right: 23%;
                         width: 10%;
                     }
                 }

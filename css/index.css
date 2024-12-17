@@ -530,7 +530,7 @@ body header .wave .img-box img {
 }
 body header .wave .img-box .paper-ship {
   position: fixed;
-  bottom: 4%;
+  bottom: 1%;
   right: 55%;
   width: 20%;
   z-index: 5;
@@ -551,7 +551,7 @@ body header .wave .img-box .paper-ship {
 }
 @media only screen and (min-width: 1024px) {
   body header .wave .img-box .paper-ship {
-    bottom: 8%;
+    bottom: 5%;
     right: 23%;
     width: 10%;
   }
