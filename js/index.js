@@ -82,7 +82,7 @@ function openModal(modalClass) {
     // 로고 버튼 숨기기
     $('.logo-btn-screen').css('display', 'none');
     $('#top-bt').css('display', 'none');
-    $('.portfolio2').css('position', 'fixed');
+
 }
 
 // 모달 닫기 함수
@@ -106,7 +106,7 @@ function closeModal() {
     // 로고 버튼 다시 보이기
     $('.logo-btn-screen').css('display', 'block');
     $('#top-bt').css('display', 'block');
-    $('.portfolio2').css('position', 'relative');
+    
 }
 
 // 각 박스 클릭 시 해당 모달 열기 이벤트 리스너
@@ -533,7 +533,7 @@ document.addEventListener('DOMContentLoaded', function() {
             scrub: 1,
             start: 'center center',
             end: '200%',
-            markers: false
+            markers: true
         }
     });
 

@@ -2501,208 +2501,6 @@ body main .main-bg .wrap .portfolio2 {
   align-items: center;
   overflow: hidden;
 }
-body main .main-bg .wrap .portfolio2 .po-modal-box {
-  position: fixed;
-  bottom: -100%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  transition: bottom 0.3s ease;
-  overflow-y: auto;
-  z-index: 100000000;
-}
-body main .main-bg .wrap .portfolio2 .po-modal-box .po-modal {
-  text-align: center;
-}
-body main .main-bg .wrap .portfolio2 .po-modal-box .po-modal .img-box {
-  width: 80%;
-  margin: auto;
-  cursor: grab;
-}
-body main .main-bg .wrap .portfolio2 .po-modal-box .po-modal .img-box img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 50px;
-  transition: transform 0.3s ease-out;
-}
-@media only screen and (min-width: 1024px) {
-  body main .main-bg .wrap .portfolio2 .po-modal-box .po-modal .img-box img {
-    width: 50%;
-    margin: 0 auto;
-    margin-bottom: 50px;
-  }
-}
-body main .main-bg .wrap .portfolio2 .po-modal-box .po-modal .img-box img:active {
-  cursor: grabbing;
-}
-body main .main-bg .wrap .portfolio2 .po-modal-box .close-modal {
-  display: none;
-  position: fixed;
-  top: 5%;
-  right: 0%;
-  padding: 10px 20px;
-  background: none;
-  cursor: pointer;
-  border: transparent;
-  z-index: 9999;
-}
-@media only screen and (min-width: 1024px) {
-  body main .main-bg .wrap .portfolio2 .po-modal-box .close-modal {
-    right: 5%;
-  }
-}
-body main .main-bg .wrap .portfolio2 .po-modal-box .close-modal span {
-  background: rgb(255, 255, 255);
-  border: none;
-  border-radius: 50px;
-  height: 3px;
-  width: 60%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: all 0.35s ease;
-  cursor: pointer;
-}
-@media only screen and (min-width: 1024px) {
-  body main .main-bg .wrap .portfolio2 .po-modal-box .close-modal span {
-    width: 100%;
-  }
-}
-body main .main-bg .wrap .portfolio2 .po-modal-box .close-modal span:nth-of-type(2) {
-  top: 7px;
-}
-body main .main-bg .wrap .portfolio2 .po-modal-box .close-modal span:nth-of-type(3) {
-  top: 16px;
-}
-body main .main-bg .wrap .portfolio2 .po-modal-box .close-modal .one {
-  transform: translateY(5px) translateX(0) rotate(45deg);
-}
-@media only screen and (min-width: 1024px) {
-  body main .main-bg .wrap .portfolio2 .po-modal-box .close-modal .one {
-    transform: translateY(5px) translateX(0) rotate(45deg);
-  }
-}
-body main .main-bg .wrap .portfolio2 .po-modal-box .close-modal .two {
-  transform: translateY(-2px) translateX(0) rotate(-45deg);
-}
-@media only screen and (min-width: 1024px) {
-  body main .main-bg .wrap .portfolio2 .po-modal-box .close-modal .two {
-    transform: translateY(-2px) translateX(0) rotate(-45deg);
-  }
-}
-@media only screen and (min-width: 1024px) {
-  body main .main-bg .wrap .portfolio2 .banner-modal-box .banner-modal .img-box {
-    display: flex;
-    align-items: center;
-  }
-}
-body main .main-bg .wrap .portfolio2 .banner-modal-box .banner-modal .img-box .img-inner-box {
-  width: 100%;
-  height: 100%;
-}
-body main .main-bg .wrap .portfolio2 .banner-modal-box .banner-modal .img-box .img-inner-box img {
-  width: 100%;
-  height: 100%;
-  margin-right: 10px;
-}
-@media only screen and (min-width: 1024px) {
-  body main .main-bg .wrap .portfolio2 .banner-modal-box .banner-modal .img-box .img-inner-box img {
-    width: 100%;
-    height: 100%;
-    margin-right: 50px;
-  }
-}
-body main .main-bg .wrap .portfolio2 .banner-modal-box .banner-modal .img-box img {
-  width: 100%;
-  height: 100%;
-  margin-right: 10px;
-}
-@media only screen and (min-width: 1024px) {
-  body main .main-bg .wrap .portfolio2 .banner-modal-box .banner-modal .img-box img {
-    width: 50%;
-    height: 50%;
-    margin-right: 50px;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  body main .main-bg .wrap .portfolio2 .detail-modal-box .detail-modal .img-box {
-    display: flex;
-  }
-}
-body main .main-bg .wrap .portfolio2 .detail-modal-box .detail-modal .img-box img {
-  width: 100%;
-  height: 50%;
-  margin-right: 10px;
-}
-@media only screen and (min-width: 1024px) {
-  body main .main-bg .wrap .portfolio2 .detail-modal-box .detail-modal .img-box img {
-    width: 50%;
-    height: 50%;
-    margin-right: 50px;
-  }
-}
-body main .main-bg .wrap .portfolio2 .info-modal-box .info-modal .img-box img {
-  width: 100%;
-  height: 100%;
-  margin-top: 45%;
-}
-@media only screen and (min-width: 1024px) {
-  body main .main-bg .wrap .portfolio2 .info-modal-box .info-modal .img-box img {
-    margin: 0 auto;
-    width: 50%;
-    height: 50%;
-  }
-}
-body main .main-bg .wrap .portfolio2 .character-modal-box .character-modal .img-box img {
-  width: 100%;
-  height: 100%;
-  margin-top: 45%;
-}
-@media only screen and (min-width: 1024px) {
-  body main .main-bg .wrap .portfolio2 .character-modal-box .character-modal .img-box img {
-    margin: 0 auto;
-    width: 50%;
-    height: 50%;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  body main .main-bg .wrap .portfolio2 .mobile-modal-box .mobile-modal .img-box {
-    width: 45%;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  body main .main-bg .wrap .portfolio2 .mobile-modal-box .mobile-modal .img-box .img-box-inner1 {
-    display: flex;
-    justify-content: center;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  body main .main-bg .wrap .portfolio2 .mobile-modal-box .mobile-modal .img-box .img-box-inner2 {
-    width: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-  }
-}
-body main .main-bg .wrap .portfolio2 .mobile-modal-box .mobile-modal .img-box img {
-  width: 100%;
-  height: 100%;
-}
-@media only screen and (min-width: 1024px) {
-  body main .main-bg .wrap .portfolio2 .mobile-modal-box .mobile-modal .img-box img {
-    width: 50%;
-    margin-right: 10px;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  body main .main-bg .wrap .portfolio2 .logo-modal-box .logo-modal .img-box img {
-    margin: 0 auto;
-    width: 90%;
-    height: 90%;
-  }
-}
 body main .main-bg .wrap .portfolio2 .list {
   display: flex;
   flex-wrap: nowrap;
@@ -2714,8 +2512,8 @@ body main .main-bg .wrap .portfolio2 .list {
   }
 }
 body main .main-bg .wrap .portfolio2 .list li {
-  width: 70vw;
-  height: 90vw;
+  width: 60vw;
+  height: 80vw;
   padding: 0 30px;
   box-sizing: border-box;
   flex-shrink: 0 !important;
@@ -2886,6 +2684,213 @@ body main .contact .contact-box a {
 body main .contact .contact-box a:hover {
   color: #5a27d4;
 }
+body footer {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
 body footer h2 {
   display: none;
+}
+body footer .wrap-modal-box .po-modal-box {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  transition: bottom 0.3s ease;
+  overflow-y: auto;
+  z-index: 100000000;
+}
+body footer .wrap-modal-box .po-modal-box .po-modal {
+  text-align: center;
+}
+body footer .wrap-modal-box .po-modal-box .po-modal .img-box {
+  width: 80%;
+  margin: auto;
+  cursor: grab;
+}
+body footer .wrap-modal-box .po-modal-box .po-modal .img-box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+  transition: transform 0.3s ease-out;
+}
+@media only screen and (min-width: 1024px) {
+  body footer .wrap-modal-box .po-modal-box .po-modal .img-box img {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+}
+body footer .wrap-modal-box .po-modal-box .po-modal .img-box img:active {
+  cursor: grabbing;
+}
+body footer .wrap-modal-box .po-modal-box .close-modal {
+  display: none;
+  position: fixed;
+  top: 5%;
+  right: 0%;
+  padding: 10px 20px;
+  background: none;
+  cursor: pointer;
+  border: transparent;
+  z-index: 9999;
+}
+@media only screen and (min-width: 1024px) {
+  body footer .wrap-modal-box .po-modal-box .close-modal {
+    right: 5%;
+  }
+}
+body footer .wrap-modal-box .po-modal-box .close-modal span {
+  background: rgb(255, 255, 255);
+  border: none;
+  border-radius: 50px;
+  height: 3px;
+  width: 60%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+@media only screen and (min-width: 1024px) {
+  body footer .wrap-modal-box .po-modal-box .close-modal span {
+    width: 100%;
+  }
+}
+body footer .wrap-modal-box .po-modal-box .close-modal span:nth-of-type(2) {
+  top: 7px;
+}
+body footer .wrap-modal-box .po-modal-box .close-modal span:nth-of-type(3) {
+  top: 16px;
+}
+body footer .wrap-modal-box .po-modal-box .close-modal .one {
+  transform: translateY(5px) translateX(0) rotate(45deg);
+}
+@media only screen and (min-width: 1024px) {
+  body footer .wrap-modal-box .po-modal-box .close-modal .one {
+    transform: translateY(5px) translateX(0) rotate(45deg);
+  }
+}
+body footer .wrap-modal-box .po-modal-box .close-modal .two {
+  transform: translateY(-2px) translateX(0) rotate(-45deg);
+}
+@media only screen and (min-width: 1024px) {
+  body footer .wrap-modal-box .po-modal-box .close-modal .two {
+    transform: translateY(-2px) translateX(0) rotate(-45deg);
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body footer .wrap-modal-box .banner-modal-box .banner-modal .img-box {
+    display: flex;
+    align-items: center;
+  }
+}
+body footer .wrap-modal-box .banner-modal-box .banner-modal .img-box .img-inner-box {
+  width: 100%;
+  height: 100%;
+}
+body footer .wrap-modal-box .banner-modal-box .banner-modal .img-box .img-inner-box img {
+  width: 100%;
+  height: 100%;
+  margin-right: 10px;
+}
+@media only screen and (min-width: 1024px) {
+  body footer .wrap-modal-box .banner-modal-box .banner-modal .img-box .img-inner-box img {
+    width: 100%;
+    height: 100%;
+    margin-right: 50px;
+  }
+}
+body footer .wrap-modal-box .banner-modal-box .banner-modal .img-box img {
+  width: 100%;
+  height: 100%;
+  margin-right: 10px;
+}
+@media only screen and (min-width: 1024px) {
+  body footer .wrap-modal-box .banner-modal-box .banner-modal .img-box img {
+    width: 50%;
+    height: 50%;
+    margin-right: 50px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body footer .wrap-modal-box .detail-modal-box .detail-modal .img-box {
+    display: flex;
+  }
+}
+body footer .wrap-modal-box .detail-modal-box .detail-modal .img-box img {
+  width: 100%;
+  height: 50%;
+  margin-right: 10px;
+}
+@media only screen and (min-width: 1024px) {
+  body footer .wrap-modal-box .detail-modal-box .detail-modal .img-box img {
+    width: 50%;
+    height: 50%;
+    margin-right: 50px;
+  }
+}
+body footer .wrap-modal-box .info-modal-box .info-modal .img-box img {
+  width: 100%;
+  height: 100%;
+  margin-top: 45%;
+}
+@media only screen and (min-width: 1024px) {
+  body footer .wrap-modal-box .info-modal-box .info-modal .img-box img {
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+  }
+}
+body footer .wrap-modal-box .character-modal-box .character-modal .img-box img {
+  width: 100%;
+  height: 100%;
+  margin-top: 45%;
+}
+@media only screen and (min-width: 1024px) {
+  body footer .wrap-modal-box .character-modal-box .character-modal .img-box img {
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body footer .wrap-modal-box .mobile-modal-box .mobile-modal .img-box {
+    width: 45%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body footer .wrap-modal-box .mobile-modal-box .mobile-modal .img-box .img-box-inner1 {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body footer .wrap-modal-box .mobile-modal-box .mobile-modal .img-box .img-box-inner2 {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+}
+body footer .wrap-modal-box .mobile-modal-box .mobile-modal .img-box img {
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (min-width: 1024px) {
+  body footer .wrap-modal-box .mobile-modal-box .mobile-modal .img-box img {
+    width: 50%;
+    margin-right: 10px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body footer .wrap-modal-box .logo-modal-box .logo-modal .img-box img {
+    margin: 0 auto;
+    width: 90%;
+    height: 90%;
+  }
 }/*# sourceMappingURL=index.css.map */
