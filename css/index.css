@@ -583,23 +583,17 @@ body header .container h1 {
 }
 body header .container h1 span {
   color: #5a27d4;
-  animation: colorChange 7s infinite;
+  animation: colorChange 3s infinite;
 }
 @keyframes colorChange {
   0% {
-    color: #5a27d4;
-  }
-  25% {
-    color: #1eb6e9;
+    color: #0064a2;
   }
   50% {
-    color: #e64aa2;
-  }
-  75% {
-    color: #dae604;
+    color: #0096a7;
   }
   100% {
-    color: #5a27d4;
+    color: #0064a2;
   }
 }
 @keyframes title22 {
@@ -621,13 +615,13 @@ body main .main-bg {
   overflow: hidden;
   width: 100%;
   height: 100%;
-  background: linear-gradient(#E8DE68 10%, #e64aa2 30%, #da5fea 40%, #5a27d4 80%);
+  background: linear-gradient(#0064a2 10%, #00b9ce 30%, #a0cede 40%, #7bb6d4 80%);
   z-index: 0;
 }
 @media only screen and (min-width: 1024px) {
   body main .main-bg {
     height: 100%;
-    background: linear-gradient(#E8DE68 10%, #e64aa2 30%, #da5fea 40%, #5a27d4 80%);
+    background: linear-gradient(#0064a2 10%, #00b9ce 30%, #a0cede 40%, #7bb6d4 80%);
   }
 }
 body main .main-bg #top-bt {
@@ -2512,9 +2506,9 @@ body main .main-bg .wrap .portfolio2 .list {
   }
 }
 body main .main-bg .wrap .portfolio2 .list li {
-  width: 60vw;
-  height: 80vw;
-  padding: 0 30px;
+  width: 55vw;
+  height: 75vw;
+  margin-right: 1%;
   box-sizing: border-box;
   flex-shrink: 0 !important;
   overflow: hidden;
@@ -2532,6 +2526,7 @@ body main .main-bg .wrap .portfolio2 .list li .box {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   -webkit-tap-highlight-color: transparent;
   cursor: pointer;
 }
@@ -2562,8 +2557,14 @@ body main .main-bg .wrap .portfolio2 .list li .box:hover img {
 body main .main-bg .wrap .portfolio2 .list li .box:hover::after {
   opacity: 1;
 }
+body main .main-bg .wrap .portfolio2 .list li .box h2 {
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "pretendard";
+  margin-bottom: 12px;
+}
 body main .main-bg .wrap .portfolio2 .list li .box img {
-  width: 90%;
+  width: 85%;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 body main .main-bg .wrap .portfolio2 .list li.a {
