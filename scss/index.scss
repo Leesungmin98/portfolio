@@ -1433,6 +1433,142 @@ body {
             }
 
 
+            .aboutMe {
+                position: relative;
+                margin: 0 auto;
+                overflow: hidden;
+                // background-color: black;
+                color: white;
+                .visual {
+                    position: relative;
+                    height: 250vh;
+                    .imgBox2 {
+                        position: absolute;
+                        width: 100%;
+                        top: 3%;
+                        left: 50%;
+                        transform:translateX(-50%);
+                        perspective: 1500px;
+                        text-align: center;
+                        .img {
+                            width: 100%;
+                        }
+                    } // imgBox2
+                    .titleBox2 {
+                        position: absolute;
+                        width: 100%;
+                        top: 12%;
+                        left: 0;
+                        line-height: 1.4;
+                        .for {
+                            font-size: 50px;
+                            margin-left: 100px;
+                        }
+                        .en2 {
+                            font-size: 64px;
+                            display: inline-block;
+                            margin-right: 10px;
+                        }
+                        .date {
+                            text-align: right;
+                            margin-right: 100px;
+                            font-size: 48px;
+                        }
+                    } //titleBox2
+                    .textLoop {
+                        ul {
+                            display: flex;
+                            white-space: nowrap;
+                            font-size: 145px;
+                            letter-spacing: -2px;
+                            li {
+                                animation: textLoop 6s linear infinite;
+                                padding: 0 20px;
+                            }
+                            @keyframes textLoop {
+                                0% {
+                                    transform: translate3d(0,0,0);
+                                }
+                                100% {
+                                    transform: translate3d(-100%,0,0);
+                                }
+                            }
+                        }
+                    } // textLoop
+                    .textBox2 {
+                        width: 30%;
+                        position: absolute;
+                        right: 5%;
+                        top: 40%;
+                        ul {
+                            .top {
+                                font-size: 24px;
+                                border-bottom: 1px solid white;
+                                h2 {
+                                    font-weight: normal;
+                                }
+                            } // .top
+                            li {
+                                display: flex;
+                                margin-bottom: 12px;
+                                align-items: center;
+                                h3 {
+                                    width: 130px;
+                                    font-weight: normal;
+                                    font-size: 13px;
+                                }
+                                .en2 {
+                                    font-size: 22px;
+                                }
+                            } // li
+                        }//ul
+                    } //textBox2
+                    .textLoop2 {
+                        position: absolute;
+                        left: -20px;
+                        bottom: 300px;
+                        ul {
+                            position: absolute;
+                            padding: 10px 0;
+                            display: flex;
+                            white-space: nowrap;
+                            font-size: 70px;
+                            letter-spacing: -2px;
+                            color: black;
+                            background: rgba(#ffffff, $alpha: 1.0);
+                            li {
+                                padding: 0 20px;
+                            } // li
+                        } //ul
+                        ul.a {
+                            transform: rotate(7deg);
+                            background: rgba(255, 255, 255, 0);
+                            color: white;
+                            border: 1px solid white;
+                            li {
+                                animation: textLoop 6s linear infinite;
+                            }
+                        } // ul.a
+                        ul.b {
+                            top: -135px;
+                            transform: rotate(-7deg);
+                            li {
+                                animation: textLoop2 6s linear infinite;
+                            }
+                            @keyframes textLoop2 {
+                                0% {
+                                    transform: translate3d(-100%,0,0);
+                                }
+                                100% {
+                                    transform: translate3d(0,0,0);
+                                }
+                            }
+                        } // ul.b
+                    }//textLoop2
+                } // visual
+            } // aboutMe
+
+
             .container {
                 width: 100%;
                 height: 100%;
@@ -1454,134 +1590,7 @@ body {
                         padding: 300px 0 140px 0;
                     }
                 };
-                .about-me {
-                    width: 100%;
-                    margin-bottom: 20%;
-                    margin-top: 0%;
-                    // background-color: #5a27d4;
-                    @include responsive(large-screens) {
-                        margin-top: 4%;
-                    }
-
-                    .submarin-atxt {
-                        width: 85%; height: 100%;
-                        margin: auto;
-                        @include responsive(large-screens) {
-                            width: 100%;
-                            display: flex;
-                            align-items: center;
-                        }
-                        .submarin {
-                            width: 100%; height: 100%;
-                            margin-top: 120px;
-                            @include responsive(large-screens) {
-                                margin-top: 0px;
-                                width: 50%;
-
-                            }
-                            .submarin-img {
-                                width: 55%;
-                                margin: auto;
-                                @include responsive(large-screens) {
-                                    width: 55%;
-                                }
-                            }
-                        }
-                        .atxt-box {
-
-                            .atxt-title {
-                                h3 {
-                                    font-family: "Super Shiny";
-                                    font-size: 25vw;
-                                    text-align: center;
-                                    color: #ceab0f;
-                                    @include responsive(large-screens) {
-                                        text-align: left;
-                                        font-size: 8vw;
-                                    }
-                                }
-                            }
-                            .atxt {
-                                width: 100%; height: 100%;
-                                padding: 20px;
-                                font-family: 'pretendard';
-                                border-radius: 20px;
-                                display: flex;
-        
-                                @include responsive(large-screens) {
-                                position: relative; 
-                                top: 0px;
-                                z-index: 10;
-                                width: 100%;
-                                
-                                }
-                                .atxt-inner {
-                                //   background-color: #505050;
-                                    h3 {
-                                        font-size: 6vw;
-                                        font-family: "pretendard";
-                                        // color: #380b4a;
-                                        @include responsive(large-screens) {
-                                            font-size: 30px;
-                                            font-weight: 600;
-                                        }
-                                    }
-                                    p {
-                                        text-align: left;
-                                        font-size: 4vw;
-                                        font-weight: 300;
-                                        color: #000000;
-                                        line-height: 145%;
-                                    
-                                        @include responsive(large-screens) {
-                                            font-size: 20px;
-                                            line-height: 32px;
-                                        
-                                        }
-                                    } // p
-                                } // atxt-inner
-                                .a1 {
-                                    h3 {
-                                        font-size: 100px;
-                                        @include responsive(large-screens) {
-                                        
-                                        }
-                                    }
-                                    p {
-                                        @include responsive(large-screens) {
-                                        
-                                        }
-                                    }
-                                }
-                                .a2 {
-                                    h3 {
-                                        @include responsive(large-screens) {
-                                        
-                                        }
-                                    }
-                                    p {
-                                        @include responsive(large-screens) {
-                                        
-                                        }
-                                    }
-                                }
-                                .a3 {
-                                    h3 {
-                                        @include responsive(large-screens) {
-                                        
-                                        }
-                                    }
-                                    p {
-                                        @include responsive(large-screens) {
-                                        
-                                        }
-                                    }
-                                } // a3
-                            } // atxt
-                        } // atxt-box
-                    } // submarin-atxt
-                } //about-me
-
+                
                     .skill {
                         margin-top: 100px;
                         margin-bottom: 100px;

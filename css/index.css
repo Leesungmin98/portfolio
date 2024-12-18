@@ -1414,6 +1414,135 @@ body main .main-bg .buble14 {
     transform: translateY(-600px);
   }
 }
+body main .main-bg .aboutMe {
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  color: white;
+}
+body main .main-bg .aboutMe .visual {
+  position: relative;
+  height: 250vh;
+}
+body main .main-bg .aboutMe .visual .imgBox2 {
+  position: absolute;
+  width: 100%;
+  top: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  perspective: 1500px;
+  text-align: center;
+}
+body main .main-bg .aboutMe .visual .imgBox2 .img {
+  width: 100%;
+}
+body main .main-bg .aboutMe .visual .titleBox2 {
+  position: absolute;
+  width: 100%;
+  top: 12%;
+  left: 0;
+  line-height: 1.4;
+}
+body main .main-bg .aboutMe .visual .titleBox2 .for {
+  font-size: 50px;
+  margin-left: 100px;
+}
+body main .main-bg .aboutMe .visual .titleBox2 .en2 {
+  font-size: 64px;
+  display: inline-block;
+  margin-right: 10px;
+}
+body main .main-bg .aboutMe .visual .titleBox2 .date {
+  text-align: right;
+  margin-right: 100px;
+  font-size: 48px;
+}
+body main .main-bg .aboutMe .visual .textLoop ul {
+  display: flex;
+  white-space: nowrap;
+  font-size: 145px;
+  letter-spacing: -2px;
+}
+body main .main-bg .aboutMe .visual .textLoop ul li {
+  animation: textLoop 6s linear infinite;
+  padding: 0 20px;
+}
+@keyframes textLoop {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+body main .main-bg .aboutMe .visual .textBox2 {
+  width: 30%;
+  position: absolute;
+  right: 5%;
+  top: 40%;
+}
+body main .main-bg .aboutMe .visual .textBox2 ul .top {
+  font-size: 24px;
+  border-bottom: 1px solid white;
+}
+body main .main-bg .aboutMe .visual .textBox2 ul .top h2 {
+  font-weight: normal;
+}
+body main .main-bg .aboutMe .visual .textBox2 ul li {
+  display: flex;
+  margin-bottom: 12px;
+  align-items: center;
+}
+body main .main-bg .aboutMe .visual .textBox2 ul li h3 {
+  width: 130px;
+  font-weight: normal;
+  font-size: 13px;
+}
+body main .main-bg .aboutMe .visual .textBox2 ul li .en2 {
+  font-size: 22px;
+}
+body main .main-bg .aboutMe .visual .textLoop2 {
+  position: absolute;
+  left: -20px;
+  bottom: 300px;
+}
+body main .main-bg .aboutMe .visual .textLoop2 ul {
+  position: absolute;
+  padding: 10px 0;
+  display: flex;
+  white-space: nowrap;
+  font-size: 70px;
+  letter-spacing: -2px;
+  color: black;
+  background: white;
+}
+body main .main-bg .aboutMe .visual .textLoop2 ul li {
+  padding: 0 20px;
+}
+body main .main-bg .aboutMe .visual .textLoop2 ul.a {
+  transform: rotate(7deg);
+  background: rgba(255, 255, 255, 0);
+  color: white;
+  border: 1px solid white;
+}
+body main .main-bg .aboutMe .visual .textLoop2 ul.a li {
+  animation: textLoop 6s linear infinite;
+}
+body main .main-bg .aboutMe .visual .textLoop2 ul.b {
+  top: -135px;
+  transform: rotate(-7deg);
+}
+body main .main-bg .aboutMe .visual .textLoop2 ul.b li {
+  animation: textLoop2 6s linear infinite;
+}
+@keyframes textLoop2 {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
 body main .main-bg .container {
   width: 100%;
   height: 100%;
@@ -1433,102 +1562,6 @@ body main .main-bg .container h2 {
     font-size: 4.5rem;
     padding: 300px 0 140px 0;
   }
-}
-body main .main-bg .container .about-me {
-  width: 100%;
-  margin-bottom: 20%;
-  margin-top: 0%;
-}
-@media only screen and (min-width: 1024px) {
-  body main .main-bg .container .about-me {
-    margin-top: 4%;
-  }
-}
-body main .main-bg .container .about-me .submarin-atxt {
-  width: 85%;
-  height: 100%;
-  margin: auto;
-}
-@media only screen and (min-width: 1024px) {
-  body main .main-bg .container .about-me .submarin-atxt {
-    width: 100%;
-    display: flex;
-    align-items: center;
-  }
-}
-body main .main-bg .container .about-me .submarin-atxt .submarin {
-  width: 100%;
-  height: 100%;
-  margin-top: 120px;
-}
-@media only screen and (min-width: 1024px) {
-  body main .main-bg .container .about-me .submarin-atxt .submarin {
-    margin-top: 0px;
-    width: 50%;
-  }
-}
-body main .main-bg .container .about-me .submarin-atxt .submarin .submarin-img {
-  width: 55%;
-  margin: auto;
-}
-@media only screen and (min-width: 1024px) {
-  body main .main-bg .container .about-me .submarin-atxt .submarin .submarin-img {
-    width: 55%;
-  }
-}
-body main .main-bg .container .about-me .submarin-atxt .atxt-box .atxt-title h3 {
-  font-family: "Super Shiny";
-  font-size: 25vw;
-  text-align: center;
-  color: #ceab0f;
-}
-@media only screen and (min-width: 1024px) {
-  body main .main-bg .container .about-me .submarin-atxt .atxt-box .atxt-title h3 {
-    text-align: left;
-    font-size: 8vw;
-  }
-}
-body main .main-bg .container .about-me .submarin-atxt .atxt-box .atxt {
-  width: 100%;
-  height: 100%;
-  padding: 20px;
-  font-family: "pretendard";
-  border-radius: 20px;
-  display: flex;
-}
-@media only screen and (min-width: 1024px) {
-  body main .main-bg .container .about-me .submarin-atxt .atxt-box .atxt {
-    position: relative;
-    top: 0px;
-    z-index: 10;
-    width: 100%;
-  }
-}
-body main .main-bg .container .about-me .submarin-atxt .atxt-box .atxt .atxt-inner h3 {
-  font-size: 6vw;
-  font-family: "pretendard";
-}
-@media only screen and (min-width: 1024px) {
-  body main .main-bg .container .about-me .submarin-atxt .atxt-box .atxt .atxt-inner h3 {
-    font-size: 30px;
-    font-weight: 600;
-  }
-}
-body main .main-bg .container .about-me .submarin-atxt .atxt-box .atxt .atxt-inner p {
-  text-align: left;
-  font-size: 4vw;
-  font-weight: 300;
-  color: #000000;
-  line-height: 145%;
-}
-@media only screen and (min-width: 1024px) {
-  body main .main-bg .container .about-me .submarin-atxt .atxt-box .atxt .atxt-inner p {
-    font-size: 20px;
-    line-height: 32px;
-  }
-}
-body main .main-bg .container .about-me .submarin-atxt .atxt-box .atxt .a1 h3 {
-  font-size: 100px;
 }
 body main .main-bg .container .skill {
   margin-top: 100px;
