@@ -1442,9 +1442,9 @@ body {
                 .visual {
                     position: relative;
                     height: 250vh;
-                    .imgBox2 {
+                    .imgBox3 {
                         position: absolute;
-                        width: 100%;
+                        width: 70%;
                         top: 3%;
                         left: 50%;
                         transform:translateX(-50%);
@@ -1452,8 +1452,9 @@ body {
                         text-align: center;
                         .img {
                             width: 100%;
+                            vertical-align: middle;
                         }
-                    } // imgBox2
+                    } // imgBox3
                     .titleBox2 {
                         position: absolute;
                         width: 100%;

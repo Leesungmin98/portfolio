@@ -1424,17 +1424,18 @@ body main .main-bg .aboutMe .visual {
   position: relative;
   height: 250vh;
 }
-body main .main-bg .aboutMe .visual .imgBox2 {
+body main .main-bg .aboutMe .visual .imgBox3 {
   position: absolute;
-  width: 100%;
+  width: 70%;
   top: 3%;
   left: 50%;
   transform: translateX(-50%);
   perspective: 1500px;
   text-align: center;
 }
-body main .main-bg .aboutMe .visual .imgBox2 .img {
+body main .main-bg .aboutMe .visual .imgBox3 .img {
   width: 100%;
+  vertical-align: middle;
 }
 body main .main-bg .aboutMe .visual .titleBox2 {
   position: absolute;
