@@ -90,7 +90,7 @@ body header .logo-btn-screen {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    height: 80px;
+    height: 60px;
     background: #faf7f5;
   }
 }
@@ -619,13 +619,12 @@ body main .main-bg {
   overflow: hidden;
   width: 100%;
   height: 100%;
-  background: linear-gradient(#0064a2 10%, #00b9ce 30%, #a0cede 40%, #7bb6d4 80%);
   z-index: 0;
 }
 @media only screen and (min-width: 1024px) {
   body main .main-bg {
     height: 100%;
-    background: linear-gradient(#0064a2 10%, #00b9ce 30%, #a0cede 40%, #7bb6d4 80%);
+    background-color: #0064a2;
   }
 }
 body main .main-bg #top-bt {
@@ -1422,12 +1421,12 @@ body main .main-bg .aboutMe {
 }
 body main .main-bg .aboutMe .visual {
   position: relative;
-  height: 250vh;
+  height: 230vh;
 }
 body main .main-bg .aboutMe .visual .imgBox3 {
   position: absolute;
-  width: 70%;
-  top: 3%;
+  width: 20%;
+  top: 10%;
   left: 50%;
   transform: translateX(-50%);
   perspective: 1500px;
@@ -1480,7 +1479,7 @@ body main .main-bg .aboutMe .visual .textBox2 {
   width: 30%;
   position: absolute;
   right: 5%;
-  top: 40%;
+  top: 60%;
 }
 body main .main-bg .aboutMe .visual .textBox2 ul .top {
   font-size: 24px;
