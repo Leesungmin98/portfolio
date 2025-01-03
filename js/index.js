@@ -648,11 +648,11 @@ document.addEventListener('DOMContentLoaded', function() {
     gsap.timeline({
         scrollTrigger: {
             trigger: '.visual .imgBox3',
-            start: '60% 50%',
+            start: '50% 50%',
             end: '150%',
             scrub: 1,
             pin: true,
-            markers: true
+            markers: false
         }
     })
     .fromTo('.visual .imgBox3 img', 
@@ -660,4 +660,6 @@ document.addEventListener('DOMContentLoaded', function() {
         { transform: 'rotateY(0deg) rotateX(0deg)', width: '100%', opacity: 1 },
         0
     );
+
 });
+
