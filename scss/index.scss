@@ -1465,7 +1465,7 @@ body {
                         border-radius: 20px;
                         @include responsive(large-screens) {
                             position: absolute;
-                            width: 20%;
+                            width: 23%;
                             top: 10%;
                             left: 70%;
                             transform:translateX(-50%);
@@ -1480,7 +1480,7 @@ body {
                     } // imgBox3
                     .aboutMe-txt-box {
                         position: absolute;
-                        top: 65%;
+                        top: 62%;
                         left: 70%;
                         transform:translateX(-50%);
                         width: 100%;
@@ -1488,30 +1488,41 @@ body {
                         .txt-box-inner {
                             
                             li {
-                                h2 {
-                                    font-size: 3.7rem;
-                                    font-weight: 600;
-                                    span {
-                                        font-size: 4.3rem;
-                                        font-family: "recipekorea";
-                                        color: #15015c;
+                                .aboutMe-box {
+                                    h2 {
+                                        font-size: 3.7rem;
+                                        font-weight: 600;
+                                        color: #FAF7F5;
+                                        span {
+                                            font-size: 4.3rem;
+                                            font-family: "recipekorea";
+                                            color: #15015c;
+                                        }
                                     }
-                                }
-                                p {
-                                    margin-top:24px;
-                                    font-size: 1.3rem;
-                                    color: #ffffff;
-                                }
-                                .aboutMe-txt {
-                                    margin-top: 40px;
-                                    padding-bottom: 12px;
-                                    font-size: 1.2rem;
-                                    strong {
-                                        font-size: 1.7rem;
-                                        margin-bottom: 12px;
+                                    p {
+                                        margin-top:12px;
+                                        font-size: 1.3rem;
+                                        color: #FAF7F5;
                                     }
-                                }
-                            }
+                                    .aboutMe-box-inner {
+                                        display: flex;
+                                        .aboutMe-txt {
+                                            margin-top: 60px;
+                                            margin-right: 20px;
+                                            padding-bottom: 12px;
+                                            font-size: 1.2rem;
+                                            padding: 20px;
+                                            border-radius: 20px;
+                                            color: #000000;
+                                            background-color: #FAF7F5;
+                                            strong {
+                                                font-size: 1.5rem;
+                                                margin-bottom: 12px;
+                                            }
+                                        } // aboutMe-txt
+                                    } // aboutMe-box-inner
+                                } // aboutMe-box
+                            } // li
                         } // txt-box-inner 
                     } // aboutMe-txt-box
                 } // visual
