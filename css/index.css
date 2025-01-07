@@ -1421,23 +1421,78 @@ body main .main-bg .aboutMe {
   overflow: hidden;
   color: rgb(255, 255, 255);
 }
+@media only screen and (min-width: 1024px) {
+  body main .main-bg .aboutMe {
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    color: rgb(255, 255, 255);
+  }
+}
 body main .main-bg .aboutMe .visual {
   position: relative;
   height: 230vh;
 }
+@media only screen and (min-width: 1024px) {
+  body main .main-bg .aboutMe .visual {
+    position: relative;
+    height: 230vh;
+  }
+}
 body main .main-bg .aboutMe .visual .imgBox3 {
   position: absolute;
-  width: 20%;
-  top: 10%;
-  left: 30%;
+  width: 50%;
+  left: 50%;
   transform: translateX(-50%);
   perspective: 1500px;
   text-align: center;
   border-radius: 20px;
 }
+@media only screen and (min-width: 1024px) {
+  body main .main-bg .aboutMe .visual .imgBox3 {
+    position: absolute;
+    width: 20%;
+    top: 10%;
+    left: 70%;
+    transform: translateX(-50%);
+    perspective: 1500px;
+    text-align: center;
+    border-radius: 20px;
+  }
+}
 body main .main-bg .aboutMe .visual .imgBox3 .img {
   width: 100%;
   vertical-align: middle;
+}
+body main .main-bg .aboutMe .visual .aboutMe-txt-box {
+  position: absolute;
+  top: 65%;
+  left: 70%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+body main .main-bg .aboutMe .visual .aboutMe-txt-box .txt-box-inner li h2 {
+  font-size: 3.7rem;
+  font-weight: 600;
+}
+body main .main-bg .aboutMe .visual .aboutMe-txt-box .txt-box-inner li h2 span {
+  font-size: 4.3rem;
+  font-family: "recipekorea";
+  color: #15015c;
+}
+body main .main-bg .aboutMe .visual .aboutMe-txt-box .txt-box-inner li p {
+  margin-top: 24px;
+  font-size: 1.3rem;
+  color: #ffffff;
+}
+body main .main-bg .aboutMe .visual .aboutMe-txt-box .txt-box-inner li .aboutMe-txt {
+  margin-top: 40px;
+  padding-bottom: 12px;
+  font-size: 1.2rem;
+}
+body main .main-bg .aboutMe .visual .aboutMe-txt-box .txt-box-inner li .aboutMe-txt strong {
+  font-size: 1.7rem;
+  margin-bottom: 12px;
 }
 body main .main-bg .container {
   width: 100%;
