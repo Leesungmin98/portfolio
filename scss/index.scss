@@ -608,7 +608,7 @@ body {
             overflow: hidden;
             width: 100%;
             height: 100%;
-            background:linear-gradient(#0064a2 10%, #00b9ce 30%,#a0cede 40%,#7bb6d4 80%);
+            background:linear-gradient(#0064a2 20%, #00b9ce 38%,#0064a2 50%,#00b9ce 80%);
             z-index: 0;
             @include responsive(large-screens) {
                 height: 100%;
@@ -674,7 +674,7 @@ body {
                     animation-iteration-count: infinite;
                     @include responsive(large-screens) {
                         width: 15%;
-                        top: 4100px; left: 0%;
+                        top: 5000px; left: 0%;
                         width: 40%;
 
                         animation-name: killer;
@@ -731,7 +731,7 @@ body {
                     animation-timing-function: ease-in-out;
                     animation-iteration-count: infinite;
                     @include responsive(large-screens) {
-                        top: 900px; 
+                        top: 600px; 
                         width: 40%
                     }
                 }
@@ -821,9 +821,10 @@ body {
                     animation-iteration-count: infinite;
                     @include responsive(large-screens) {
                         width: 20px;
-                        top: 1500px; 
+                        top: 1200px; 
                         width: 10%;
 
+                        animation-delay: 1s;
                         animation-name: fish2 ;
                         animation-duration: 20s;
                         animation-timing-function: ease-in-out;
@@ -868,7 +869,7 @@ body {
                     position: absolute;
                     top: 87%; left: 70%;
                     width: 50%;
-                    z-index: 9;
+                    z-index: 1;
                     animation-name: fish3-box ;
                     animation-duration: 6s;
                     animation-timing-function: linear;
@@ -892,7 +893,7 @@ body {
                         }
                     }
                     @include responsive(large-screens) {
-                        top: 4000px; left: 78%;
+                        top: 8000px; left: 78%;
                         width: 20%;
 
                         animation-name: fish3-box ;
@@ -1450,7 +1451,7 @@ body {
     
                 .visual {
                     position: relative;
-                    height: 230vh;
+                    height: 300vh;
                     @include responsive(large-screens) {
                         position: relative;
                         height: 250vh;
@@ -1480,6 +1481,7 @@ body {
                     } // imgBox3
                     .aboutMe-txt-box1 {
                         position: absolute;
+                        top: 60%;
                         left: 50%;
                         transform:translateX(-50%);
                         width: 100%;
@@ -1495,7 +1497,8 @@ body {
                             li {
                                 .aboutMe-box {
                                     h2 {
-                                        font-size: 3.7rem;
+                                        font-size: 1.5rem;
+                                        text-align: center;
                                         color: #FAF7F5;
                                         @include responsive(large-screens) {
                                             font-size: 3rem;
@@ -1521,6 +1524,7 @@ body {
                     } // aboutMe-txt-box1
                     .aboutMe-txt-box2 {
                         position: absolute;
+                        top: 68%;
                         left: 50%;
                         transform:translateX(-50%);
                         width: 100%;
@@ -1536,8 +1540,9 @@ body {
                             li {
                                 .aboutMe-box {
                                     h2 {
-                                        font-size: 3.7rem;
+                                        font-size: 1.3rem;
                                         font-weight: 600;
+                                        text-align: center;
                                         color: #FAF7F5;
                                         @include responsive(large-screens) {
                                             font-size: 2.5rem;
@@ -1554,16 +1559,28 @@ body {
                                         } 
                                     } // h2
                                     .box2-color {
-                                        margin-top: 16px;
-                                        margin-bottom: 24px;
-                                        font-size: 1.4rem;
+                                        margin-top: 20px;
+                                        margin-bottom: 28px;
+                                        font-size: 0.85rem;
+                                        text-align: center;
+                                        @include responsive(large-screens) {
+                                            margin-top: 16px;
+                                            margin-bottom: 24px;
+                                            font-size: 1.4rem; 
+                                        }
                                         span {
                                             color: #46b4fd;
                                         }
                                     } // box2-color
                                     p {
-                                        font-size: 1.1rem;
-                                        width: 25%;
+                                        font-size: 0.8rem;
+                                        width: 80%;
+                                        margin: 0 auto;
+                                        text-align: center;
+                                        @include responsive(large-screens) {
+                                            font-size: 1.1rem;
+                                            width: 25%;
+                                        }
                                     }
                                 } // aboutMe-box
                             } // li
