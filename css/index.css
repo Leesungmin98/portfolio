@@ -1420,6 +1420,7 @@ body main .main-bg .aboutMe {
   position: relative;
   margin: 0 auto;
   overflow: hidden;
+  width: 100%;
   color: rgb(255, 255, 255);
 }
 @media only screen and (min-width: 1024px) {
@@ -1432,33 +1433,25 @@ body main .main-bg .aboutMe {
 }
 body main .main-bg .aboutMe .visual {
   position: relative;
-  height: 300vh;
+  height: 250vh;
 }
 @media only screen and (min-width: 1024px) {
   body main .main-bg .aboutMe .visual {
     position: relative;
-    height: 250vh;
+    height: 100%;
   }
 }
 body main .main-bg .aboutMe .visual .imgBox3 {
-  position: absolute;
+  margin: 0 auto;
   width: 50%;
-  left: 50%;
-  transform: translateX(-50%);
   perspective: 1500px;
   text-align: center;
-  border-radius: 20px;
 }
 @media only screen and (min-width: 1024px) {
   body main .main-bg .aboutMe .visual .imgBox3 {
-    position: absolute;
     width: 18%;
-    top: 13%;
-    left: 50%;
-    transform: translateX(-50%);
     perspective: 1500px;
     text-align: center;
-    border-radius: 20px;
   }
 }
 body main .main-bg .aboutMe .visual .imgBox3 .img {
@@ -1467,7 +1460,7 @@ body main .main-bg .aboutMe .visual .imgBox3 .img {
 }
 body main .main-bg .aboutMe .visual .aboutMe-txt-box1 {
   position: absolute;
-  top: 60%;
+  margin-top: 24px;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
@@ -1479,6 +1472,7 @@ body main .main-bg .aboutMe .visual .aboutMe-txt-box1 {
     left: 65%;
     transform: translateX(-50%);
     width: 100%;
+    margin-top: 0px;
   }
 }
 body main .main-bg .aboutMe .visual .aboutMe-txt-box1 .txt-box-inner li .aboutMe-box h2 {
@@ -1510,7 +1504,7 @@ body main .main-bg .aboutMe .visual .aboutMe-txt-box1 .txt-box-inner li .aboutMe
 }
 body main .main-bg .aboutMe .visual .aboutMe-txt-box2 {
   position: absolute;
-  top: 68%;
+  margin-top: 200px;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
@@ -1522,6 +1516,7 @@ body main .main-bg .aboutMe .visual .aboutMe-txt-box2 {
     left: 113%;
     transform: translateX(-50%);
     width: 100%;
+    margin-top: 0px;
   }
 }
 body main .main-bg .aboutMe .visual .aboutMe-txt-box2 .txt-box-inner li .aboutMe-box h2 {

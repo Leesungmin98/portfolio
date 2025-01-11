@@ -1439,40 +1439,36 @@ body {
                 position: relative;
                 margin: 0 auto;
                 overflow: hidden;
-                // background-color: black;
+                width: 100%;
+                
                 color: rgb(255, 255, 255);
                 @include responsive(large-screens) {
                     position: relative;
                     margin: 0 auto;
                     overflow: hidden;
-                    // background-color: black;
+                    
                     color: rgb(255, 255, 255);
                 }
     
                 .visual {
                     position: relative;
-                    height: 300vh;
+                    height: 250vh;
+                    
                     @include responsive(large-screens) {
                         position: relative;
-                        height: 250vh;
+                        height: 100%;
                     }
                     .imgBox3 {
-                        position: absolute;
+                        margin: 0 auto;
                         width: 50%;
-                        left: 50%;
-                        transform:translateX(-50%);
                         perspective: 1500px;
                         text-align: center;
-                        border-radius: 20px;
-                        @include responsive(large-screens) {
-                            position: absolute;
+                        
+                        @include responsive(large-screens) {                            
                             width: 18%;
-                            top: 13%;
-                            left: 50%;
-                            transform:translateX(-50%);
                             perspective: 1500px;
                             text-align: center;
-                            border-radius: 20px;
+                            
                         }
                         .img {
                             width: 100%;
@@ -1481,16 +1477,18 @@ body {
                     } // imgBox3
                     .aboutMe-txt-box1 {
                         position: absolute;
-                        top: 60%;
+                        margin-top: 24px;
                         left: 50%;
                         transform:translateX(-50%);
                         width: 100%;
+                        
                         @include responsive(large-screens) {
                             position: absolute;
                             top: 73%;
                             left: 65%;
                             transform:translateX(-50%);
                             width: 100%;
+                            margin-top: 0px;
                         }
                         .txt-box-inner {
                             
@@ -1525,7 +1523,7 @@ body {
                     } // aboutMe-txt-box1
                     .aboutMe-txt-box2 {
                         position: absolute;
-                        top: 68%;
+                        margin-top: 200px;
                         left: 50%;
                         transform:translateX(-50%);
                         width: 100%;
@@ -1535,6 +1533,7 @@ body {
                             left: 113%;
                             transform:translateX(-50%);
                             width: 100%;
+                            margin-top: 0px;
                         }
                         .txt-box-inner {
                             

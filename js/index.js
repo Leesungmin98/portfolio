@@ -656,7 +656,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     })
     .fromTo('.visual .imgBox3 img', 
-        { transform: 'rotateY(-40deg) rotateX(50deg)', width: '100%', opacity: 0.2 },
+        { transform: 'rotateY(-40deg) rotateX(50deg)', width: '100%', opacity: 0.1 },
         { transform: 'rotateY(0deg) rotateX(0deg)', width: '100%', opacity: 1 },
         0
     );
