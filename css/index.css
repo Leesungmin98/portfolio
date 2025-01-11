@@ -303,13 +303,13 @@ body header .wave {
   position: relative;
   z-index: 0;
   width: 100%;
-  height: 180vw;
+  height: 250vw;
   overflow: hidden;
   background-color: #FAF7F5;
 }
 @media only screen and (min-width: 1024px) {
   body header .wave {
-    height: 1000px;
+    height: 1200px;
   }
 }
 body header .wave canvas {
@@ -322,7 +322,8 @@ body header .wave canvas {
 }
 @media only screen and (min-width: 1024px) {
   body header .wave canvas {
-    height: 200vh;
+    bottom: 0;
+    height: 100vh;
   }
 }
 body header .wave .box {
@@ -1482,7 +1483,7 @@ body main .main-bg .aboutMe .visual .aboutMe-txt-box1 .txt-box-inner li .aboutMe
 }
 @media only screen and (min-width: 1024px) {
   body main .main-bg .aboutMe .visual .aboutMe-txt-box1 .txt-box-inner li .aboutMe-box h2 {
-    font-size: 3rem;
+    font-size: 2.5vw;
     text-align: left;
     color: #FAF7F5;
   }
@@ -1527,7 +1528,7 @@ body main .main-bg .aboutMe .visual .aboutMe-txt-box2 .txt-box-inner li .aboutMe
 }
 @media only screen and (min-width: 1024px) {
   body main .main-bg .aboutMe .visual .aboutMe-txt-box2 .txt-box-inner li .aboutMe-box h2 {
-    font-size: 2.5rem;
+    font-size: 2vw;
     text-align: left;
     color: #FAF7F5;
   }
@@ -1548,7 +1549,7 @@ body main .main-bg .aboutMe .visual .aboutMe-txt-box2 .txt-box-inner li .aboutMe
   body main .main-bg .aboutMe .visual .aboutMe-txt-box2 .txt-box-inner li .aboutMe-box .box2-color {
     margin-top: 28px;
     margin-bottom: 32px;
-    font-size: 1.4rem;
+    font-size: 1.2vw;
     text-align: left;
   }
 }
@@ -1564,7 +1565,7 @@ body main .main-bg .aboutMe .visual .aboutMe-txt-box2 .txt-box-inner li .aboutMe
 @media only screen and (min-width: 1024px) {
   body main .main-bg .aboutMe .visual .aboutMe-txt-box2 .txt-box-inner li .aboutMe-box p {
     margin: 0;
-    font-size: 1.1rem;
+    font-size: 1vw;
     text-align: left;
     width: 25%;
   }
@@ -1591,7 +1592,7 @@ body main .main-bg .aboutMe .visual .aboutMe-txt-box3 .txt-box-inner li .aboutMe
 }
 @media only screen and (min-width: 1024px) {
   body main .main-bg .aboutMe .visual .aboutMe-txt-box3 .txt-box-inner li .aboutMe-box h2 {
-    font-size: 3rem;
+    font-size: 2.5vw;
     font-weight: 600;
     color: #FAF7F5;
   }
@@ -2245,7 +2246,7 @@ body main .main-bg .container .portfolio .box {
 }
 body main .main-bg .container .portfolio .box-ani {
   opacity: 0;
-  transform: translateX(-100%);
+  transform: translateX(-50%);
   transition: transform 1s ease, opacity 1s ease;
 }
 body main .main-bg .container .portfolio .box-ani.visible {

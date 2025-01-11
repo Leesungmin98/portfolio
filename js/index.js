@@ -516,81 +516,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /////////////////////////////////////////////////////////
 
-// document.addEventListener('DOMContentLoaded', function() {
-//     gsap.registerPlugin(ScrollTrigger);
 
-//     let list = gsap.utils.toArray('.portfolio2 li');
-//     let listA = gsap.utils.toArray('.portfolio2 .a');
-//     let listB = gsap.utils.toArray('.portfolio2 .b');
-//     let listC = gsap.utils.toArray('.portfolio2 .c');
-
-//     let scrollTween = gsap.to(list, {
-//         xPercent: -100 * (list.length - 1),
-//         ease: 'none',
-//         scrollTrigger: {
-//             trigger: '.portfolio2',
-//             pin: true,
-//             scrub: 1,
-//             start: 'center center',
-//             end: '200%',
-//             markers: false
-//         }
-//     });
-
-//     gsap.to(listA, {
-//         y:50,
-//         rotation: 10,
-//         scrollTrigger: {
-//             trigger:'.portfolio2',
-//             scrub:2,
-//             end:'200%'
-//         }
-//     })
-
-//     gsap.to(listB, {
-//         y:-50,
-//         rotation: 20,
-//         scrollTrigger: {
-//             trigger:'.portfolio2',
-//             scrub:2,
-//             end:'200%'
-//         }
-//     })
-
-//     gsap.to(listC, {
-//         y:-50,
-//         x:20,
-//         rotation: -10,
-//         scrollTrigger: {
-//             trigger:'.portfolio2',
-//             scrub:2,
-//             end:'200%'
-//         }
-//     })
-
-
-
-    
-// });
-
-// ///////////////////
-
-// gsap.registerPlugin(ScrollTrigger);
-
-// gsap.timeline({
-//     scrollTrigger: {
-//         trigger:'.visual .imgBox2',
-//         start:'60% 50%',
-//         end:'150%',
-//         scrub:1,
-//         pin:true,
-//         markers:true
-//     }
-// })
-// .fromTo('.visual .imgBox2 img',{'transform': 'rotateY(-40deg) rotateX(50deg)', 'width':'25%', 'opacity':'0.2'},
-//                             {'transform': 'rotateY(0deg) rotateX(0deg)', 'width':'25%', 'opacity':'1'},0)
-
-//////////////////////////////
 
 document.addEventListener('DOMContentLoaded', function() {
     gsap.registerPlugin(ScrollTrigger);
@@ -610,6 +536,7 @@ document.addEventListener('DOMContentLoaded', function() {
             scrub: 1,
             start: 'center center',
             end: '200%',
+            
         }
     });
 
@@ -656,7 +583,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     })
     .fromTo('.visual .imgBox3 img', 
-        { transform: 'rotateY(-40deg) rotateX(50deg)', width: '100%', opacity: 0.1 },
+        { transform: 'rotateY(-40deg) rotateX(50deg)', width: '100%', opacity: 0 },
         { transform: 'rotateY(0deg) rotateX(0deg)', width: '100%', opacity: 1 },
         0
     );
