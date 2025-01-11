@@ -17,6 +17,7 @@ class App {
       new Wave('#a0cede', -80, 0.8, 0.2),
       new Wave('#00b9ce', -80, 0.8, 0.1),
       new Wave('#0064a2', -80, 1, 0.1),
+      
     ];
 
     // 초기화

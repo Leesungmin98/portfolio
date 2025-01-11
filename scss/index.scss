@@ -563,7 +563,7 @@ body {
                 
                 @include responsive(large-screens) {
                     top: 47%;
-                    font-size: 150px;
+                    font-size: 120px;
                 } 
                 span {
                     color: #0064a2;
@@ -612,7 +612,7 @@ body {
             z-index: 0;
             @include responsive(large-screens) {
                 height: 100%;
-                background:linear-gradient( #0064a2 10%, #00b9ce 30%,#a0cede 40%,#7bb6d4 80%);
+                background:linear-gradient( #0064a2 20%, #00b9ce 35%,#0064a2 40%,#00b9ce 80%);
             }
 
             #top-bt { 
@@ -1453,7 +1453,7 @@ body {
                     height: 230vh;
                     @include responsive(large-screens) {
                         position: relative;
-                        height: 230vh;
+                        height: 250vh;
                     }
                     .imgBox3 {
                         position: absolute;
@@ -1465,9 +1465,9 @@ body {
                         border-radius: 20px;
                         @include responsive(large-screens) {
                             position: absolute;
-                            width: 23%;
-                            top: 10%;
-                            left: 70%;
+                            width: 18%;
+                            top: 13%;
+                            left: 50%;
                             transform:translateX(-50%);
                             perspective: 1500px;
                             text-align: center;
@@ -1478,13 +1478,59 @@ body {
                             vertical-align: middle;
                         }
                     } // imgBox3
-                    .aboutMe-txt-box {
+                    .aboutMe-txt-box1 {
                         position: absolute;
-                        top: 62%;
-                        left: 70%;
+                        left: 50%;
                         transform:translateX(-50%);
                         width: 100%;
-                        
+                        @include responsive(large-screens) {
+                            position: absolute;
+                            top: 73%;
+                            left: 65%;
+                            transform:translateX(-50%);
+                            width: 100%;
+                        }
+                        .txt-box-inner {
+                            
+                            li {
+                                .aboutMe-box {
+                                    h2 {
+                                        font-size: 3.7rem;
+                                        color: #FAF7F5;
+                                        @include responsive(large-screens) {
+                                            font-size: 3rem;
+                                            color: #FAF7F5;
+                                        }
+                                        .color1 {
+                                            text-decoration: underline;
+                                            text-decoration-color: #14108B;
+                                            text-decoration-thickness: 20px;
+                                            text-underline-offset: -10px;
+                                            color: #4BF9FF;
+                                            @include responsive(large-screens) {
+                                                color: #4BF9FF;
+                                            }
+                                        }
+                                        .size1 {
+                                            font-weight: 600;
+                                        } 
+                                    } // h2
+                                } // aboutMe-box
+                            } // li
+                        } // txt-box-inner 
+                    } // aboutMe-txt-box1
+                    .aboutMe-txt-box2 {
+                        position: absolute;
+                        left: 50%;
+                        transform:translateX(-50%);
+                        width: 100%;
+                        @include responsive(large-screens) {
+                            position: absolute;
+                            top: 80%;
+                            left: 113%;
+                            transform:translateX(-50%);
+                            width: 100%;
+                        }
                         .txt-box-inner {
                             
                             li {
@@ -1493,38 +1539,76 @@ body {
                                         font-size: 3.7rem;
                                         font-weight: 600;
                                         color: #FAF7F5;
+                                        @include responsive(large-screens) {
+                                            font-size: 2.5rem;
+                                            color: #FAF7F5;
+                                        }    
                                         span {
-                                            font-size: 4.3rem;
-                                            font-family: "recipekorea";
-                                            color: #15015c;
-                                        }
-                                    }
-                                    p {
-                                        margin-top:12px;
-                                        font-size: 1.3rem;
-                                        color: #FAF7F5;
-                                    }
-                                    .aboutMe-box-inner {
-                                        display: flex;
-                                        .aboutMe-txt {
-                                            margin-top: 60px;
-                                            margin-right: 20px;
-                                            padding-bottom: 12px;
-                                            font-size: 1.2rem;
-                                            padding: 20px;
-                                            border-radius: 20px;
-                                            color: #000000;
-                                            background-color: #FAF7F5;
-                                            strong {
-                                                font-size: 1.5rem;
-                                                margin-bottom: 12px;
+                                            text-decoration: underline;
+                                            text-decoration-color: #46b4fd;
+                                            text-decoration-thickness: 20px;
+                                            text-underline-offset: -10px;
+                                            @include responsive(large-screens) {
+                                       
                                             }
-                                        } // aboutMe-txt
-                                    } // aboutMe-box-inner
+                                        } 
+                                    } // h2
+                                    .box2-color {
+                                        margin-top: 16px;
+                                        margin-bottom: 24px;
+                                        font-size: 1.4rem;
+                                        span {
+                                            color: #46b4fd;
+                                        }
+                                    } // box2-color
+                                    p {
+                                        font-size: 1.1rem;
+                                        width: 25%;
+                                    }
                                 } // aboutMe-box
                             } // li
                         } // txt-box-inner 
-                    } // aboutMe-txt-box
+                    } // aboutMe-txt-box2
+                    .aboutMe-txt-box3 {
+                        position: absolute;
+                        left: 50%;
+                        transform:translateX(-50%);
+                        width: 100%;
+                        @include responsive(large-screens) {
+                            position: absolute;
+                            top: 95%;
+                            left: 80%;
+                            transform:translateX(-50%);
+                            width: 100%;
+                        }
+                        .txt-box-inner {
+                            
+                            li {
+                                .aboutMe-box {
+                                    h2 {
+                                        font-size: 3.7rem;
+                                        font-weight: 600;
+                                        color: #FAF7F5;
+                                        @include responsive(large-screens) {
+                                            font-size: 3rem;
+                                            font-weight: 600;
+                                            color: #FAF7F5;
+                                        }
+                                        span {
+                                            font-size: 4.3rem;
+                                            font-family: "recipekorea";
+                                            color: #5c012f;
+                                            @include responsive(large-screens) {
+                                                font-size: 3rem;
+                                                font-family: "recipekorea";
+                                                color: #fd017f;
+                                            }
+                                        }
+                                    }
+                                } // aboutMe-box
+                            } // li
+                        } // txt-box-inner 
+                    } // aboutMe-txt-box3
                 } // visual
             } // aboutMe
 

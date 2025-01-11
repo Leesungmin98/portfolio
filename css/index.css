@@ -583,7 +583,7 @@ body header .container h1 {
 @media only screen and (min-width: 1024px) {
   body header .container h1 {
     top: 47%;
-    font-size: 150px;
+    font-size: 120px;
   }
 }
 body header .container h1 span {
@@ -626,7 +626,7 @@ body main .main-bg {
 @media only screen and (min-width: 1024px) {
   body main .main-bg {
     height: 100%;
-    background: linear-gradient(#0064a2 10%, #00b9ce 30%, #a0cede 40%, #7bb6d4 80%);
+    background: linear-gradient(#0064a2 20%, #00b9ce 35%, #0064a2 40%, #00b9ce 80%);
   }
 }
 body main .main-bg #top-bt {
@@ -1436,7 +1436,7 @@ body main .main-bg .aboutMe .visual {
 @media only screen and (min-width: 1024px) {
   body main .main-bg .aboutMe .visual {
     position: relative;
-    height: 230vh;
+    height: 250vh;
   }
 }
 body main .main-bg .aboutMe .visual .imgBox3 {
@@ -1451,9 +1451,9 @@ body main .main-bg .aboutMe .visual .imgBox3 {
 @media only screen and (min-width: 1024px) {
   body main .main-bg .aboutMe .visual .imgBox3 {
     position: absolute;
-    width: 23%;
-    top: 10%;
-    left: 70%;
+    width: 18%;
+    top: 13%;
+    left: 50%;
     transform: translateX(-50%);
     perspective: 1500px;
     text-align: center;
@@ -1464,44 +1464,128 @@ body main .main-bg .aboutMe .visual .imgBox3 .img {
   width: 100%;
   vertical-align: middle;
 }
-body main .main-bg .aboutMe .visual .aboutMe-txt-box {
+body main .main-bg .aboutMe .visual .aboutMe-txt-box1 {
   position: absolute;
-  top: 62%;
-  left: 70%;
+  left: 50%;
   transform: translateX(-50%);
   width: 100%;
 }
-body main .main-bg .aboutMe .visual .aboutMe-txt-box .txt-box-inner li .aboutMe-box h2 {
+@media only screen and (min-width: 1024px) {
+  body main .main-bg .aboutMe .visual .aboutMe-txt-box1 {
+    position: absolute;
+    top: 73%;
+    left: 65%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+}
+body main .main-bg .aboutMe .visual .aboutMe-txt-box1 .txt-box-inner li .aboutMe-box h2 {
+  font-size: 3.7rem;
+  color: #FAF7F5;
+}
+@media only screen and (min-width: 1024px) {
+  body main .main-bg .aboutMe .visual .aboutMe-txt-box1 .txt-box-inner li .aboutMe-box h2 {
+    font-size: 3rem;
+    color: #FAF7F5;
+  }
+}
+body main .main-bg .aboutMe .visual .aboutMe-txt-box1 .txt-box-inner li .aboutMe-box h2 .color1 {
+  text-decoration: underline;
+  text-decoration-color: #14108B;
+  text-decoration-thickness: 20px;
+  text-underline-offset: -10px;
+  color: #4BF9FF;
+}
+@media only screen and (min-width: 1024px) {
+  body main .main-bg .aboutMe .visual .aboutMe-txt-box1 .txt-box-inner li .aboutMe-box h2 .color1 {
+    color: #4BF9FF;
+  }
+}
+body main .main-bg .aboutMe .visual .aboutMe-txt-box1 .txt-box-inner li .aboutMe-box h2 .size1 {
+  font-weight: 600;
+}
+body main .main-bg .aboutMe .visual .aboutMe-txt-box2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+@media only screen and (min-width: 1024px) {
+  body main .main-bg .aboutMe .visual .aboutMe-txt-box2 {
+    position: absolute;
+    top: 80%;
+    left: 113%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+}
+body main .main-bg .aboutMe .visual .aboutMe-txt-box2 .txt-box-inner li .aboutMe-box h2 {
   font-size: 3.7rem;
   font-weight: 600;
   color: #FAF7F5;
 }
-body main .main-bg .aboutMe .visual .aboutMe-txt-box .txt-box-inner li .aboutMe-box h2 span {
-  font-size: 4.3rem;
-  font-family: "recipekorea";
-  color: #15015c;
+@media only screen and (min-width: 1024px) {
+  body main .main-bg .aboutMe .visual .aboutMe-txt-box2 .txt-box-inner li .aboutMe-box h2 {
+    font-size: 2.5rem;
+    color: #FAF7F5;
+  }
 }
-body main .main-bg .aboutMe .visual .aboutMe-txt-box .txt-box-inner li .aboutMe-box p {
-  margin-top: 12px;
-  font-size: 1.3rem;
+body main .main-bg .aboutMe .visual .aboutMe-txt-box2 .txt-box-inner li .aboutMe-box h2 span {
+  text-decoration: underline;
+  text-decoration-color: #46b4fd;
+  text-decoration-thickness: 20px;
+  text-underline-offset: -10px;
+}
+body main .main-bg .aboutMe .visual .aboutMe-txt-box2 .txt-box-inner li .aboutMe-box .box2-color {
+  margin-top: 16px;
+  margin-bottom: 24px;
+  font-size: 1.4rem;
+}
+body main .main-bg .aboutMe .visual .aboutMe-txt-box2 .txt-box-inner li .aboutMe-box .box2-color span {
+  color: #46b4fd;
+}
+body main .main-bg .aboutMe .visual .aboutMe-txt-box2 .txt-box-inner li .aboutMe-box p {
+  font-size: 1.1rem;
+  width: 25%;
+}
+body main .main-bg .aboutMe .visual .aboutMe-txt-box3 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+@media only screen and (min-width: 1024px) {
+  body main .main-bg .aboutMe .visual .aboutMe-txt-box3 {
+    position: absolute;
+    top: 95%;
+    left: 80%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+}
+body main .main-bg .aboutMe .visual .aboutMe-txt-box3 .txt-box-inner li .aboutMe-box h2 {
+  font-size: 3.7rem;
+  font-weight: 600;
   color: #FAF7F5;
 }
-body main .main-bg .aboutMe .visual .aboutMe-txt-box .txt-box-inner li .aboutMe-box .aboutMe-box-inner {
-  display: flex;
+@media only screen and (min-width: 1024px) {
+  body main .main-bg .aboutMe .visual .aboutMe-txt-box3 .txt-box-inner li .aboutMe-box h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #FAF7F5;
+  }
 }
-body main .main-bg .aboutMe .visual .aboutMe-txt-box .txt-box-inner li .aboutMe-box .aboutMe-box-inner .aboutMe-txt {
-  margin-top: 60px;
-  margin-right: 20px;
-  padding-bottom: 12px;
-  font-size: 1.2rem;
-  padding: 20px;
-  border-radius: 20px;
-  color: #000000;
-  background-color: #FAF7F5;
+body main .main-bg .aboutMe .visual .aboutMe-txt-box3 .txt-box-inner li .aboutMe-box h2 span {
+  font-size: 4.3rem;
+  font-family: "recipekorea";
+  color: #5c012f;
 }
-body main .main-bg .aboutMe .visual .aboutMe-txt-box .txt-box-inner li .aboutMe-box .aboutMe-box-inner .aboutMe-txt strong {
-  font-size: 1.5rem;
-  margin-bottom: 12px;
+@media only screen and (min-width: 1024px) {
+  body main .main-bg .aboutMe .visual .aboutMe-txt-box3 .txt-box-inner li .aboutMe-box h2 span {
+    font-size: 3rem;
+    font-family: "recipekorea";
+    color: #fd017f;
+  }
 }
 body main .main-bg .container {
   width: 100%;

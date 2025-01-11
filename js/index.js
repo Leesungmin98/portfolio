@@ -649,7 +649,7 @@ document.addEventListener('DOMContentLoaded', function() {
         scrollTrigger: {
             trigger: '.visual .imgBox3',
             start: '50% 50%',
-            end: '150%',
+            end: '280%',
             scrub: 1,
             pin: true,
             markers: false
