@@ -1460,7 +1460,7 @@ body main .main-bg .aboutMe .visual .imgBox3 .img {
 }
 body main .main-bg .aboutMe .visual .aboutMe-txt-box1 {
   position: absolute;
-  margin-top: 24px;
+  margin-top: 48px;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
