@@ -370,7 +370,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const observerOptions = {
         root: null, // 뷰포트를 기준으로
         rootMargin: '0px',
-        threshold: 0.5 // 요소가 10% 이상 보이면 감지
+        threshold: 0.3 // 요소가 10% 이상 보이면 감지
     };
 
     const observer = new IntersectionObserver((entries) => {
