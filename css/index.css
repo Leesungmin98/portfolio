@@ -326,242 +326,6 @@ body header .wave canvas {
     height: 100vh;
   }
 }
-body header .wave .box {
-  position: fixed;
-  margin: auto;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-body header .wave .box .sun-ray {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  top: -7%;
-  left: -20%;
-  transform: scale(0.3);
-  transform-origin: center center;
-  z-index: 10;
-}
-@media only screen and (min-width: 1024px) {
-  body header .wave .box .sun-ray {
-    transform: scale(0.7);
-    left: -100px;
-    top: -100px;
-  }
-}
-body header .wave .box .sun-ray .sun {
-  position: absolute;
-  z-index: 8;
-  background: yellow;
-  top: 30%;
-  right: 50%;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  box-shadow: 0px 0px 30px 15px #ffff66;
-  animation: pulse 2s infinite;
-}
-@media only screen and (min-width: 1024px) {
-  body header .wave .box .sun-ray .sun {
-    top: 30%;
-    left: 30%;
-    width: 150px;
-    height: 150px;
-  }
-}
-body header .wave .box .sun-ray .sun .face {
-  position: absolute;
-}
-body header .wave .box .sun-ray .sun .face:before, body header .wave .box .sun-ray .sun .face:after {
-  content: "";
-  position: absolute;
-  width: 9px;
-  height: 9px;
-  background: #000000;
-  border-radius: 50%;
-  z-index: 5;
-}
-body header .wave .box .sun-ray .sun .face:before {
-  top: 20px;
-  left: 60px;
-}
-body header .wave .box .sun-ray .sun .face:after {
-  top: 20px;
-  left: 100px;
-}
-body header .wave .box .sun-ray .sun .face .smile {
-  position: absolute;
-  top: 27px;
-  left: 79px;
-  width: 10px;
-  height: 10px;
-  border: 3px solid;
-  border-radius: 50%;
-  border-color: transparent #000 #000 transparent;
-  transform: rotate(45deg);
-}
-body header .wave .box .sun-ray .sun .face .pupil-left {
-  position: absolute;
-  border-radius: 50%;
-  height: 3px;
-  width: 3px;
-  left: 63px;
-  top: 20px;
-  background: #ffffff;
-  z-index: 7;
-}
-body header .wave .box .sun-ray .sun .face .pupil-right {
-  position: absolute;
-  border-radius: 50%;
-  height: 3px;
-  width: 3px;
-  left: 104px;
-  top: 20px;
-  background: #ffffff;
-  z-index: 7;
-}
-body header .wave .box .sun-ray .sun .ray {
-  position: absolute;
-  margin: auto;
-  width: 150px;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  animation: spin 15s linear infinite;
-}
-body header .wave .box .sun-ray .sun .ray .beam {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0), yellow 40%, yellow);
-  margin-left: 10px;
-  border-radius: 50% 50% 0 0;
-  position: absolute;
-  opacity: 0.2;
-}
-body header .wave .box .sun-ray .sun .ray .r1 {
-  height: 120px;
-  width: 40px;
-  transform: rotate(180deg);
-  top: -120px;
-  left: 42px;
-}
-body header .wave .box .sun-ray .sun .ray .r2 {
-  height: 120px;
-  width: 30px;
-  transform: rotate(210deg);
-  top: -100px;
-  right: -5px;
-}
-body header .wave .box .sun-ray .sun .ray .r3 {
-  height: 120px;
-  width: 50px;
-  transform: rotate(255deg);
-  top: -30px;
-  right: -65px;
-}
-body header .wave .box .sun-ray .sun .ray .r4 {
-  height: 120px;
-  width: 24px;
-  transform: rotate(300deg);
-  top: 60px;
-  left: 150px;
-}
-body header .wave .box .sun-ray .sun .ray .r5 {
-  height: 120px;
-  width: 40px;
-  top: 135px;
-  left: 40px;
-}
-body header .wave .box .sun-ray .sun .ray .r6 {
-  height: 120px;
-  width: 30px;
-  transform: rotate(-35deg);
-  top: 115px;
-  right: -12px;
-}
-body header .wave .box .sun-ray .sun .ray .r7 {
-  height: 120px;
-  width: 45px;
-  transform: rotate(45deg);
-  top: 100px;
-  left: -45px;
-}
-body header .wave .box .sun-ray .sun .ray .r8 {
-  height: 130px;
-  width: 20px;
-  transform: rotate(75deg);
-  top: 40px;
-  left: -70px;
-}
-body header .wave .box .sun-ray .sun .ray .r9 {
-  height: 120px;
-  width: 50px;
-  transform: rotate(-255deg);
-  top: -30px;
-  left: -80px;
-}
-body header .wave .box .sun-ray .sun .ray .r10 {
-  height: 130px;
-  width: 20px;
-  transform: rotate(150deg);
-  top: -110px;
-  left: -20px;
-}
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-    opacity: 0.5;
-  }
-  100% {
-    transform: rotate(360deg);
-    opacity: 1;
-  }
-}
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-    animation-timing-function: ease-in;
-  }
-  50% {
-    transform: scale(1.2);
-    animation-timing-function: ease-out;
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-body header .wave .img-box img {
-  position: fixed;
-  width: 10%;
-}
-body header .wave .img-box .paper-ship {
-  position: fixed;
-  bottom: 3%;
-  right: 55%;
-  width: 20%;
-  z-index: 5;
-  transform-origin: center center;
-  will-change: transform;
-  transition: transform 0.05s linear;
-}
-@keyframes move3 {
-  0% {
-    transform: rotate(5deg);
-  }
-  50% {
-    transform: rotate(-5deg);
-  }
-  100% {
-    transform: rotate(5deg);
-  }
-}
-@media only screen and (min-width: 1024px) {
-  body header .wave .img-box .paper-ship {
-    bottom: 5%;
-    right: 23%;
-    width: 10%;
-  }
-}
 body header .container {
   width: 100%;
   height: 100%;
@@ -1419,6 +1183,7 @@ body main .main-bg .buble14 {
 }
 body main .main-bg .aboutMe {
   position: relative;
+  z-index: 0;
   margin: 0 auto;
   overflow: hidden;
   width: 100%;
@@ -1439,7 +1204,7 @@ body main .main-bg .aboutMe .visual {
 @media only screen and (min-width: 1024px) {
   body main .main-bg .aboutMe .visual {
     position: relative;
-    height: 208vh;
+    height: 1800px;
   }
 }
 body main .main-bg .aboutMe .visual .imgBox3 {
@@ -1450,7 +1215,7 @@ body main .main-bg .aboutMe .visual .imgBox3 {
 }
 @media only screen and (min-width: 1024px) {
   body main .main-bg .aboutMe .visual .imgBox3 {
-    width: 18%;
+    width: 18vw;
     perspective: 1500px;
     text-align: center;
   }
@@ -1468,11 +1233,7 @@ body main .main-bg .aboutMe .visual .aboutMe-txt-box1 {
 }
 @media only screen and (min-width: 1024px) {
   body main .main-bg .aboutMe .visual .aboutMe-txt-box1 {
-    position: absolute;
-    top: 73%;
-    left: 65%;
-    transform: translateX(-50%);
-    width: 100%;
+    transform: translateX(-38%) translateY(-300%);
     margin-top: 0px;
   }
 }
@@ -1512,11 +1273,7 @@ body main .main-bg .aboutMe .visual .aboutMe-txt-box2 {
 }
 @media only screen and (min-width: 1024px) {
   body main .main-bg .aboutMe .visual .aboutMe-txt-box2 {
-    position: absolute;
-    top: 80%;
-    left: 113%;
-    transform: translateX(-50%);
-    width: 100%;
+    transform: translateX(13%) translateY(-120%);
     margin-top: 0px;
   }
 }
@@ -1574,15 +1331,14 @@ body main .main-bg .aboutMe .visual .aboutMe-txt-box3 {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  width: 100%;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 @media only screen and (min-width: 1024px) {
   body main .main-bg .aboutMe .visual .aboutMe-txt-box3 {
     position: absolute;
-    top: 95%;
-    left: 80%;
+    left: 25%;
     transform: translateX(-50%);
-    width: 100%;
   }
 }
 body main .main-bg .aboutMe .visual .aboutMe-txt-box3 .txt-box-inner li .aboutMe-box h2 {
@@ -1592,20 +1348,17 @@ body main .main-bg .aboutMe .visual .aboutMe-txt-box3 .txt-box-inner li .aboutMe
 }
 @media only screen and (min-width: 1024px) {
   body main .main-bg .aboutMe .visual .aboutMe-txt-box3 .txt-box-inner li .aboutMe-box h2 {
-    font-size: 2.5vw;
+    font-size: 2vw;
     font-weight: 600;
     color: #FAF7F5;
   }
 }
 body main .main-bg .aboutMe .visual .aboutMe-txt-box3 .txt-box-inner li .aboutMe-box h2 span {
   font-size: 4.3rem;
-  font-family: "recipekorea";
-  color: #5c012f;
 }
 @media only screen and (min-width: 1024px) {
   body main .main-bg .aboutMe .visual .aboutMe-txt-box3 .txt-box-inner li .aboutMe-box h2 span {
-    font-size: 3rem;
-    font-family: "recipekorea";
+    font-size: 2vw;
     color: #fd017f;
   }
 }

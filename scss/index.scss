@@ -280,266 +280,7 @@ body {
                         // background-color: #00A3A0;
                     }
                 }
-                ///////////////////////////////
-                .box {
-                    position: fixed;
-                    margin: auto;
-                    display: block;
-                    
-                    width: 100%;
-                    height: 100%;
-                    // background-color: #00A3A0;
-                    .sun-ray {
-                        width: 100%;
-                        height: 100%;
-                        position: relative;
-                        top: -7%;
-                        left: -20%;
-                        transform: scale(0.3); 
-                        transform-origin: center center; 
-                        z-index: 10;
-                        // background-color: #00A3A0;
-                        @include responsive(large-screens) {
-                            transform: scale(0.7);
-                            left: -100px;
-                            top: -100px;
-                        }
-                        .sun{
-                        position: absolute;
-                        z-index: 8;
-                        background: yellow;
-                        top: 30%;
-                        right: 50%;
-                        width: 150px;
-                        height: 150px;
-                        border-radius: 50%;
-                        box-shadow: 0px 0px 30px 15px lighten(yellow, 20%);
-                        animation: pulse 2s infinite;
-                        //   background-color: #18267F;
-                        @include responsive(large-screens) {
-                            top: 30%;
-                            left: 30%;
-                            width: 150px;
-                            height: 150px;
-                        }
-                        .face {
-                            position: absolute;
-                            &:before, &:after {
-                            content: '';
-                            position: absolute;
-                            width: 9px;
-                            height: 9px;
-                            background: #000000;
-                            border-radius: 50%;
-                            z-index: 5;
-                            }
-                            &:before {
-                            top: 20px;
-                            left: 60px;
-                            }
-                            &:after{
-                            top: 20px;
-                            left: 100px;
-                            };
-                    
-                            .smile{
-                            position:absolute;
-                            top: 27px;
-                            left: 79px;
-                            width: 10px;
-                            height: 10px;
-                            border: 3px solid;
-                            border-radius: 50%;
-                            border-color: transparent #000 #000 transparent;
-                            transform: rotate(45deg);
-                            };
-                    
-                            .pupil-left {
-                            position: absolute;
-                            border-radius: 50%;
-                            height:3px;
-                            width: 3px;
-                            left: 63px;
-                            top: 20px;
-                            background: #ffffff;
-                            z-index: 7;
-                            };
-                            
-                            .pupil-right {
-                            position: absolute;
-                            border-radius: 50%;
-                            height:3px;
-                            width: 3px;
-                            left: 104px;
-                            top: 20px;
-                            background: #ffffff;
-                            z-index: 7;
-                            };
-                            
-                        } // face
-                        .ray {
-                        
-                            position: absolute;
-                            margin: auto;
-                            width: 150px;
-                            top: 0;
-                            left: 0;
-                            right: 0;
-                            bottom: 0;
-                            animation: spin 15s linear infinite;
-                            .beam {
-                            background: linear-gradient(0deg, rgba(255,255,255,0), yellow 40%, yellow);
-                            margin-left:10px;
-                            border-radius: 50% 50% 0 0;
-                            position:absolute;
-                            opacity:0.2;
-                            }
-                            
-                            .r1 {
-                            height: 120px;
-                            width: 40px;
-                            transform: rotate(180deg);
-                            top: -120px;
-                            left: 42px;
-                            }
-                            
-                            .r2 {
-                            height: 120px;
-                            width: 30px;
-                            transform: rotate(210deg);
-                            top: -100px;
-                            right: -5px;
-                            }
-                            
-                            .r3 {
-                            height: 120px;
-                            width: 50px;
-                            transform: rotate(255deg);
-                            top: -30px;
-                            right: -65px;
-                            }
-                            
-                            .r4{
-                            height: 120px;
-                            width: 24px;
-                            transform: rotate(300deg);
-                            top: 60px;
-                            left: 150px;
-                            }
-                            
-                            .r5 {
-                            height: 120px;
-                            width: 40px;
-                            top: 135px;
-                            left: 40px;
-                            }
-                            
-                            .r6 {
-                            height: 120px;
-                            width: 30px;
-                            transform: rotate(-35deg);
-                            top: 115px;
-                            right: -12px;
-                            }
-                            
-                            .r7 {
-                            height: 120px;
-                            width: 45px;
-                            transform: rotate(45deg);
-                            top: 100px;
-                            left: -45px;
-                            }
-                            
-                            .r8 {
-                            height: 130px;
-                            width: 20px;
-                            transform: rotate(75deg);
-                            top: 40px;
-                            left: -70px;
-                            }
-                            
-                            .r9 {
-                            height: 120px;
-                            width: 50px;
-                            transform: rotate(-255deg);
-                            top: -30px;
-                            left: -80px;
-                            }
-                            
-                            .r10 {
-                            height: 130px;
-                            width: 20px;
-                            transform: rotate(150deg);
-                            top: -110px;
-                            left: -20px;
-                            }
-                    
-                        } // ray  
-                        } // sun
-                    }
-                }// box
-
-            
-
-                @keyframes spin {
-                    0% {
-                    transform: rotate(0deg);
-                    opacity: .5;
-                }
-                    100% {
-                    transform: rotate(360deg);
-                    opacity: 1;
-                }
-                }
-                @keyframes pulse {
-                0%{
-                    transform: scale(1);
-                    animation-timing-function: ease-in;
-                }
-                50% {
-                    transform: scale(1.2);
-                    animation-timing-function: ease-out;
-                }
-                100%{
-                    transform: scale(1);
-                }
-                }
-
-            ////////////////////////
-            
-            .img-box {
-                img {
-                    position: fixed;
-                    width: 10%;
-                }
-                .paper-ship {
-                    position: fixed;
-                    bottom: 3%;  
-                    right: 55%; 
-                    width: 20%;  
-                    z-index: 5;
-                    transform-origin: center center;
-                    will-change: transform;
-                    transition: transform 0.05s linear;
-
-                    @keyframes move3 {
-                        0% {
-                            transform: rotate(5deg);
-                        }
-                        50% {
-                            transform: rotate(-5deg);
-                        }
-                        100% {
-                            transform: rotate(5deg);
-                        }
-                    }
-                    @include responsive(large-screens) {
-                        bottom: 5%; right: 23%;
-                        width: 10%;
-                    }
-                }
-            } // img box
-        }
+            } // wave
 
 
         .container {
@@ -1438,6 +1179,7 @@ body {
 
             .aboutMe {
                 position: relative;
+                z-index: 0;
                 margin: 0 auto;
                 overflow: hidden;
                 width: 100%;
@@ -1458,17 +1200,18 @@ body {
                     
                     @include responsive(large-screens) {
                         position: relative;
-                        height: 208vh;
+                        height: 1800px;
                         // background-color: #5a27d4;
+                    
                     }
                     .imgBox3 {
                         margin: 0 auto;
                         width: 50%;
                         perspective: 1500px;
                         text-align: center;
-                        
+                        // background-color: #00b9ce;
                         @include responsive(large-screens) {                            
-                            width: 18%;
+                            width: 18vw;
                             perspective: 1500px;
                             text-align: center;
                             
@@ -1486,12 +1229,9 @@ body {
                         width: 100%;
                         
                         @include responsive(large-screens) {
-                            position: absolute;
-                            top: 73%;
-                            left: 65%;
-                            transform:translateX(-50%);
-                            width: 100%;
+                            transform:translateX(-38%) translateY(-300%);
                             margin-top: 0px;
+                            // background-color: #14108B;
                         }
                         .txt-box-inner {
                             
@@ -1531,11 +1271,7 @@ body {
                         transform:translateX(-50%);
                         width: 100%;
                         @include responsive(large-screens) {
-                            position: absolute;
-                            top: 80%;
-                            left: 113%;
-                            transform:translateX(-50%);
-                            width: 100%;
+                            transform:translateX(13%) translateY(-120%);
                             margin-top: 0px;
                         }
                         .txt-box-inner {
@@ -1597,13 +1333,14 @@ body {
                         position: absolute;
                         left: 50%;
                         transform:translateX(-50%);
-                        width: 100%;
+                        width: fit-content;
+                        // background-color: #14108B;
                         @include responsive(large-screens) {
                             position: absolute;
-                            top: 95%;
-                            left: 80%;
+                            // top: 95%;
+                            left: 25%;
                             transform:translateX(-50%);
-                            width: 100%;
+                            
                         }
                         .txt-box-inner {
                             
@@ -1614,17 +1351,17 @@ body {
                                         font-weight: 600;
                                         color: #FAF7F5;
                                         @include responsive(large-screens) {
-                                            font-size: 2.5vw;
+                                            font-size: 2vw;
                                             font-weight: 600;
                                             color: #FAF7F5;
                                         }
                                         span {
                                             font-size: 4.3rem;
-                                            font-family: "recipekorea";
-                                            color: #5c012f;
+                                            
+                                           
                                             @include responsive(large-screens) {
-                                                font-size: 3rem;
-                                                font-family: "recipekorea";
+                                                font-size: 2vw;
+                                                
                                                 color: #fd017f;
                                             }
                                         }
