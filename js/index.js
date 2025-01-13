@@ -365,7 +365,37 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
   
+////////////////////////////////////////////////
+document.addEventListener('DOMContentLoaded', () => {
+    const observerOptions = {
+        root: null, // 뷰포트를 기준으로
+        rootMargin: '0px',
+        threshold: 0.5 // 요소가 10% 이상 보이면 감지
+    };
 
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // 랜덤 딜레이 설정
+                const randomDelay = Math.random() * 0.5; // 0 ~ 1.5초 사이 랜덤
+                entry.target.style.transitionDelay = `${randomDelay}s`;
+
+                // 화면에 보일 때 애니메이션 실행
+                entry.target.classList.add('visible1');
+            } else if (entry.boundingClientRect.top > 0) {
+                // 화면에서 사라지면 애니메이션 리셋
+                entry.target.classList.remove('visible1');
+
+                // 딜레이 초기화 (옵션)
+                entry.target.style.transitionDelay = '0s';
+            }
+        });
+    }, observerOptions);
+
+    // 감지 대상 추가
+    const hiddenElements = document.querySelectorAll('.hidden01');
+    hiddenElements.forEach(el => observer.observe(el));
+});
 
 
 ///////////////////////////////////////////////
