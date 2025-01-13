@@ -92,7 +92,7 @@ body header .logo-btn-screen {
     display: flex;
     justify-content: space-between;
     height: 60px;
-    background: #faf7f5;
+    background: rgba(250, 247, 245, 0.9);
   }
 }
 body header .logo-btn-screen .container {
@@ -1233,7 +1233,7 @@ body main .main-bg .aboutMe .visual .aboutMe-txt-box1 {
 }
 @media only screen and (min-width: 1024px) {
   body main .main-bg .aboutMe .visual .aboutMe-txt-box1 {
-    transform: translateX(-38%) translateY(-300%);
+    transform: translateX(-33%) translateY(-350%);
     margin-top: 0px;
   }
 }
@@ -1279,7 +1279,6 @@ body main .main-bg .aboutMe .visual .aboutMe-txt-box2 {
 }
 body main .main-bg .aboutMe .visual .aboutMe-txt-box2 .txt-box-inner li .aboutMe-box h2 {
   font-size: 1.3rem;
-  font-weight: 600;
   text-align: center;
   color: #FAF7F5;
 }
@@ -1295,6 +1294,7 @@ body main .main-bg .aboutMe .visual .aboutMe-txt-box2 .txt-box-inner li .aboutMe
   text-decoration-color: #46b4fd;
   text-decoration-thickness: 20px;
   text-underline-offset: -10px;
+  font-weight: 600;
 }
 body main .main-bg .aboutMe .visual .aboutMe-txt-box2 .txt-box-inner li .aboutMe-box .box2-color {
   margin-top: 20px;
@@ -1336,18 +1336,18 @@ body main .main-bg .aboutMe .visual .aboutMe-txt-box3 {
 }
 @media only screen and (min-width: 1024px) {
   body main .main-bg .aboutMe .visual .aboutMe-txt-box3 {
-    transform: translateX(0);
+    margin-top: 0px;
+    transform: translateX(-35%) translateY(-50%);
   }
 }
 body main .main-bg .aboutMe .visual .aboutMe-txt-box3 .txt-box-inner li .aboutMe-box3 h2 {
   font-size: 1.1rem;
-  font-weight: 600;
   text-align: center;
   color: #FAF7F5;
 }
 @media only screen and (min-width: 1024px) {
   body main .main-bg .aboutMe .visual .aboutMe-txt-box3 .txt-box-inner li .aboutMe-box3 h2 {
-    font-size: 2vw;
+    font-size: 1.8vw;
     text-align: left;
     color: #FAF7F5;
   }
@@ -1357,16 +1357,27 @@ body main .main-bg .aboutMe .visual .aboutMe-txt-box3 .txt-box-inner li .aboutMe
   text-decoration-color: #5a27d4;
   text-decoration-thickness: 20px;
   text-underline-offset: -10px;
+  font-weight: 600;
 }
 body main .main-bg .aboutMe .visual .aboutMe-txt-box3 .txt-box-inner li .aboutMe-box3 .aboutMe-img-box {
   width: 100%;
   display: flex;
   justify-content: center;
 }
+@media only screen and (min-width: 1024px) {
+  body main .main-bg .aboutMe .visual .aboutMe-txt-box3 .txt-box-inner li .aboutMe-box3 .aboutMe-img-box {
+    justify-content: left;
+  }
+}
 body main .main-bg .aboutMe .visual .aboutMe-txt-box3 .txt-box-inner li .aboutMe-box3 .aboutMe-img-box img {
   width: 25%;
   margin-top: 20px;
   margin-right: 12px;
+}
+@media only screen and (min-width: 1024px) {
+  body main .main-bg .aboutMe .visual .aboutMe-txt-box3 .txt-box-inner li .aboutMe-box3 .aboutMe-img-box img {
+    width: 9.5%;
+  }
 }
 body main .main-bg .container {
   width: 100%;
