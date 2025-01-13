@@ -365,10 +365,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
   
-  //////////////////////////////////
 
 
 
+///////////////////////////////////////////////
 
 document.addEventListener('DOMContentLoaded', () => {
     const observerOptions = {
