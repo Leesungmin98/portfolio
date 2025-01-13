@@ -2,11 +2,13 @@
 @import "./mixin.scss";
 @import "./style.scss";
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital@1&family=Noto+Sans+KR&family=Public+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
 
 body {
     touch-action: manipulation; /* 터치 이벤트 제한 */
     overscroll-behavior: contain; /* 바운스 스크롤 제거 */
     header {
+        
         .logo-btn-screen {
             position: fixed;
             z-index: 1000;
@@ -19,6 +21,8 @@ body {
                 justify-content: space-between;
                 height: 60px;
                 background:rgba(#FAF7F5, 0.9);
+                
+
             }
             .container {
                 width: 100%;
@@ -261,9 +265,14 @@ body {
                 height: 250vw;
                 overflow: hidden; 
                 background-color: #FAF7F5;
-                // background:radial-gradient(ellipse at center, #ceecf7 0%, #c5eefb 35%, #63acff 100%);
+                // background-image: url(../images/sky.jpg);
+                // background-repeat: no-repeat;
+                // background-size: cover;
+                // background-attachment: fixed;
+                
                 @include responsive(large-screens) {
                     height: 1200px;
+                    
                 }
                 canvas {
                     position: absolute; bottom: 0px; left: 0px;
@@ -287,51 +296,17 @@ body {
             margin: auto;
 
             h1 {
-                position: fixed; top: 50%; left: 50%;
-                transform: translate(-50%, -50%);
+                position: fixed; bottom: 0%; left: 50%;
+                transform: translate(-50%);
                 z-index: 10;
                 font-size: 16vw;
-                font-family: 'Super Shiny';
+                
                 text-align: center;
-            
-                // -webkit-text-stroke: 1px white;
-
-                animation-name: title22;
-                animation-timing-function: ease-out;
-                animation-duration: 1s;
+                font-family: "rubik doodle shadow";
                 
                 @include responsive(large-screens) {
-                    top: 47%;
-                    font-size: 120px;
+                 
                 } 
-                span {
-                    color: #0064a2;
-                    animation: colorChange 3s infinite;
-
-                }
-                @keyframes colorChange {
-                    0% {
-                        color: #0064a2 
-                    }
-                    50% {
-                        color: #0096a7; 
-                    }
-                    100% {
-                        color: #0064a2 
-                    }
-                }
-
-                @keyframes title22 {
-                    0% {
-                        top: -100%;
-                        opacity: 0;
-                    
-                    }
-                    100% {
-                        opacity: 1;
-                    
-                    }
-                }
             } // h1
         } // container
         

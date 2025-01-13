@@ -184,7 +184,12 @@ $('.po-modal-box .close-modal').on('click', closeModal);
     const gnbB = $('.pc-menu > li > a');
     gnbB.click(function(e) {
         const target = $(this).attr('href');
-        $('html').animate({ scrollTop: $(target).offset().top - 180 }, 1000);
+
+        if (target === '#aboutMe') {
+            $('html').animate({ scrollTop: $(target).offset().top - 100 }, 1000);
+        } else {
+            $('html').animate({ scrollTop: $(target).offset().top - 180 }, 1000);
+        }
         e.preventDefault();
     });
 
