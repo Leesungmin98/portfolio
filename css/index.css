@@ -1311,6 +1311,7 @@ body main .main-bg .aboutMe .visual .aboutMe-txt-box2 .txt-box-inner li .aboutMe
   }
 }
 body main .main-bg .aboutMe .visual .aboutMe-txt-box2 .txt-box-inner li .aboutMe-box .box2-color span {
+  font-weight: 600;
   color: #46b4fd;
 }
 body main .main-bg .aboutMe .visual .aboutMe-txt-box2 .txt-box-inner li .aboutMe-box p {
