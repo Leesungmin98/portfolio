@@ -171,7 +171,13 @@ $('.po-modal-box .close-modal').on('click', closeModal);
     const gnbA = $('.mobile-menu > li > a');
     gnbA.click(function(e) {
         const target = $(this).attr('href');
-        $('html').animate({ scrollTop: $(target).offset().top - 80 }, 1000);
+    
+        if (target === '#aboutMe') { 
+            $('html, body').animate({ scrollTop: $(target).offset().top - 450 }, 1000);
+        } else {
+            $('html, body').animate({ scrollTop: $(target).offset().top - 80 }, 1000);
+        }
+    
         e.preventDefault();
     });
 
