@@ -1199,7 +1199,7 @@ body main .main-bg .aboutMe {
 }
 body main .main-bg .aboutMe .visual {
   position: relative;
-  height: 500vw;
+  height: 455vw;
 }
 @media only screen and (min-width: 1024px) {
   body main .main-bg .aboutMe .visual {
@@ -1329,38 +1329,44 @@ body main .main-bg .aboutMe .visual .aboutMe-txt-box2 .txt-box-inner li .aboutMe
 }
 body main .main-bg .aboutMe .visual .aboutMe-txt-box3 {
   position: absolute;
+  margin-top: 500px;
   left: 50%;
   transform: translateX(-50%);
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 100%;
 }
 @media only screen and (min-width: 1024px) {
   body main .main-bg .aboutMe .visual .aboutMe-txt-box3 {
-    position: absolute;
-    left: 25%;
-    transform: translateX(-50%);
+    transform: translateX(0);
   }
 }
-body main .main-bg .aboutMe .visual .aboutMe-txt-box3 .txt-box-inner li .aboutMe-box h2 {
-  font-size: 3.7rem;
+body main .main-bg .aboutMe .visual .aboutMe-txt-box3 .txt-box-inner li .aboutMe-box3 h2 {
+  font-size: 1.1rem;
   font-weight: 600;
+  text-align: center;
   color: #FAF7F5;
 }
 @media only screen and (min-width: 1024px) {
-  body main .main-bg .aboutMe .visual .aboutMe-txt-box3 .txt-box-inner li .aboutMe-box h2 {
+  body main .main-bg .aboutMe .visual .aboutMe-txt-box3 .txt-box-inner li .aboutMe-box3 h2 {
     font-size: 2vw;
-    font-weight: 600;
+    text-align: left;
     color: #FAF7F5;
   }
 }
-body main .main-bg .aboutMe .visual .aboutMe-txt-box3 .txt-box-inner li .aboutMe-box h2 span {
-  font-size: 4.3rem;
+body main .main-bg .aboutMe .visual .aboutMe-txt-box3 .txt-box-inner li .aboutMe-box3 h2 span {
+  text-decoration: underline;
+  text-decoration-color: #5a27d4;
+  text-decoration-thickness: 20px;
+  text-underline-offset: -10px;
 }
-@media only screen and (min-width: 1024px) {
-  body main .main-bg .aboutMe .visual .aboutMe-txt-box3 .txt-box-inner li .aboutMe-box h2 span {
-    font-size: 2vw;
-    color: #fd017f;
-  }
+body main .main-bg .aboutMe .visual .aboutMe-txt-box3 .txt-box-inner li .aboutMe-box3 .aboutMe-img-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+body main .main-bg .aboutMe .visual .aboutMe-txt-box3 .txt-box-inner li .aboutMe-box3 .aboutMe-img-box img {
+  width: 25%;
+  margin-top: 20px;
+  margin-right: 12px;
 }
 body main .main-bg .container {
   width: 100%;

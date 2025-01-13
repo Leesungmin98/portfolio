@@ -1196,7 +1196,7 @@ body {
     
                 .visual {
                     position: relative;
-                    height: 500vw;
+                    height: 455vw;
                     
                     @include responsive(large-screens) {
                         position: relative;
@@ -1331,42 +1331,51 @@ body {
                     } // aboutMe-txt-box2
                     .aboutMe-txt-box3 {
                         position: absolute;
+                        margin-top: 500px;
                         left: 50%;
                         transform:translateX(-50%);
-                        width: fit-content;
-                        // background-color: #14108B;
+                        width: 100%;
                         @include responsive(large-screens) {
-                            position: absolute;
-                            // top: 95%;
-                            left: 25%;
-                            transform:translateX(-50%);
+                            
+                            transform:translateX(0);
                             
                         }
                         .txt-box-inner {
                             
                             li {
-                                .aboutMe-box {
+                                .aboutMe-box3 {
                                     h2 {
-                                        font-size: 3.7rem;
+                                        font-size: 1.1rem;
                                         font-weight: 600;
+                                        text-align: center;
                                         color: #FAF7F5;
                                         @include responsive(large-screens) {
                                             font-size: 2vw;
-                                            font-weight: 600;
+                                            text-align: left;
                                             color: #FAF7F5;
                                         }
                                         span {
-                                            font-size: 4.3rem;
-                                            
-                                           
+                                            text-decoration: underline;
+                                            text-decoration-color: #5a27d4;
+                                            text-decoration-thickness: 20px;
+                                            text-underline-offset: -10px;
                                             @include responsive(large-screens) {
-                                                font-size: 2vw;
-                                                
-                                                color: #fd017f;
+                                               
                                             }
                                         }
+                                    } // h2
+                                    .aboutMe-img-box {
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: center;
+                                        img {
+                                            width: 25%;
+                                            margin-top: 20px;
+                                            margin-right: 12px;
+                                           
+                                        }
                                     }
-                                } // aboutMe-box
+                                } // aboutMe-box3
                             } // li
                         } // txt-box-inner 
                     } // aboutMe-txt-box3
