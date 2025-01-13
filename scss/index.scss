@@ -416,7 +416,7 @@ body {
                     animation-iteration-count: infinite;
                     @include responsive(large-screens) {
                         width: 15%;
-                        top: 5000px; left: 0%;
+                        top: 4100px; left: 0%;
                         width: 40%;
 
                         animation-name: killer;
@@ -473,7 +473,7 @@ body {
                     animation-timing-function: ease-in-out;
                     animation-iteration-count: infinite;
                     @include responsive(large-screens) {
-                        top: 600px; 
+                        top: 1450px; 
                         width: 40%
                     }
                 }
@@ -521,7 +521,7 @@ body {
                     animation-timing-function: ease-in-out;
                     animation-iteration-count: infinite;
                     @include responsive(large-screens) {
-                        top: 5200px;
+                        top: 4650px;
                         width: 20%;
 
                         animation-name: fish1-box ;
@@ -611,7 +611,7 @@ body {
                     position: absolute;
                     top: 87%; left: 70%;
                     width: 50%;
-                    z-index: 1;
+                    z-index: 10;
                     animation-name: fish3-box ;
                     animation-duration: 6s;
                     animation-timing-function: linear;

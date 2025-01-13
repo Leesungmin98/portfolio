@@ -458,7 +458,7 @@ body main .main-bg .fishs .killer {
 @media only screen and (min-width: 1024px) {
   body main .main-bg .fishs .killer {
     width: 15%;
-    top: 5000px;
+    top: 4100px;
     left: 0%;
     width: 40%;
     animation-name: killer;
@@ -509,7 +509,7 @@ body main .main-bg .fishs .whale {
 }
 @media only screen and (min-width: 1024px) {
   body main .main-bg .fishs .whale {
-    top: 600px;
+    top: 1450px;
     width: 40%;
   }
 }
@@ -556,7 +556,7 @@ body main .main-bg .fishs .fish1-box {
 }
 @media only screen and (min-width: 1024px) {
   body main .main-bg .fishs .fish1-box {
-    top: 5200px;
+    top: 4650px;
     width: 20%;
     animation-name: fish1-box;
     animation-duration: 12s;
@@ -639,7 +639,7 @@ body main .main-bg .fishs .fish3-box {
   top: 87%;
   left: 70%;
   width: 50%;
-  z-index: 1;
+  z-index: 10;
   animation-name: fish3-box;
   animation-duration: 6s;
   animation-timing-function: linear;
