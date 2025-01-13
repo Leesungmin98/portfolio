@@ -494,7 +494,7 @@ document.addEventListener('DOMContentLoaded', function() {
  
             scrub: 1,
             pin: true,
-            markers: true
+            markers: false
         }
     })
     .fromTo('.visual .imgBox3 img', 
