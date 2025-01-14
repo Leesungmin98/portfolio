@@ -566,8 +566,8 @@ $(document).mousemove(function (event) {
         const angle = Math.atan2(dy, dx);
 
         // 눈동자 이동 반경 (눈 안에서만 움직이도록 제한)
-        const radiusX = (eye.width() / 2) - (inner.width() / 2);
-        const radiusY = (eye.height() / 2) - (inner.height() / 2);
+        const radiusX = (eye.width() / 2) - (inner.width() / 1.5);
+        const radiusY = (eye.height() / 2) - (inner.height() / 1.5);
 
         // 눈동자 위치 계산
         const x = Math.cos(angle) * radiusX;
