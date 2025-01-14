@@ -14,8 +14,8 @@ class App {
 
     // 다양한 색상과 특성의 웨이브 생성
     this.waves = [
-      new Wave('#a0cede', -80, 0.8, 0.2),
-      new Wave('#009eaf', -80, 0.8, 0.1),
+      new Wave('#009eaf', -80, 0.8, 0.2),
+      new Wave('#205cdd', -80, 0.8, 0.1),
       new Wave('#002c8a', -80, 1, 0.1),
       
     ];

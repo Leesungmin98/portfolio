@@ -71,8 +71,12 @@ footer {
   src: local("crunch chips"), url("../font/Crunch Chips.otf") format("opentype");
 }
 @font-face {
-  font-family: "Super Shiny";
-  src: local("Super Shiny"), url("../font/Super Shiny.ttf") format("opentype");
+  font-family: "impact";
+  src: local("impact"), url("../font/impact.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Copperplate Gothic Light";
+  src: local("Copperplate Gothic Lightt"), url("../font/copperplate-gothic-light.ttf") format("ttf");
 }
 body {
   touch-action: manipulation; /* 터치 이벤트 제한 */
@@ -326,6 +330,32 @@ body header .wave canvas {
     height: 100vh;
   }
 }
+body header .wave .textLoop ul {
+  position: fixed;
+  z-index: 1;
+  top: 250px;
+  display: flex;
+  white-space: nowrap;
+  font-family: "impact";
+  font-size: 50vw;
+}
+@media only screen and (min-width: 1024px) {
+  body header .wave .textLoop ul {
+    font-size: 350px;
+  }
+}
+body header .wave .textLoop ul li {
+  animation: textLoop 10s linear infinite;
+  padding-right: 50px;
+}
+@keyframes textLoop {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
 body header .container {
   width: 100%;
   height: 100%;
@@ -334,13 +364,18 @@ body header .container {
 }
 body header .container h1 {
   position: fixed;
-  bottom: 0%;
+  top: 24%;
   left: 50%;
   transform: translate(-50%);
   z-index: 10;
   font-size: 16vw;
   text-align: center;
-  font-family: "rubik doodle shadow";
+  font-family: "Copperplate Gothic Light";
+}
+@media only screen and (min-width: 1024px) {
+  body header .container h1 {
+    font-size: 30px;
+  }
 }
 body main {
   width: 100%;
@@ -352,13 +387,13 @@ body main .main-bg {
   overflow: hidden;
   width: 100%;
   height: 100%;
-  background: linear-gradient(#002c8a 30%, #009eaf 40%, #002c8a 60%, #009eaf 70%, #002c8a 85%);
+  background: linear-gradient(#002c8a 30%, #009eaf 40%, #002c8a 60%, #00b9ce 70%, #002c8a 85%);
   z-index: 0;
 }
 @media only screen and (min-width: 1024px) {
   body main .main-bg {
     height: 100%;
-    background: linear-gradient(#002c8a 10%, #009eaf 25%, #002c8a 40%, #009eaf 60%, #002c8a 80%);
+    background: linear-gradient(#002c8a 10%, #4a7be6 25%, #002c8a 40%, #4a7be6 60%, #002c8a 80%);
   }
 }
 body main .main-bg #top-bt {

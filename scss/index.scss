@@ -286,26 +286,55 @@ body {
                         // background-color: #00A3A0;
                     }
                 }
+
+                .textLoop {
+                    ul {
+                        position: fixed;
+                        z-index: 1;
+                        top: 250px;
+                        display: flex;
+                        white-space: nowrap;
+                        font-family: "impact";
+                        font-size: 50vw;
+                        @include responsive(large-screens) {
+                            font-size: 350px;
+                        }
+                        li {
+                            animation: textLoop 10s linear infinite;
+                            padding-right: 50px;
+                        }
+                        @keyframes textLoop {
+                            0% {
+                                transform: translate3d(0,0,0);
+                            }
+                            100% {
+                                transform: translate3d(-100%,0,0);
+                            }
+                        }
+                    }
+                } // textLoop
+
             } // wave
 
-
+           
         .container {
             width: 100%;
             height: 100%;
             max-width: 1580px;
             margin: auto;
+           
 
             h1 {
-                position: fixed; bottom: 0%; left: 50%;
+                position: fixed; top: 24%; left: 50%;
                 transform: translate(-50%);
                 z-index: 10;
                 font-size: 16vw;
                 
                 text-align: center;
-                font-family: "rubik doodle shadow";
+                font-family: 'Copperplate Gothic Light';
                 
                 @include responsive(large-screens) {
-                 
+                    font-size: 30px;
                 } 
             } // h1
         } // container
@@ -322,11 +351,11 @@ body {
             overflow: hidden;
             width: 100%;
             height: 100%;
-            background:linear-gradient(#002c8a 30%, #009eaf 40%,#002c8a 60%,#009eaf 70%,#002c8a 85%);
+            background:linear-gradient(#002c8a 30%, #009eaf 40%,#002c8a 60%,#00b9ce 70%,#002c8a 85%);
             z-index: 0;
             @include responsive(large-screens) {
                 height: 100%;
-                background:linear-gradient( #002c8a 10%, #009eaf 25%,#002c8a 40%,#009eaf 60%,#002c8a 80%);
+                background:linear-gradient( #002c8a 10%, #4a7be6 25%,#002c8a 40%,#4a7be6 60%,#002c8a 80%);
             }
 
             #top-bt { 

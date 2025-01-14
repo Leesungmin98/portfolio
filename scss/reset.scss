@@ -82,10 +82,16 @@ footer {
 }
 
 
+
 @font-face {
-    font-family: 'Super Shiny';
-    src:local('Super Shiny'),
-        url('../font/Super\ Shiny.ttf') format('opentype');
+    font-family: 'impact';
+    src:local('impact'),
+        url('../font/impact.ttf') format('ttf');
 }
 
+@font-face {
+    font-family: 'Copperplate Gothic Light';
+    src:local('Copperplate Gothic Lightt'),
+        url('../font/copperplate-gothic-light.ttf') format('ttf');
+}
 
