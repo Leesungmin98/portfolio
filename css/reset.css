@@ -70,10 +70,10 @@ footer {
   src: local("crunch chips"), url("../font/Crunch Chips.otf") format("opentype");
 }
 @font-face {
-  font-family: "impact";
-  src: local("impact"), url("../font/impact.ttf") format("ttf");
+  font-family: "Impact";
+  src: local("Impact"), url("../font/impact.ttf") format("truetype");
 }
 @font-face {
   font-family: "Copperplate Gothic Light";
-  src: local("Copperplate Gothic Lightt"), url("../font/copperplate-gothic-light.ttf") format("ttf");
+  src: local("Copperplate Gothic Light"), url("../font/copperplate-gothic-light.ttf") format("truetype");
 }/*# sourceMappingURL=reset.css.map */
