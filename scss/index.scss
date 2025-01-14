@@ -318,7 +318,7 @@ body {
                     width: 100%;
                     height: 100vh;
                     z-index: 5;
-                    background-color: #002c8a;
+                    // background-color: #002c8a;
                     @include responsive(large-screens) {
                         height: 1200px;
                     }
