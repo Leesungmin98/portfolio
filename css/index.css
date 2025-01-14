@@ -372,7 +372,6 @@ body header .wave .sun-box .sun {
   transform: scale(0.6);
   width: 900px;
   height: 450px;
-  margin: 0 auto;
   border-top-left-radius: 450px;
   border-top-right-radius: 450px;
   background-color: #FFF158;
@@ -382,6 +381,7 @@ body header .wave .sun-box .sun {
     bottom: -50%;
     width: 800px;
     height: 600px;
+    margin: 0 auto;
     border-top-left-radius: 400px;
     border-top-right-radius: 400px;
     transform: scale(1.4);
@@ -389,7 +389,7 @@ body header .wave .sun-box .sun {
 }
 body header .wave .sun-box .sun .eyes {
   position: relative;
-  bottom: 0%;
+  top: 30%;
   transform: scale(1);
   display: flex;
   justify-content: center;
@@ -402,8 +402,7 @@ body header .wave .sun-box .sun .eyes .eye {
   border-radius: 50%;
   background-color: #ffffff;
 }
-body header .wave .sun-box .sun .eyes .eye::before {
-  content: "";
+body header .wave .sun-box .sun .eyes .eye .inner {
   position: absolute;
   top: 50px;
   left: 25px;
@@ -412,6 +411,17 @@ body header .wave .sun-box .sun .eyes .eye::before {
   border-radius: 50%;
   transform: translate(-50%, -50%);
   background-color: #000;
+}
+body header .wave .sun-box .sun .eyes .inner::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 25px;
+  width: 15px;
+  height: 20px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
 }
 body header .wave .container {
   width: 100%;
