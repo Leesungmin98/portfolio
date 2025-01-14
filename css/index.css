@@ -333,7 +333,7 @@ body header .wave canvas {
 body header .wave .textLoop ul {
   position: fixed;
   z-index: 1;
-  top: 250px;
+  top: 20%;
   display: flex;
   white-space: nowrap;
   font-family: "impact";
@@ -342,10 +342,11 @@ body header .wave .textLoop ul {
 @media only screen and (min-width: 1024px) {
   body header .wave .textLoop ul {
     font-size: 350px;
+    top: 250px;
   }
 }
 body header .wave .textLoop ul li {
-  animation: textLoop 14s linear infinite;
+  animation: textLoop 18s linear infinite;
   padding-right: 50px;
 }
 @keyframes textLoop {
@@ -358,22 +359,23 @@ body header .wave .textLoop ul li {
 }
 body header .wave .sun-box {
   position: fixed;
+  bottom: -5%;
   width: 100%;
-  height: 100vh;
   z-index: 5;
 }
 @media only screen and (min-width: 1024px) {
   body header .wave .sun-box {
     height: 1200px;
+    bottom: -25%;
   }
 }
 body header .wave .sun-box .sun {
   position: relative;
-  transform: scale(0.6);
-  width: 900px;
-  height: 450px;
-  border-top-left-radius: 450px;
-  border-top-right-radius: 450px;
+  transform: scale(0.8);
+  width: 600px;
+  height: 300px;
+  border-top-left-radius: 300px;
+  border-top-right-radius: 300px;
   background-color: #FFF158;
 }
 @media only screen and (min-width: 1024px) {
@@ -431,7 +433,7 @@ body header .wave .container {
 }
 body header .wave .container h1 {
   position: fixed;
-  top: 24%;
+  top: 16%;
   left: 50%;
   transform: translate(-50%);
   z-index: 10;
@@ -441,6 +443,8 @@ body header .wave .container h1 {
 }
 @media only screen and (min-width: 1024px) {
   body header .wave .container h1 {
+    top: 24%;
+    left: 50%;
     font-size: 30px;
   }
 }

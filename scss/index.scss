@@ -291,16 +291,17 @@ body {
                     ul {
                         position: fixed;
                         z-index: 1;
-                        top: 250px;
+                        top: 20%;
                         display: flex;
                         white-space: nowrap;
                         font-family: "impact";
                         font-size: 50vw;
                         @include responsive(large-screens) {
                             font-size: 350px;
+                            top: 250px;
                         }
                         li {
-                            animation: textLoop 14s linear infinite;
+                            animation: textLoop 18s linear infinite;
                             padding-right: 50px;
                         }
                         @keyframes textLoop {
@@ -315,21 +316,24 @@ body {
                 } // textLoop
                 .sun-box {
                     position: fixed;
+                    bottom: -5%;
                     width: 100%;
-                    height: 100vh;
+                    // background-color: #00b9ce;
                     z-index: 5;
-                    // background-color: #002c8a;
+                   
                     @include responsive(large-screens) {
                         height: 1200px;
+                        bottom: -25%;
                     }
                     .sun {
                         position: relative;
-                        transform: scale(0.6);
-                        width: 900px; 
-                        height: 450px; 
                         
-                        border-top-left-radius: 450px;
-                        border-top-right-radius: 450px;   
+                        transform: scale(0.8);
+                        width: 600px;          
+                        height: 300px; 
+                        
+                        border-top-left-radius: 300px;
+                        border-top-right-radius: 300px;   
                         background-color: #FFF158;
                         @include responsive(large-screens) {
                             bottom: -50%;
@@ -388,7 +392,8 @@ body {
                    
         
                     h1 {
-                        position: fixed; top: 24%; left: 50%;
+                        position: fixed; 
+                        top: 16%; left: 50%;
                         transform: translate(-50%);
                         z-index: 10;
                         font-size: 5vw;
@@ -397,6 +402,7 @@ body {
                         font-family: 'Copperplate Gothic Light';
                         
                         @include responsive(large-screens) {
+                            top: 24%; left: 50%;
                             font-size: 30px;
                         } 
                     } // h1    
