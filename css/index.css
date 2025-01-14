@@ -345,7 +345,7 @@ body header .wave .textLoop ul {
   }
 }
 body header .wave .textLoop ul li {
-  animation: textLoop 10s linear infinite;
+  animation: textLoop 14s linear infinite;
   padding-right: 50px;
 }
 @keyframes textLoop {
@@ -368,7 +368,7 @@ body header .container h1 {
   left: 50%;
   transform: translate(-50%);
   z-index: 10;
-  font-size: 16vw;
+  font-size: 5vw;
   text-align: center;
   font-family: "Copperplate Gothic Light";
 }
