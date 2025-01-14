@@ -547,3 +547,38 @@ document.addEventListener('DOMContentLoaded', function() {
     
 });
 
+///////////////////////////////////
+
+$(document).mousemove(function (event) {
+    $('.eye').each(function () {
+        const eye = $(this);
+        const inner = eye.find('.inner');
+
+        // 눈의 중심 좌표 계산
+        const eyeCenterX = eye.offset().left + eye.width() / 2;
+        const eyeCenterY = eye.offset().top + eye.height() / 2;
+
+        // 마우스와 눈 중심 간의 거리 계산
+        const dx = event.pageX - eyeCenterX;
+        const dy = event.pageY - eyeCenterY;
+
+        // 각도 계산
+        const angle = Math.atan2(dy, dx);
+
+        // 눈동자 이동 반경 (눈 안에서만 움직이도록 제한)
+        const radiusX = (eye.width() / 2) - (inner.width() / 2);
+        const radiusY = (eye.height() / 2) - (inner.height() / 2);
+
+        // 눈동자 위치 계산
+        const x = Math.cos(angle) * radiusX;
+        const y = Math.sin(angle) * radiusY;
+
+        // 눈동자 위치 적용
+        inner.css({
+            left: `${x + eye.width() / 2 - inner.width() / 20}px`,
+            top: `${y + eye.height() / 2 - inner.height() / 20}px`,
+        });
+    });
+});
+
+
