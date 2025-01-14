@@ -359,7 +359,7 @@ body header .wave .textLoop ul li {
 }
 body header .wave .sun-box {
   position: fixed;
-  bottom: -17vw;
+  bottom: -27vw;
   width: 100%;
   z-index: 5;
 }
@@ -391,8 +391,8 @@ body header .wave .sun-box .sun {
 }
 body header .wave .sun-box .sun .eyes {
   position: relative;
-  top: 30%;
-  transform: scale(0.8);
+  top: 20%;
+  transform: scale(0.6);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -400,6 +400,7 @@ body header .wave .sun-box .sun .eyes {
 @media only screen and (min-width: 1024px) {
   body header .wave .sun-box .sun .eyes {
     transform: scale(1);
+    top: 30%;
   }
 }
 body header .wave .sun-box .sun .eyes .eye {
