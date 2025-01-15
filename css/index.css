@@ -79,8 +79,8 @@ footer {
   src: local("Copperplate Gothic Light"), url("../font/copperplate-gothic-light.ttf") format("truetype");
 }
 body {
-  touch-action: manipulation; /* 터치 이벤트 제한 */
-  overscroll-behavior: contain; /* 바운스 스크롤 제거 */
+  touch-action: manipulation;
+  overscroll-behavior: contain;
 }
 body header .logo-btn-screen {
   position: fixed;

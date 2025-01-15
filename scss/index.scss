@@ -5,8 +5,8 @@
 
 
 body {
-    touch-action: manipulation; /* 터치 이벤트 제한 */
-    overscroll-behavior: contain; /* 바운스 스크롤 제거 */
+    touch-action: manipulation; 
+    overscroll-behavior: contain; 
     header {
         
         .logo-btn-screen {
@@ -265,10 +265,6 @@ body {
                 height: 250vw;
                 overflow: hidden; 
                 background-color: #FAF7F5;
-                // background-image: url(../images/sky.jpg);
-                // background-repeat: no-repeat;
-                // background-size: cover;
-                // background-attachment: fixed;
                 
                 @include responsive(large-screens) {
                     height: 1200px;

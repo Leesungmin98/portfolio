@@ -59,27 +59,26 @@ $(document).ready(function() {
     });
 /////////////////////////////////////////////////////////////////
 
-// 특정 모달 열기 함수
 function openModal(modalClass) {
-    // 모든 모달을 숨김 (하단으로 이동)
+    
     $('.po-modal-box').css('bottom', '-100%');
     
-    // 닫기 버튼 보이기
+   
     $('.close-modal').css('display', 'block');
     
-    // 선택한 모달 열기 (하단에서 위로 슬라이드)
+    
     $(modalClass).css({
         'bottom': '0'
     });
     
-    // 스크롤 방지 및 스크롤바 공간 조정
+    
     const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
     $('html, body').css({
         'overflow': 'hidden',
         'padding-right': `${scrollbarWidth}px`
     });
     
-    // 로고 버튼 숨기기
+  
     $('.logo-btn-screen').css('display', 'none');
     $('#top-bt').css('display', 'none');
 
@@ -87,29 +86,29 @@ function openModal(modalClass) {
 
 // 모달 닫기 함수
 function closeModal() {
-    // 모든 모달 하단으로 슬라이드
+    
     $('.po-modal-box').css({
         'bottom': '-100%'
     });
     
-    // 닫기 버튼 숨기기 (0.5초 후)
+    
     setTimeout(function () {
         $('.close-modal').css('display', 'none');
     }, 100);
     
-    // 스크롤 복구
+    
     $('html, body').css({
         'overflow': 'auto',
         'padding-right': '0'
     });
     
-    // 로고 버튼 다시 보이기
+   
     $('.logo-btn-screen').css('display', 'block');
     $('#top-bt').css('display', 'block');
     
 }
 
-// 각 박스 클릭 시 해당 모달 열기 이벤트 리스너
+
 $('.box-banner').on('click', function() {
     openModal('.banner-modal-box');
 });
@@ -138,7 +137,7 @@ $('.box-character').on('click', function() {
     openModal('.character-modal-box');
 });
 
-// 닫기 버튼 클릭 시 모달 닫기
+
 $('.po-modal-box .close-modal').on('click', closeModal);
 
 /////////////////////
@@ -167,7 +166,7 @@ $('.po-modal-box .close-modal').on('click', closeModal);
         $('body').css('overflow', 'auto');
     });
 
-    // 스크롤 이동
+    
     const gnbA = $('.mobile-menu > li > a');
     gnbA.click(function(e) {
         const target = $(this).attr('href');
@@ -373,31 +372,31 @@ document.addEventListener("DOMContentLoaded", () => {
 ////////////////////////////////////////////////
 document.addEventListener('DOMContentLoaded', () => {
     const observerOptions = {
-        root: null, // 뷰포트를 기준으로
+        root: null, 
         rootMargin: '0px',
-        threshold: 0.3 // 요소가 10% 이상 보이면 감지
+        threshold: 0.3 
     };
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // 랜덤 딜레이 설정
-                const randomDelay = Math.random() * 0.5; // 0 ~ 1.5초 사이 랜덤
+                
+                const randomDelay = Math.random() * 0.5; 
                 entry.target.style.transitionDelay = `${randomDelay}s`;
 
-                // 화면에 보일 때 애니메이션 실행
+                
                 entry.target.classList.add('visible1');
             } else if (entry.boundingClientRect.top > 0) {
-                // 화면에서 사라지면 애니메이션 리셋
+                
                 entry.target.classList.remove('visible1');
 
-                // 딜레이 초기화 (옵션)
+                
                 entry.target.style.transitionDelay = '0s';
             }
         });
     }, observerOptions);
 
-    // 감지 대상 추가
+   
     const hiddenElements = document.querySelectorAll('.hidden01');
     hiddenElements.forEach(el => observer.observe(el));
 });
@@ -407,31 +406,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
     const observerOptions = {
-        root: null, // 뷰포트를 기준으로
+        root: null, 
         rootMargin: '0px',
-        threshold: 0.4 // 요소가 10% 이상 보이면 감지
+        threshold: 0.4 
     };
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // 랜덤 딜레이 설정
+               
                 const randomDelay = Math.random() * 0.5; // 0 ~ 1.5초 사이 랜덤
                 entry.target.style.transitionDelay = `${randomDelay}s`;
 
-                // 화면에 보일 때 애니메이션 실행
+                
                 entry.target.classList.add('visible');
             } else if (entry.boundingClientRect.top > 0) {
-                // 화면에서 사라지면 애니메이션 리셋
+              
                 entry.target.classList.remove('visible');
 
-                // 딜레이 초기화 (옵션)
+                
                 entry.target.style.transitionDelay = '0s';
             }
         });
     }, observerOptions);
 
-    // 감지 대상 추가
+    
     const hiddenElements = document.querySelectorAll('.hidden1');
     hiddenElements.forEach(el => observer.observe(el));
 });
@@ -439,31 +438,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
     const observerOptions = {
-        root: null, // 뷰포트를 기준으로
+        root: null, 
         rootMargin: '0px',
-        threshold: 0.03 // 요소가 10% 이상 보이면 감지
+        threshold: 0.03 
     };
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // 랜덤 딜레이 설정
-                const randomDelay = Math.random() * 0.5; // 0 ~ 1.5초 사이 랜덤
+             
+                const randomDelay = Math.random() * 0.5; // 
                 entry.target.style.transitionDelay = `${randomDelay}s`;
 
-                // 화면에 보일 때 애니메이션 실행
+                
                 entry.target.classList.add('visible');
             } else if (entry.boundingClientRect.top > 0) {
-                // 화면에서 사라지면 애니메이션 리셋
+                
                 entry.target.classList.remove('visible');
 
-                // 딜레이 초기화 (옵션)
+                
                 entry.target.style.transitionDelay = '0s';
             }
         });
     }, observerOptions);
 
-    // 애니메이션을 적용할 대상 선택
+    
     const boxes = document.querySelectorAll('.box-ani');
     boxes.forEach(box => observer.observe(box));
 });
@@ -554,26 +553,25 @@ $(document).mousemove(function (event) {
         const eye = $(this);
         const inner = eye.find('.inner');
 
-        // 눈의 중심 좌표 계산
+       
         const eyeCenterX = eye.offset().left + eye.width() / 2;
         const eyeCenterY = eye.offset().top + eye.height() / 2;
 
-        // 마우스와 눈 중심 간의 거리 계산
+       
         const dx = event.pageX - eyeCenterX;
         const dy = event.pageY - eyeCenterY;
 
-        // 각도 계산
+        
         const angle = Math.atan2(dy, dx);
 
-        // 눈동자 이동 반경 (눈 안에서만 움직이도록 제한)
+       
         const radiusX = (eye.width() / 2) - (inner.width() / 1.5);
         const radiusY = (eye.height() / 2) - (inner.height() / 1.5);
 
-        // 눈동자 위치 계산
         const x = Math.cos(angle) * radiusX;
         const y = Math.sin(angle) * radiusY;
 
-        // 눈동자 위치 적용
+        
         inner.css({
             left: `${x + eye.width() / 2 - inner.width() / 20}px`,
             top: `${y + eye.height() / 2 - inner.height() / 20}px`,
