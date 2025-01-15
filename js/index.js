@@ -75,7 +75,7 @@ function openModal(modalClass) {
     const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
     $('html, body').css({
         'overflow': 'hidden',
-        'padding-right': `${scrollbarWidth}px`
+        'padding-right': `${scrollbarWidth}px -10px`
     });
     
   
