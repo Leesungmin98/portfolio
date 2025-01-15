@@ -2149,7 +2149,7 @@ body main .main-bg .container .portfolio .inner-box {
   border-radius: 50px;
 }
 body main .main-bg .container .portfolio .po-box {
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
   display: grid;
   padding: 20px;
