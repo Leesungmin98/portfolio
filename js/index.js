@@ -582,3 +582,81 @@ $(document).mousemove(function (event) {
 
 ////////////////////////////////////////
 
+document.addEventListener('DOMContentLoaded', () => {
+    const polyline = document.querySelector('.drawing_line_polyline');
+    const circle = document.querySelector('.drawing_line_circle');
+
+    let points = [];
+    const total = 12;
+    const gap = 30;
+    let debounceRemoveLine;
+    let debounceCounter = 0;
+
+    const pointer = {
+        x: window.innerWidth / 2,
+        y: window.innerHeight / 2,
+        tx: 0,
+        ty: 0,
+        dist: 0,
+        scale: 1,
+        speed: 2,
+        circRadius: 8,
+        updateCoords() {
+            if (this.x !== 0) {
+                this.dist = Math.abs((this.x - this.tx) + (this.y - this.ty));
+                this.scale = Math.max(this.scale + ((100 - this.dist * 8) * 0.01 - this.scale) * 0.1, 0.25);
+                this.tx += (this.x - this.tx) / this.speed;
+                this.ty += (this.y - this.ty) / this.speed;
+            }
+        }
+    };
+
+    window.addEventListener('mousemove', (e) => {
+        pointer.x = e.clientX;
+        pointer.y = e.clientY;
+        debounceCounter = 0;
+        drawLine();
+
+        clearTimeout(debounceRemoveLine);
+        debounceRemoveLine = setTimeout(() => {
+            debounceCounter = 12;
+            drawLine();
+        }, 80);
+    });
+
+    window.addEventListener('mousedown', () => {
+        pointer.circRadius = 6;
+        drawLine();
+    });
+
+    window.addEventListener('mouseup', () => {
+        pointer.circRadius = 8;
+        drawLine();
+    });
+
+    function drawLine() {
+        pointer.updateCoords();
+
+        points.push({ x: pointer.tx, y: pointer.ty });
+        while (points.length > total) {
+            points.shift();
+            if (points.length > gap) {
+                for (let i = 0; i < 5; i++) {
+                    points.shift();
+                }
+            }
+        }
+
+        const pointsArr = points.map(point => `${point.x},${point.y}`);
+        polyline.setAttribute('points', pointsArr.join(' '));
+
+        circle.setAttribute('cx', pointer.x);
+        circle.setAttribute('cy', pointer.y);
+        circle.setAttribute('r', pointer.scale * pointer.circRadius);
+
+        if (debounceCounter > 0) {
+            debounceCounter--;
+            requestAnimationFrame(drawLine);
+        }
+    }
+});
