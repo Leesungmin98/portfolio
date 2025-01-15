@@ -412,8 +412,8 @@ body header .wave .sun-box .sun .eyes .eye {
 }
 body header .wave .sun-box .sun .eyes .eye .inner {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 40%;
+  left: 30%;
   width: 45px;
   height: 70px;
   border-radius: 50%;
@@ -2663,27 +2663,15 @@ body main .contact .contact-box {
   transform: translate(-50%);
   color: rgb(255, 255, 255);
 }
-body main .contact .contact-box h2 {
-  text-align: center;
-  margin-bottom: 16px;
-  font-size: 8vw;
-  font-family: "pretendard";
-  color: rgb(255, 255, 255);
-}
-@media only screen and (min-width: 1024px) {
-  body main .contact .contact-box h2 {
-    font-size: 5rem;
-  }
-}
 body main .contact .contact-box a {
   color: white;
-  font-size: 3vw;
-  margin-bottom: 8px;
+  font-size: 3.5vw;
+  margin-bottom: 10px;
 }
 @media only screen and (min-width: 1024px) {
   body main .contact .contact-box a {
     font-size: 2rem;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
   }
 }
 body main .contact .contact-box a:hover {
