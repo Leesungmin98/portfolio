@@ -1435,6 +1435,7 @@ body {
                         left: 50%;
                         transform:translateX(-50%);
                         width: 100%;
+                        // background-color: #009eaf;
                         @include responsive(large-screens) {
                             margin-top: 0px;
                             transform:translateX(-35%) translateY(-50%);
@@ -1483,6 +1484,7 @@ body {
                                         justify-content: center;
                                         @include responsive(large-screens) {
                                             justify-content: left;
+                                          
                                         }
                                         img {
                                             width: 25%;
@@ -1491,6 +1493,9 @@ body {
                                             @include responsive(large-screens) {
                                                 width: 9.5%;
                                             }
+                                        }
+                                        .speed {
+                                            margin-right: 0px;
                                         }
                                     }
                                 } // aboutMe-box3
@@ -2214,7 +2219,7 @@ body {
                     
                     }
                     .po-box {
-                        width: 100%;
+                        width: 95%;
                         margin: 0 auto;
                         display: grid;
                         
@@ -2274,11 +2279,13 @@ body {
                         }
                     
                         .box-button {
-                            // width: 150px;
+                            width: 100%;
+                            margin: 0 auto;
                             display: flex;
                             padding-top: 12px;
                             // margin-bottom: 20px;
-                    
+                            
+                            
                             @include responsive(large-screens) {
                                 position: absolute;
                                 width: 30%;
@@ -2293,13 +2300,13 @@ body {
                             a {
                                 position: relative;
                                 width: 50%;
-                                height: 8vw;
+                                height: 10vw;
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
-                                margin-left: 2px;
-                                margin-right: 2px;
-                                font-size: 3vw;
+                                margin-left: 4px;
+                                margin-right: 4px;
+                                font-size: 3.5vw;
                                 font-weight: 600;
                                 text-align: center;
                                 color: #111111;
@@ -2312,6 +2319,8 @@ body {
                                     height: 50px;
                                     line-height: 50px;
                                     border-radius: 20px;
+                                    margin-left: 2px;
+                                    margin-right: 2px;
                                 }
                             }
                             a:hover {

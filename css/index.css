@@ -1486,6 +1486,9 @@ body main .main-bg .aboutMe .visual .aboutMe-txt-box3 .txt-box-inner li .aboutMe
     width: 9.5%;
   }
 }
+body main .main-bg .aboutMe .visual .aboutMe-txt-box3 .txt-box-inner li .aboutMe-box3 .aboutMe-img-box .speed {
+  margin-right: 0px;
+}
 body main .main-bg .container {
   width: 100%;
   height: 100%;
@@ -2146,7 +2149,7 @@ body main .main-bg .container .portfolio .inner-box {
   border-radius: 50px;
 }
 body main .main-bg .container .portfolio .po-box {
-  width: 100%;
+  width: 95%;
   margin: 0 auto;
   display: grid;
   padding: 20px;
@@ -2209,6 +2212,8 @@ body main .main-bg .container .portfolio .po-box .box-txt .box-inner-txt p {
   }
 }
 body main .main-bg .container .portfolio .po-box .box-button {
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   padding-top: 12px;
 }
@@ -2226,13 +2231,13 @@ body main .main-bg .container .portfolio .po-box .box-button {
 body main .main-bg .container .portfolio .po-box .box-button a {
   position: relative;
   width: 50%;
-  height: 8vw;
+  height: 10vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 2px;
-  margin-right: 2px;
-  font-size: 3vw;
+  margin-left: 4px;
+  margin-right: 4px;
+  font-size: 3.5vw;
   font-weight: 600;
   text-align: center;
   color: #111111;
@@ -2246,6 +2251,8 @@ body main .main-bg .container .portfolio .po-box .box-button a {
     height: 50px;
     line-height: 50px;
     border-radius: 20px;
+    margin-left: 2px;
+    margin-right: 2px;
   }
 }
 body main .main-bg .container .portfolio .po-box .box-button a:hover {
