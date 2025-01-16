@@ -524,8 +524,8 @@ body main .main-bg {
   overflow: hidden;
   width: 100%;
   height: 100%;
-  background: linear-gradient(#002c8a 30%, #009eaf 40%, #002c8a 60%, #00b9ce 70%, #002c8a 85%);
-  z-index: 0;
+  background: linear-gradient(#002c8a 20%, #009eaf 40%, #002c8a 60%, #00b9ce 70%, #002c8a 85%);
+  z-index: 1;
 }
 @media only screen and (min-width: 1024px) {
   body main .main-bg {

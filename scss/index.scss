@@ -481,8 +481,8 @@ body {
             overflow: hidden;
             width: 100%;
             height: 100%;
-            background:linear-gradient(#002c8a 30%, #009eaf 40%,#002c8a 60%,#00b9ce 70%,#002c8a 85%);
-            z-index: 0;
+            background:linear-gradient(#002c8a 20%, #009eaf 40%,#002c8a 60%,#00b9ce 70%,#002c8a 85%);
+            z-index: 1;
             @include responsive(large-screens) {
                 height: 100%;
                 background:linear-gradient( #002c8a 10%, #4a7be6 25%,#002c8a 40%,#4a7be6 60%,#002c8a 80%);
