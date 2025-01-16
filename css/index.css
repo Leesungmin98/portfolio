@@ -530,7 +530,7 @@ body main .main-bg {
 @media only screen and (min-width: 1024px) {
   body main .main-bg {
     height: 100%;
-    background: linear-gradient(#002c8a 10%, #4a7be6 25%, #002c8a 40%, #4a7be6 60%, #002c8a 80%);
+    background: linear-gradient(#002c8a 10%, #009eaf 25%, #002c8a 40%, #009eaf 60%, #002c8a 80%);
   }
 }
 body main .main-bg #top-bt {
