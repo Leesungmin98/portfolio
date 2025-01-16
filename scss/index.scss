@@ -7,6 +7,8 @@
 body {
     touch-action: manipulation; 
     overscroll-behavior: contain; 
+
+    
         #drawing_line {
             
         @include responsive(large-screens) {
@@ -291,8 +293,8 @@ body {
             .wave {
                 position: relative; 
                 z-index: 0; 
-                width: 100%;
-                height: 150dvh;
+                height: 150vh; /* Fallback for browsers that do not support Custom Properties */
+                height: calc(var(--vh, 1vh) * 150);
                 overflow: hidden; 
                 background-color: #FAF7F5;
                 
