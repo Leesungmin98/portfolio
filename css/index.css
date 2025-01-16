@@ -1338,7 +1338,7 @@ body main .main-bg .aboutMe {
 }
 body main .main-bg .aboutMe .visual {
   position: relative;
-  height: 470vw;
+  height: 455vw;
 }
 @media only screen and (min-width: 1024px) {
   body main .main-bg .aboutMe .visual {
