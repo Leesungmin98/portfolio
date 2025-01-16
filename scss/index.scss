@@ -309,7 +309,7 @@ body {
                     // background-color: #00A3A0;
                     @include responsive(large-screens) {
                         bottom: 0;
-                        height: 100vh;
+                        height: 100svh;
                         // background-color: #00A3A0;
                     }
                 }
