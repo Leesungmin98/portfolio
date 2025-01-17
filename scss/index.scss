@@ -43,8 +43,7 @@ body {
 
    
     header {
-        width: 100%;
-        height: 100%;
+        
         .logo-btn-screen {
             position: fixed;
             z-index: 1000;
@@ -480,7 +479,7 @@ body {
     //////////////////////////////////////////////////////////////////////////// 
 
     main {
-        width: 100%; height: 100%;
+        width: 100%; 
         font-family: "Pretendard";
         .main-bg {
             position: relative;
@@ -490,7 +489,7 @@ body {
             background:linear-gradient(#002c8a 20%, #009eaf 40%,#002c8a 60%,#00b9ce 70%,#002c8a 85%);
             z-index: 1;
             @include responsive(large-screens) {
-                height: 100%;
+                
                 background:linear-gradient( #002c8a 10%, #009eaf 25%,#002c8a 40%,#009eaf 60%,#002c8a 80%);
             }
 

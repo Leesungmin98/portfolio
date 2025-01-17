@@ -112,10 +112,6 @@ body #drawing_line > svg .drawing_line_polyline {
 body #drawing_line > svg .drawing_line_circle {
   fill: #D2330F;
 }
-body header {
-  width: 100%;
-  height: 100%;
-}
 body header .logo-btn-screen {
   position: fixed;
   z-index: 1000;
@@ -524,7 +520,6 @@ body header .wave .container .pc {
 }
 body main {
   width: 100%;
-  height: 100%;
   font-family: "Pretendard";
 }
 body main .main-bg {
@@ -537,7 +532,6 @@ body main .main-bg {
 }
 @media only screen and (min-width: 1024px) {
   body main .main-bg {
-    height: 100%;
     background: linear-gradient(#002c8a 10%, #009eaf 25%, #002c8a 40%, #009eaf 60%, #002c8a 80%);
   }
 }
