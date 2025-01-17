@@ -2,7 +2,10 @@
 @import "./mixin.scss";
 @import "./style.scss";
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital@1&family=Noto+Sans+KR&family=Public+Sans&display=swap');
-
+html {
+    width: 100%;
+    height: 100%;
+}
 
 body {
     touch-action: manipulation; 
@@ -40,7 +43,8 @@ body {
 
    
     header {
-        
+        width: 100%;
+        height: 100%;
         .logo-btn-screen {
             position: fixed;
             z-index: 1000;
@@ -293,8 +297,8 @@ body {
             .wave {
                 position: relative; 
                 z-index: 0; 
-                height: 150vh; /* Fallback for browsers that do not support Custom Properties */
-                height: calc(var(--vh, 1vh) * 150);
+                height: 150vh; 
+              
                 overflow: hidden; 
                 background-color: #FAF7F5;
                 
@@ -311,7 +315,7 @@ body {
                     // background-color: #00A3A0;
                     @include responsive(large-screens) {
                         bottom: 0;
-                        height: 100vh;
+                        height: 100%;
                         // background-color: #00A3A0;
                     }
                 }

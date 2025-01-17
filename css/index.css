@@ -79,6 +79,11 @@ footer {
   font-family: "Copperplate Gothic Light";
   src: local("Copperplate Gothic Light"), url("../font/copperplate-gothic-light.ttf") format("truetype");
 }
+html {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   touch-action: manipulation;
   overscroll-behavior: contain;
@@ -106,6 +111,10 @@ body #drawing_line > svg .drawing_line_polyline {
 }
 body #drawing_line > svg .drawing_line_circle {
   fill: #D2330F;
+}
+body header {
+  width: 100%;
+  height: 100%;
 }
 body header .logo-btn-screen {
   position: fixed;
@@ -331,8 +340,7 @@ body header .logo-btn-screen .pc-menu li a:hover {
 body header .wave {
   position: relative;
   z-index: 0;
-  height: 150vh; /* Fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * 150);
+  height: 150vh;
   overflow: hidden;
   background-color: #FAF7F5;
 }
@@ -352,7 +360,7 @@ body header .wave canvas {
 @media only screen and (min-width: 1024px) {
   body header .wave canvas {
     bottom: 0;
-    height: 100vh;
+    height: 100%;
   }
 }
 body header .wave .textLoop ul {
