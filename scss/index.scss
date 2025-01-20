@@ -368,7 +368,7 @@ body {
                         border-top-left-radius: 1000px;
                         border-top-right-radius: 1000px; 
                           
-                        background:linear-gradient(45deg,#FFF158 60%, #ffec1e 80%);
+                        background:linear-gradient(120deg,#fdf063 5%, #FFF158 30%, #ffea00 90%);
                         
                         @include responsive(large-screens) {
                             bottom: -50%;
@@ -377,7 +377,7 @@ body {
                             margin: 0 auto;
                             border-top-left-radius: 400px;
                             border-top-right-radius: 400px; 
-                            transform: scale(1.3);
+                            transform: scale(1.4);
                         }
                         .eyes {
                             position: relative;
@@ -396,7 +396,7 @@ body {
                                 height: 150px;
                                 
                                 border-radius: 50%;
-                                background:linear-gradient(120deg,#ffffff 60%, #dddddd 80%);
+                                background:linear-gradient(120deg,#ffffff 60%, #dfdfdf 80%);
                                 .inner {
                                     position: absolute;
                                     top: 40%;
