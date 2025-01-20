@@ -405,7 +405,7 @@ body header .wave .sun-box .sun {
   height: 300px;
   border-top-left-radius: 1000px;
   border-top-right-radius: 1000px;
-  background-color: #FFF158;
+  background: linear-gradient(45deg, #FFF158 60%, #ffec1e 80%);
 }
 @media only screen and (min-width: 1024px) {
   body header .wave .sun-box .sun {
@@ -415,7 +415,7 @@ body header .wave .sun-box .sun {
     margin: 0 auto;
     border-top-left-radius: 400px;
     border-top-right-radius: 400px;
-    transform: scale(1.4);
+    transform: scale(1.2);
   }
 }
 body header .wave .sun-box .sun .eyes {
@@ -437,7 +437,7 @@ body header .wave .sun-box .sun .eyes .eye {
   width: 100px;
   height: 150px;
   border-radius: 50%;
-  background-color: #ffffff;
+  background: linear-gradient(120deg, #ffffff 60%, #d8d8d8 80%);
 }
 body header .wave .sun-box .sun .eyes .eye .inner {
   position: absolute;
