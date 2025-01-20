@@ -437,7 +437,12 @@ body header .wave .sun-box .sun .eyes .eye {
   width: 100px;
   height: 150px;
   border-radius: 50%;
-  background: linear-gradient(140deg, #ffffff 60%, #e2e2e2 80%);
+  background: linear-gradient(140deg, #ffffff 60%, #ebebeb 80%);
+}
+@media only screen and (min-width: 1024px) {
+  body header .wave .sun-box .sun .eyes .eye {
+    background: linear-gradient(140deg, #ffffff 60%, #dbdbdb 80%);
+  }
 }
 body header .wave .sun-box .sun .eyes .eye .inner {
   position: absolute;

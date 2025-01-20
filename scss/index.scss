@@ -396,7 +396,10 @@ body {
                                 height: 150px;
                                 
                                 border-radius: 50%;
-                                background:linear-gradient(140deg,#ffffff 60%, #e2e2e2 80%);
+                                background:linear-gradient(140deg,#ffffff 60%, #ebebeb 80%);
+                                @include responsive(large-screens) {
+                                    background:linear-gradient(140deg,#ffffff 60%, #dbdbdb 80%);
+                                }
                                 .inner {
                                     position: absolute;
                                     top: 40%;
