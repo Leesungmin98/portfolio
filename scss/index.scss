@@ -1484,6 +1484,7 @@ body {
                                         width: 80%;
                                         margin: 0 auto;
                                         text-align: center;
+                                        
                                         @include responsive(large-screens) {
                                             margin: 0;
                                             font-size: 1vw;
