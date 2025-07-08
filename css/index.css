@@ -342,7 +342,7 @@ body header .wave {
 }
 @media only screen and (min-width: 1024px) {
   body header .wave {
-    height: 1200px;
+    height: 1000px;
   }
 }
 body header .wave canvas {

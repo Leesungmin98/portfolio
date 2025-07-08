@@ -203,16 +203,16 @@ body {
                     position: relative;
                     height:40vh; 
                     @include responsive(large-screens) {
-                    display: none;
+                        display: none;
                     }
                     
                     li {
-                    display: block;
-                    height: calc(100% / 4);
-                    min-height: 50px;
-                    position: relative;
-                    opacity: 0;
-                    // background-color: #00A3A0;
+                        display: block;
+                        height: calc(100% / 4);
+                        min-height: 50px;
+                        position: relative;
+                        opacity: 0;
+                        // background-color: #00A3A0;
                     @include responsive(large-screens) {
                     
                     }
@@ -302,8 +302,8 @@ body {
                 background-color: #FAF7F5;
                 
                 @include responsive(large-screens) {
-                    height: 1200px;
-                    
+                    height: 1000px;
+                   
                 }
                 
                 canvas {
