@@ -441,7 +441,7 @@ document.addEventListener('DOMContentLoaded', function() {
         scrollTrigger: {
             trigger: '.visual .imgBox3',
             start: '50% 50%',
-            end: '500px',
+            end: '400px',
  
             scrub: 1,
             pin: true,
