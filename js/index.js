@@ -440,12 +440,12 @@ document.addEventListener('DOMContentLoaded', function() {
     gsap.timeline({
         scrollTrigger: {
             trigger: '.visual .imgBox3',
-            start: '50% 50%',
-            end: '500px',
+            start: '50% 60%',
+            end: '200px',
  
             scrub: 1,
             pin: true,
-            markers: true
+            markers: false
         }
     })
     .fromTo('.visual .imgBox3 img', 
