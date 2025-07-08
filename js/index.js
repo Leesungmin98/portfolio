@@ -441,11 +441,11 @@ document.addEventListener('DOMContentLoaded', function() {
         scrollTrigger: {
             trigger: '.visual .imgBox3',
             start: '50% 50%',
-            end: '400px',
+            end: '500px',
  
             scrub: 1,
             pin: true,
-            markers: false
+            markers: true
         }
     })
     .fromTo('.visual .imgBox3 img', 
